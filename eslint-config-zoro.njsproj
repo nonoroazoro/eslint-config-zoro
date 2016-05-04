@@ -31,7 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="index.js" />
+    <Compile Include="rules\base.js" />
     <Compile Include="rules\react.js" />
+    <Compile Include="test\rules\base.test.js" />
     <Compile Include="test\rules\react.test.js" />
     <Content Include=".gitignore" />
     <Content Include="LICENSE" />
