@@ -1,0 +1,3 @@
+﻿--reporter spec
+--ui bdd
+--recursive

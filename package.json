@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-zoro",
+  "version": "0.1.0",
+  "description": "Zoro's ESLint config",
+  "main": "index.js",
+  "author": {
+    "name": "nonoroazoro",
+    "email": "xiaochao.k@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nonoroazoro/eslint-config-zoro"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "styleguide"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.3.1"
+  }
+}
