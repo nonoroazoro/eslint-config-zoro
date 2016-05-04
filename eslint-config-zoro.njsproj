@@ -36,6 +36,7 @@
     <Compile Include="test\rules\base.test.js" />
     <Compile Include="test\rules\react.test.js" />
     <Content Include=".gitignore" />
+    <Content Include=".npmignore" />
     <Content Include="LICENSE" />
     <Content Include="package.json" />
     <Content Include="README.md" />
