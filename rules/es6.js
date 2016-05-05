@@ -11,7 +11,7 @@
         }
     },
     "rules": {
-        "arrow-body-style": [2, "as-needed"],
+        "arrow-body-style": 0,
         "arrow-parens": 0,
         "arrow-spacing": [2, { "before": true, "after": true }],
         "constructor-super": 2,
