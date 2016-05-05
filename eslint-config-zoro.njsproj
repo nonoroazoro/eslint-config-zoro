@@ -37,7 +37,11 @@
     <Compile Include="rules\es6.js" />
     <Compile Include="rules\react.js" />
     <Compile Include="rules\variables.js" />
-    <Compile Include="test\rules\base.test.js" />
+    <Compile Include="test\rules\best-practices.test.js" />
+    <Compile Include="test\rules\es6.test.js" />
+    <Compile Include="test\rules\variables.test.js" />
+    <Compile Include="test\rules\style.test.js" />
+    <Compile Include="test\rules\errors.test.js" />
     <Compile Include="test\rules\react.test.js" />
     <Content Include=".gitignore" />
     <Content Include=".npmignore" />
