@@ -37,6 +37,7 @@
     <Compile Include="rules\errors.js" />
     <Compile Include="rules\es6.js" />
     <Compile Include="rules\react.js" />
+    <Compile Include="rules\variables.js" />
     <Compile Include="test\rules\base.test.js" />
     <Compile Include="test\rules\react.test.js" />
     <Content Include=".gitignore" />
