@@ -34,6 +34,7 @@
     <Compile Include="rules\base.js" />
     <Compile Include="rules\best-practices.js" />
     <Compile Include="rules\errors.js" />
+    <Compile Include="rules\es6.js" />
     <Compile Include="rules\react.js" />
     <Compile Include="test\rules\base.test.js" />
     <Compile Include="test\rules\react.test.js" />
