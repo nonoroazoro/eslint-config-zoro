@@ -28,6 +28,7 @@ module.exports = {
         "no-regex-spaces": 2,
         "no-sparse-arrays": 2,
         "no-unreachable": 2,
+        "no-unsafe-finally": 2,
         "use-isnan": 2,
         "valid-jsdoc": 0,
         "valid-typeof": 2,
