@@ -32,7 +32,6 @@
   <ItemGroup>
     <Compile Include="index.js" />
     <Compile Include="rules\style.js" />
-    <Compile Include="rules\base.js" />
     <Compile Include="rules\best-practices.js" />
     <Compile Include="rules\errors.js" />
     <Compile Include="rules\es6.js" />

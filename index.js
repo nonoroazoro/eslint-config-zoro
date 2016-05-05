@@ -1,9 +1,21 @@
 ﻿module.exports = {
-    extends: [
-        "./rules/base",
-        "./rules/react",
+    "extends": [
+        "./rules/best-practices",
+        "./rules/errors",
+        "./rules/style",
+        "./rules/variables",
+        "./rules/es6",
+        "./rules/react"
     ].map(require.resolve),
-    ecmaFeatures: {},
-    globals: {},
-    rules: {}
+    "env": {
+        "browser": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions":
+    {
+        "ecmaVersion": 7,
+        "sourceType": "module",
+    },
+    "globals": {},
+    "rules": {},
 };
