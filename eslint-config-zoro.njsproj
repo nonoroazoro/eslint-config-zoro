@@ -46,6 +46,7 @@
     <Compile Include="test\rules\react.test.js" />
     <Content Include=".gitignore" />
     <Content Include=".npmignore" />
+    <Content Include=".travis.yml" />
     <Content Include="LICENSE" />
     <Content Include="package.json" />
     <Content Include="README.md" />
