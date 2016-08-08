@@ -14,7 +14,7 @@
         "id-blacklist": 0,
         "id-length": 0,
         "id-match": 0,
-        "indent": [2, 4],
+        "indent": [2, 4, { "SwitchCase": 1 }],
         "jsx-quotes": [2, "prefer-double"],
         "key-spacing": [2, { "beforeColon": false, "afterColon": true }],
         "keyword-spacing": [2, {
