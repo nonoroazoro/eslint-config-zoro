@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zoro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zoro's ESLint Configuration",
   "main": "index.js",
   "author": {
@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "should": "^8.3.1"
+    "mocha": "^2.5.3",
+    "should": "^8.4.0"
   }
 }
