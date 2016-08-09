@@ -55,7 +55,7 @@ module.exports = {
         "no-param-reassign": [2, { "props": true }],
         "no-proto": 2,
         "no-redeclare": 2,
-        "no-return-assign": ["error", "always"],
+        "no-return-assign": [2, "always"],
         "no-script-url": 0,
         "no-self-assign": 2,
         "no-self-compare": 2,
