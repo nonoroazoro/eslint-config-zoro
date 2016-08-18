@@ -2,7 +2,7 @@
     "rules": {
         "array-bracket-spacing": [2, "never"],
         "block-spacing": [2, "always"],
-        "brace-style": [2, "allman"],
+        "brace-style": [2, "allman", { "allowSingleLine": true }],
         "camelcase": 0,
         "comma-spacing": [2, { "before": false, "after": true }],
         "comma-style": [2, "last"],
