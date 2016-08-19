@@ -6,12 +6,12 @@ describe("index", function ()
 {
     it("should load all rules.", function (done)
     {
-        Object.keys(index).forEach((key) =>
+        Object.keys(index).forEach(function (key)
         {
             should.exist(index[key]);
         });
 
-        index.extends.forEach((p_filePath) =>
+        index.extends.forEach(function (p_filePath)
         {
             fs.statSync(p_filePath);
         });
