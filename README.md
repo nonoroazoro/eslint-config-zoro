@@ -9,7 +9,7 @@ Based on the default ESLint configuration, including:
 5.  [ECMAScript 6](http://eslint.org/docs/rules/#ecmascript-6)
 6.  [React](https://github.com/yannickcr/eslint-plugin-react)
 
-with **very strict rules**.
+with **VERY STRICT RULES**.
 
 ## Installation
 
