@@ -13,7 +13,7 @@ module.exports = {
         "no-dupe-args": 2,
         "no-dupe-keys": 2,
         "no-duplicate-case": 2,
-        "no-empty": 2,
+        "no-empty": [2, { "allowEmptyCatch": true }],
         "no-empty-character-class": 2,
         "no-ex-assign": 2,
         "no-extra-boolean-cast": 0,
