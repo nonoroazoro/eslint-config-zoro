@@ -11,6 +11,7 @@ Based on the default ESLint configuration, including:
 
 with **VERY STRICT RULES**.
 
+
 ## Installation
 
 1.  Install ESLint:
@@ -25,6 +26,7 @@ with **VERY STRICT RULES**.
     npm i -D eslint-config-zoro
     ```
 
+
 ## Usage
 
 In your `.eslintrc` file, add:
@@ -34,6 +36,18 @@ In your `.eslintrc` file, add:
     "extends": "zoro"
 }
 ```
+
+Or you can overwrite this configuration by:
+
+```javascript
+{
+    "extends": "zoro",
+    "rules": {
+        "no-empty": 0
+    }
+}
+```
+
 
 ## Where to ask for help?
 
