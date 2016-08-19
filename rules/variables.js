@@ -11,6 +11,6 @@
         "no-undef-init": 0,
         "no-undefined": 0,
         "no-unused-vars": [2, { "vars": "local", "args": "none" }],
-        "no-use-before-define": 2
+        "no-use-before-define": [2, { "functions": false, "classes": true }]
     }
 };
