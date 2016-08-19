@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zoro",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Zoro's ESLint Configuration",
   "main": "index.js",
   "author": {
