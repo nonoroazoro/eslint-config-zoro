@@ -34,7 +34,12 @@
         "max-params": 0,
         "max-statements": 0,
         "max-statements-per-line": 2,
-        "new-cap": [2, { "newIsCap": true }],
+        "new-cap": [2, {
+            "newIsCap": true,
+            "capIsNewExceptions": [
+                "Router"
+            ]
+        }],
         "new-parens": 2,
         "newline-after-var": 0,
         "newline-before-return": 0,
