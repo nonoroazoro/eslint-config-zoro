@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^2.5.3",
-    "should": "^8.4.0"
+    "mocha": "^3.2.0",
+    "should": "^11.1.1"
   }
 }

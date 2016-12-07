@@ -1,28 +1,28 @@
 # Zoro's ESLint Configuration [![Dependency Status](https://david-dm.org/nonoroazoro/eslint-config-zoro.svg?style=flat-square)](https://david-dm.org/nonoroazoro/eslint-config-zoro) [![Build Status](https://travis-ci.org/nonoroazoro/eslint-config-zoro.svg?branch=master)](https://travis-ci.org/nonoroazoro/eslint-config-zoro)
 
-Based on the default ESLint configuration, including:
+Based on the default ESLint configuration:
 
-1.  [Errors](http://eslint.org/docs/rules/#possible-errors)
-2.  [Best Practices](http://eslint.org/docs/rules/#best-practices)
-3.  [Variables](http://eslint.org/docs/rules/#variables)
-4.  [Style](http://eslint.org/docs/rules/#stylistic-issues)
-5.  [ECMAScript 6](http://eslint.org/docs/rules/#ecmascript-6)
-6.  [React](https://github.com/yannickcr/eslint-plugin-react)
+1. [Errors](http://eslint.org/docs/rules/#possible-errors)
+1. [Best Practices](http://eslint.org/docs/rules/#best-practices)
+1. [Variables](http://eslint.org/docs/rules/#variables)
+1. [Style](http://eslint.org/docs/rules/#stylistic-issues)
+1. [ECMAScript 6](http://eslint.org/docs/rules/#ecmascript-6)
+1. [React](https://github.com/yannickcr/eslint-plugin-react)
 
-with **VERY STRICT RULES**.
+added some **VERY STRICT RULES**.
 
 
 ## Installation
 
-1.  Install ESLint:
+1. Install ESLint:
 
-    ```javascript
+    ```bash
     npm i -D eslint
     ```
 
-2.  Install this configuration:
+1. Install this configuration:
 
-    ```javascript
+    ```bash
     npm i -D eslint-config-zoro
     ```
 
@@ -31,17 +31,17 @@ with **VERY STRICT RULES**.
 
 In your `.eslintrc` file, add:
 
-```javascript
+```json
 {
-    "extends": "zoro"
+    "extends": "eslint-config-zoro"
 }
 ```
 
-Or you can overwrite this configuration by:
+And you can overwrite this configuration by:
 
-```javascript
+```json
 {
-    "extends": "zoro",
+    "extends": "eslint-config-zoro",
     "rules": {
         "no-empty": 0
     }
@@ -51,4 +51,5 @@ Or you can overwrite this configuration by:
 
 ## Where to ask for help?
 
-[ESLint Rules](http://eslint.org/docs/rules/)
+- [ESLint Rules](http://eslint.org/docs/rules/)
+- [ESLint React Rules](https://github.com/yannickcr/eslint-plugin-react)
