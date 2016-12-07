@@ -1,16 +1,16 @@
 ﻿module.exports = {
     "rules": {
-        "init-declarations": 0,
-        "no-catch-shadow": 0,
-        "no-delete-var": 2,
-        "no-label-var": 0,
-        "no-restricted-globals": 0,
-        "no-shadow": 2,
-        "no-shadow-restricted-names": 2,
-        "no-undef": 2,
-        "no-undef-init": 0,
-        "no-undefined": 0,
-        "no-unused-vars": [2, { "vars": "local", "args": "none" }],
-        "no-use-before-define": [2, { "functions": false, "classes": true }]
+        "init-declarations": "off",
+        "no-catch-shadow": "off",
+        "no-delete-var": "error",
+        "no-label-var": "off",
+        "no-restricted-globals": "off",
+        "no-shadow": "error",
+        "no-shadow-restricted-names": "error",
+        "no-undef": "error",
+        "no-undef-init": "off",
+        "no-undefined": "off",
+        "no-unused-vars": ["error", { "vars": "local", "args": "none" }],
+        "no-use-before-define": ["error", { "functions": false, "classes": true }]
     }
 };
