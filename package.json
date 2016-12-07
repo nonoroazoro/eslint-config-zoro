@@ -7,6 +7,7 @@
     "name": "nonoroazoro",
     "email": "xiaochao.k@gmail.com"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/nonoroazoro/eslint-config-zoro"
@@ -22,9 +23,15 @@
   "scripts": {
     "test": "mocha"
   },
-  "license": "MIT",
+  "engines": {
+    "node": ">= 4"
+  },
   "devDependencies": {
     "mocha": "^3.2.0",
     "should": "^11.1.1"
+  },
+  "peerDependencies": {
+    "eslint": "3.x",
+    "eslint-plugin-react": "6.x"
   }
 }
