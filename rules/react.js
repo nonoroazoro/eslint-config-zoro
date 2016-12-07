@@ -8,8 +8,6 @@ module.exports = {
         "ecmaFeatures": { "jsx": true }
     },
     "rules": {
-        "jsx-quotes": ["error", "prefer-double"],
-
         "react/display-name": "off",
         "react/forbid-component-props": "off",
         "react/forbid-prop-types": ["error", { forbid: ["any", "array", "object"] }],
