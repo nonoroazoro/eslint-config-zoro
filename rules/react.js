@@ -1,8 +1,7 @@
 ﻿module.exports = {
     "plugins": ["react"],
     "parserOptions": {
-        "ecmaFeatures": { "jsx": true },
-        "sourceType": "module"
+        "ecmaFeatures": { "jsx": true }
     },
     "rules": {
         "jsx-quotes": [2, "prefer-double"],
