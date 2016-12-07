@@ -29,13 +29,14 @@ module.exports = {
             ]
         }],
         "no-empty-pattern": "error",
-        "no-extra-label": "error",
         "no-eq-null": "off",
         "no-eval": "error",
         "no-extend-native": "error",
         "no-extra-bind": "error",
+        "no-extra-label": "error",
         "no-fallthrough": "error",
         "no-floating-decimal": "error",
+        "no-global-assign": "error",
         "no-implicit-coercion": "off",
         "no-implicit-globals": "error",
         "no-implied-eval": "error",
@@ -47,34 +48,58 @@ module.exports = {
         "no-magic-numbers": "off",
         "no-multi-spaces": ["error", { exceptions: { "Property": true, "VariableDeclarator": true, "ImportDeclaration": true } }],
         "no-multi-str": "error",
-        "no-native-reassign": "error",
-        "no-new": "error",
         "no-new-func": "error",
         "no-new-wrappers": "error",
-        "no-octal": "error",
+        "no-new": "error",
         "no-octal-escape": "error",
+        "no-octal": "error",
         "no-param-reassign": ["error", { "props": true }],
         "no-proto": "error",
         "no-redeclare": "error",
+        "no-restricted-properties": ["error",
+            {
+                "object": "arguments",
+                "property": "callee",
+                "message": "arguments.callee is deprecated."
+            },
+            {
+                "property": "__defineGetter__",
+                "message": "Please use Object.defineProperty instead."
+            },
+            {
+                "property": "__defineSetter__",
+                "message": "Please use Object.defineProperty instead."
+            },
+            {
+                "object": "Math",
+                "property": "pow",
+                "message": "Please use the exponentiation operator (**) instead."
+            }
+        ],
         "no-return-assign": ["error", "always"],
+        "no-return-await": "error",
         "no-script-url": "off",
         "no-self-assign": "error",
         "no-self-compare": "error",
         "no-sequences": "error",
         "no-throw-literal": "error",
         "no-unmodified-loop-condition": "off",
-        "no-unused-expressions": ["error", { "allowTernary": true }],
+        "no-unused-expressions": ["error", {
+            "allowShortCircuit": false,
+            "allowTernary": false
+        }],
         "no-unused-labels": "error",
         "no-useless-call": "off",
         "no-useless-concat": "error",
         "no-useless-escape": "error",
         "no-useless-return": "error",
-        "no-void": "off",
+        "no-void": "error",
         "no-warning-comments": "off",
         "no-with": "error",
         "radix": "error",
+        "require-await": "off",
         "vars-on-top": "error",
-        "wrap-iife": ["error", "outside"],
+        "wrap-iife": ["error", "outside", { "functionPrototypeMethods": false }],
         "yoda": "error"
     }
 };
