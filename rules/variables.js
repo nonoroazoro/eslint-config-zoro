@@ -1,4 +1,8 @@
-﻿module.exports = {
+﻿/**
+ * Modified ESLint Possible Errors.
+ * http://eslint.org/docs/rules/#variables
+ */
+module.exports = {
     "rules": {
         "init-declarations": "off",
         "no-catch-shadow": "off",

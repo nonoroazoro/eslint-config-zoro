@@ -1,4 +1,8 @@
-﻿module.exports = {
+﻿/**
+ * Modified ESLint Possible Errors.
+ * https://github.com/yannickcr/eslint-plugin-react
+ */
+module.exports = {
     "plugins": ["react"],
     "parserOptions": {
         "ecmaFeatures": { "jsx": true }

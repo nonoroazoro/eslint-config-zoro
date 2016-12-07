@@ -1,4 +1,8 @@
-﻿module.exports = {
+﻿/**
+ * Modified ESLint Possible Errors.
+ * http://eslint.org/docs/rules/#ecmascript-6
+ */
+module.exports = {
     "env": {
         "es6": true
     },

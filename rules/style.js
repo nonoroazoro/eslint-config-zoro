@@ -1,4 +1,8 @@
-﻿module.exports = {
+﻿/**
+ * Modified ESLint Possible Errors.
+ * http://eslint.org/docs/rules/#stylistic-issues
+ */
+module.exports = {
     "rules": {
         "array-bracket-spacing": ["error", "never"],
         "block-spacing": ["error", "always"],
