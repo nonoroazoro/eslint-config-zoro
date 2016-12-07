@@ -9,7 +9,6 @@
         "./rules/react"
     ].map(require.resolve),
     "env": {
-        "browser": true,
         "mocha": false
     },
     "parser": "babel-eslint",
