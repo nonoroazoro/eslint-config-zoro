@@ -2,6 +2,7 @@
     "extends": [
         "./rules/best-practices",
         "./rules/errors",
+        "./rules/node",
         "./rules/style",
         "./rules/variables",
         "./rules/es6",
@@ -9,8 +10,7 @@
     ].map(require.resolve),
     "env": {
         "browser": true,
-        "mocha": false,
-        "node": true
+        "mocha": false
     },
     "parser": "babel-eslint",
     "parserOptions": {
