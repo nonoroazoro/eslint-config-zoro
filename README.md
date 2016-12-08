@@ -1,52 +1,63 @@
 # Zoro's ESLint Configuration [![Dependency Status](https://david-dm.org/nonoroazoro/eslint-config-zoro.svg?style=flat-square)](https://david-dm.org/nonoroazoro/eslint-config-zoro) [![Build Status](https://travis-ci.org/nonoroazoro/eslint-config-zoro.svg?branch=master)](https://travis-ci.org/nonoroazoro/eslint-config-zoro)
 
-Based on the default ESLint configuration:
+Based on the default ESLint rules:
 
-1. [Errors](http://eslint.org/docs/rules/#possible-errors)
 1. [Best Practices](http://eslint.org/docs/rules/#best-practices)
-1. [Variables](http://eslint.org/docs/rules/#variables)
+1. [Errors](http://eslint.org/docs/rules/#possible-errors)
+1. [Node](http://eslint.org/docs/rules/#nodejs-and-commonjs)
 1. [Style](http://eslint.org/docs/rules/#stylistic-issues)
+1. [Variables](http://eslint.org/docs/rules/#variables)
 1. [ECMAScript 6](http://eslint.org/docs/rules/#ecmascript-6)
 1. [React](https://github.com/yannickcr/eslint-plugin-react)
 
 added some **VERY STRICT RULES**.
 
 
-## Installation
-
-1. Install ESLint:
-
-    ```bash
-    npm i -D eslint
-    ```
-
-1. Install this configuration:
-
-    ```bash
-    npm i -D eslint-config-zoro
-    ```
-
-
 ## Usage
 
-In your `.eslintrc` file, add:
+There're two ESLint configurations for your usage.
 
-```json
-{
-    "extends": "eslint-config-zoro"
-}
-```
 
-And you can overwrite this configuration by:
+### eslint-config-zoro
 
-```json
-{
-    "extends": "eslint-config-zoro",
-    "rules": {
-        "no-empty": 0
+This is the default configuration contains all of the rules, including `React`.
+
+It requires `eslint`, `babel-eslint`, `eslint-plugin-react`.
+
+1. Install:
+
+    ```bash
+    npm i -D eslint-config-zoro eslint babel-eslint eslint-plugin-react
+    ```
+
+1. In your `.eslintrc` file, add:
+
+    ```json
+    {
+        "extends": "eslint-config-zoro"
     }
-}
-```
+    ```
+
+
+### eslint-config-zoro/base
+
+This configuration contains all of the rules but `React`.
+
+It requires `eslint`, `babel-eslint`.
+
+1. Install:
+
+    ```bash
+    npm i -D eslint-config-zoro eslint babel-eslint
+    ```
+
+1. In your `.eslintrc` file, add:
+
+    ```json
+    {
+        "extends": "eslint-config-zoro/base"
+    }
+    ```
 
 
 ## Where to ask for help?
