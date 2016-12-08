@@ -37,8 +37,8 @@ module.exports = {
         "linebreak-style": "off",
         "lines-around-comment": "off",
         "lines-around-directive": ["error", {
-            before: "always",
-            after: "always"
+            "before": "always",
+            "after": "always"
         }],
         "max-depth": "off",
         "max-len": "off",
@@ -117,14 +117,14 @@ module.exports = {
         "space-infix-ops": "error",
         "space-unary-ops": "off",
         "spaced-comment": ["error", "always", {
-            line: {
-                exceptions: ["-", "+"],
-                markers: ["=", "!"]
+            "line": {
+                "exceptions": ["-", "+"],
+                "markers": ["=", "!"]
             },
-            block: {
-                exceptions: ["-", "+"],
-                markers: ["=", "!"],
-                balanced: false
+            "block": {
+                "exceptions": ["-", "+"],
+                "markers": ["=", "!"],
+                "balanced": false
             }
         }],
         "unicode-bom": ["error", "never"],

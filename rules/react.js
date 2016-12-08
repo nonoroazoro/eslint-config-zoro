@@ -10,7 +10,7 @@ module.exports = {
     "rules": {
         "react/display-name": "off",
         "react/forbid-component-props": "off",
-        "react/forbid-prop-types": ["error", { forbid: ["any", "array", "object"] }],
+        "react/forbid-prop-types": ["error", { "forbid": ["any", "array", "object"] }],
         "react/no-array-index-key": "error",
         "react/no-children-prop": "error",
         "react/no-danger": "off",
@@ -21,15 +21,15 @@ module.exports = {
         "react/no-direct-mutation-state": "error",
         "react/no-find-dom-node": "error",
         "react/no-is-mounted": "error",
-        "react/no-multi-comp": ["error", { ignoreStateless: true }],
+        "react/no-multi-comp": ["error", { "ignoreStateless": true }],
         "react/no-render-return-value": "error",
         "react/no-set-state": "off",
         "react/no-string-refs": "error",
         "react/no-unescaped-entities": "error",
         "react/no-unknown-property": "error",
         "react/no-unused-prop-types": ["error", {
-            customValidators: [],
-            skipShapeProps: true
+            "customValidators": [],
+            "skipShapeProps": true
         }],
         "react/prefer-es6-class": ["error", "always"],
         "react/prefer-stateless-function": "error",
@@ -57,7 +57,7 @@ module.exports = {
         "react/jsx-closing-bracket-location": ["error", "line-aligned"],
         "react/jsx-curly-spacing": ["error", "never", { "allowMultiline": true }],
         "react/jsx-equals-spacing": ["error", "never"],
-        "react/jsx-filename-extension": ["error", { extensions: [".jsx"] }],
+        "react/jsx-filename-extension": ["error", { "extensions": [".jsx"] }],
         "react/jsx-first-prop-new-line": ["error", "multiline"],
         "react/jsx-handler-names": "off",
         "react/jsx-indent": ["error", 4],
@@ -65,9 +65,9 @@ module.exports = {
         "react/jsx-key": "off",
         "react/jsx-max-props-per-line": "off",
         "react/jsx-no-bind": ["error", {
-            ignoreRefs: true,
-            allowArrowFunctions: true,
-            allowBind: false
+            "ignoreRefs": true,
+            "allowArrowFunctions": true,
+            "allowBind": false
         }],
         "react/jsx-no-comment-textnodes": "error",
         "react/jsx-no-duplicate-props": "error",
@@ -78,16 +78,16 @@ module.exports = {
         "react/jsx-sort-props": "off",
         "react/jsx-space-before-closing": ["error", "always"],
         "react/jsx-tag-spacing": ["error", {
-            closingSlash: "never",
-            beforeSelfClosing: "always",
-            afterOpening: "never"
+            "closingSlash": "never",
+            "beforeSelfClosing": "always",
+            "afterOpening": "never"
         }],
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
         "react/jsx-wrap-multilines": ["error", {
-            declaration: true,
-            assignment: true,
-            return: true
+            "declaration": true,
+            "assignment": true,
+            "return": true
         }]
     }
 };

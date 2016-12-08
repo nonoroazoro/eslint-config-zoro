@@ -8,17 +8,13 @@
         "./rules/es6",
         "./rules/react"
     ].map(require.resolve),
-    "env": {
-        "mocha": false
-    },
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 7,
         "sourceType": "module",
-        ecmaFeatures: {
-            experimentalObjectRestSpread: true
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
         }
     },
-    "globals": {},
     "rules": {}
 };

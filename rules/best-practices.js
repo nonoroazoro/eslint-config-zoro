@@ -46,7 +46,7 @@ module.exports = {
         "no-lone-blocks": "error",
         "no-loop-func": "error",
         "no-magic-numbers": "off",
-        "no-multi-spaces": ["error", { exceptions: { "Property": true, "VariableDeclarator": true, "ImportDeclaration": true } }],
+        "no-multi-spaces": ["error", { "exceptions": { "Property": true, "VariableDeclarator": true, "ImportDeclaration": true } }],
         "no-multi-str": "error",
         "no-new-func": "error",
         "no-new-wrappers": "error",
