@@ -63,4 +63,4 @@ It requires `eslint`, `babel-eslint`.
 ## Where to ask for help?
 
 - [ESLint Rules](http://eslint.org/docs/rules/)
-- [ESLint React Rules](https://github.com/yannickcr/eslint-plugin-react)
+- [ESLint Rules - React](https://github.com/yannickcr/eslint-plugin-react)
