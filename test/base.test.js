@@ -1,10 +1,10 @@
 ﻿const fs = require("fs");
 const should = require("should");
-const rules = require("../index");
+const rules = require("../base");
 
-describe("index", function ()
+describe("base", function ()
 {
-    it("should load all rules.", function (done)
+    it("should load base rules.", function (done)
     {
         Object.keys(rules).forEach(function (key)
         {
