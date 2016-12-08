@@ -10,6 +10,9 @@ module.exports = {
         "./rules/variables",
         "./rules/es6"
     ].map(require.resolve),
+    "env": {
+        "browser": true
+    },
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 7,
