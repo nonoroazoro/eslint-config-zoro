@@ -20,7 +20,7 @@ There're two ESLint configurations for your usage.
 
 ### eslint-config-zoro
 
-This is the default configuration contains all of the rules, including `React`.
+This is the default configuration contains all of the rules, **including `React`**.
 
 It requires `eslint`, `babel-eslint`, `eslint-plugin-react`.
 
@@ -41,7 +41,7 @@ It requires `eslint`, `babel-eslint`, `eslint-plugin-react`.
 
 ### eslint-config-zoro/base
 
-This configuration contains all of the rules but `React`.
+This configuration contains all of the rules **but `React`**.
 
 It requires `eslint`, `babel-eslint`.
 
