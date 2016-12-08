@@ -1,3 +1,6 @@
+/**
+ * Include all rules but react.
+ */
 module.exports = {
     "extends": [
         "./rules/best-practices",

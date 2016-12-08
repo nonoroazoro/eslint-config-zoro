@@ -1,4 +1,7 @@
-﻿module.exports = {
+﻿/**
+ * Include all rules.
+ */
+module.exports = {
     "extends": [
         "./rules/best-practices",
         "./rules/errors",
