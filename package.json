@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zoro",
-  "version": "1.1.6",
+  "version": "1.2.0",
   "description": "Zoro's ESLint Configuration",
   "main": "index.js",
   "author": {
@@ -32,10 +32,5 @@
     "eslint-plugin-react": "^6.8.0",
     "mocha": "^3.2.0",
     "should": "^11.1.1"
-  },
-  "peerDependencies": {
-    "babel-eslint": "7.x",
-    "eslint": "3.x",
-    "eslint-plugin-react": "6.x"
   }
 }
