@@ -27,7 +27,7 @@ module.exports = {
         "react/no-string-refs": "error",
         "react/no-unescaped-entities": "error",
         "react/no-unknown-property": "error",
-        "react/no-unused-prop-types": ["error", {
+        "react/no-unused-prop-types": ["warn", {
             "customValidators": [],
             "skipShapeProps": true
         }],
