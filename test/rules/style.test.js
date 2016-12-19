@@ -1,9 +1,9 @@
 ﻿const should = require("should");
 const rules = require("../../rules/style");
 
-describe("rules/style", function ()
+describe("rules/style", () =>
 {
-    it("should load style rules.", function (done)
+    it("should load style rules.", (done) =>
     {
         should.exist(rules);
         done();

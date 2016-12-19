@@ -2,16 +2,16 @@
 const should = require("should");
 const rules = require("../index");
 
-describe("index", function ()
+describe("index", () =>
 {
-    it("should load all rules.", function (done)
+    it("should load all rules.", (done) =>
     {
-        Object.keys(rules).forEach(function (key)
+        Object.keys(rules).forEach((key) =>
         {
             should.exist(rules[key]);
         });
 
-        rules.extends.forEach(function (p_filePath)
+        rules.extends.forEach((p_filePath) =>
         {
             fs.statSync(p_filePath);
         });
