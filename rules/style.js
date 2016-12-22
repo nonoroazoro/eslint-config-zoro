@@ -65,16 +65,7 @@ module.exports = {
         "no-continue": "off",
         "no-inline-comments": "off",
         "no-lonely-if": "off",
-        "no-mixed-operators": ["error", {
-            "groups": [
-                ["+", "-", "*", "/", "%", "**"],
-                ["&", "|", "^", "~", "<<", ">>", ">>>"],
-                ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-                ["&&", "||"],
-                ["in", "instanceof"]
-            ],
-            "allowSamePrecedence": false
-        }],
+        "no-mixed-operators": "error",
         "no-mixed-spaces-and-tabs": "error",
         "no-multiple-empty-lines": ["warn", { "max": 2, "maxEOF": 1 }],
         "no-negated-condition": "off",
