@@ -54,7 +54,7 @@ module.exports = {
         "react/style-prop-object": "error",
 
         "react/jsx-boolean-value": ["error", "never"],
-        "react/jsx-closing-bracket-location": ["error", "props-aligned"],
+        "react/jsx-closing-bracket-location": ["error", "line-aligned"],
         "react/jsx-curly-spacing": ["error", "never", { "allowMultiline": true }],
         "react/jsx-equals-spacing": ["error", "never"],
         "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
