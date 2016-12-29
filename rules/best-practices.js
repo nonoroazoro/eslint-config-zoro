@@ -53,7 +53,7 @@ module.exports = {
         "no-new": "error",
         "no-octal-escape": "error",
         "no-octal": "error",
-        "no-param-reassign": ["error", { "props": true }],
+        "no-param-reassign": "error",
         "no-proto": "error",
         "no-redeclare": "error",
         "no-restricted-properties": ["error",
