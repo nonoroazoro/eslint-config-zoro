@@ -10,7 +10,9 @@ module.exports = {
     "rules": {
         "react/display-name": "off",
         "react/forbid-component-props": "off",
+        "react/forbid-elements": "off",
         "react/forbid-prop-types": ["error", { "forbid": ["any", "array", "object"] }],
+        "react/forbid-foreign-prop-types": "error",
         "react/no-array-index-key": "error",
         "react/no-children-prop": "error",
         "react/no-danger": "off",
@@ -32,7 +34,7 @@ module.exports = {
             "skipShapeProps": true
         }],
         "react/prefer-es6-class": ["error", "always"],
-        "react/prefer-stateless-function": "error",
+        "react/prefer-stateless-function": ["error", { "ignorePureComponents": true }],
         "react/prop-types": ["error", { "ignore": ["children"], "customValidators": [] }],
         "react/react-in-jsx-scope": "error",
         "react/require-default-props": "error",
@@ -52,6 +54,7 @@ module.exports = {
         }],
         "react/sort-prop-types": "off",
         "react/style-prop-object": "error",
+        "react/void-dom-elements-no-children": "error",
 
         "react/jsx-boolean-value": ["error", "never"],
         "react/jsx-closing-bracket-location": ["error", "line-aligned"],
