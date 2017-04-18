@@ -41,7 +41,7 @@ It requires `eslint`, `babel-eslint`, `eslint-plugin-react`.
 
 ### eslint-config-zoro/base
 
-This configuration contains all of the rules **but `React`**.
+This configuration contains all of the rules **but `React`** (in case you don't use React).
 
 It requires `eslint`, `babel-eslint`.
 
