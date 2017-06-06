@@ -29,10 +29,8 @@ module.exports = {
         "react/no-string-refs": "error",
         "react/no-unescaped-entities": "error",
         "react/no-unknown-property": "error",
-        "react/no-unused-prop-types": ["warn", {
-            "customValidators": [],
-            "skipShapeProps": true
-        }],
+        "react/no-unused-prop-types": ["warn", { "customValidators": [], "skipShapeProps": true }],
+        "no-will-update-set-state": "error",
         "react/prefer-es6-class": ["error", "always"],
         "react/prefer-stateless-function": ["error", { "ignorePureComponents": true }],
         "react/prop-types": ["error", { "ignore": ["children"], "customValidators": [] }],
