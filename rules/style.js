@@ -4,10 +4,13 @@
  */
 module.exports = {
     "rules": {
+        "array-bracket-newline": "off",
         "array-bracket-spacing": ["error", "never"],
+        "array-element-newline": "off",
         "block-spacing": ["error", "always"],
         "brace-style": ["error", "allman", { "allowSingleLine": true }],
         "camelcase": "off",
+        "capitalized-comments": "off",
         "comma-dangle": "error",
         "comma-spacing": ["error", { "before": false, "after": true }],
         "comma-style": ["error", "last"],
@@ -18,9 +21,11 @@ module.exports = {
         "func-name-matching": "off",
         "func-names": "warn",
         "func-style": "off",
+        "function-paren-newline": ["error", "multiline"],
         "id-blacklist": "off",
         "id-length": "off",
         "id-match": "off",
+        "implicit-arrow-linebreak": ["error", "beside"],
         "indent": ["error", 4, { "SwitchCase": 1 }],
         "jsx-quotes": ["error", "prefer-double"],
         "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
@@ -36,17 +41,16 @@ module.exports = {
         "line-comment-position": "off",
         "linebreak-style": "off",
         "lines-around-comment": "off",
-        "lines-around-directive": ["error", {
-            "before": "always",
-            "after": "always"
-        }],
+        "lines-between-class-members": "error",
         "max-depth": "off",
         "max-len": "off",
         "max-lines": "off",
         "max-nested-callbacks": "off",
         "max-params": "off",
-        "max-statements-per-line": "error",
         "max-statements": "off",
+        "max-statements-per-line": "error",
+        "multiline-comment-style": "off",
+        "multiline-ternary": "off",
         "new-cap": ["error", {
             "newIsCap": true,
             "capIsNewExceptions": [
@@ -57,8 +61,6 @@ module.exports = {
             ]
         }],
         "new-parens": "error",
-        "newline-after-var": "off",
-        "newline-before-return": "off",
         "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 3 }],
         "no-array-constructor": "error",
         "no-bitwise": "warn",
@@ -67,6 +69,7 @@ module.exports = {
         "no-lonely-if": "off",
         "no-mixed-operators": "error",
         "no-mixed-spaces-and-tabs": "error",
+        "no-multi-assign": "error",
         "no-multiple-empty-lines": ["warn", { "max": 2, "maxEOF": 1 }],
         "no-negated-condition": "off",
         "no-nested-ternary": "error",
@@ -84,22 +87,25 @@ module.exports = {
         "no-underscore-dangle": "off",
         "no-unneeded-ternary": "error",
         "no-whitespace-before-property": "error",
+        "nonblock-statement-body-position": "off",
         "object-curly-newline": ["off", {
             "ObjectExpression": { "minProperties": 0, "multiline": true },
             "ObjectPattern": { "minProperties": 0, "multiline": true }
         }],
         "object-curly-spacing": ["error", "always"],
         "object-property-newline": ["error", { "allowMultiplePropertiesPerLine": true }],
-        "one-var-declaration-per-line": ["error", "always"],
         "one-var": ["error", "never"],
+        "one-var-declaration-per-line": ["error", "always"],
         "operator-assignment": "off",
         "operator-linebreak": "off",
         "padded-blocks": ["error", "never"],
+        "padding-line-between-statements": "off",
         "quote-props": ["error", "as-needed", { "keywords": false, "unnecessary": false, "numbers": false }],
         "quotes": ["error", "double", { "allowTemplateLiterals": true }],
         "require-jsdoc": "off",
-        "semi-spacing": ["error", { "before": false, "after": true }],
         "semi": ["error", "always"],
+        "semi-spacing": ["error", { "before": false, "after": true }],
+        "semi-style": ["error", "last"],
         "sort-keys": "off",
         "sort-vars": "off",
         "space-before-blocks": "error",
@@ -118,6 +124,8 @@ module.exports = {
                 "balanced": false
             }
         }],
+        "switch-colon-spacing": ["error", { "after": true, "before": false }],
+        "template-tag-spacing": ["error", "never"],
         "unicode-bom": ["error", "never"],
         "wrap-regex": "off"
     }

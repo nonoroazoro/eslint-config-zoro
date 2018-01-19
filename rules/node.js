@@ -10,6 +10,7 @@ module.exports = {
         "callback-return": "off",
         "global-require": "off",
         "handle-callback-err": "off",
+        "no-buffer-constructor": "error",
         "no-mixed-requires": "off",
         "no-new-require": "error",
         "no-path-concat": "error",

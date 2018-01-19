@@ -42,6 +42,7 @@ module.exports = {
             "allowUnboundThis": true
         }],
         "prefer-const": "error",
+        "prefer-destructuring": "off",
         "prefer-numeric-literals": "error",
         "prefer-rest-params": "error",
         "prefer-spread": "off",

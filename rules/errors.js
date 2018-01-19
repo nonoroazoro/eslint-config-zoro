@@ -4,6 +4,10 @@
  */
 module.exports = {
     "rules": {
+        "for-direction": "off",
+        "getter-return": "error",
+        "no-await-in-loop": "off",
+        "no-compare-neg-zero": "error",
         "no-cond-assign": ["error", "always"],
         "no-console": "warn",
         "no-constant-condition": "warn",
@@ -12,8 +16,8 @@ module.exports = {
         "no-dupe-args": "error",
         "no-dupe-keys": "error",
         "no-duplicate-case": "error",
-        "no-empty-character-class": "error",
         "no-empty": ["error", { "allowEmptyCatch": true }],
+        "no-empty-character-class": "error",
         "no-ex-assign": "error",
         "no-extra-boolean-cast": "off",
         "no-extra-parens": ["error", "functions"],
