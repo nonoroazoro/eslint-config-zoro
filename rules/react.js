@@ -3,16 +3,26 @@
  * https://github.com/yannickcr/eslint-plugin-react
  */
 module.exports = {
-    "plugins": ["react"],
+    "plugins": [
+        "react"
+    ],
     "parserOptions": {
-        "ecmaFeatures": { "jsx": true }
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
     "rules": {
+        "react/boolean-prop-naming": "error",
+        "react/button-has-type": "error",
+        "react/default-props-match-prop-types": "error",
+        "react/destructuring-assignment": "off",
         "react/display-name": "off",
         "react/forbid-component-props": "off",
+        "react/forbid-dom-props": "off",
         "react/forbid-elements": "off",
         "react/forbid-prop-types": ["error", { "forbid": ["any", "array", "object"] }],
         "react/forbid-foreign-prop-types": "error",
+        "react/no-access-state-in-setstate": "error",
         "react/no-array-index-key": "error",
         "react/no-children-prop": "error",
         "react/no-danger": "off",
@@ -24,12 +34,16 @@ module.exports = {
         "react/no-find-dom-node": "error",
         "react/no-is-mounted": "error",
         "react/no-multi-comp": ["error", { "ignoreStateless": true }],
+        "react/no-redundant-should-component-update": "error",
         "react/no-render-return-value": "error",
         "react/no-set-state": "off",
+        "react/no-typos": "error",
         "react/no-string-refs": "error",
+        "react/no-this-in-sfc": "error",
         "react/no-unescaped-entities": "error",
         "react/no-unknown-property": "error",
         "react/no-unused-prop-types": ["warn", { "customValidators": [], "skipShapeProps": true }],
+        "react/no-unused-state": "error",
         "react/no-will-update-set-state": "error",
         "react/prefer-es6-class": ["error", "always"],
         "react/prefer-stateless-function": ["error", { "ignorePureComponents": true }],
@@ -56,6 +70,7 @@ module.exports = {
 
         "react/jsx-boolean-value": ["error", "never"],
         "react/jsx-closing-bracket-location": ["error", "line-aligned"],
+        "react/jsx-closing-tag-location": "error",
         "react/jsx-curly-spacing": ["error", "never", { "allowMultiline": true }],
         "react/jsx-equals-spacing": ["error", "never"],
         "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
@@ -75,12 +90,16 @@ module.exports = {
         "react/jsx-no-literals": "off",
         "react/jsx-no-target-blank": "error",
         "react/jsx-no-undef": "error",
+        "react/jsx-one-expression-per-line": "error",
+        "react/jsx-curly-brace-presence": ["error", { "props": "ignore", "children": "always" }],
         "react/jsx-pascal-case": "error",
+        "react/jsx-sort-default-props": "off",
         "react/jsx-sort-props": "off",
         "react/jsx-tag-spacing": ["error", {
-            "closingSlash": "never",
+            "afterOpening": "never",
+            "beforeClosing": "never",
             "beforeSelfClosing": "always",
-            "afterOpening": "never"
+            "closingSlash": "never",
         }],
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
