@@ -21,7 +21,7 @@ module.exports = {
         "func-name-matching": "off",
         "func-names": "warn",
         "func-style": "off",
-        "function-paren-newline": ["error", "multiline"],
+        "function-paren-newline": ["error", "consistent"],
         "id-blacklist": "off",
         "id-length": "off",
         "id-match": "off",
