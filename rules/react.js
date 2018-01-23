@@ -96,10 +96,9 @@ module.exports = {
         "react/jsx-sort-default-props": "off",
         "react/jsx-sort-props": "off",
         "react/jsx-tag-spacing": ["error", {
-            "afterOpening": "never",
-            "beforeClosing": "never",
-            "beforeSelfClosing": "always",
             "closingSlash": "never",
+            "beforeSelfClosing": "always",
+            "afterOpening": "never"
         }],
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
