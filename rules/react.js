@@ -90,7 +90,7 @@ module.exports = {
         "react/jsx-no-target-blank": "error",
         "react/jsx-no-undef": "error",
         "react/jsx-one-expression-per-line": "error",
-        "react/jsx-curly-brace-presence": ["error", { "props": "ignore", "children": "always" }],
+        "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never" }],
         "react/jsx-pascal-case": "error",
         "react/jsx-sort-default-props": "off",
         "react/jsx-sort-props": "off",
