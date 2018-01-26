@@ -39,6 +39,7 @@ module.exports = {
         "react/no-set-state": "off",
         "react/no-typos": "error",
         "react/no-string-refs": "error",
+        "react/no-this-in-sfc": "error",
         "react/no-unescaped-entities": "error",
         "react/no-unknown-property": "error",
         "react/no-unused-prop-types": ["warn", { "customValidators": [], "skipShapeProps": true }],
