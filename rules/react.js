@@ -58,6 +58,8 @@ module.exports = {
                 "static-methods",
                 "lifecycle",
                 "/^on.+$/",
+                "getters",
+                "setters",
                 "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
                 "everything-else",
                 "/^render.+$/",
