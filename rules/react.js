@@ -102,7 +102,7 @@ module.exports = {
             "afterOpening": "never",
             "beforeClosing": "never",
             "beforeSelfClosing": "always",
-            "closingSlash": "never",
+            "closingSlash": "never"
         }],
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
