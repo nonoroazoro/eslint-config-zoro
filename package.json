@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-zoro",
-  "version": "1.4.6",
-  "description": "Zoro's ESLint Configuration",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Zoro's ESLint Configuration.",
+  "main": "dist/index.js",
   "author": {
     "name": "nonoroazoro",
     "email": "xiaochao.k@gmail.com"
@@ -13,24 +13,45 @@
     "url": "https://github.com/nonoroazoro/eslint-config-zoro"
   },
   "keywords": [
+    "config",
     "eslint",
     "eslintconfig",
-    "config",
     "javascript",
+    "react",
     "styleguide",
-    "react"
+    "typescript"
   ],
   "scripts": {
-    "test": "mocha"
+    "prebuild": "npm run clean && npm run cleanCov",
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json -w",
+    "clean": "rimraf dist",
+    "cleanCov": "rimraf @coverage",
+    "test": "jest --config jest.config.js",
+    "test:watch": "npm test -- --watch",
+    "test:cov": "npm run cleanCov && npm test -- --coverage"
   },
   "engines": {
     "node": ">= 4"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.8.2",
-    "mocha": "^5.2.0",
-    "should": "^13.2.1"
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.7",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
+    "eslint": "^5.16.0",
+    "husky": "^2.1.0",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0"
   }
 }

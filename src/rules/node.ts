@@ -1,8 +1,7 @@
 /**
- * Modified ESLint Possible Errors.
  * http://eslint.org/docs/rules/#nodejs-and-commonjs
  */
-module.exports = {
+export = {
     "env": {
         "node": true
     },

@@ -1,5 +1,9 @@
 ﻿# Node files
 node_modules
+package-lock.json
 
-# OS generated files
+# OS junk files
 .DS_Store
+
+# Project specific stuff
+dist

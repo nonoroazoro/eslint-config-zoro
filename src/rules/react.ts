@@ -1,8 +1,7 @@
 ﻿/**
- * Modified ESLint Possible Errors.
  * https://github.com/yannickcr/eslint-plugin-react
  */
-module.exports = {
+export = {
     "plugins": [
         "react"
     ],
@@ -42,40 +41,75 @@ module.exports = {
         "react/no-this-in-sfc": "error",
         "react/no-unescaped-entities": "error",
         "react/no-unknown-property": "error",
+        "react/no-unsafe": "error",
         "react/no-unused-prop-types": ["warn", { "customValidators": [], "skipShapeProps": true }],
         "react/no-unused-state": "error",
         "react/no-will-update-set-state": "error",
         "react/prefer-es6-class": ["error", "always"],
-        "react/prefer-stateless-function": ["off", { "ignorePureComponents": true }],
+        "react/prefer-stateless-function": "off",
         "react/prop-types": ["error", { "ignore": ["children"], "customValidators": [] }],
         "react/react-in-jsx-scope": "error",
         "react/require-default-props": "error",
         "react/require-optimization": "off",
         "react/require-render-return": "error",
         "react/self-closing-comp": "error",
-        "react/sort-comp": ["error", {
-            "order": [
-                "static-methods",
-                "lifecycle",
-                "/^on.+$/",
-                "getters",
-                "setters",
-                "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
-                "everything-else",
-                "/^render.+$/",
-                "render"
-            ]
-        }],
+        "react/sort-comp": [
+            "error", {
+                "order": [
+                    "static-methods",
+                    "instance-variables",
+                    "lifecycle",
+                    "/^on.+$/",
+                    "getters",
+                    "setters",
+                    "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+                    "instance-methods",
+                    "everything-else",
+                    "rendering"
+                ],
+                "groups": {
+                    "lifecycle": [
+                        "displayName",
+                        "propTypes",
+                        "contextTypes",
+                        "childContextTypes",
+                        "mixins",
+                        "statics",
+                        "defaultProps",
+                        "constructor",
+                        "getDefaultProps",
+                        "getInitialState",
+                        "state",
+                        "getChildContext",
+                        "componentWillMount",
+                        "componentDidMount",
+                        "componentWillReceiveProps",
+                        "shouldComponentUpdate",
+                        "componentWillUpdate",
+                        "componentDidUpdate",
+                        "componentWillUnmount"
+                    ],
+                    "rendering": [
+                        "/^render.+$/",
+                        "render"
+                    ]
+                }
+            }
+        ],
         "react/sort-prop-types": "off",
+        "react/state-in-constructor": "off",
+        "react/static-property-placement": "off",
         "react/style-prop-object": "error",
         "react/void-dom-elements-no-children": "error",
 
+
         "react/jsx-boolean-value": ["error", "never"],
+        "react/jsx-child-element-spacing": "off",
         "react/jsx-closing-bracket-location": ["error", "line-aligned"],
         "react/jsx-closing-tag-location": "error",
         "react/jsx-curly-spacing": ["error", "never", { "allowMultiline": true }],
         "react/jsx-equals-spacing": ["error", "never"],
-        "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+        "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
         "react/jsx-first-prop-new-line": ["error", "multiline"],
         "react/jsx-handler-names": "off",
         "react/jsx-indent": ["error", 4],
@@ -83,11 +117,16 @@ module.exports = {
         "react/jsx-key": "off",
         "react/jsx-max-depth": "off",
         "react/jsx-max-props-per-line": "off",
-        "react/jsx-no-bind": ["error", {
-            "ignoreRefs": true,
-            "allowArrowFunctions": true,
-            "allowBind": false
-        }],
+        "react/jsx-no-bind": [
+            "error",
+            {
+                "ignoreRefs": true,
+                "allowArrowFunctions": true,
+                "allowFunctions": false,
+                "allowBind": false,
+                "ignoreDOMComponents": true
+            }
+        ],
         "react/jsx-no-comment-textnodes": "error",
         "react/jsx-no-duplicate-props": "error",
         "react/jsx-no-literals": "off",
@@ -95,22 +134,35 @@ module.exports = {
         "react/jsx-no-undef": "error",
         "react/jsx-one-expression-per-line": "off",
         "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never" }],
+        "react/jsx-fragments": "off",
         "react/jsx-pascal-case": "error",
+        "react/jsx-props-no-multi-spaces": "error",
+        "react/jsx-props-no-spreading": "off",
         "react/jsx-sort-default-props": "off",
         "react/jsx-sort-props": "off",
-        "react/jsx-tag-spacing": ["error", {
-            "afterOpening": "never",
-            "beforeClosing": "never",
-            "beforeSelfClosing": "always",
-            "closingSlash": "never"
-        }],
+        "react/jsx-space-before-closing": "off",
+        "react/jsx-tag-spacing": [
+            "error",
+            {
+                "afterOpening": "never",
+                "beforeClosing": "never",
+                "beforeSelfClosing": "always",
+                "closingSlash": "never"
+            }
+        ],
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
-        "react/jsx-wrap-multilines": ["error", {
-            "arrow": true,
-            "assignment": true,
-            "declaration": true,
-            "return": true
-        }]
+        "react/jsx-wrap-multilines": [
+            "error",
+            {
+                "declaration": "parens-new-line",
+                "assignment": "parens-new-line",
+                "return": "parens-new-line",
+                "arrow": "parens-new-line",
+                "condition": "parens-new-line",
+                "logical": "parens-new-line",
+                "prop": "parens-new-line"
+            }
+        ]
     }
 };

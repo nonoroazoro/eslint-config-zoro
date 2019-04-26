@@ -1,8 +1,7 @@
 ﻿/**
- * Modified ESLint Best Practices.
  * http://eslint.org/docs/rules/#best-practices
  */
-module.exports = {
+export = {
     "rules": {
         "accessor-pairs": "off",
         "array-callback-return": "error",
@@ -14,20 +13,24 @@ module.exports = {
         "default-case": ["error", { "commentPattern": "^no default$" }],
         "dot-location": "off",
         "dot-notation": "off",
-        "eqeqeq": ["error", "allow-null"],
+        "eqeqeq": ["error", "always", { "null": "ignore" }],
         "guard-for-in": "error",
+        "max-classes-per-file": "error",
         "no-alert": "error",
         "no-caller": "error",
         "no-case-declarations": "error",
         "no-div-regex": "off",
         "no-else-return": "off",
-        "no-empty-function": ["error", {
-            "allow": [
-                "arrowFunctions",
-                "functions",
-                "methods"
-            ]
-        }],
+        "no-empty-function": [
+            "error",
+            {
+                "allow": [
+                    "arrowFunctions",
+                    "functions",
+                    "methods"
+                ]
+            }
+        ],
         "no-empty-pattern": "error",
         "no-eq-null": "off",
         "no-eval": "error",
@@ -46,7 +49,7 @@ module.exports = {
         "no-lone-blocks": "error",
         "no-loop-func": "error",
         "no-magic-numbers": "off",
-        "no-multi-spaces": ["error", { "exceptions": { "Property": true, "VariableDeclarator": true, "ImportDeclaration": true } }],
+        "no-multi-spaces": "error",
         "no-multi-str": "error",
         "no-new": "error",
         "no-new-func": "error",
@@ -59,52 +62,52 @@ module.exports = {
         "no-restricted-properties": [
             "error",
             {
-                object: "arguments",
-                property: "callee",
-                message: "arguments.callee is deprecated."
+                "object": "arguments",
+                "property": "callee",
+                "message": "arguments.callee is deprecated."
             },
             {
-                object: "global",
-                property: "isFinite",
-                message: "Please use Number.isFinite instead."
+                "object": "global",
+                "property": "isFinite",
+                "message": "Please use Number.isFinite instead."
             },
             {
-                object: "self",
-                property: "isFinite",
-                message: "Please use Number.isFinite instead."
+                "object": "self",
+                "property": "isFinite",
+                "message": "Please use Number.isFinite instead."
             },
             {
-                object: "window",
-                property: "isFinite",
-                message: "Please use Number.isFinite instead."
+                "object": "window",
+                "property": "isFinite",
+                "message": "Please use Number.isFinite instead."
             },
             {
-                object: "global",
-                property: "isNaN",
-                message: "Please use Number.isNaN instead."
+                "object": "global",
+                "property": "isNaN",
+                "message": "Please use Number.isNaN instead."
             },
             {
-                object: "self",
-                property: "isNaN",
-                message: "Please use Number.isNaN instead."
+                "object": "self",
+                "property": "isNaN",
+                "message": "Please use Number.isNaN instead."
             },
             {
-                object: "window",
-                property: "isNaN",
-                message: "Please use Number.isNaN instead."
+                "object": "window",
+                "property": "isNaN",
+                "message": "Please use Number.isNaN instead."
             },
             {
-                property: "__defineGetter__",
-                message: "Please use Object.defineProperty instead."
+                "property": "__defineGetter__",
+                "message": "Please use Object.defineProperty instead."
             },
             {
-                property: "__defineSetter__",
-                message: "Please use Object.defineProperty instead."
+                "property": "__defineSetter__",
+                "message": "Please use Object.defineProperty instead."
             },
             {
-                object: "Math",
-                property: "pow",
-                message: "Please use the exponentiation operator (**) instead."
+                "object": "Math",
+                "property": "pow",
+                "message": "Please use the exponentiation operator (**) instead."
             }
         ],
         "no-return-assign": ["error", "always"],
@@ -115,21 +118,28 @@ module.exports = {
         "no-sequences": "error",
         "no-throw-literal": "error",
         "no-unmodified-loop-condition": "off",
-        "no-unused-expressions": ["error", {
-            "allowShortCircuit": false,
-            "allowTernary": false
-        }],
+        "no-unused-expressions": [
+            "error",
+            {
+                "allowShortCircuit": false,
+                "allowTernary": false,
+                "allowTaggedTemplates": false
+            }
+        ],
         "no-unused-labels": "error",
         "no-useless-call": "off",
+        "no-useless-catch": "off",
         "no-useless-concat": "error",
         "no-useless-escape": "error",
         "no-useless-return": "error",
         "no-void": "error",
         "no-warning-comments": "off",
         "no-with": "error",
+        "prefer-named-capture-group": "off",
         "prefer-promise-reject-errors": ["error", { "allowEmptyReject": true }],
         "radix": "error",
         "require-await": "off",
+        "require-unicode-regexp": "off",
         "vars-on-top": "error",
         "wrap-iife": ["error", "outside", { "functionPrototypeMethods": false }],
         "yoda": "error"

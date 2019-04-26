@@ -1,8 +1,7 @@
 ﻿/**
- * Modified ESLint Possible Errors.
  * http://eslint.org/docs/rules/#ecmascript-6
  */
-module.exports = {
+export = {
     "env": {
         "es6": true
     },
@@ -15,7 +14,13 @@ module.exports = {
         }
     },
     "rules": {
-        "arrow-body-style": "off",
+        "arrow-body-style": [
+            "error",
+            "as-needed",
+            {
+                "requireReturnForObjectLiteral": false
+            }
+        ],
         "arrow-parens": "off",
         "arrow-spacing": ["error", { "before": true, "after": true }],
         "constructor-super": "error",
@@ -30,17 +35,30 @@ module.exports = {
         "no-this-before-super": "error",
         "no-useless-computed-key": "error",
         "no-useless-constructor": "error",
-        "no-useless-rename": ["error", {
-            "ignoreDestructuring": false,
-            "ignoreImport": false,
-            "ignoreExport": false
-        }],
+        "no-useless-rename": [
+            "error",
+            {
+                "ignoreDestructuring": false,
+                "ignoreImport": false,
+                "ignoreExport": false
+            }
+        ],
         "no-var": "error",
-        "object-shorthand": "off",
-        "prefer-arrow-callback": ["error", {
-            "allowNamedFunctions": false,
-            "allowUnboundThis": true
-        }],
+        "object-shorthand": [
+            "error",
+            "always",
+            {
+                "ignoreConstructors": false,
+                "avoidQuotes": true
+            }
+        ],
+        "prefer-arrow-callback": [
+            "error",
+            {
+                "allowNamedFunctions": false,
+                "allowUnboundThis": true
+            }
+        ],
         "prefer-const": "error",
         "prefer-destructuring": "off",
         "prefer-numeric-literals": "error",

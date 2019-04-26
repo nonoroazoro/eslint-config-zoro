@@ -1,8 +1,7 @@
 ﻿/**
- * Modified ESLint Possible Errors.
  * http://eslint.org/docs/rules/#stylistic-issues
  */
-module.exports = {
+export = {
     "rules": {
         "array-bracket-newline": "off",
         "array-bracket-spacing": ["error", "never"],
@@ -29,15 +28,18 @@ module.exports = {
         "indent": ["error", 4, { "SwitchCase": 1 }],
         "jsx-quotes": ["error", "prefer-double"],
         "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
-        "keyword-spacing": ["error", {
-            "before": true,
-            "after": true,
-            "overrides": {
-                "return": { "after": true },
-                "throw": { "after": true },
-                "case": { "after": true }
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true,
+                "overrides": {
+                    "return": { "after": true },
+                    "throw": { "after": true },
+                    "case": { "after": true }
+                }
             }
-        }],
+        ],
         "line-comment-position": "off",
         "linebreak-style": "off",
         "lines-around-comment": "off",
@@ -45,21 +47,26 @@ module.exports = {
         "max-depth": "off",
         "max-len": "off",
         "max-lines": "off",
+        "max-lines-per-function": "off",
         "max-nested-callbacks": "off",
         "max-params": "off",
         "max-statements": "off",
         "max-statements-per-line": "off",
         "multiline-comment-style": "off",
         "multiline-ternary": "off",
-        "new-cap": ["error", {
-            "newIsCap": true,
-            "capIsNewExceptions": [
-                "Router",
-                "Immutable.Map",
-                "Immutable.Set",
-                "Immutable.List"
-            ]
-        }],
+        "new-cap": [
+            "error",
+            {
+                "newIsCap": true,
+                "newIsCapExceptions": [],
+                "capIsNew": false,
+                "capIsNewExceptions": [
+                    "Immutable.Map",
+                    "Immutable.Set",
+                    "Immutable.List"
+                ]
+            }
+        ],
         "new-parens": "error",
         "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 3 }],
         "no-array-constructor": "error",
@@ -88,10 +95,7 @@ module.exports = {
         "no-unneeded-ternary": "error",
         "no-whitespace-before-property": "error",
         "nonblock-statement-body-position": "off",
-        "object-curly-newline": ["off", {
-            "ObjectExpression": { "minProperties": 0, "multiline": true },
-            "ObjectPattern": { "minProperties": 0, "multiline": true }
-        }],
+        "object-curly-newline": "off",
         "object-curly-spacing": ["error", "always"],
         "object-property-newline": ["error", { "allowMultiplePropertiesPerLine": true }],
         "one-var": ["error", "never"],
@@ -100,30 +104,34 @@ module.exports = {
         "operator-linebreak": "off",
         "padded-blocks": ["error", "never"],
         "padding-line-between-statements": "off",
+        "prefer-object-spread": "off",
         "quote-props": ["error", "as-needed", { "keywords": false, "unnecessary": false, "numbers": false }],
-        "quotes": ["error", "double", { "allowTemplateLiterals": true }],
-        "require-jsdoc": "off",
+        "quotes": ["error", "double", { "avoidEscape": true }],
         "semi": ["error", "always"],
         "semi-spacing": ["error", { "before": false, "after": true }],
         "semi-style": ["error", "last"],
         "sort-keys": "off",
         "sort-vars": "off",
         "space-before-blocks": "error",
-        "space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }],
+        "space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
         "space-in-parens": ["error", "never"],
         "space-infix-ops": "error",
         "space-unary-ops": "off",
-        "spaced-comment": ["error", "always", {
-            "line": {
-                "exceptions": ["-", "+"],
-                "markers": ["=", "!"]
-            },
-            "block": {
-                "exceptions": ["-", "+"],
-                "markers": ["=", "!"],
-                "balanced": false
+        "spaced-comment": [
+            "error",
+            "always",
+            {
+                "line": {
+                    "exceptions": ["-", "+"],
+                    "markers": ["=", "!"]
+                },
+                "block": {
+                    "exceptions": ["-", "+"],
+                    "markers": ["=", "!"],
+                    "balanced": true
+                }
             }
-        }],
+        ],
         "switch-colon-spacing": ["error", { "after": true, "before": false }],
         "template-tag-spacing": ["error", "never"],
         "unicode-bom": ["error", "never"],

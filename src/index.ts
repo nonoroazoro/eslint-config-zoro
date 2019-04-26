@@ -1,7 +1,7 @@
-﻿/**
+/**
  * Include all rules.
  */
-module.exports = {
+export = {
     "extends": [
         "./rules/best-practices",
         "./rules/errors",
@@ -9,18 +9,16 @@ module.exports = {
         "./rules/style",
         "./rules/variables",
         "./rules/es6",
-        "./rules/react"
-    ].map(require.resolve),
+        "./rules/react",
+        "./rules/react-hooks"
+    ].map((path) => require.resolve(path)),
     "env": {
         "browser": true
     },
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 7,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "experimentalObjectRestSpread": true
-        }
+        "ecmaVersion": 2018,
+        "sourceType": "module"
     },
-    "rules": {}
+    "plugins": ["@typescript-eslint"]
 };
