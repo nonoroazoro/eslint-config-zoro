@@ -8,7 +8,8 @@ export = {
         "./rules/node",
         "./rules/style",
         "./rules/variables",
-        "./rules/es6"
+        "./rules/es6",
+        "./rules/typescript"
     ].map((path) => require.resolve(path)),
     "env": {
         "browser": true
@@ -17,6 +18,5 @@ export = {
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
-    },
-    "plugins": ["@typescript-eslint"]
+    }
 };

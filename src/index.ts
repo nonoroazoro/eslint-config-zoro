@@ -9,6 +9,7 @@ export = {
         "./rules/style",
         "./rules/variables",
         "./rules/es6",
+        "./rules/typescript",
         "./rules/react",
         "./rules/react-hooks"
     ].map((path) => require.resolve(path)),
@@ -19,6 +20,5 @@ export = {
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
-    },
-    "plugins": ["@typescript-eslint"]
+    }
 };
