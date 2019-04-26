@@ -87,12 +87,12 @@ export = {
                         "shouldComponentUpdate",
                         "componentWillUpdate",
                         "componentDidUpdate",
-                        "componentWillUnmount",
+                        "componentWillUnmount"
                     ],
                     "rendering": [
                         "/^render.+$/",
                         "render"
-                    ],
+                    ]
                 }
             }
         ],
@@ -161,7 +161,7 @@ export = {
                 "arrow": "parens-new-line",
                 "condition": "parens-new-line",
                 "logical": "parens-new-line",
-                "prop": "parens-new-line",
+                "prop": "parens-new-line"
             }
         ]
     }
