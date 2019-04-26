@@ -1,4 +1,4 @@
-﻿import rules = require("../src/base");
+import rules = require("../src/base");
 
 describe("rules", () =>
 {

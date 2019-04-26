@@ -1,4 +1,4 @@
-﻿/**
+/**
  * https://github.com/yannickcr/eslint-plugin-react
  */
 export = {

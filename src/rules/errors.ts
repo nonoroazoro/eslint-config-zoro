@@ -1,4 +1,4 @@
-﻿/**
+/**
  * http://eslint.org/docs/rules/#possible-errors
  */
 export = {

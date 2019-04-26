@@ -1,4 +1,4 @@
-﻿import rules = require("../src/index");
+import rules = require("../src/index");
 
 describe("rules", () =>
 {

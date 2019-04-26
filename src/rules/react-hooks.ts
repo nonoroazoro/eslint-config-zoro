@@ -1,4 +1,4 @@
-﻿/**
+/**
  * https://www.npmjs.com/package/eslint-plugin-react-hooks
  */
 export = {
