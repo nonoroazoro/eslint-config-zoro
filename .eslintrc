@@ -1,6 +1,6 @@
 {
-    "extends": "./index.js",
+    "extends": "./dist/index.js",
     "env": {
-        "mocha": true
+        "jest": true
     }
 }
