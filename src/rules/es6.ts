@@ -14,13 +14,7 @@ export = {
         }
     },
     "rules": {
-        "arrow-body-style": [
-            "error",
-            "as-needed",
-            {
-                "requireReturnForObjectLiteral": false
-            }
-        ],
+        "arrow-body-style": "off",
         "arrow-parens": "off",
         "arrow-spacing": ["error", { "before": true, "after": true }],
         "constructor-super": "error",
