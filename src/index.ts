@@ -1,5 +1,5 @@
 /**
- * Include all rules.
+ * Includes all rules.
  */
 export = {
     "extends": [
@@ -9,9 +9,9 @@ export = {
         "./rules/style",
         "./rules/variables",
         "./rules/es6",
-        "./rules/typescript",
         "./rules/react",
-        "./rules/react-hooks"
+        "./rules/react-hooks",
+        "./rules/typescript"
     ].map((path) => require.resolve(path)),
     "env": {
         "browser": true
