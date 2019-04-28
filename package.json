@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-zoro",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Zoro's ESLint Configuration.",
-  "main": "dist/index.js",
+  "main": "index.js",
   "author": {
     "name": "nonoroazoro",
     "email": "xiaochao.k@gmail.com"
