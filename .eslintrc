@@ -1,5 +1,5 @@
 {
-    "extends": "./base.js",
+    "extends": ["./base.js", "./typescript.js"],
     "env": {
         "jest": true
     }
