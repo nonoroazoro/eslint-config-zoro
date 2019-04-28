@@ -1,8 +1,8 @@
-import rules = require("../src/base");
+import rules = require("../src/typescript");
 
 describe("rules", () =>
 {
-    it("should load base rules.", () =>
+    it("should load TypeScript rules.", () =>
     {
         Object.keys(rules).forEach((key) =>
         {

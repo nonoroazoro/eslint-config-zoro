@@ -1,8 +1,8 @@
-import rules = require("../src/index");
+import rules = require("../src/react");
 
 describe("rules", () =>
 {
-    it("should load all rules.", () =>
+    it("should load React rules.", () =>
     {
         Object.keys(rules).forEach((key) =>
         {
