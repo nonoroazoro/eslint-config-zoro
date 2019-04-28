@@ -164,5 +164,11 @@ export = {
                 "prop": "parens-new-line"
             }
         ]
+    },
+    settings: {
+        react: {
+            pragma: "React",
+            version: "detect"
+        }
     }
 };
