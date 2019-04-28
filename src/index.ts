@@ -1,5 +1,5 @@
 /**
- * Includes all rules.
+ * Includes `all` rules.
  */
 export = {
     "extends": [
