@@ -1,7 +1,7 @@
 {
     "extends": [
-        "./eslint.js",
-        "./typescript.js"
+        "./dist/eslint.js",
+        "./dist/typescript.js"
     ],
     "env": {
         "jest": true
