@@ -26,18 +26,29 @@ export = {
         "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/class-name-casing": "error",
         "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/explicit-member-accessibility": ["error", { "accessibility": "no-public" }],
+        "@typescript-eslint/explicit-member-accessibility": [
+            "error",
+            {
+                "overrides": {
+                    "constructors": "no-public"
+                }
+            }
+        ],
 
         // Not supported yet.
         // "func-call-spacing": "off",
         // "@typescript-eslint/func-call-spacing": ["error", "never"],
 
         "@typescript-eslint/generic-type-naming": "off",
-        "indent": "off",
-        "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
-        "@typescript-eslint/interface-name-prefix": ["error", "never"],
+
+        // Temporary disable the following rule as it breaks on enum's indent.
+        "@typescript-eslint/indent": "off",
+        // "indent": "off",
+        // "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
+
+        "@typescript-eslint/interface-name-prefix": "off",
         "@typescript-eslint/member-delimiter-style": "error",
-        "@typescript-eslint/member-naming": ["error", { "private": "^_" }],
+        "@typescript-eslint/member-naming": "off",
         "@typescript-eslint/member-ordering": [
             "error",
             {
@@ -63,7 +74,7 @@ export = {
         "@typescript-eslint/no-angle-bracket-type-assertion": "error",
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-empty-interface": ["error", { "allowSingleExtends": true }],
-        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/no-explicit-any": "off",
         "no-extra-parens": "off",
         "@typescript-eslint/no-extra-parens": ["error", "functions"],
         "@typescript-eslint/no-extraneous-class": "off",
@@ -72,7 +83,7 @@ export = {
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-namespace": ["error", { "allowDeclarations": true, "allowDefinitionFiles": true }],
         "@typescript-eslint/no-non-null-assertion": "warn",
-        "@typescript-eslint/no-object-literal-type-assertion": "error",
+        "@typescript-eslint/no-object-literal-type-assertion": "off",
         "@typescript-eslint/no-parameter-properties": "error",
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
