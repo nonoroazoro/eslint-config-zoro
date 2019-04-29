@@ -1,4 +1,4 @@
-# Zoro's ESLint Configuration [![Dependency Status](https://david-dm.org/nonoroazoro/eslint-config-zoro.svg?style=flat-square)](https://david-dm.org/nonoroazoro/eslint-config-zoro) [![Build Status](https://travis-ci.org/nonoroazoro/eslint-config-zoro.svg?branch=master)](https://travis-ci.org/nonoroazoro/eslint-config-zoro)
+# Zoro's ESLint Configuration [![Dependency Status](https://img.shields.io/npm/dw/eslint-config-zoro.svg?label=Downloads&style=flat-square)](https://www.npmjs.com/package/eslint-config-zoro) [![Dependency Status](https://david-dm.org/nonoroazoro/eslint-config-zoro.svg?style=flat-square)](https://david-dm.org/nonoroazoro/eslint-config-zoro) [![Build Status](https://travis-ci.org/nonoroazoro/eslint-config-zoro.svg?branch=master)](https://travis-ci.org/nonoroazoro/eslint-config-zoro)
 
 A customized `ESLint configuration` based on the default `ESLint`, `React` and `TypeScript` rules:
 
