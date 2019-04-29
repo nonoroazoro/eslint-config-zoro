@@ -43,7 +43,7 @@ export = {
         "line-comment-position": "off",
         "linebreak-style": "off",
         "lines-around-comment": "off",
-        "lines-between-class-members": "error",
+        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
         "max-depth": "off",
         "max-len": "off",
         "max-lines": "off",
