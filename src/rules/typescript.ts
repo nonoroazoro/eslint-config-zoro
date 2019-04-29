@@ -8,7 +8,7 @@ export = {
     "rules": {
         "@typescript-eslint/adjacent-overload-signatures": "error",
         "@typescript-eslint/array-type": ["error", "array-simple"],
-        "@typescript-eslint/await-thenable": "error",
+        "@typescript-eslint/await-thenable": "off",
         "@typescript-eslint/ban-ts-ignore": "off",
         "@typescript-eslint/ban-types": [
             "error",
@@ -27,8 +27,11 @@ export = {
         "@typescript-eslint/class-name-casing": "error",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/explicit-member-accessibility": ["error", { "accessibility": "no-public" }],
-        "func-call-spacing": "off",
-        "@typescript-eslint/func-call-spacing": ["error", "never"],
+
+        // Not supported yet.
+        // "func-call-spacing": "off",
+        // "@typescript-eslint/func-call-spacing": ["error", "never"],
+
         "@typescript-eslint/generic-type-naming": "off",
         "indent": "off",
         "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
@@ -71,12 +74,12 @@ export = {
         "@typescript-eslint/no-non-null-assertion": "warn",
         "@typescript-eslint/no-object-literal-type-assertion": "error",
         "@typescript-eslint/no-parameter-properties": "error",
-        "@typescript-eslint/no-require-imports": "error",
+        "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
         "@typescript-eslint/no-triple-slash-reference": "error",
         "@typescript-eslint/no-type-alias": "off",
-        "@typescript-eslint/no-unnecessary-qualifier": "error",
-        "@typescript-eslint/no-unnecessary-type-assertion": "error",
+        "@typescript-eslint/no-unnecessary-qualifier": "off",
+        "@typescript-eslint/no-unnecessary-type-assertion": "off",
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": [
             "warn",
@@ -92,17 +95,20 @@ export = {
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/prefer-for-of": "off",
         "@typescript-eslint/prefer-function-type": "off",
-        "@typescript-eslint/prefer-includes": "error",
+        "@typescript-eslint/prefer-includes": "off",
         "@typescript-eslint/prefer-interface": "error",
         "@typescript-eslint/prefer-namespace-keyword": "error",
-        "@typescript-eslint/prefer-string-starts-ends-with": "error",
-        "@typescript-eslint/promise-function-async": ["error", { "allowedPromiseNames": ["Thenable"] }],
-        "@typescript-eslint/require-array-sort-compare": "error",
-        "@typescript-eslint/restrict-plus-operands": "error",
-        "semi": "off",
-        "@typescript-eslint/semi": ["error", "always"],
+        "@typescript-eslint/prefer-string-starts-ends-with": "off",
+        "@typescript-eslint/promise-function-async": "off",
+        "@typescript-eslint/require-array-sort-compare": "off",
+        "@typescript-eslint/restrict-plus-operands": "off",
+
+        // Not supported yet.
+        // "semi": "off",
+        // "@typescript-eslint/semi": ["error", "always"],
+
         "@typescript-eslint/type-annotation-spacing": "error",
-        "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }],
+        "@typescript-eslint/unbound-method": "off",
         "@typescript-eslint/unified-signatures": "off"
     }
 };
