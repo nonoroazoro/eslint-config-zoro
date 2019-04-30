@@ -35,10 +35,10 @@
 
 This package contains four configurations for your usage:
 
-1. **default**: Consists of `all` the rules.
-1. **eslint**: Consists of the `ESLint` rules.
-1. **react**: Consists of the `React` rules.
-1. **typescript**: Consists of the `TypeScript` rules.
+1. **[default](#1-eslint-config-zoro)**: Consists of `all` the rules.
+1. **[eslint](#2-eslint-config-zoroeslint)**: Consists of the `ESLint` rules.
+1. **[react](#3-eslint-config-zororeact)**: Consists of the `React` rules.
+1. **[typescript](#4-eslint-config-zorotypescript)**: Consists of the `TypeScript` rules.
 
 The simplest usage is to extend the default configuration in your `.eslintrc` as the followings:
 
