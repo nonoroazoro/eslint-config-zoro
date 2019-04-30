@@ -1,6 +1,19 @@
-# Zoro's ESLint Configuration [![Dependency Status](https://img.shields.io/npm/dw/eslint-config-zoro.svg?label=Downloads&style=flat-square)](https://www.npmjs.com/package/eslint-config-zoro) [![Dependency Status](https://david-dm.org/nonoroazoro/eslint-config-zoro.svg?style=flat-square)](https://david-dm.org/nonoroazoro/eslint-config-zoro) [![Build Status](https://travis-ci.org/nonoroazoro/eslint-config-zoro.svg?branch=master)](https://travis-ci.org/nonoroazoro/eslint-config-zoro)
+<h1 align="center">Zoro's ESLint Configuration</h1>
+<p align="center">A fully customized <b>ESLint configuration</b> based on the default <i>ESLint</i>, <i>React</i> and <i>TypeScript</i> rules</p>
+<p align="center">
+    <a href="https://github.com/nonoroazoro/eslint-config-zoro/blob/master/LICENSE">
+        <img src="https://img.shields.io/npm/l/eslint-config-zoro.svg" alt="GitHub License" />
+    </a>
+    <a href="https://travis-ci.org/nonoroazoro/eslint-config-zoro">
+        <img src="https://img.shields.io/travis/nonoroazoro/eslint-config-zoro/master.svg" alt="Build Status" />
+    </a>
+    <a href="https://www.npmjs.com/package/eslint-config-zoro">
+        <img src="https://img.shields.io/npm/dw/eslint-config-zoro.svg" alt="NPM Downloads" />
+    </a>
+</p>
 
-A customized `ESLint configuration` based on the default `ESLint`, `React` and `TypeScript` rules:
+
+## Based on
 
 1. ESLint rules:
     1. [Best Practices](http://eslint.org/docs/rules/#best-practices)
@@ -22,12 +35,12 @@ A customized `ESLint configuration` based on the default `ESLint`, `React` and `
 
 This package contains four configurations for your usage:
 
-1. The `default` configuration contains `all` rules.
-1. The `eslint` configuration contains the `ESLint` rules.
-1. The `react` configuration contains the `React` rules.
-1. The `typescript` configuration contains the `TypeScript` rules.
+1. **default**: Consists of `all` the rules.
+1. **eslint**: Consists of the `ESLint` rules.
+1. **react**: Consists of the `React` rules.
+1. **typescript**: Consists of the `TypeScript` rules.
 
-You can just extend the `default` rules as the followings:
+The simplest usage is to extend the **default** configuration in your `.eslintrc` as the followings:
 
 ```json
 {
@@ -39,15 +52,16 @@ You can also extend with any combination of the last three rules, such as:
 
 ```json
 {
-    "extends": ["eslint-config-zoro/eslint", "eslint-config-zoro/react"]
+    "extends": [
+        "eslint-config-zoro/eslint",
+        "eslint-config-zoro/typescript"
+    ]
 }
 ```
 
 ### 1. eslint-config-zoro
 
-This is the default configuration contains `all` rules.
-
-It requires `eslint`, `@typescript-eslint/parser`, `@typescript-eslint/eslint-plugin`, `eslint-plugin-react` and `eslint-plugin-react-hooks`.
+This is the default configuration which contains `all` the rules.
 
 1. Install:
 
@@ -55,7 +69,7 @@ It requires `eslint`, `@typescript-eslint/parser`, `@typescript-eslint/eslint-pl
     npm i -D eslint-config-zoro eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-react-hooks
     ```
 
-1. In your `.eslintrc` file, add:
+1. Add to your `.eslintrc` file:
 
     ```json
     {
@@ -66,9 +80,7 @@ It requires `eslint`, `@typescript-eslint/parser`, `@typescript-eslint/eslint-pl
 
 ### 2. eslint-config-zoro/eslint
 
-This configuration contains the `ESLint` rules.
-
-It requires `eslint`.
+This configuration only contains the `ESLint` rules.
 
 1. Install:
 
@@ -76,7 +88,7 @@ It requires `eslint`.
     npm i -D eslint-config-zoro eslint
     ```
 
-1. In your `.eslintrc` file, add:
+1. Add to your `.eslintrc` file:
 
     ```json
     {
@@ -86,9 +98,7 @@ It requires `eslint`.
 
 ### 3. eslint-config-zoro/react
 
-This configuration contains the `React` rules.
-
-It requires `eslint`, `eslint-plugin-react` and `eslint-plugin-react-hooks`.
+This configuration only contains the `React` rules.
 
 1. Install:
 
@@ -96,7 +106,7 @@ It requires `eslint`, `eslint-plugin-react` and `eslint-plugin-react-hooks`.
     npm i -D eslint-config-zoro eslint eslint-plugin-react eslint-plugin-react-hooks
     ```
 
-1. In your `.eslintrc` file, add:
+1. Add to your `.eslintrc` file:
 
     ```json
     {
@@ -106,9 +116,7 @@ It requires `eslint`, `eslint-plugin-react` and `eslint-plugin-react-hooks`.
 
 ### 4. eslint-config-zoro/typescript
 
-This configuration contains the `TypeScript` rules.
-
-It requires `eslint`, `@typescript-eslint/parser` and `@typescript-eslint/eslint-plugin`.
+This configuration only contains the `TypeScript` rules.
 
 1. Install:
 
