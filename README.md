@@ -15,7 +15,7 @@
 
 ## Based on
 
-1. ESLint rules:
+- ESLint rules:
     1. [Best Practices](http://eslint.org/docs/rules/#best-practices)
     1. [Errors](http://eslint.org/docs/rules/#possible-errors)
     1. [Node](http://eslint.org/docs/rules/#nodejs-and-commonjs)
@@ -23,11 +23,11 @@
     1. [Variables](http://eslint.org/docs/rules/#variables)
     1. [ECMAScript 6](http://eslint.org/docs/rules/#ecmascript-6)
 
-1. React rules:
+- React rules:
     1. [React](https://github.com/yannickcr/eslint-plugin-react)
     1. [React Hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
 
-1. TypeScript rules:
+- TypeScript rules:
     1. [TypeScript](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules)
 
 
