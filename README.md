@@ -65,7 +65,7 @@ This is the default configuration which contains `all` the rules.
 
 1. Install:
 
-    ```bash
+    ```sh
     npm i -D eslint-config-zoro eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-react-hooks
     ```
 
@@ -84,7 +84,7 @@ This configuration only contains the `ESLint` rules.
 
 1. Install:
 
-    ```bash
+    ```sh
     npm i -D eslint-config-zoro eslint
     ```
 
@@ -102,7 +102,7 @@ This configuration only contains the `React` rules.
 
 1. Install:
 
-    ```bash
+    ```sh
     npm i -D eslint-config-zoro eslint eslint-plugin-react eslint-plugin-react-hooks
     ```
 
@@ -120,7 +120,7 @@ This configuration only contains the `TypeScript` rules.
 
 1. Install:
 
-    ```bash
+    ```sh
     npm i -D eslint-config-zoro eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
     ```
 
