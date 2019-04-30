@@ -40,7 +40,7 @@ This package contains four configurations for your usage:
 1. **react**: Consists of the `React` rules.
 1. **typescript**: Consists of the `TypeScript` rules.
 
-The simplest usage is to extend the **default** configuration in your `.eslintrc` as the followings:
+The simplest usage is to extend the default configuration in your `.eslintrc` as the followings:
 
 ```json
 {
