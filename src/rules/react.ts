@@ -46,6 +46,7 @@ export = {
         "react/no-unused-state": "error",
         "react/no-will-update-set-state": "error",
         "react/prefer-es6-class": ["error", "always"],
+        "react/prefer-read-only-props": "error",
         "react/prefer-stateless-function": "off",
         "react/prop-types": ["error", { "ignore": ["children"], "customValidators": [] }],
         "react/react-in-jsx-scope": "error",
@@ -98,7 +99,7 @@ export = {
         ],
         "react/sort-prop-types": "off",
         "react/state-in-constructor": "off",
-        "react/static-property-placement": "off",
+        "react/static-property-placement": "error",
         "react/style-prop-object": "error",
         "react/void-dom-elements-no-children": "error",
 
