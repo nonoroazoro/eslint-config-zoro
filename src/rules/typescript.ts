@@ -34,11 +34,8 @@ export = {
                 }
             }
         ],
-
-        // Not supported yet.
-        // "func-call-spacing": "off",
-        // "@typescript-eslint/func-call-spacing": ["error", "never"],
-
+        "func-call-spacing": "off",
+        "@typescript-eslint/func-call-spacing": ["error", "never"],
         "@typescript-eslint/generic-type-naming": "off",
 
         // Temporary disable the following rule as it breaks on enum's indent.
@@ -80,6 +77,7 @@ export = {
         "@typescript-eslint/no-extraneous-class": "off",
         "@typescript-eslint/no-for-in-array": "error",
         "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/no-magic-numbers": "off",
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-namespace": ["error", { "allowDeclarations": true, "allowDefinitionFiles": true }],
         "@typescript-eslint/no-non-null-assertion": "warn",
@@ -109,17 +107,48 @@ export = {
         "@typescript-eslint/prefer-includes": "off",
         "@typescript-eslint/prefer-interface": "error",
         "@typescript-eslint/prefer-namespace-keyword": "error",
+        "@typescript-eslint/prefer-regexp-exec": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "off",
         "@typescript-eslint/promise-function-async": "off",
         "@typescript-eslint/require-array-sort-compare": "off",
         "@typescript-eslint/restrict-plus-operands": "off",
-
-        // Not supported yet.
-        // "semi": "off",
-        // "@typescript-eslint/semi": ["error", "always"],
-
+        "semi": "off",
+        "@typescript-eslint/semi": ["error", "always"],
         "@typescript-eslint/type-annotation-spacing": "error",
         "@typescript-eslint/unbound-method": "off",
         "@typescript-eslint/unified-signatures": "off"
-    }
+    },
+    "overrides": [
+        {
+            files: ["*.ts", "*.tsx"],
+            rules: {
+                // Checked by Typescript - ts(2378)
+                "getter-return": "off",
+
+                // Checked by Typescript - ts(2300)
+                "no-dupe-args": "off",
+
+                // Checked by Typescript - ts(1117)
+                "no-dupe-keys": "off",
+
+                // Checked by Typescript - ts(7027)
+                "no-unreachable": "off",
+
+                // Checked by Typescript - ts(2367)
+                "valid-typeof": "off",
+
+                // Checked by Typescript - ts(2588)
+                "no-const-assign": "off",
+
+                // Checked by Typescript - ts(2588)
+                "no-new-symbol": "off",
+
+                // Checked by Typescript - ts(2376)
+                "no-this-before-super": "off",
+
+                // Checked by Typescript - `strictNullChecks`.
+                "no-undef": "off"
+            }
+        }
+    ]
 };
