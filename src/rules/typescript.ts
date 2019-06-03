@@ -107,7 +107,7 @@ export = {
         "@typescript-eslint/prefer-includes": "off",
         "@typescript-eslint/prefer-interface": "error",
         "@typescript-eslint/prefer-namespace-keyword": "error",
-        "@typescript-eslint/prefer-regexp-exec": "error",
+        "@typescript-eslint/prefer-regexp-exec": "off",
         "@typescript-eslint/prefer-string-starts-ends-with": "off",
         "@typescript-eslint/promise-function-async": "off",
         "@typescript-eslint/require-array-sort-compare": "off",
