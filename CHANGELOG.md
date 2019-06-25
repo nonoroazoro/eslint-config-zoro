@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.3.0 - June 25, 2019
+
+- Changed: Enable rules.
+
+
 ## 2.2.1 - June 03, 2019
 
 - Changed: Disable @typescript-eslint/prefer-regexp-exec
