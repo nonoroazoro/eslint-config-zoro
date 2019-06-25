@@ -78,7 +78,7 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-extra-parens": ["error", "functions"],
         "@typescript-eslint/no-extraneous-class": "off",
-        "@typescript-eslint/no-floating-promises": "error",
+        "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-for-in-array": "error",
         "@typescript-eslint/no-inferrable-types": "off",
         "@typescript-eslint/no-magic-numbers": "off",

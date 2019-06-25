@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.3.4 - June 25, 2019
+
+- Changed: Disable @typescript-eslint/no-floating-promises.
+
+
 ## 2.3.3 - June 25, 2019
 
 - Changed: Disable @typescript-eslint/promise-function-async.
