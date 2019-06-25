@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.3.5 - June 25, 2019
+
+- Changed: Disable @typescript-eslint/unbound-method.
+
+
 ## 2.3.4 - June 25, 2019
 
 - Changed: Disable @typescript-eslint/no-floating-promises.
