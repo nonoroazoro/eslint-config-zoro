@@ -108,6 +108,7 @@ export = {
         "react/jsx-child-element-spacing": "off",
         "react/jsx-closing-bracket-location": ["error", "line-aligned"],
         "react/jsx-closing-tag-location": "error",
+        "react/jsx-curly-newline": ["error", "consistent"],
         "react/jsx-curly-spacing": ["error", "never", { "allowMultiline": true }],
         "react/jsx-equals-spacing": ["error", "never"],
         "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
