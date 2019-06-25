@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.3.1 - June 25, 2019
+
+- Changed: Upgrade packages.
+
+
 ## 2.3.0 - June 25, 2019
 
 - Changed: Enable rules.
