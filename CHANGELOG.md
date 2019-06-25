@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.3.2 - June 25, 2019
+
+- Changed: Disable @typescript-eslint/no-var-requires.
+
+
 ## 2.3.1 - June 25, 2019
 
 - Changed: Upgrade packages.

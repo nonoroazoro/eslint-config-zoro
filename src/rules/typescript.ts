@@ -107,7 +107,7 @@ export = {
         ],
         "@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
         "@typescript-eslint/no-useless-constructor": "error",
-        "@typescript-eslint/no-var-requires": "error",
+        "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/prefer-for-of": "off",
         "@typescript-eslint/prefer-function-type": "off",
         "@typescript-eslint/prefer-includes": "error",
