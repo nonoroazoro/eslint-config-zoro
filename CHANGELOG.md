@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.3.3 - June 25, 2019
+
+- Changed: Disable @typescript-eslint/promise-function-async.
+
+
 ## 2.3.2 - June 25, 2019
 
 - Changed: Disable @typescript-eslint/no-var-requires.
