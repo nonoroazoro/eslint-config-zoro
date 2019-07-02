@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.3.7 - July 02, 2019
+
+- Fixed: Fix peerDependencies.
+
+
 ## 2.3.6 - July 02, 2019
 
 - Changed: Upgrade packages.
