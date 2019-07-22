@@ -104,7 +104,7 @@ module.exports = {
         "padding-line-between-statements": "off",
         "prefer-object-spread": "off",
         "quote-props": ["error", "as-needed", { "keywords": false, "unnecessary": false, "numbers": false }],
-        "quotes": ["error", "double", { "avoidEscape": true }],
+        "quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
         "semi": ["error", "always"],
         "semi-spacing": ["error", { "before": false, "after": true }],
         "semi-style": ["error", "last"],
