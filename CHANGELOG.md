@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.4.1 - July 22, 2019
+
+- Changed: Enable allowTemplateLiterals option of quotes.
+
+
 ## 2.4.0 - July 22, 2019
 
 - Added: @typescript-eslint/no-misused-promises.
