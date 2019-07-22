@@ -1,5 +1,18 @@
 # Changelogs
 
+## 2.4.0 - July 22, 2019
+
+- Added: @typescript-eslint/no-misused-promises.
+
+- Added: @typescript-eslint/prefer-readonly.
+
+- Added: @typescript-eslint/require-await.
+
+- Added: @typescript-eslint/strict-boolean-expressions.
+
+- Changed: Remove @typescript-eslint/no-triple-slash-reference in favor @typescript-eslint/triple-slash-reference.
+
+
 ## 2.3.7 - July 02, 2019
 
 - Fixed: Fix peerDependencies.
