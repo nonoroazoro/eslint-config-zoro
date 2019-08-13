@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.4.3 - August 13, 2019
+
+- Changed: Update dependencies.
+
+
 ## 2.4.2 - July 22, 2019
 
 - Changed: Disable @typescript-eslint/strict-boolean-expressions.
