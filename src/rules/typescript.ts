@@ -7,7 +7,7 @@ export = {
     ],
     "rules": {
         "@typescript-eslint/adjacent-overload-signatures": "error",
-        "@typescript-eslint/array-type": ["error", "array-simple"],
+        "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
         "@typescript-eslint/await-thenable": "error",
         "@typescript-eslint/ban-ts-ignore": "off",
         "@typescript-eslint/ban-types": [
@@ -24,6 +24,7 @@ export = {
         ],
         "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/class-name-casing": "error",
+        "@typescript-eslint/consistent-type-assertion": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/explicit-member-accessibility": [
@@ -66,7 +67,6 @@ export = {
                 ]
             }
         ],
-        "@typescript-eslint/no-angle-bracket-type-assertion": "error",
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-empty-function": [
             "error",
@@ -90,12 +90,12 @@ export = {
         "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
         "@typescript-eslint/no-namespace": ["error", { "allowDeclarations": true, "allowDefinitionFiles": true }],
         "@typescript-eslint/no-non-null-assertion": "warn",
-        "@typescript-eslint/no-object-literal-type-assertion": "off",
         "@typescript-eslint/no-parameter-properties": "error",
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
         "@typescript-eslint/no-type-alias": "off",
         "@typescript-eslint/no-unnecessary-qualifier": "error",
+        "@typescript-eslint/no-unnecessary-type-arguments": "off",
         "@typescript-eslint/no-unnecessary-type-assertion": "error",
         "@typescript-eslint/no-unused-vars": [
             "warn",
@@ -111,7 +111,6 @@ export = {
         "@typescript-eslint/prefer-for-of": "off",
         "@typescript-eslint/prefer-function-type": "off",
         "@typescript-eslint/prefer-includes": "error",
-        "@typescript-eslint/prefer-interface": "error",
         "@typescript-eslint/prefer-namespace-keyword": "error",
         "@typescript-eslint/prefer-readonly": "off",
         "@typescript-eslint/prefer-regexp-exec": "error",
@@ -124,6 +123,7 @@ export = {
         "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/triple-slash-reference": "error",
         "@typescript-eslint/type-annotation-spacing": "error",
+        "@typescript-eslint/typedef": "off",
         "@typescript-eslint/unbound-method": "off",
         "@typescript-eslint/unified-signatures": "off"
     },
