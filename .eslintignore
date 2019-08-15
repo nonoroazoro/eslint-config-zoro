@@ -1,3 +1,6 @@
+# Project specific stuff
+dist
+
 eslint.js
 index.js
 jest.config.js
