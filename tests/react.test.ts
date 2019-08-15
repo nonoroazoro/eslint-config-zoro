@@ -6,7 +6,7 @@ describe("rules", () =>
     {
         Object.keys(rules).forEach((key) =>
         {
-            expect(rules[key]).not.toBeNull();
+            expect((rules as any)[key]).not.toBeNull();
         });
     });
 });
