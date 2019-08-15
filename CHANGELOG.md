@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.5.1 - August 15, 2019
+
+- Changed: Upgrade node engines.
+
+
 ## 2.5.0 - August 15, 2019
 
 - Changed: Upgrade to @typescript-eslint version 2.0.0
