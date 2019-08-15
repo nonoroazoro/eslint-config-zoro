@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.5.0 - August 15, 2019
+
+- Changed: Upgrade to @typescript-eslint version 2.0.0
+
+
 ## 2.4.3 - August 13, 2019
 
 - Changed: Update dependencies.
