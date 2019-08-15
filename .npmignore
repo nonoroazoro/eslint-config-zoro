@@ -12,7 +12,7 @@ yarn.lock
 .lintstagedrc
 .travis.yml
 jest.config.js
-tsconfig.build.json
+tsconfig.eslint.json
 tsconfig.json
 
 # Project specific stuff
