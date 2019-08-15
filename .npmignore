@@ -16,5 +16,5 @@ jest.config.js
 tsconfig.json
 
 # Project specific stuff
-src/**
-tests/**
+src
+tests
