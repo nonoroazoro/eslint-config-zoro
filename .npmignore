@@ -12,7 +12,6 @@ yarn.lock
 .lintstagedrc
 .travis.yml
 jest.config.js
-tsconfig.base.json
 tsconfig.build.json
 tsconfig.json
 
