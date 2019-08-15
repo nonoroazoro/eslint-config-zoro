@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "outDir": "dist",
         "module": "commonjs",
         "target": "es2017",
         "lib": [
@@ -22,7 +23,6 @@
         "strictNullChecks": true
     },
     "include": [
-        "src",
-        "tests"
+        "src"
     ]
 }
