@@ -1,10 +1,9 @@
 # Node files
 node_modules
-package-lock.json
 yarn.lock
 
 # Editor files
-.vscode/**
+.vscode
 
 # Configuration files
 .eslintrc
@@ -13,6 +12,8 @@ yarn.lock
 .lintstagedrc
 .travis.yml
 jest.config.js
+tsconfig.base.json
+tsconfig.build.json
 tsconfig.json
 
 # Project specific stuff
