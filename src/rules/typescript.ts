@@ -24,7 +24,7 @@ export = {
         ],
         "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/class-name-casing": "error",
-        "@typescript-eslint/consistent-type-assertion": "error",
+        "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/explicit-member-accessibility": [
