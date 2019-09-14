@@ -1,5 +1,12 @@
 # Changelogs
 
+## 2.5.2 - August 15, 2019
+
+- Changed: Disable @typescript-eslint/explicit-member-accessibility.
+
+- Changed: Disable @typescript-eslint/member-ordering while linting React.
+
+
 ## 2.5.1 - August 15, 2019
 
 - Changed: Upgrade node engines.
