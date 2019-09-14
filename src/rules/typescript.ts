@@ -27,14 +27,7 @@ export = {
         "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/explicit-member-accessibility": [
-            "error",
-            {
-                "overrides": {
-                    "constructors": "no-public"
-                }
-            }
-        ],
+        "@typescript-eslint/explicit-member-accessibility": "off",
         "@typescript-eslint/func-call-spacing": ["error", "never"],
         "@typescript-eslint/generic-type-naming": "off",
 
