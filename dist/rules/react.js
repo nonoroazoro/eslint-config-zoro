@@ -163,6 +163,15 @@ module.exports = {
             }
         ]
     },
+    "overrides": [
+        {
+            files: ["*.tsx"],
+            rules: {
+                // Checked by react/sort-comp
+                "@typescript-eslint/member-ordering": "off"
+            }
+        }
+    ],
     settings: {
         react: {
             pragma: "React",
