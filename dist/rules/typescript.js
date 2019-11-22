@@ -20,6 +20,7 @@ module.exports = {
                 }
             }
         ],
+        "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }],
         "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/class-name-casing": "error",
         "@typescript-eslint/consistent-type-assertions": "error",
@@ -57,6 +58,7 @@ module.exports = {
             }
         ],
         "@typescript-eslint/no-array-constructor": "error",
+        "@typescript-eslint/no-dynamic-delete": "error",
         "@typescript-eslint/no-empty-function": [
             "error",
             {
@@ -83,9 +85,19 @@ module.exports = {
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
         "@typescript-eslint/no-type-alias": "off",
+        "@typescript-eslint/no-unnecessary-condition": ["error", { "ignoreRhs": true, "allowConstantLoopConditions": true }],
         "@typescript-eslint/no-unnecessary-qualifier": "error",
         "@typescript-eslint/no-unnecessary-type-arguments": "off",
         "@typescript-eslint/no-unnecessary-type-assertion": "error",
+        "@typescript-eslint/no-untyped-public-signature": "error",
+        "@typescript-eslint/no-unused-expressions": [
+            "error",
+            {
+                "allowShortCircuit": false,
+                "allowTernary": false,
+                "allowTaggedTemplates": false
+            }
+        ],
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {
@@ -108,7 +120,9 @@ module.exports = {
         "@typescript-eslint/require-array-sort-compare": "error",
         "@typescript-eslint/require-await": "off",
         "@typescript-eslint/restrict-plus-operands": "error",
+        "@typescript-eslint/restrict-template-expressions": "error",
         "@typescript-eslint/semi": ["error", "always"],
+        "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
         "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/triple-slash-reference": "error",
         "@typescript-eslint/type-annotation-spacing": "error",
@@ -120,6 +134,8 @@ module.exports = {
         {
             files: ["*.ts", "*.tsx"],
             rules: {
+                // Checked by @typescript-eslint/brace-style
+                "brace-style": "off",
                 // Checked by @typescript-eslint/camelcase
                 "camelcase": "off",
                 // Checked by @typescript-eslint/func-call-spacing
@@ -130,12 +146,16 @@ module.exports = {
                 "no-empty-function": "off",
                 // Checked by @typescript-eslint/no-extra-parens
                 "no-extra-parens": "off",
+                // Checked by @typescript-eslint/no-unused-expressions
+                "no-unused-expressions": "off",
                 // Checked by @typescript-eslint/no-unused-vars
                 "no-unused-vars": "off",
                 // Checked by @typescript-eslint/no-useless-constructor
                 "no-useless-constructor": "off",
                 // Checked by @typescript-eslint/semi
                 "semi": "off",
+                // Checked by @typescript-eslint/space-before-function-paren
+                "space-before-function-paren": "off",
                 // Checked by Typescript - ts(2378)
                 "getter-return": "off",
                 // Checked by Typescript - ts(2300)
@@ -152,7 +172,7 @@ module.exports = {
                 "no-new-symbol": "off",
                 // Checked by Typescript - ts(2376)
                 "no-this-before-super": "off",
-                // Checked by Typescript - `strictNullChecks`.
+                // Checked by Typescript - `strictNullChecks`
                 "no-undef": "off"
             }
         }
