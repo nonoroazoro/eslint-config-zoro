@@ -75,6 +75,7 @@ export = {
         ],
         "@typescript-eslint/no-empty-interface": ["error", { "allowSingleExtends": true }],
         "@typescript-eslint/no-explicit-any": "off",
+        // "@typescript-eslint/no-extra-non-null-assertion": "error",
         "@typescript-eslint/no-extra-parens": ["error", "functions"],
         "@typescript-eslint/no-extraneous-class": "off",
         "@typescript-eslint/no-floating-promises": "off",
@@ -121,6 +122,7 @@ export = {
         "@typescript-eslint/prefer-regexp-exec": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
         "@typescript-eslint/promise-function-async": "off",
+        "@typescript-eslint/quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
         "@typescript-eslint/require-array-sort-compare": "error",
         "@typescript-eslint/require-await": "off",
         "@typescript-eslint/restrict-plus-operands": "error",
@@ -167,6 +169,9 @@ export = {
 
                 // Checked by @typescript-eslint/semi
                 "semi": "off",
+
+                // Checked by @typescript-eslint/quotes
+                "quotes": "off",
 
                 // Checked by @typescript-eslint/space-before-function-paren
                 "space-before-function-paren": "off",
