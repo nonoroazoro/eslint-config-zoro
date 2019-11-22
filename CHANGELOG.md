@@ -1,5 +1,14 @@
 # Changelogs
 
+## 2.6.0 - November 22, 2019
+
+- Changed: Upgrade to @typescript-eslint version 2.8.0
+
+- Changed: Upgrade to eslint-plugin-react version 7.16.0
+
+- Changed: Upgrade to eslint-plugin-react-hooks version 2.3.0
+
+
 ## 2.5.2 - August 15, 2019
 
 - Changed: Disable @typescript-eslint/explicit-member-accessibility.
