@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.6.2 - November 22, 2019
+
+- Added: Add missing rules
+
+
 ## 2.6.0 - November 22, 2019
 
 - Changed: Upgrade to @typescript-eslint version 2.8.0
