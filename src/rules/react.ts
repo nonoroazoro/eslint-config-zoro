@@ -57,6 +57,7 @@ export = {
         "react/sort-comp": [
             "error", {
                 "order": [
+                    "static-variables",
                     "static-methods",
                     "instance-variables",
                     "lifecycle",
@@ -134,6 +135,7 @@ export = {
         "react/jsx-no-literals": "off",
         "react/jsx-no-target-blank": "error",
         "react/jsx-no-undef": "error",
+        "react/jsx-no-useless-fragment": "error",
         "react/jsx-one-expression-per-line": "off",
         "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never" }],
         "react/jsx-fragments": "off",
