@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.6.4 - November 25, 2019
+
+- Changed: Disable @typescript-eslint/disable no-untyped-public-signature.
+
+
 ## 2.6.3 - November 25, 2019
 
 - Changed: Allow number in @typescript-eslint/restrict-template-expressions rule.
