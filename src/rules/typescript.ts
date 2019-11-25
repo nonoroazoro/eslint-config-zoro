@@ -94,7 +94,7 @@ export = {
         "@typescript-eslint/no-unnecessary-qualifier": "error",
         "@typescript-eslint/no-unnecessary-type-arguments": "off",
         "@typescript-eslint/no-unnecessary-type-assertion": "error",
-        "@typescript-eslint/no-untyped-public-signature": "error",
+        "@typescript-eslint/no-untyped-public-signature": "off",
         "@typescript-eslint/no-unused-expressions": [
             "error",
             {
