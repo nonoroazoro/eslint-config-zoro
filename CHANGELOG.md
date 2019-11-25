@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.6.3 - November 25, 2019
+
+- Changed: Allow number in @typescript-eslint/restrict-template-expressions rule.
+
+
 ## 2.6.2 - November 22, 2019
 
 - Added: Add missing rules
