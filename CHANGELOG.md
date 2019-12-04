@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.7.2 - December 12, 2019
+
+- Changed: Disable @typescript-eslint/prefer-nullish-coalescing in vanilla JavaScript files.
+
+
 ## 2.7.1 - December 12, 2019
 
 - Changed: Only lint ts files with ts rules.

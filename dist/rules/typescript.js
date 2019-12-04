@@ -183,6 +183,13 @@ module.exports = {
                 // Checked by Typescript - `strictNullChecks`
                 "no-undef": "off"
             }
+        },
+        {
+            files: ["*.js", "*.jsx"],
+            rules: {
+                // Disabled in vanilla JavaScript files
+                "@typescript-eslint/prefer-nullish-coalescing": "off"
+            }
         }
     ]
 };
