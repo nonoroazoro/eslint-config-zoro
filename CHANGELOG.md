@@ -1,5 +1,12 @@
 # Changelogs
 
+## 2.7.0 - December 12, 2019
+
+- Changed: Upgrade to @typescript-eslint version 2.10.0
+
+- Changed: Upgrade to eslint-plugin-react version 7.17.0
+
+
 ## 2.6.4 - November 25, 2019
 
 - Changed: Disable @typescript-eslint/disable no-untyped-public-signature.
