@@ -71,7 +71,7 @@ module.exports = {
         ],
         "@typescript-eslint/no-empty-interface": ["error", { "allowSingleExtends": true }],
         "@typescript-eslint/no-explicit-any": "off",
-        // "@typescript-eslint/no-extra-non-null-assertion": "error",
+        "@typescript-eslint/no-extra-non-null-assertion": "error",
         "@typescript-eslint/no-extra-parens": ["error", "functions"],
         "@typescript-eslint/no-extraneous-class": "off",
         "@typescript-eslint/no-floating-promises": "off",
@@ -99,6 +99,7 @@ module.exports = {
                 "allowTaggedTemplates": false
             }
         ],
+        "@typescript-eslint/no-unused-vars-experimental": "off",
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {
@@ -114,6 +115,8 @@ module.exports = {
         "@typescript-eslint/prefer-function-type": "off",
         "@typescript-eslint/prefer-includes": "error",
         "@typescript-eslint/prefer-namespace-keyword": "error",
+        "@typescript-eslint/prefer-nullish-coalescing": "error",
+        "@typescript-eslint/prefer-optional-chain": "off",
         "@typescript-eslint/prefer-readonly": "off",
         "@typescript-eslint/prefer-regexp-exec": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
@@ -123,6 +126,7 @@ module.exports = {
         "@typescript-eslint/require-await": "off",
         "@typescript-eslint/restrict-plus-operands": "error",
         "@typescript-eslint/restrict-template-expressions": ["error", { "allowNumber": true }],
+        "@typescript-eslint/return-await": "off",
         "@typescript-eslint/semi": ["error", "always"],
         "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
         "@typescript-eslint/strict-boolean-expressions": "off",
