@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.7.1 - December 12, 2019
+
+- Changed: Only lint ts files with ts rules.
+
+
 ## 2.7.0 - December 12, 2019
 
 - Changed: Upgrade to @typescript-eslint version 2.10.0
