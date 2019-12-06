@@ -1,16 +1,23 @@
 # Changelogs
 
-## 2.7.2 - December 12, 2019
+## 2.7.3 - December 06, 2019
+
+- Changed: Disable @typescript-eslint/no-dynamic-delete.
+
+- Changed: Disable @typescript-eslint/no-unnecessary-condition because it's not function correctly yet.
+
+
+## 2.7.2 - December 05, 2019
 
 - Changed: Disable @typescript-eslint/prefer-nullish-coalescing in vanilla JavaScript files.
 
 
-## 2.7.1 - December 12, 2019
+## 2.7.1 - December 04, 2019
 
 - Changed: Only lint ts files with ts rules.
 
 
-## 2.7.0 - December 12, 2019
+## 2.7.0 - December 03, 2019
 
 - Changed: Upgrade to @typescript-eslint version 2.10.0
 
