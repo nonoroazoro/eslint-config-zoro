@@ -58,7 +58,7 @@ module.exports = {
             }
         ],
         "@typescript-eslint/no-array-constructor": "error",
-        "@typescript-eslint/no-dynamic-delete": "error",
+        "@typescript-eslint/no-dynamic-delete": "off",
         "@typescript-eslint/no-empty-function": [
             "error",
             {
@@ -86,7 +86,7 @@ module.exports = {
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
         "@typescript-eslint/no-type-alias": "off",
-        "@typescript-eslint/no-unnecessary-condition": ["error", { "ignoreRhs": true }],
+        "@typescript-eslint/no-unnecessary-condition": "off",
         "@typescript-eslint/no-unnecessary-qualifier": "error",
         "@typescript-eslint/no-unnecessary-type-arguments": "off",
         "@typescript-eslint/no-unnecessary-type-assertion": "error",
