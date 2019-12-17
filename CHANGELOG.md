@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.7.4 - December 17, 2019
+
+- Changed: Upgrade to @typescript-eslint version 2.12.0
+
+
 ## 2.7.3 - December 06, 2019
 
 - Changed: Disable @typescript-eslint/no-dynamic-delete.
