@@ -1,5 +1,14 @@
 # Changelogs
 
+## 2.7.5 - December 24, 2019
+
+- Added: Add @typescript-eslint/no-extra-semi
+
+- Added: Add @typescript-eslint/no-throw-literal
+
+- Changed: Upgrade to @typescript-eslint version 2.13.0
+
+
 ## 2.7.4 - December 17, 2019
 
 - Changed: Upgrade to @typescript-eslint version 2.12.0

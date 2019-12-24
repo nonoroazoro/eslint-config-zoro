@@ -73,6 +73,7 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-extra-non-null-assertion": "error",
         "@typescript-eslint/no-extra-parens": ["error", "functions"],
+        "@typescript-eslint/no-extra-semi": "error",
         "@typescript-eslint/no-extraneous-class": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-for-in-array": "error",
@@ -85,6 +86,7 @@ module.exports = {
         "@typescript-eslint/no-parameter-properties": "error",
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
+        "@typescript-eslint/no-throw-literal": "error",
         "@typescript-eslint/no-type-alias": "off",
         "@typescript-eslint/no-unnecessary-condition": "off",
         "@typescript-eslint/no-unnecessary-qualifier": "error",
@@ -152,6 +154,8 @@ module.exports = {
                 "no-empty-function": "off",
                 // Checked by @typescript-eslint/no-extra-parens
                 "no-extra-parens": "off",
+                // Checked by @typescript-eslint/no-extra-semi
+                "no-extra-semi": "off",
                 // Checked by @typescript-eslint/no-unused-expressions
                 "no-unused-expressions": "off",
                 // Checked by @typescript-eslint/no-unused-vars
@@ -164,6 +168,8 @@ module.exports = {
                 "quotes": "off",
                 // Checked by @typescript-eslint/space-before-function-paren
                 "space-before-function-paren": "off",
+                // Checked by @typescript-eslint/no-throw-literal
+                "no-throw-literal": "off",
                 // Checked by Typescript - ts(2378)
                 "getter-return": "off",
                 // Checked by Typescript - ts(2300)
