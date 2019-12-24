@@ -77,6 +77,7 @@ export = {
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-extra-non-null-assertion": "error",
         "@typescript-eslint/no-extra-parens": ["error", "functions"],
+        "@typescript-eslint/no-extra-semi": "error",
         "@typescript-eslint/no-extraneous-class": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-for-in-array": "error",
@@ -162,6 +163,9 @@ export = {
 
                 // Checked by @typescript-eslint/no-extra-parens
                 "no-extra-parens": "off",
+
+                // Checked by @typescript-eslint/no-extra-semi
+                "no-extra-semi": "off",
 
                 // Checked by @typescript-eslint/no-unused-expressions
                 "no-unused-expressions": "off",
