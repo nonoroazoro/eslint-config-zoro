@@ -89,6 +89,7 @@ export = {
         "@typescript-eslint/no-parameter-properties": "error",
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
+        "@typescript-eslint/no-throw-literal": "error",
         "@typescript-eslint/no-type-alias": "off",
         "@typescript-eslint/no-unnecessary-condition": "off",
         "@typescript-eslint/no-unnecessary-qualifier": "error",
@@ -179,6 +180,9 @@ export = {
 
                 // Checked by @typescript-eslint/space-before-function-paren
                 "space-before-function-paren": "off",
+
+                // Checked by @typescript-eslint/no-throw-literal
+                "no-throw-literal": "off",
 
                 // Checked by Typescript - ts(2378)
                 "getter-return": "off",
