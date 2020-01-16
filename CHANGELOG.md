@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.7.6 - January 16, 2020
+
+- Changed: Changed @typescript-eslint/member-ordering (move protected members to the front).
+
+
 ## 2.7.5 - December 24, 2019
 
 - Added: Add @typescript-eslint/no-extra-semi
