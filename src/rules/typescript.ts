@@ -43,19 +43,19 @@ export = {
             "error",
             {
                 "default": [
-                    "public-static-field",
-                    "public-instance-field",
                     "protected-static-field",
                     "protected-instance-field",
+                    "public-static-field",
+                    "public-instance-field",
                     "private-static-field",
                     "private-instance-field",
-                    "public-constructor",
                     "protected-constructor",
+                    "public-constructor",
                     "private-constructor",
-                    "public-static-method",
-                    "public-instance-method",
                     "protected-static-method",
                     "protected-instance-method",
+                    "public-static-method",
+                    "public-instance-method",
                     "private-static-method",
                     "private-instance-method"
                 ]
