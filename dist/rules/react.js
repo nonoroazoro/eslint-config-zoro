@@ -17,9 +17,11 @@ module.exports = {
         "react/forbid-component-props": "off",
         "react/forbid-dom-props": "off",
         "react/forbid-elements": "off",
-        "react/forbid-prop-types": ["error", { "forbid": ["any", "array", "object"] }],
         "react/forbid-foreign-prop-types": "error",
+        "react/forbid-prop-types": ["error", { "forbid": ["any", "array", "object"] }],
+        "react/function-component-definition": "off",
         "react/no-access-state-in-setstate": "error",
+        "react/no-adjacent-inline-elements": "error",
         "react/no-array-index-key": "error",
         "react/no-children-prop": "error",
         "react/no-danger": "off",
@@ -129,6 +131,7 @@ module.exports = {
         "react/jsx-no-comment-textnodes": "error",
         "react/jsx-no-duplicate-props": "error",
         "react/jsx-no-literals": "off",
+        "react/jsx-no-script-url": "error",
         "react/jsx-no-target-blank": "error",
         "react/jsx-no-undef": "error",
         "react/jsx-no-useless-fragment": "error",
@@ -140,7 +143,6 @@ module.exports = {
         "react/jsx-props-no-spreading": "off",
         "react/jsx-sort-default-props": "off",
         "react/jsx-sort-props": "off",
-        "react/jsx-space-before-closing": "off",
         "react/jsx-tag-spacing": [
             "error",
             {

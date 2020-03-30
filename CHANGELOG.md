@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.8.0 - March 30, 2020
+
+- Changed: Upgrade to @typescript-eslint version 2.25.0
+
+
 ## 2.7.6 - January 16, 2020
 
 - Changed: Changed @typescript-eslint/member-ordering (move protected members to the front).
