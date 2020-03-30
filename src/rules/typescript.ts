@@ -65,14 +65,26 @@ export = {
                 ]
             }
         ],
-        "@typescript-eslint/naming-convention": [
-            "error",
-            {
-                "selector": "default",
-                "leadingUnderscore": "allow",
-                "trailingUnderscore": "forbid"
-            }
-        ],
+        "@typescript-eslint/naming-convention": "error",
+        // "@typescript-eslint/naming-convention": [
+        //     "error",
+        //     {
+        //         "selector": "default",
+        //         "format": ["camelCase"],
+        //         "leadingUnderscore": "allow",
+        //         "trailingUnderscore": "forbid"
+        //     },
+        //     {
+        //         "selector": "variable",
+        //         "format": ["camelCase", "UPPER_CASE"],
+        //         "leadingUnderscore": "allow",
+        //         "trailingUnderscore": "forbid"
+        //     },
+        //     {
+        //         "selector": "typeLike",
+        //         "format": ["PascalCase"]
+        //     }
+        // ],
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-base-to-string": "error",
         "@typescript-eslint/no-dupe-class-members": "error",
