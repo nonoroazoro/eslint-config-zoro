@@ -33,9 +33,11 @@ module.exports = {
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/func-call-spacing": ["error", "never"],
         "@typescript-eslint/generic-type-naming": "off",
-        // Temporary disable the following rule as it breaks on enum's indent.
-        // "@typescript-eslint/indent": "off",
+        // Temporary disable the following rule as it breaks in enums.
+        // https://github.com/typescript-eslint/typescript-eslint/issues/1824
+        // https://github.com/typescript-eslint/typescript-eslint/issues/1701
         // "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
+        "@typescript-eslint/indent": "off",
         "@typescript-eslint/interface-name-prefix": "off",
         "@typescript-eslint/member-delimiter-style": "error",
         "@typescript-eslint/member-naming": ["error", { "private": "^_" }],
