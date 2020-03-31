@@ -40,7 +40,7 @@ This package contains four configurations for your usage:
 1. **[react](#3-eslint-config-zororeact)**: Consists of the `React` rules.
 1. **[typescript](#4-eslint-config-zorotypescript)**: Consists of the `TypeScript` rules.
 
-The simplest usage is to extend the default configuration in your `.eslintrc` as the followings:
+The simplest usage is to extend the default configuration in your `.eslintrc.json` as the followings:
 
 ```json
 {
@@ -69,7 +69,7 @@ This is the default configuration which contains `all` the rules.
     npm i -D eslint-config-zoro eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-react-hooks
     ```
 
-1. Add to your `.eslintrc` file:
+1. Add to your `.eslintrc.json` file:
 
     ```json
     {
@@ -88,7 +88,7 @@ This configuration only contains the `ESLint` rules.
     npm i -D eslint-config-zoro eslint
     ```
 
-1. Add to your `.eslintrc` file:
+1. Add to your `.eslintrc.json` file:
 
     ```json
     {
@@ -106,7 +106,7 @@ This configuration only contains the `React` rules.
     npm i -D eslint-config-zoro eslint eslint-plugin-react eslint-plugin-react-hooks
     ```
 
-1. Add to your `.eslintrc` file:
+1. Add to your `.eslintrc.json` file:
 
     ```json
     {
@@ -124,7 +124,7 @@ This configuration only contains the `TypeScript` rules.
     npm i -D eslint-config-zoro eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
     ```
 
-1. In your `.eslintrc` file, add:
+1. In your `.eslintrc.json` file, add:
 
     ```json
     {

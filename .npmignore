@@ -6,7 +6,7 @@ yarn.lock
 .vscode
 
 # Configuration files
-.eslintrc
+.eslintrc.json
 .gitignore
 .huskyrc
 .lintstagedrc
