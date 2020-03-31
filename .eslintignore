@@ -1,6 +1,7 @@
 # Project specific stuff
 dist
 
+# Ignore the exports
 eslint.js
 index.js
 jest.config.js
