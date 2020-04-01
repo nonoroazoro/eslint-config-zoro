@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.8.2 - April 01, 2020
+
+- Changed: Disable @typescript-eslint/no-unnecessary-condition
+
+
 ## 2.8.1 - March 31, 2020
 
 - Changed: Upgrade to @typescript-eslint version 2.26.0
