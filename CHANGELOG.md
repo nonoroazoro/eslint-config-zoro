@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.8.4 - April 26, 2020
+
+- Changed: Change the default option of @typescript-eslintmethod-signature-style to `method`.
+
+
 ## 2.8.3 - April 26, 2020
 
 - Changed: Upgrade to @typescript-eslint version 2.29.0
