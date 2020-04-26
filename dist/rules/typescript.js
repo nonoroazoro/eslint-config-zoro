@@ -38,7 +38,20 @@ module.exports = {
         // https://github.com/typescript-eslint/typescript-eslint/issues/1701
         // "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
         "@typescript-eslint/indent": "off",
+        "@typescript-eslint/init-declarations": "off",
         "@typescript-eslint/interface-name-prefix": "off",
+        "@typescript-eslint/keyword-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true,
+                "overrides": {
+                    "return": { "after": true },
+                    "throw": { "after": true },
+                    "case": { "after": true }
+                }
+            }
+        ],
         "@typescript-eslint/member-delimiter-style": "error",
         "@typescript-eslint/member-naming": ["error", { "private": "^_" }],
         "@typescript-eslint/member-ordering": [
@@ -63,6 +76,7 @@ module.exports = {
                 ]
             }
         ],
+        "@typescript-eslint/method-signature-style": "error",
         "@typescript-eslint/naming-convention": "error",
         // "@typescript-eslint/naming-convention": [
         //     "error",
@@ -123,6 +137,7 @@ module.exports = {
         "@typescript-eslint/no-unnecessary-qualifier": "error",
         "@typescript-eslint/no-unnecessary-type-arguments": "off",
         "@typescript-eslint/no-unnecessary-type-assertion": "error",
+        "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unsafe-member-access": "off",
         "@typescript-eslint/no-unsafe-return": "off",
@@ -155,8 +170,10 @@ module.exports = {
         "@typescript-eslint/prefer-optional-chain": "off",
         "@typescript-eslint/prefer-readonly-parameter-types": "off",
         "@typescript-eslint/prefer-readonly": "off",
+        "@typescript-eslint/prefer-reduce-type-parameter": "error",
         "@typescript-eslint/prefer-regexp-exec": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
+        "@typescript-eslint/prefer-ts-expect-error": "off",
         "@typescript-eslint/promise-function-async": "off",
         "@typescript-eslint/quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
         "@typescript-eslint/require-array-sort-compare": "error",
@@ -188,6 +205,8 @@ module.exports = {
                 "func-call-spacing": "off",
                 // Checked by @typescript-eslint/indent
                 // "indent": "off",
+                // Checked by @typescript-eslint/keyword-spacing
+                "keyword-spacing": "off",
                 // Checked by @typescript-eslint/no-dupe-class-members
                 "no-dupe-class-members": "off",
                 // Checked by @typescript-eslint/no-empty-function
