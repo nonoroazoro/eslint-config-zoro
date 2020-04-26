@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.8.5 - April 26, 2020
+
+- Changed: Disable @typescript-eslintmethod-signature-style
+
+
 ## 2.8.4 - April 26, 2020
 
 - Changed: Change the default option of @typescript-eslintmethod-signature-style to `method`.
