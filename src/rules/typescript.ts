@@ -80,7 +80,7 @@ export = {
                 ]
             }
         ],
-        "@typescript-eslint/method-signature-style": ["error", "method"],
+        "@typescript-eslint/method-signature-style": "off",
         "@typescript-eslint/naming-convention": "error",
         // "@typescript-eslint/naming-convention": [
         //     "error",
