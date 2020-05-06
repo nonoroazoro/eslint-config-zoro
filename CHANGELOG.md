@@ -1,5 +1,12 @@
 # Changelogs
 
+## 2.9.0 - May 06, 2020
+
+- Changed: Upgrade to @typescript-eslint version 2.31.0
+
+- Changed: Drop support for Node 8
+
+
 ## 2.8.5 - April 26, 2020
 
 - Changed: Disable @typescript-eslint/method-signature-style
