@@ -30,7 +30,7 @@
     "test:watch": "npm test -- --watch"
   },
   "engines": {
-    "node": "^v10.20.1 || >=11.10.1"
+    "node": ">=12.0.0"
   },
   "devDependencies": {
     "@types/jest": "^25.2.1",
