@@ -57,6 +57,11 @@ export = {
                 }
             }
         ],
+        "@typescript-eslint/lines-between-class-members": [
+            "error",
+            "always",
+            { "exceptAfterSingleLine": true }
+        ],
         "@typescript-eslint/member-delimiter-style": "error",
         "@typescript-eslint/member-naming": ["error", { "private": "^_" }],
         "@typescript-eslint/member-ordering": [
@@ -219,6 +224,9 @@ export = {
 
                 // Checked by @typescript-eslint/keyword-spacing
                 "keyword-spacing": "off",
+
+                // Checked by @typescript-eslint/lines-between-class-members
+                "lines-between-class-members": "off",
 
                 // Checked by @typescript-eslint/no-dupe-class-members
                 "no-dupe-class-members": "off",
