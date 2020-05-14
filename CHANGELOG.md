@@ -1,5 +1,10 @@
 # Changelogs
 
+## 2.9.1 - May 14, 2020
+
+- Changed: Upgrade to @typescript-eslint version 2.33.0
+
+
 ## 2.9.0 - May 06, 2020
 
 - Changed: Upgrade to @typescript-eslint version 2.31.0
