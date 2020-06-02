@@ -124,7 +124,7 @@ export = {
             {
                 "line": {
                     "exceptions": ["-", "+"],
-                    "markers": ["=", "!"]
+                    "markers": ["=", "!", "#region", "#endregion"]
                 },
                 "block": {
                     "exceptions": ["-", "+"],
