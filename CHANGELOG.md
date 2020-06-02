@@ -1,5 +1,10 @@
 # Changelogs
 
+## 3.0.1 - June 02, 2020
+
+- Changed: Allow PascalCase naming in React files
+
+
 ## 3.0.0 - June 02, 2020
 
 - Changed: Upgrade to @typescript-eslint version 3.1.0
