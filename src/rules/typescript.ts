@@ -23,9 +23,7 @@ export = {
             }
         ],
         "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }],
-        "@typescript-eslint/camelcase": "off",
         "@typescript-eslint/class-literal-property-style": "off",
-        "@typescript-eslint/class-name-casing": "error",
         "@typescript-eslint/comma-spacing": ["error", { "before": false, "after": true }],
         "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
@@ -35,7 +33,6 @@ export = {
         "@typescript-eslint/explicit-member-accessibility": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/func-call-spacing": ["error", "never"],
-        "@typescript-eslint/generic-type-naming": "off",
 
         // Temporary disable the following rule as it breaks in enums.
         // https://github.com/typescript-eslint/typescript-eslint/issues/1824
@@ -44,7 +41,6 @@ export = {
         "@typescript-eslint/indent": "off",
 
         "@typescript-eslint/init-declarations": "off",
-        "@typescript-eslint/interface-name-prefix": "off",
         "@typescript-eslint/keyword-spacing": [
             "error",
             {
@@ -63,7 +59,6 @@ export = {
             { "exceptAfterSingleLine": true }
         ],
         "@typescript-eslint/member-delimiter-style": "error",
-        "@typescript-eslint/member-naming": ["error", { "private": "^_" }],
         "@typescript-eslint/member-ordering": [
             "error",
             {
@@ -191,7 +186,7 @@ export = {
         "@typescript-eslint/require-array-sort-compare": "error",
         "@typescript-eslint/require-await": "off",
         "@typescript-eslint/restrict-plus-operands": "error",
-        "@typescript-eslint/restrict-template-expressions": ["error", { "allowNumber": true }],
+        "@typescript-eslint/restrict-template-expressions": "error",
         "@typescript-eslint/return-await": "off",
         "@typescript-eslint/semi": ["error", "always"],
         "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
@@ -207,86 +202,98 @@ export = {
         {
             files: ["*.ts", "*.tsx"],
             rules: {
-                // Checked by @typescript-eslint/brace-style
+                // Checked by @typescript-eslint
                 "brace-style": "off",
 
-                // Checked by @typescript-eslint/camelcase
-                "camelcase": "off",
-
-                // Checked by @typescript-eslint/comma-spacing
+                // Checked by @typescript-eslint
                 "comma-spacing": "off",
 
-                // Checked by @typescript-eslint/func-call-spacing
+                // Checked by @typescript-eslint
                 "func-call-spacing": "off",
 
-                // Checked by @typescript-eslint/indent
+                // Checked by @typescript-eslint
                 // "indent": "off",
 
-                // Checked by @typescript-eslint/keyword-spacing
+                // Checked by @typescript-eslint
                 "keyword-spacing": "off",
 
-                // Checked by @typescript-eslint/lines-between-class-members
+                // Checked by @typescript-eslint
                 "lines-between-class-members": "off",
 
-                // Checked by @typescript-eslint/no-dupe-class-members
-                "no-dupe-class-members": "off",
-
-                // Checked by @typescript-eslint/no-empty-function
+                // Checked by @typescript-eslint
                 "no-empty-function": "off",
 
-                // Checked by @typescript-eslint/no-extra-parens
+                // Checked by @typescript-eslint
                 "no-extra-parens": "off",
 
-                // Checked by @typescript-eslint/no-extra-semi
+                // Checked by @typescript-eslint
                 "no-extra-semi": "off",
 
-                // Checked by @typescript-eslint/no-unused-expressions
+                // Checked by @typescript-eslint
                 "no-unused-expressions": "off",
 
-                // Checked by @typescript-eslint/no-unused-vars
+                // Checked by @typescript-eslint
                 "no-unused-vars": "off",
 
-                // Checked by @typescript-eslint/no-useless-constructor
+                // Checked by @typescript-eslint
                 "no-useless-constructor": "off",
 
-                // Checked by @typescript-eslint/semi
+                // Checked by @typescript-eslint
                 "semi": "off",
 
-                // Checked by @typescript-eslint/quotes
+                // Checked by @typescript-eslint
                 "quotes": "off",
 
-                // Checked by @typescript-eslint/space-before-function-paren
+                // Checked by @typescript-eslint
                 "space-before-function-paren": "off",
 
-                // Checked by @typescript-eslint/no-throw-literal
+                // Checked by @typescript-eslint
                 "no-throw-literal": "off",
+
+                // Checked by Typescript - ts(2335) & ts(2377)
+                "constructor-super": "off",
 
                 // Checked by Typescript - ts(2378)
                 "getter-return": "off",
 
+                // Checked by Typescript - ts(2588)
+                "no-const-assign": "off",
+
                 // Checked by Typescript - ts(2300)
                 "no-dupe-args": "off",
+
+                // Checked by @typescript-eslint & ts(2393) & ts(2300)
+                "no-dupe-class-members": "off",
 
                 // Checked by Typescript - ts(1117)
                 "no-dupe-keys": "off",
 
-                // Checked by Typescript - ts(7027)
-                "no-unreachable": "off",
-
-                // Checked by Typescript - ts(2367)
-                "valid-typeof": "off",
-
-                // Checked by Typescript - ts(2588)
-                "no-const-assign": "off",
+                // Checked by Typescript - ts(2539)
+                "no-func-assign": "off",
 
                 // Checked by Typescript - ts(2588)
                 "no-new-symbol": "off",
 
+                // Checked by Typescript - ts(2349)
+                "no-obj-calls": "off",
+
+                // Checked by Typescript - ts(2451)
+                "no-redeclare": "off",
+
                 // Checked by Typescript - ts(2376)
                 "no-this-before-super": "off",
 
-                // Checked by Typescript - `strictNullChecks`
-                "no-undef": "off"
+                // Checked by Typescript - `strictNullChecks` ts(2304)
+                "no-undef": "off",
+
+                // Checked by Typescript - ts(7027)
+                "no-unreachable": "off",
+
+                // Checked by Typescript - ts(2365) & ts(2360) & ts(2358)
+                "no-unsafe-negation": "off",
+
+                // Checked by Typescript - ts(2367)
+                "valid-typeof": "off"
             }
         },
         {
