@@ -1,5 +1,14 @@
 # Changelogs
 
+## 3.0.0 - June 02, 2020
+
+- Changed: Upgrade to @typescript-eslint version 3.1.0
+
+- Changed: Update Typescript overrides
+
+- Changed: Remove deprecated rules
+
+
 ## 2.9.1 - May 14, 2020
 
 - Changed: Upgrade to @typescript-eslint version 2.33.0
