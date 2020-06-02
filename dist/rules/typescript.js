@@ -68,25 +68,6 @@ module.exports = {
         ],
         "@typescript-eslint/method-signature-style": "off",
         "@typescript-eslint/naming-convention": "error",
-        // "@typescript-eslint/naming-convention": [
-        //     "error",
-        //     {
-        //         "selector": "default",
-        //         "format": ["camelCase"],
-        //         "leadingUnderscore": "allow",
-        //         "trailingUnderscore": "forbid"
-        //     },
-        //     {
-        //         "selector": "variable",
-        //         "format": ["camelCase", "UPPER_CASE"],
-        //         "leadingUnderscore": "allow",
-        //         "trailingUnderscore": "forbid"
-        //     },
-        //     {
-        //         "selector": "typeLike",
-        //         "format": ["PascalCase"]
-        //     }
-        // ],
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-base-to-string": "error",
         "@typescript-eslint/no-dupe-class-members": "error",
@@ -256,6 +237,19 @@ module.exports = {
             rules: {
                 // Disabled in vanilla JavaScript files
                 "@typescript-eslint/prefer-nullish-coalescing": "off"
+            }
+        },
+        {
+            files: ["*.jsx", "*.tsx"],
+            rules: {
+                // Allow PascalCase in React files.
+                "@typescript-eslint/naming-convention": [
+                    "error",
+                    {
+                        "selector": "variable",
+                        "format": ["camelCase", "UPPER_CASE", "PascalCase"]
+                    }
+                ]
             }
         }
     ]
