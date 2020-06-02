@@ -122,7 +122,7 @@ module.exports = {
             {
                 "line": {
                     "exceptions": ["-", "+"],
-                    "markers": ["=", "!"]
+                    "markers": ["=", "!", "#region", "#endregion"]
                 },
                 "block": {
                     "exceptions": ["-", "+"],

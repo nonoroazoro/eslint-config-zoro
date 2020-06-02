@@ -1,5 +1,12 @@
 # Changelogs
 
+## 3.0.2 - June 02, 2020
+
+- Changed: Allow PascalCase naming
+
+- Changed: Allow #region in comments
+
+
 ## 3.0.1 - June 02, 2020
 
 - Changed: Allow PascalCase naming in React files
