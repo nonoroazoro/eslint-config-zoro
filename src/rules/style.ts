@@ -25,6 +25,7 @@ export = {
         "id-length": "off",
         "id-match": "off",
         "implicit-arrow-linebreak": "off",
+        // eslint-disable-next-line @typescript-eslint/naming-convention
         "indent": ["error", 4, { "SwitchCase": 1 }],
         "jsx-quotes": ["error", "prefer-double"],
         "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],

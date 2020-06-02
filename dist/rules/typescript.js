@@ -8,18 +8,7 @@ module.exports = {
         "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
         "@typescript-eslint/await-thenable": "error",
         "@typescript-eslint/ban-ts-comment": "warn",
-        "@typescript-eslint/ban-types": [
-            "error",
-            {
-                "types": {
-                    "Object": "Use {} instead",
-                    "String": {
-                        "message": "Use string instead",
-                        "fixWith": "string"
-                    }
-                }
-            }
-        ],
+        "@typescript-eslint/ban-types": "error",
         "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }],
         "@typescript-eslint/class-literal-property-style": "off",
         "@typescript-eslint/comma-spacing": ["error", { "before": false, "after": true }],
@@ -31,7 +20,7 @@ module.exports = {
         "@typescript-eslint/explicit-member-accessibility": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/func-call-spacing": ["error", "never"],
-        // Temporary disable the following rule as it breaks in enums.
+        // Disable the following rule as it's in a broken state now.
         // https://github.com/typescript-eslint/typescript-eslint/issues/1824
         // https://github.com/typescript-eslint/typescript-eslint/issues/1701
         // "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
