@@ -1,5 +1,10 @@
 # Changelogs
 
+## 3.0.3 - June 04, 2020
+
+- Changed: Restrict leadingUnderscore and trailingUnderscore in naming-convention convention.
+
+
 ## 3.0.2 - June 02, 2020
 
 - Changed: Allow PascalCase naming
