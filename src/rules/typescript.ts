@@ -75,7 +75,9 @@ export = {
             "error",
             {
                 "selector": "variable",
-                "format": ["camelCase", "UPPER_CASE", "PascalCase"]
+                "format": ["camelCase", "UPPER_CASE", "PascalCase"],
+                "leadingUnderscore": "allow",
+                "trailingUnderscore": "forbid"
             }
         ],
         "@typescript-eslint/no-array-constructor": "error",
