@@ -1,5 +1,10 @@
 # Changelogs
 
+## 3.0.4 - June 30, 2020
+
+- Changed: Upgrade to @typescript-eslint version 3.5.0
+
+
 ## 3.0.3 - June 04, 2020
 
 - Changed: Restrict leadingUnderscore and trailingUnderscore in naming-convention convention.
