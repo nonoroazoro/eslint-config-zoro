@@ -26,6 +26,7 @@ export = {
         "no-inner-declarations": "error",
         "no-invalid-regexp": "error",
         "no-irregular-whitespace": "error",
+        "no-loss-of-precision": "error",
         "no-misleading-character-class": "off",
         "no-obj-calls": "error",
         "no-prototype-builtins": "error",

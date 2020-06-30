@@ -10,6 +10,7 @@ export = {
         "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
         "@typescript-eslint/await-thenable": "error",
         "@typescript-eslint/ban-ts-comment": "warn",
+        "@typescript-eslint/ban-tslint-comment": "warn",
         "@typescript-eslint/ban-types": "error",
         "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }],
         "@typescript-eslint/class-literal-property-style": "off",
@@ -82,6 +83,7 @@ export = {
         ],
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-base-to-string": "error",
+        "@typescript-eslint/no-confusing-non-null-assertion": "error",
         "@typescript-eslint/no-dupe-class-members": "error",
         "@typescript-eslint/no-dynamic-delete": "off",
         "@typescript-eslint/no-empty-function": [
@@ -106,6 +108,7 @@ export = {
         "@typescript-eslint/no-inferrable-types": "off",
         "@typescript-eslint/no-invalid-this": "off",
         "@typescript-eslint/no-invalid-void-type": "error",
+        "@typescript-eslint/no-loss-of-precision": "error",
         "@typescript-eslint/no-magic-numbers": "off",
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
@@ -206,6 +209,9 @@ export = {
 
                 // Checked by @typescript-eslint
                 "no-extra-semi": "off",
+
+                // Checked by @typescript-eslint
+                "no-loss-of-precision": "off",
 
                 // Checked by @typescript-eslint
                 "no-unused-expressions": "off",
