@@ -1,5 +1,10 @@
 # Changelogs
 
+## 3.0.5 - July 02, 2020
+
+- Changed: Disable restrict-template-expressions in vanilla JavaScript
+
+
 ## 3.0.4 - June 30, 2020
 
 - Changed: Upgrade to @typescript-eslint version 3.5.0
