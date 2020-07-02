@@ -284,7 +284,8 @@ export = {
             files: ["*.js", "*.jsx"],
             rules: {
                 // Disabled in vanilla JavaScript files
-                "@typescript-eslint/prefer-nullish-coalescing": "off"
+                "@typescript-eslint/prefer-nullish-coalescing": "off",
+                "@typescript-eslint/restrict-template-expressions": "off"
             }
         }
     ]
