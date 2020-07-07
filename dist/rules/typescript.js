@@ -9,7 +9,13 @@ module.exports = {
         "@typescript-eslint/await-thenable": "error",
         "@typescript-eslint/ban-ts-comment": "warn",
         "@typescript-eslint/ban-tslint-comment": "warn",
-        "@typescript-eslint/ban-types": "error",
+        "@typescript-eslint/ban-types": [
+            "error",
+            {
+                "types": { "Function": false },
+                "extendDefaults": true
+            }
+        ],
         "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }],
         "@typescript-eslint/class-literal-property-style": "off",
         "@typescript-eslint/comma-spacing": ["error", { "before": false, "after": true }],
@@ -149,6 +155,7 @@ module.exports = {
         "@typescript-eslint/prefer-for-of": "off",
         "@typescript-eslint/prefer-function-type": "off",
         "@typescript-eslint/prefer-includes": "error",
+        "@typescript-eslint/prefer-literal-enum-member": "error",
         "@typescript-eslint/prefer-namespace-keyword": "error",
         "@typescript-eslint/prefer-nullish-coalescing": "error",
         "@typescript-eslint/prefer-optional-chain": "off",
