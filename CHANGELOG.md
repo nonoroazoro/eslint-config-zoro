@@ -1,5 +1,11 @@
 # Changelogs
 
+## 3.0.6 - July 02, 2020
+
+- Changed: Enable prefer-literal-enum-member.
+- Changed: Enable Function in ban-types.
+
+
 ## 3.0.5 - July 02, 2020
 
 - Changed: Disable restrict-template-expressions in vanilla JavaScript
