@@ -152,7 +152,7 @@ export = {
                 "ignoreRestSiblings": true
             }
         ],
-        "@typescript-eslint/no-use-before-define": ["error", { "functions": false }],
+        "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false }],
         "@typescript-eslint/no-useless-constructor": "error",
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/prefer-as-const": "off",
@@ -225,6 +225,9 @@ export = {
 
                 // Checked by @typescript-eslint
                 "no-unused-vars": "off",
+
+                // Checked by @typescript-eslint
+                "no-use-before-define": "off",
 
                 // Checked by @typescript-eslint
                 "no-useless-constructor": "off",

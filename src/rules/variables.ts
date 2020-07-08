@@ -13,6 +13,6 @@ export = {
         "no-undef-init": "off",
         "no-undefined": "off",
         "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": true }],
-        "no-use-before-define": ["error", { "functions": false }]
+        "no-use-before-define": ["error", { "functions": false, "classes": false }]
     }
 };
