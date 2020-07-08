@@ -1,5 +1,10 @@
 # Changelogs
 
+## 3.0.7 - July 02, 2020
+
+- Changed: Allow classes in no-use-before-define.
+
+
 ## 3.0.6 - July 02, 2020
 
 - Changed: Enable prefer-literal-enum-member.
