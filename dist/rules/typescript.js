@@ -117,7 +117,7 @@ module.exports = {
         "@typescript-eslint/no-namespace": ["error", { "allowDeclarations": true, "allowDefinitionFiles": true }],
         "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
         "@typescript-eslint/no-non-null-assertion": "warn",
-        "@typescript-eslint/no-parameter-properties": "error",
+        "@typescript-eslint/no-parameter-properties": ["error", { "allows": ["public", "public readonly"] }],
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
         "@typescript-eslint/no-throw-literal": "error",
