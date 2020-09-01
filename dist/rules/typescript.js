@@ -121,6 +121,7 @@ module.exports = {
         "@typescript-eslint/no-non-null-assertion": "warn",
         "@typescript-eslint/no-parameter-properties": ["error", { "allows": ["public", "public readonly"] }],
         "@typescript-eslint/no-require-imports": "off",
+        "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
         "@typescript-eslint/no-throw-literal": "error",
         "@typescript-eslint/no-type-alias": "off",
@@ -210,6 +211,8 @@ module.exports = {
                 // Checked by @typescript-eslint
                 "no-loss-of-precision": "off",
                 // Checked by @typescript-eslint
+                "no-shadow": "off",
+                // Checked by @typescript-eslint
                 "no-unused-expressions": "off",
                 // Checked by @typescript-eslint
                 "no-unused-vars": "off",
@@ -261,6 +264,7 @@ module.exports = {
             files: ["*.js", "*.jsx"],
             rules: {
                 // Disabled in vanilla JavaScript files
+                "@typescript-eslint/no-shadow": "off",
                 "@typescript-eslint/prefer-nullish-coalescing": "off",
                 "@typescript-eslint/restrict-template-expressions": "off"
             }
