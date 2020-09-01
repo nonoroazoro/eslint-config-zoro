@@ -1,5 +1,10 @@
 # Changelogs
 
+## 3.1.2 - September 01, 2020
+
+- Changed: Disable jsx-handler-names.
+
+
 ## 3.1.1 - September 01, 2020
 
 - Changed: Disable consistent-type-imports.
