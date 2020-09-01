@@ -1,5 +1,10 @@
 # Changelogs
 
+## 3.1.1 - September 01, 2020
+
+- Changed: Disable consistent-type-imports.
+
+
 ## 3.1.0 - September 01, 2020
 
 - Added: Enable consistent-type-imports.
