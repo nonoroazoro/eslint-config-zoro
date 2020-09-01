@@ -116,7 +116,7 @@ export = {
         "react/jsx-equals-spacing": ["error", "never"],
         "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
         "react/jsx-first-prop-new-line": ["error", "multiline"],
-        "react/jsx-handler-names": "off",
+        "react/jsx-handler-names": "error",
         "react/jsx-indent": ["error", 4],
         "react/jsx-indent-props": ["error", 4],
         "react/jsx-key": "off",
