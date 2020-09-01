@@ -1,5 +1,12 @@
 # Changelogs
 
+## 3.1.0 - September 01, 2020
+
+- Added: Enable consistent-type-imports.
+- Added: Enable no-implicit-any-catch.
+- Changed: Enable jsx-handler-names.
+
+
 ## 3.0.9 - July 21, 2020
 
 - Changed: Upgrade packages.
