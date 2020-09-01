@@ -1,5 +1,10 @@
 # Changelogs
 
+## 3.1.3 - September 01, 2020
+
+- Changed: Use @typescript-eslint/no-shadow instead of no-shadow.
+
+
 ## 3.1.2 - September 01, 2020
 
 - Changed: Disable jsx-handler-names.
