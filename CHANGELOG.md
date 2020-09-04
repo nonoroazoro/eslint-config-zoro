@@ -1,5 +1,10 @@
 # Changelogs
 
+## 3.1.4 - September 04, 2020
+
+- Changed: Ignore args in no-unused-vars and @typescript-eslint/no-unused-vars.
+
+
 ## 3.1.3 - September 01, 2020
 
 - Changed: Use @typescript-eslint/no-shadow instead of no-shadow.
