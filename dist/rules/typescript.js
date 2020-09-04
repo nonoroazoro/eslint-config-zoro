@@ -147,7 +147,7 @@ module.exports = {
             "warn",
             {
                 "vars": "all",
-                "args": "after-used",
+                "args": "none",
                 "ignoreRestSiblings": true
             }
         ],

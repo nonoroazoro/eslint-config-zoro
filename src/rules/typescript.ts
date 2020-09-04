@@ -151,7 +151,7 @@ export = {
             "warn",
             {
                 "vars": "all",
-                "args": "after-used",
+                "args": "none",
                 "ignoreRestSiblings": true
             }
         ],
