@@ -20,7 +20,9 @@ export = {
         ],
         "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }],
         "@typescript-eslint/class-literal-property-style": "off",
+        "@typescript-eslint/comma-dangle": "error",
         "@typescript-eslint/comma-spacing": ["error", { "before": false, "after": true }],
+        "@typescript-eslint/consistent-indexed-object-style": "error",
         "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/consistent-type-imports": "off",
@@ -92,6 +94,7 @@ export = {
         "@typescript-eslint/no-base-to-string": "error",
         "@typescript-eslint/no-confusing-non-null-assertion": "error",
         "@typescript-eslint/no-dupe-class-members": "error",
+        "@typescript-eslint/no-duplicate-imports": "error",
         "@typescript-eslint/no-dynamic-delete": "off",
         "@typescript-eslint/no-empty-function": [
             "error",
@@ -116,6 +119,7 @@ export = {
         "@typescript-eslint/no-inferrable-types": "off",
         "@typescript-eslint/no-invalid-this": "off",
         "@typescript-eslint/no-invalid-void-type": "error",
+        "@typescript-eslint/no-loop-func": "error",
         "@typescript-eslint/no-loss-of-precision": "error",
         "@typescript-eslint/no-magic-numbers": "off",
         "@typescript-eslint/no-misused-new": "error",
@@ -198,6 +202,9 @@ export = {
                 "brace-style": "off",
 
                 // Checked by @typescript-eslint
+                "comma-dangle": "off",
+
+                // Checked by @typescript-eslint
                 "comma-spacing": "off",
 
                 // Checked by @typescript-eslint
@@ -213,6 +220,9 @@ export = {
                 "lines-between-class-members": "off",
 
                 // Checked by @typescript-eslint
+                "no-duplicate-imports": "off",
+
+                // Checked by @typescript-eslint
                 "no-empty-function": "off",
 
                 // Checked by @typescript-eslint
@@ -220,6 +230,9 @@ export = {
 
                 // Checked by @typescript-eslint
                 "no-extra-semi": "off",
+
+                // Checked by @typescript-eslint
+                "no-loop-func": "off",
 
                 // Checked by @typescript-eslint
                 "no-loss-of-precision": "off",
