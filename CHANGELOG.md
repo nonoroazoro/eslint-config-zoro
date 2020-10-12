@@ -1,5 +1,10 @@
 # Changelogs
 
+## 3.2.0 - October 12, 2020
+
+- Changed: Upgrade to @typescript-eslint version 4.4.0
+
+
 ## 3.1.4 - September 04, 2020
 
 - Changed: Ignore args in no-unused-vars and @typescript-eslint/no-unused-vars.
