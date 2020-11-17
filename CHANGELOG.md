@@ -1,5 +1,10 @@
 # Changelogs
 
+## 4.0.1 - November 17, 2020
+
+- Changed: Comment out unreleased rules.
+
+
 ## 4.0.0 - November 17, 2020
 
 - Changed: Upgrade to @typescript-eslint version 4.8.0
