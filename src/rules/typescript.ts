@@ -93,6 +93,7 @@ export = {
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-base-to-string": "error",
         "@typescript-eslint/no-confusing-non-null-assertion": "error",
+        "@typescript-eslint/no-confusing-void-expression": "error",
         "@typescript-eslint/no-dupe-class-members": "error",
         "@typescript-eslint/no-duplicate-imports": "error",
         "@typescript-eslint/no-dynamic-delete": "off",
@@ -138,6 +139,7 @@ export = {
         "@typescript-eslint/no-unnecessary-qualifier": "error",
         "@typescript-eslint/no-unnecessary-type-arguments": "off",
         "@typescript-eslint/no-unnecessary-type-assertion": "error",
+        "@typescript-eslint/no-unnecessary-type-constraint": "error",
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unsafe-member-access": "off",
@@ -186,6 +188,7 @@ export = {
         "@typescript-eslint/return-await": "off",
         "@typescript-eslint/semi": ["error", "always"],
         "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
+        "@typescript-eslint/space-infix-ops": "error",
         "@typescript-eslint/strict-boolean-expressions": "off",
         "@typescript-eslint/switch-exhaustiveness-check": "error",
         "@typescript-eslint/triple-slash-reference": "error",
@@ -254,6 +257,9 @@ export = {
 
                 // Checked by @typescript-eslint
                 "semi": "off",
+
+                // Checked by @typescript-eslint
+                "space-infix-ops": "off",
 
                 // Checked by @typescript-eslint
                 "quotes": "off",
