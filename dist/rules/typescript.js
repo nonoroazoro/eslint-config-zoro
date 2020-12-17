@@ -160,6 +160,7 @@ module.exports = {
         "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false }],
         "@typescript-eslint/no-useless-constructor": "error",
         "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/non-nullable-type-assertion-style": "error",
         "@typescript-eslint/prefer-as-const": "off",
         "@typescript-eslint/prefer-enum-initializers": "off",
         "@typescript-eslint/prefer-for-of": "off",
