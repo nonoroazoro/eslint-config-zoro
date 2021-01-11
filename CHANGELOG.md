@@ -1,5 +1,10 @@
 # Changelogs
 
+## 4.2.1 - January 11, 2021
+
+- Changed: Disable rule sort-type-union-intersection-members.
+
+
 ## 4.0.1 - November 17, 2020
 
 - Changed: Comment out unreleased rules.
