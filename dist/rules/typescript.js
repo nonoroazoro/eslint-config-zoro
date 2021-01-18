@@ -184,8 +184,7 @@ module.exports = {
         "@typescript-eslint/restrict-template-expressions": "error",
         "@typescript-eslint/return-await": "off",
         "@typescript-eslint/semi": ["error", "always"],
-        // Temporary disbale the following rule as it doesn't work properly.
-        "@typescript-eslint/sort-type-union-intersection-members": "off",
+        "@typescript-eslint/sort-type-union-intersection-members": "error",
         "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
         "@typescript-eslint/space-infix-ops": "error",
         "@typescript-eslint/strict-boolean-expressions": "off",
