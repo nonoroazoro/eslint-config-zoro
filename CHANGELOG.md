@@ -1,5 +1,10 @@
 # Changelogs
 
+## 4.3.0 - March 05, 2021
+
+- Changed: Upgrade to @typescript-eslint version 4.16.1
+
+
 ## 4.2.2 - January 18, 2021
 
 - Changed: Enable rule sort-type-union-intersection-members.
