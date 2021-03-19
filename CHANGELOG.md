@@ -1,5 +1,11 @@
 # Changelogs
 
+## 4.4.0 - March 19, 2021
+
+- Changed: Upgrade to @typescript-eslint version 4.18.0
+- Changed: Enable rule @typescript-eslint/indent.
+
+
 ## 4.3.0 - March 05, 2021
 
 - Changed: Upgrade to @typescript-eslint version 4.16.1
@@ -7,12 +13,12 @@
 
 ## 4.2.2 - January 18, 2021
 
-- Changed: Enable rule sort-type-union-intersection-members.
+- Changed: Enable rule @typescript-eslint/sort-type-union-intersection-members.
 
 
 ## 4.2.1 - January 11, 2021
 
-- Changed: Disable rule sort-type-union-intersection-members.
+- Changed: Disable rule @typescript-eslint/sort-type-union-intersection-members.
 
 
 ## 4.0.1 - November 17, 2020
