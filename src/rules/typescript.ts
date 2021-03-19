@@ -36,8 +36,7 @@ export = {
         // Disable the following rule as it's in a broken state now.
         // https://github.com/typescript-eslint/typescript-eslint/issues/1824
         // https://github.com/typescript-eslint/typescript-eslint/issues/1701
-        // "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
-        "@typescript-eslint/indent": "off",
+        "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
 
         "@typescript-eslint/init-declarations": "off",
         "@typescript-eslint/keyword-spacing": [
@@ -217,7 +216,7 @@ export = {
                 "func-call-spacing": "off",
 
                 // Checked by @typescript-eslint
-                // "indent": "off",
+                "indent": "off",
 
                 // Checked by @typescript-eslint
                 "keyword-spacing": "off",
