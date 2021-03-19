@@ -1,5 +1,10 @@
 # Changelogs
 
+## 4.4.1 - March 19, 2021
+
+- Changed: Enable rule @typescript-eslint/consistent-type-imports
+
+
 ## 4.4.0 - March 19, 2021
 
 - Changed: Upgrade to @typescript-eslint version 4.18.0
