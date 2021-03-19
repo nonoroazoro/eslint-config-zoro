@@ -25,7 +25,7 @@ export = {
         "@typescript-eslint/consistent-indexed-object-style": "error",
         "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
-        "@typescript-eslint/consistent-type-imports": "off",
+        "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/default-param-last": "error",
         "@typescript-eslint/dot-notation": "off",
         "@typescript-eslint/explicit-function-return-type": "off",
