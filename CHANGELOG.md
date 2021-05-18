@@ -1,5 +1,10 @@
 # Changelogs
 
+## 4.5.0 - May 18, 2021
+
+- Added: Added rules react/no-unstable-nested-components and @typescript-eslint/no-unsafe-argument.
+
+
 ## 4.4.1 - March 19, 2021
 
 - Changed: Enable rule @typescript-eslint/consistent-type-imports
