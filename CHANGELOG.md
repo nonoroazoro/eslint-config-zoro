@@ -1,5 +1,10 @@
 # Changelogs
 
+## 4.5.1 - May 24, 2021
+
+- Changed: Disable react/react-in-jsx-scope by default, please use the [new JSX Transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) to run your code.
+
+
 ## 4.5.0 - May 18, 2021
 
 - Added: Added rules react/no-unstable-nested-components and @typescript-eslint/no-unsafe-argument.
