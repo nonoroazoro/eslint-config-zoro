@@ -52,7 +52,7 @@ export = {
         "react/prefer-read-only-props": "error",
         "react/prefer-stateless-function": "off",
         "react/prop-types": ["error", { "ignore": ["children"], "customValidators": [] }],
-        "react/react-in-jsx-scope": "error",
+        "react/react-in-jsx-scope": "off",
         "react/require-default-props": "error",
         "react/require-optimization": "off",
         "react/require-render-return": "error",
