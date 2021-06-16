@@ -179,7 +179,10 @@ export = {
             files: ["*.tsx"],
             rules: {
                 // Checked by react/sort-comp
-                "@typescript-eslint/member-ordering": "off"
+                "@typescript-eslint/member-ordering": "off",
+
+                // Checked by typescript
+                "react/prop-types": "off"
             }
         }
     ],
