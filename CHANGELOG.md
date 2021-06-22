@@ -1,5 +1,10 @@
 # Changelogs
 
+## 4.28.0 - June 22, 2021
+
+- Changed: Synchronize version with @typescript-eslint.
+
+
 ## 4.5.1 - May 24, 2021
 
 - Changed: Disable react/react-in-jsx-scope by default, please use the [new JSX Transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) to run your code.
