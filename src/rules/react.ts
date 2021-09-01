@@ -49,6 +49,7 @@ export = {
         "react/no-unused-state": "error",
         "react/no-will-update-set-state": "error",
         "react/prefer-es6-class": ["error", "always"],
+        "react/prefer-exact-props": "error",
         "react/prefer-read-only-props": "error",
         "react/prefer-stateless-function": "off",
         "react/prop-types": ["error", { "ignore": ["children"], "customValidators": [] }],
