@@ -1,5 +1,11 @@
 # Changelogs
 
+## 4.30.0 - September 01, 2021
+
+- Changed: Synchronize version with @typescript-eslint.
+- Changed: Disable rule @typescript-eslint/indent.
+
+
 ## 4.28.0 - June 22, 2021
 
 - Changed: Synchronize version with @typescript-eslint.
