@@ -36,7 +36,8 @@ export = {
         // Disable the following rule as it's in a broken state now.
         // https://github.com/typescript-eslint/typescript-eslint/issues/1824
         // https://github.com/typescript-eslint/typescript-eslint/issues/1701
-        "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
+        // "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
+        "@typescript-eslint/indent": "off",
 
         "@typescript-eslint/init-declarations": "off",
         "@typescript-eslint/keyword-spacing": [
@@ -128,6 +129,7 @@ export = {
         "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
         "@typescript-eslint/no-non-null-assertion": "warn",
         "@typescript-eslint/no-parameter-properties": ["error", { "allows": ["public", "public readonly"] }],
+        "@typescript-eslint/no-redeclare": ["error", { "ignoreDeclarationMerge": true }],
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
@@ -179,6 +181,7 @@ export = {
         "@typescript-eslint/prefer-readonly": "off",
         "@typescript-eslint/prefer-reduce-type-parameter": "error",
         "@typescript-eslint/prefer-regexp-exec": "error",
+        "@typescript-eslint/prefer-return-this-type": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
         "@typescript-eslint/prefer-ts-expect-error": "off",
         "@typescript-eslint/promise-function-async": "off",
@@ -217,7 +220,7 @@ export = {
                 "func-call-spacing": "off",
 
                 // Checked by @typescript-eslint
-                "indent": "off",
+                // "indent": "off",
 
                 // Checked by @typescript-eslint
                 "keyword-spacing": "off",
