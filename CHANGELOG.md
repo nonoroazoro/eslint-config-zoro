@@ -1,5 +1,11 @@
 # Changelogs
 
+## 4.31.0 - September 16, 2021
+
+- Changed: Synchronize version with @typescript-eslint.
+- Changed: Enable rule @typescript-eslint/no-meaningless-void-operator.
+
+
 ## 4.30.0 - September 01, 2021
 
 - Changed: Synchronize version with @typescript-eslint.
