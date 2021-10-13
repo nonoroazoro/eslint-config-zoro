@@ -58,15 +58,24 @@ module.exports = {
             "error",
             {
                 "default": [
+                    // Fields
                     "protected-static-field",
                     "protected-instance-field",
+                    "protected-decorated-field",
+                    "protected-abstract-field",
                     "public-static-field",
                     "public-instance-field",
+                    "public-decorated-field",
+                    "public-abstract-field",
                     "private-static-field",
                     "private-instance-field",
+                    "private-decorated-field",
+                    "private-abstract-field",
+                    // Constructors
                     "protected-constructor",
                     "public-constructor",
                     "private-constructor",
+                    // Methods
                     "protected-static-method",
                     "protected-instance-method",
                     "public-static-method",
@@ -123,11 +132,13 @@ module.exports = {
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
         "@typescript-eslint/no-namespace": ["error", { "allowDeclarations": true, "allowDefinitionFiles": true }],
+        "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
         "@typescript-eslint/no-non-null-assertion": "warn",
         "@typescript-eslint/no-parameter-properties": ["error", { "allows": ["public", "public readonly"] }],
         "@typescript-eslint/no-redeclare": ["error", { "ignoreDeclarationMerge": true }],
         "@typescript-eslint/no-require-imports": "off",
+        "@typescript-eslint/no-restricted-imports": "off",
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
         "@typescript-eslint/no-throw-literal": "error",
@@ -151,7 +162,6 @@ module.exports = {
                 "allowTaggedTemplates": false
             }
         ],
-        "@typescript-eslint/no-unused-vars-experimental": "off",
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {
