@@ -1,5 +1,17 @@
 # Changelogs
 
+## 5.2.0 - October 28, 2021
+
+- Added: Add rule @typescript-eslint/consistent-type-exports.
+
+- Changed: Synchronize version with @typescript-eslint.
+
+
+## 5.0.0 - October 13, 2021
+
+- Changed: Synchronize version with @typescript-eslint.
+
+
 ## 4.31.0 - September 16, 2021
 
 - Changed: Synchronize version with @typescript-eslint.
