@@ -6,7 +6,7 @@ module.exports = {
         "no-async-promise-executor": "off",
         "no-await-in-loop": "off",
         "no-compare-neg-zero": "error",
-        "no-cond-assign": ["error", "always"],
+        "no-cond-assign": "error",
         "no-console": "warn",
         "no-constant-condition": ["warn", { "checkLoops": false }],
         "no-control-regex": "error",
