@@ -1,5 +1,10 @@
 # Changelogs
 
+## 5.3.2 - December 01, 2021
+
+- Changed: Disable @typescript-eslint/prefer-regexp-exec
+
+
 ## 5.3.1 - December 01, 2021
 
 - Changed: Set `no-cond-assign` with default options.

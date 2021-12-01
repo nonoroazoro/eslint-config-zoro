@@ -196,7 +196,7 @@ export = {
         "@typescript-eslint/prefer-readonly-parameter-types": "off",
         "@typescript-eslint/prefer-readonly": "off",
         "@typescript-eslint/prefer-reduce-type-parameter": "error",
-        "@typescript-eslint/prefer-regexp-exec": "error",
+        "@typescript-eslint/prefer-regexp-exec": "off",
         "@typescript-eslint/prefer-return-this-type": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
         "@typescript-eslint/prefer-ts-expect-error": "off",
