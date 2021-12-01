@@ -8,7 +8,7 @@ module.exports = {
         "no-compare-neg-zero": "error",
         "no-cond-assign": ["error", "always"],
         "no-console": "warn",
-        "no-constant-condition": "warn",
+        "no-constant-condition": ["warn", { "checkLoops": false }],
         "no-control-regex": "error",
         "no-debugger": "error",
         "no-dupe-args": "error",
