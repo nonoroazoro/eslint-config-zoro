@@ -1,5 +1,10 @@
 # Changelogs
 
+## 5.3.1 - December 01, 2021
+
+- Changed: Set `no-cond-assign` with default options.
+
+
 ## 5.3.0 - December 01, 2021
 
 - Changed: Synchronize version with @typescript-eslint and eslint-plugin-react.
