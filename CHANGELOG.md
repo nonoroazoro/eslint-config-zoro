@@ -1,5 +1,10 @@
 # Changelogs
 
+## 5.3.0 - December 01, 2021
+
+- Changed: Synchronize version with @typescript-eslint and eslint-plugin-react.
+
+
 ## 5.2.0 - October 28, 2021
 
 - Added: Add rule @typescript-eslint/consistent-type-exports.
