@@ -1,5 +1,10 @@
 # Changelogs
 
+## 5.4.0 - December 09, 2021
+
+- Changed: Synchronize version with @typescript-eslint.
+
+
 ## 5.3.2 - December 01, 2021
 
 - Changed: Disable @typescript-eslint/prefer-regexp-exec
