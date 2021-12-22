@@ -1,5 +1,10 @@
 # Changelogs
 
+## 5.8.0 - December 22, 2021
+
+- Changed: Synchronize version with @typescript-eslint.
+
+
 ## 5.4.0 - December 09, 2021
 
 - Changed: Synchronize version with @typescript-eslint.
