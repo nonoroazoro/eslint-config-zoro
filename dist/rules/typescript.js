@@ -138,6 +138,7 @@ module.exports = {
         "@typescript-eslint/no-non-null-assertion": "warn",
         "@typescript-eslint/no-parameter-properties": ["error", { "allows": ["public", "public readonly"] }],
         "@typescript-eslint/no-redeclare": ["error", { "ignoreDeclarationMerge": true }],
+        "@typescript-eslint/no-redundant-type-constituents": "error",
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-restricted-imports": "off",
         "@typescript-eslint/no-shadow": "error",
@@ -173,6 +174,7 @@ module.exports = {
         ],
         "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false }],
         "@typescript-eslint/no-useless-constructor": "error",
+        "@typescript-eslint/no-useless-empty-export": "error",
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/non-nullable-type-assertion-style": "error",
         "@typescript-eslint/object-curly-spacing": ["error", "always"],
@@ -202,6 +204,7 @@ module.exports = {
         "@typescript-eslint/return-await": "off",
         "@typescript-eslint/semi": ["error", "always"],
         "@typescript-eslint/sort-type-union-intersection-members": "error",
+        "@typescript-eslint/space-before-blocks": "error",
         "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
         "@typescript-eslint/space-infix-ops": "error",
         "@typescript-eslint/strict-boolean-expressions": "off",
@@ -222,6 +225,8 @@ module.exports = {
                 "comma-dangle": "off",
                 // Checked by @typescript-eslint
                 "comma-spacing": "off",
+                // Checked by @typescript-eslint
+                "default-param-last": "off",
                 // Checked by @typescript-eslint
                 "func-call-spacing": "off",
                 // Checked by @typescript-eslint
@@ -245,6 +250,8 @@ module.exports = {
                 // Checked by @typescript-eslint
                 "no-shadow": "off",
                 // Checked by @typescript-eslint
+                "no-throw-literal": "off",
+                // Checked by @typescript-eslint
                 "no-unused-expressions": "off",
                 // Checked by @typescript-eslint
                 "no-unused-vars": "off",
@@ -255,15 +262,15 @@ module.exports = {
                 // Checked by @typescript-eslint
                 "object-curly-spacing": "off",
                 // Checked by @typescript-eslint
+                "quotes": "off",
+                // Checked by @typescript-eslint
                 "semi": "off",
                 // Checked by @typescript-eslint
-                "space-infix-ops": "off",
-                // Checked by @typescript-eslint
-                "quotes": "off",
+                "space-before-blocks": "off",
                 // Checked by @typescript-eslint
                 "space-before-function-paren": "off",
                 // Checked by @typescript-eslint
-                "no-throw-literal": "off",
+                "space-infix-ops": "off",
                 // Checked by Typescript - ts(2335) & ts(2377)
                 "constructor-super": "off",
                 // Checked by Typescript - ts(2378)

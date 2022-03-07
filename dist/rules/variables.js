@@ -18,6 +18,7 @@ module.exports = {
                 "ignoreRestSiblings": true
             }
         ],
-        "no-use-before-define": ["error", { "functions": false, "classes": false }]
+        "no-use-before-define": ["error", { "functions": false, "classes": false }],
+        "no-useless-backreference": "error"
     }
 };

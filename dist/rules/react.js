@@ -20,6 +20,8 @@ module.exports = {
         "react/forbid-foreign-prop-types": "error",
         "react/forbid-prop-types": ["error", { "forbid": ["any", "array", "object"] }],
         "react/function-component-definition": "off",
+        "react/hook-use-state ": "error",
+        "react/iframe-missing-sandbox": "error",
         "react/no-access-state-in-setstate": "error",
         "react/no-adjacent-inline-elements": "error",
         "react/no-array-index-key": "error",
@@ -120,7 +122,7 @@ module.exports = {
         "react/jsx-handler-names": "off",
         "react/jsx-indent": ["error", 4],
         "react/jsx-indent-props": ["error", 4],
-        "react/jsx-key": "off",
+        "react/jsx-key": ["error", { "checkKeyMustBeforeSpread": true, "warnOnDuplicates": true }],
         "react/jsx-max-depth": "off",
         "react/jsx-max-props-per-line": "off",
         "react/jsx-newline": "off",
@@ -143,7 +145,14 @@ module.exports = {
         "react/jsx-no-undef": "error",
         "react/jsx-no-useless-fragment": "error",
         "react/jsx-one-expression-per-line": "off",
-        "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never" }],
+        "react/jsx-curly-brace-presence": [
+            "error",
+            {
+                "children": "never",
+                "propElementValues": "always",
+                "props": "never"
+            }
+        ],
         "react/jsx-fragments": "off",
         "react/jsx-pascal-case": "error",
         "react/jsx-props-no-multi-spaces": "error",

@@ -21,6 +21,7 @@ export = {
         "func-names": "warn",
         "func-style": "off",
         "function-paren-newline": ["error", "consistent"],
+        "grouped-accessor-pairs": ["off", "getBeforeSet"],
         "id-blacklist": "off",
         "id-length": "off",
         "id-match": "off",

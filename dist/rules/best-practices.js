@@ -8,7 +8,9 @@ module.exports = {
         "complexity": "off",
         "consistent-return": "off",
         "curly": "error",
+        "default-case-last": "error",
         "default-case": ["error", { "commentPattern": "^no default$" }],
+        "default-param-last": "error",
         "dot-location": "off",
         "dot-notation": "off",
         "eqeqeq": ["error", "always", { "null": "ignore" }],
@@ -65,47 +67,12 @@ module.exports = {
                 "message": "arguments.callee is deprecated."
             },
             {
-                "object": "global",
-                "property": "isFinite",
-                "message": "Please use Number.isFinite instead."
-            },
-            {
-                "object": "self",
-                "property": "isFinite",
-                "message": "Please use Number.isFinite instead."
-            },
-            {
-                "object": "window",
-                "property": "isFinite",
-                "message": "Please use Number.isFinite instead."
-            },
-            {
-                "object": "global",
-                "property": "isNaN",
-                "message": "Please use Number.isNaN instead."
-            },
-            {
-                "object": "self",
-                "property": "isNaN",
-                "message": "Please use Number.isNaN instead."
-            },
-            {
-                "object": "window",
-                "property": "isNaN",
-                "message": "Please use Number.isNaN instead."
-            },
-            {
                 "property": "__defineGetter__",
                 "message": "Please use Object.defineProperty instead."
             },
             {
                 "property": "__defineSetter__",
                 "message": "Please use Object.defineProperty instead."
-            },
-            {
-                "object": "Math",
-                "property": "pow",
-                "message": "Please use the exponentiation operator (**) instead."
             }
         ],
         "no-return-assign": ["error", "always"],
@@ -120,11 +87,12 @@ module.exports = {
             "error",
             {
                 "allowShortCircuit": false,
-                "allowTernary": false,
-                "allowTaggedTemplates": false
+                "allowTaggedTemplates": false,
+                "allowTernary": false
             }
         ],
         "no-unused-labels": "error",
+        "no-unused-private-class-members": "warn",
         "no-useless-call": "off",
         "no-useless-catch": "off",
         "no-useless-concat": "error",
@@ -135,6 +103,8 @@ module.exports = {
         "no-with": "error",
         "prefer-named-capture-group": "off",
         "prefer-promise-reject-errors": ["error", { "allowEmptyReject": true }],
+        "prefer-reflect": "off",
+        "prefer-regex-literals": "error",
         "radix": "error",
         "require-await": "off",
         "require-unicode-regexp": "off",
