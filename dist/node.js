@@ -1,8 +1,6 @@
 "use strict";
 module.exports = {
-    "extends": [
-        "./rules/node"
-    ].map(path => require.resolve(path)),
+    "extends": require.resolve("./rules/node"),
     "parserOptions": {
         "ecmaVersion": 2018,
         "sourceType": "module"
