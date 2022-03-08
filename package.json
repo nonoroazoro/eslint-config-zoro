@@ -40,9 +40,10 @@
     "@types/node": "^17.0.21",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
-    "eslint": "^8.10.0",
-    "eslint-plugin-react": "^7.29.3",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react": "^7.29.3",
+    "eslint": "^8.10.0",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
     "lint-staged": "^12.3.5",
@@ -52,11 +53,15 @@
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=5.13.0",
-    "eslint": ">=8.0.0",
+    "eslint-plugin-node": ">=11.1.0",
+    "eslint-plugin-react-hooks": ">=4.3.0",
     "eslint-plugin-react": ">=7.29.0",
-    "eslint-plugin-react-hooks": ">=4.3.0"
+    "eslint": ">=8.0.0"
   },
   "peerDependenciesMeta": {
+    "eslint-plugin-node": {
+      "optional": true
+    },
     "eslint-plugin-react": {
       "optional": true
     },

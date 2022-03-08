@@ -12,33 +12,30 @@
     </a>
 </p>
 
-
 ## Based on
 
 - ESLint rules:
-    1. [Best Practices](http://eslint.org/docs/rules/#best-practices)
-    1. [Errors](http://eslint.org/docs/rules/#possible-errors)
-    1. [Node](http://eslint.org/docs/rules/#nodejs-and-commonjs)
-    1. [Style](http://eslint.org/docs/rules/#stylistic-issues)
-    1. [Variables](http://eslint.org/docs/rules/#variables)
-    1. [ECMAScript 6](http://eslint.org/docs/rules/#ecmascript-6)
+    1. [ESLint](https://eslint.org/docs/rules)
 
 - React rules:
-    1. [React](https://github.com/yannickcr/eslint-plugin-react)
-    1. [React Hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+    1. [React](https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules)
+    1. [React Hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
 
 - TypeScript rules:
-    1. [TypeScript](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules)
+    1. [TypeScript](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules)
 
+- Node rules:
+    1. [Node](https://github.com/mysticatea/eslint-plugin-node/tree/master/docs/rules)
 
 ## Usage
 
-This package contains four configurations for your usage:
+This package contains `five` configurations for your usage:
 
 1. **[default](#1-eslint-config-zoro)**: Consists of `all` the rules.
 1. **[eslint](#2-eslint-config-zoroeslint)**: Consists of the `ESLint` rules.
 1. **[react](#3-eslint-config-zororeact)**: Consists of the `React` rules.
 1. **[typescript](#4-eslint-config-zorotypescript)**: Consists of the `TypeScript` rules.
+1. **[node](#5-eslint-config-zoronode)**: Consists of the `Node` rules.
 
 The simplest usage is to extend the default configuration in your `.eslintrc.json` as the followings:
 
@@ -48,13 +45,14 @@ The simplest usage is to extend the default configuration in your `.eslintrc.jso
 }
 ```
 
-You can also extend with any combination of the last three rules, such as:
+You can also extend with any combination of `the last four rules`, such as:
 
 ```json
 {
     "extends": [
         "eslint-config-zoro/eslint",
-        "eslint-config-zoro/typescript"
+        "eslint-config-zoro/typescript",
+        "eslint-config-zoro/node"
     ]
 }
 ```
@@ -66,7 +64,7 @@ This is the default configuration which contains `all` the rules.
 1. Install:
 
     ```sh
-    npm i -D eslint-config-zoro eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-react-hooks
+    npm i -D eslint-config-zoro eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-node
     ```
 
 1. Add to your `.eslintrc.json` file:
@@ -76,7 +74,6 @@ This is the default configuration which contains `all` the rules.
         "extends": "eslint-config-zoro"
     }
     ```
-
 
 ### 2. eslint-config-zoro/eslint
 
@@ -132,10 +129,28 @@ This configuration only contains the `TypeScript` rules.
     }
     ```
 
+### 5. eslint-config-zoro/node
+
+This configuration only contains the `Node` rules.
+
+1. Install:
+
+    ```sh
+    npm i -D eslint-config-zoro eslint eslint-plugin-node
+    ```
+
+1. In your `.eslintrc.json` file, add:
+
+    ```json
+    {
+        "extends": "eslint-config-zoro/node"
+    }
+    ```
 
 ## Where to ask for help?
 
-- [ESLint Rules](http://eslint.org/docs/rules/)
+- [ESLint Rules](http://eslint.org/docs/rules)
 - [ESLint Rules - React](https://github.com/yannickcr/eslint-plugin-react)
-- [ESLint Rules - React Hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
-- [ESLint Rules - TypeScript](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules)
+- [ESLint Rules - React Hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
+- [ESLint Rules - TypeScript](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin)
+- [ESLint Rules - Node](https://github.com/mysticatea/eslint-plugin-node)
