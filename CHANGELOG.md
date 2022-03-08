@@ -1,5 +1,10 @@
 # Changelogs
 
+## 5.14.0 - March 08, 2022
+
+- Added: Add node config file.
+
+
 ## 5.13.0 - March 07, 2022
 
 - Changed: Synchronize version with @typescript-eslint and eslint.
