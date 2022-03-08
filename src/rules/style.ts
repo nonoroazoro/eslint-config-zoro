@@ -22,7 +22,7 @@ export = {
         "func-style": "off",
         "function-paren-newline": ["error", "consistent"],
         "grouped-accessor-pairs": ["off", "getBeforeSet"],
-        "id-blacklist": "off",
+        "id-denylist": "off",
         "id-length": "off",
         "id-match": "off",
         "implicit-arrow-linebreak": "off",
