@@ -20,7 +20,7 @@ module.exports = {
         "react/forbid-foreign-prop-types": "error",
         "react/forbid-prop-types": ["error", { "forbid": ["any", "array", "object"] }],
         "react/function-component-definition": "off",
-        "react/hook-use-state ": "error",
+        "react/hook-use-state": "error",
         "react/iframe-missing-sandbox": "error",
         "react/no-access-state-in-setstate": "error",
         "react/no-adjacent-inline-elements": "error",
