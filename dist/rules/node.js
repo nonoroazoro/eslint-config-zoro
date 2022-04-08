@@ -44,5 +44,6 @@ module.exports = {
         "node/prefer-promises/fs": "error",
         "node/process-exit-as-throw": "error",
         "node/shebang": "error"
-    }
+    },
+    "ignorePatterns": ["*.jsx", "*.tsx"]
 };
