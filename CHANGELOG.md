@@ -1,5 +1,10 @@
 # Changelogs
 
+## 5.15.2 - April 08, 2022
+
+- Changed: Disable node/no-unpublished-import, node/no-unpublished-require and node/no-unsupported-features/es-syntax.
+
+
 ## 5.15.1 - April 08, 2022
 
 - Fixed: Fix rule react/hook-use-state.
