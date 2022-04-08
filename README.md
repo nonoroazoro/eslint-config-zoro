@@ -51,8 +51,8 @@ You can also extend with any combination of `the last four rules`, such as:
 {
     "extends": [
         "eslint-config-zoro/eslint",
-        "eslint-config-zoro/typescript",
-        "eslint-config-zoro/node"
+        "eslint-config-zoro/react",
+        "eslint-config-zoro/typescript"
     ]
 }
 ```
