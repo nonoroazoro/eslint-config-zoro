@@ -1,5 +1,9 @@
 # Changelogs
 
+## 5.15.3 - April 08, 2022
+
+- Changed: Ignore ignore jsx and tsx for node rules.
+
 ## 5.15.2 - April 08, 2022
 
 - Changed: Disable node/no-unpublished-import, node/no-unpublished-require and node/no-unsupported-features/es-syntax.
