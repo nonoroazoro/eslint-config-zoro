@@ -1,5 +1,10 @@
 # Changelogs
 
+## 5.15.1 - April 08, 2022
+
+- Fixed: Fix rule react/hook-use-state.
+
+
 ## 5.15.0 - April 08, 2022
 
 - Changed: Synchronize version with @typescript-eslint and eslint-plugin-react.
