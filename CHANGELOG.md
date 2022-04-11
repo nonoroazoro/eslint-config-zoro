@@ -1,5 +1,10 @@
 # Changelogs
 
+## 5.15.5 - April 11, 2022
+
+- Changed: Disable node/no-missing-import and node/no-missing-require.
+
+
 ## 5.15.4 - April 11, 2022
 
 - Changed: Disable node/no-extraneous-require.
