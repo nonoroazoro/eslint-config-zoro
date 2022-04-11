@@ -1,8 +1,14 @@
 # Changelogs
 
+## 5.15.4 - April 11, 2022
+
+- Changed: Disable node/no-extraneous-require.
+
+
 ## 5.15.3 - April 08, 2022
 
 - Changed: Ignore ignore jsx and tsx for node rules.
+
 
 ## 5.15.2 - April 08, 2022
 
