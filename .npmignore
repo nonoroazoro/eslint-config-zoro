@@ -12,8 +12,8 @@ yarn.lock
 .lintstagedrc
 .travis.yml
 jest.config.js
-tsconfig.eslint.json
 tsconfig.json
+tsconfig.prod.json
 
 # Project specific stuff
 src

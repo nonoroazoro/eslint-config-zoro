@@ -7,6 +7,6 @@
         "jest": true
     },
     "parserOptions": {
-        "project": "./tsconfig.eslint.json"
+        "project": "./tsconfig.json"
     }
 }
