@@ -108,6 +108,7 @@ export = {
         "@typescript-eslint/no-confusing-non-null-assertion": "error",
         "@typescript-eslint/no-confusing-void-expression": "error",
         "@typescript-eslint/no-dupe-class-members": "error",
+        "@typescript-eslint/no-duplicate-enum-values": "error",
         "@typescript-eslint/no-duplicate-imports": "error",
         "@typescript-eslint/no-dynamic-delete": "off",
         "@typescript-eslint/no-empty-function": [
@@ -116,7 +117,8 @@ export = {
                 "allow": [
                     "arrowFunctions",
                     "functions",
-                    "methods"
+                    "methods",
+                    "overrideMethods"
                 ]
             }
         ],
