@@ -1,5 +1,12 @@
 # Changelogs
 
+## 5.27.0 - May 31, 2022
+
+- Changed: Synchronize version with `@typescript-eslint` and `eslint-plugin-react`.
+- Changed: Enable `react/jsx-no-leaked-render` and `@typescript-eslint/no-duplicate-enum-values` by default.
+- Added: Add `overrideMethods` to rule `@typescript-eslint/no-empty-function`.
+
+
 ## 5.15.5 - April 11, 2022
 
 - Changed: Disable node/no-missing-import and node/no-missing-require.
