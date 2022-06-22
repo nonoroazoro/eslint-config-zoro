@@ -20,6 +20,7 @@ module.exports = {
         "@typescript-eslint/class-literal-property-style": "off",
         "@typescript-eslint/comma-dangle": "error",
         "@typescript-eslint/comma-spacing": ["error", { "before": false, "after": true }],
+        "@typescript-eslint/consistent-generic-constructors": "off",
         "@typescript-eslint/consistent-indexed-object-style": "error",
         "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
