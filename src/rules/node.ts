@@ -12,7 +12,7 @@ export = {
         "node/callback-return": "off",
         "node/exports-style": "error",
         "node/file-extension-in-import": "off",
-        "node/global-require": "error",
+        "node/global-require": "off",
         "node/handle-callback-err": "off",
         "node/no-callback-literal": "error",
         "node/no-deprecated-api": "error",
