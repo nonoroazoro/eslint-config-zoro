@@ -1,5 +1,11 @@
 # Changelogs
 
+## 5.29.0 - May 31, 2022
+
+- Changed: Disable `node/global-require` by default.
+- Changed: Synchronize version with `@typescript-eslint`.
+
+
 ## 5.27.0 - May 31, 2022
 
 - Changed: Synchronize version with `@typescript-eslint` and `eslint-plugin-react`.
