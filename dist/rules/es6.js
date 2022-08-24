@@ -56,7 +56,7 @@ module.exports = {
         "prefer-destructuring": "off",
         "prefer-exponentiation-operator": "off",
         "prefer-numeric-literals": "error",
-        "prefer-object-has-own": "error",
+        "prefer-object-has-own": "off",
         "prefer-rest-params": "error",
         "prefer-spread": "off",
         "prefer-template": "error",
