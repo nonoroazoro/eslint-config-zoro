@@ -1,5 +1,11 @@
 # Changelogs
 
+## 5.34.0 - August 24, 2022
+
+- Changed: Synchronize version with `@typescript-eslint`.
+- Changed: Disable `prefer-object-has-own` by default.
+
+
 ## 5.30.0 - July 07, 2022
 
 - Changed: Synchronize version with `@typescript-eslint`.
