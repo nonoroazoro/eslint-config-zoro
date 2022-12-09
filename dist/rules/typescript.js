@@ -60,6 +60,9 @@ module.exports = {
             "error",
             {
                 "default": [
+                    // Index signature
+                    "signature",
+                    "call-signature",
                     // Fields
                     "protected-static-field",
                     "protected-instance-field",
@@ -72,7 +75,6 @@ module.exports = {
                     "private-static-field",
                     "private-instance-field",
                     "private-decorated-field",
-                    "private-abstract-field",
                     // Constructors
                     "protected-constructor",
                     "public-constructor",
@@ -157,6 +159,7 @@ module.exports = {
         "@typescript-eslint/no-unsafe-argument": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-declaration-merging": "error",
         "@typescript-eslint/no-unsafe-member-access": "off",
         "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/no-unused-expressions": [
