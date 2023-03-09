@@ -16,6 +16,7 @@ module.exports = {
                 "extendDefaults": true
             }
         ],
+        "@typescript-eslint/block-spacing": ["error", "always"],
         "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }],
         "@typescript-eslint/class-literal-property-style": "off",
         "@typescript-eslint/comma-dangle": "error",
@@ -38,6 +39,7 @@ module.exports = {
         // "@typescript-eslint/indent": ["error", 4, { "SwitchCase": 1 }],
         "@typescript-eslint/indent": "off",
         "@typescript-eslint/init-declarations": "off",
+        "@typescript-eslint/key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
         "@typescript-eslint/keyword-spacing": [
             "error",
             {
@@ -128,6 +130,7 @@ module.exports = {
         "@typescript-eslint/no-for-in-array": "error",
         "@typescript-eslint/no-implicit-any-catch": ["error", { "allowExplicitAny": true }],
         "@typescript-eslint/no-implied-eval": "error",
+        "@typescript-eslint/no-import-type-side-effects": "error",
         "@typescript-eslint/no-inferrable-types": "off",
         "@typescript-eslint/no-invalid-this": "off",
         "@typescript-eslint/no-invalid-void-type": "error",
@@ -137,6 +140,7 @@ module.exports = {
         "@typescript-eslint/no-meaningless-void-operator": "error",
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
+        "@typescript-eslint/no-mixed-enums": "error",
         "@typescript-eslint/no-namespace": ["error", { "allowDeclarations": true, "allowDefinitionFiles": true }],
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
@@ -226,6 +230,8 @@ module.exports = {
             files: ["*.ts", "*.tsx"],
             rules: {
                 // Checked by @typescript-eslint
+                "block-spacing": "off",
+                // Checked by @typescript-eslint
                 "brace-style": "off",
                 // Checked by @typescript-eslint
                 "comma-dangle": "off",
@@ -237,6 +243,8 @@ module.exports = {
                 "func-call-spacing": "off",
                 // Checked by @typescript-eslint
                 // "indent": "off",
+                // Checked by @typescript-eslint
+                "key-spacing": "off",
                 // Checked by @typescript-eslint
                 "keyword-spacing": "off",
                 // Checked by @typescript-eslint
