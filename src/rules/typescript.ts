@@ -21,6 +21,7 @@ export = {
         "@typescript-eslint/block-spacing": ["error", "always"],
         "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }],
         "@typescript-eslint/class-literal-property-style": "off",
+        "@typescript-eslint/class-methods-use-this": "off",
         "@typescript-eslint/comma-dangle": "error",
         "@typescript-eslint/comma-spacing": ["error", { "before": false, "after": true }],
         "@typescript-eslint/consistent-generic-constructors": "off",
@@ -56,6 +57,7 @@ export = {
                 }
             }
         ],
+        "@typescript-eslint/lines-around-comment": "off",
         "@typescript-eslint/lines-between-class-members": [
             "error",
             "always",
@@ -115,7 +117,7 @@ export = {
         "@typescript-eslint/no-confusing-void-expression": "error",
         "@typescript-eslint/no-dupe-class-members": "error",
         "@typescript-eslint/no-duplicate-enum-values": "error",
-        "@typescript-eslint/no-duplicate-imports": "error",
+        "@typescript-eslint/no-duplicate-type-constituents": "error",
         "@typescript-eslint/no-dynamic-delete": "off",
         "@typescript-eslint/no-empty-function": [
             "error",
@@ -136,7 +138,6 @@ export = {
         "@typescript-eslint/no-extraneous-class": "off",
         "@typescript-eslint/no-floating-promises": "off",
         "@typescript-eslint/no-for-in-array": "error",
-        "@typescript-eslint/no-implicit-any-catch": ["error", { "allowExplicitAny": true }],
         "@typescript-eslint/no-implied-eval": "error",
         "@typescript-eslint/no-import-type-side-effects": "error",
         "@typescript-eslint/no-inferrable-types": "off",
@@ -153,7 +154,6 @@ export = {
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
         "@typescript-eslint/no-non-null-assertion": "warn",
-        "@typescript-eslint/no-parameter-properties": ["error", { "allows": ["public", "public readonly"] }],
         "@typescript-eslint/no-redeclare": ["error", { "ignoreDeclarationMerge": true }],
         "@typescript-eslint/no-redundant-type-constituents": "error",
         "@typescript-eslint/no-require-imports": "off",
@@ -172,6 +172,7 @@ export = {
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unsafe-declaration-merging": "error",
+        "@typescript-eslint/no-unsafe-enum-comparison": "error",
         "@typescript-eslint/no-unsafe-member-access": "off",
         "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/no-unused-expressions": [
@@ -221,7 +222,6 @@ export = {
         "@typescript-eslint/restrict-template-expressions": "error",
         "@typescript-eslint/return-await": "off",
         "@typescript-eslint/semi": ["error", "always"],
-        "@typescript-eslint/sort-type-union-intersection-members": "error",
         "@typescript-eslint/space-before-blocks": "error",
         "@typescript-eslint/space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }],
         "@typescript-eslint/space-infix-ops": "error",
@@ -263,6 +263,9 @@ export = {
 
                 // Checked by @typescript-eslint
                 "keyword-spacing": "off",
+
+                // Checked by @typescript-eslint
+                "lines-around-comment": "off",
 
                 // Checked by @typescript-eslint
                 "lines-between-class-members": "off",
