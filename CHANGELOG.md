@@ -1,5 +1,10 @@
 # Changelogs
 
+## 6.1.0 - May 10, 2024
+
+- Changed: Synchronize version with `@typescript-eslint`.
+
+
 ## 6.0.1 - September 25, 2023
 
 - Changed: Disable `@typescript-eslint/no-unsafe-enum-comparison` by default.
