@@ -6,7 +6,7 @@ export = {
         "es6": true
     },
     "parserOptions": {
-        "ecmaVersion": 6,
+        "ecmaVersion": "latest",
         "sourceType": "module",
         "ecmaFeatures": {
             "generators": false,

@@ -4,7 +4,7 @@
 export = {
     "extends": require.resolve("./rules/node"),
     "parserOptions": {
-        "ecmaVersion": 2018,
+        "ecmaVersion": "latest",
         "sourceType": "module"
     }
 };
