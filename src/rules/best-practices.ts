@@ -105,7 +105,7 @@ export = {
         "no-warning-comments": "off",
         "no-with": "error",
         "prefer-named-capture-group": "off",
-        "prefer-promise-reject-errors": ["error", { "allowEmptyReject": true }],
+        "prefer-promise-reject-errors": "error",
         "prefer-regex-literals": "error",
         "radix": "error",
         "require-await": "off",

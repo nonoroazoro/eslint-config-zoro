@@ -26,6 +26,7 @@ export = {
         "@typescript-eslint/comma-spacing": ["error", { "before": false, "after": true }],
         "@typescript-eslint/consistent-generic-constructors": "off",
         "@typescript-eslint/consistent-indexed-object-style": "error",
+        "@typescript-eslint/consistent-return": "off",
         "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/consistent-type-exports": "error",
@@ -106,12 +107,13 @@ export = {
             "error",
             {
                 "selector": "variable",
-                "format": ["camelCase", "UPPER_CASE", "PascalCase"],
+                "format": ["camelCase", "UPPER_CASE"],
                 "leadingUnderscore": "allow",
                 "trailingUnderscore": "forbid"
             }
         ],
         "@typescript-eslint/no-array-constructor": "error",
+        "@typescript-eslint/no-array-delete": "error",
         "@typescript-eslint/no-base-to-string": "error",
         "@typescript-eslint/no-confusing-non-null-assertion": "error",
         "@typescript-eslint/no-confusing-void-expression": "error",
@@ -160,7 +162,6 @@ export = {
         "@typescript-eslint/no-restricted-imports": "off",
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
-        "@typescript-eslint/no-throw-literal": "error",
         "@typescript-eslint/no-type-alias": "off",
         "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
         "@typescript-eslint/no-unnecessary-condition": "off",
@@ -175,6 +176,7 @@ export = {
         "@typescript-eslint/no-unsafe-enum-comparison": "off",
         "@typescript-eslint/no-unsafe-member-access": "off",
         "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/no-unsafe-unary-minus": "error",
         "@typescript-eslint/no-unused-expressions": [
             "error",
             {
@@ -194,12 +196,15 @@ export = {
         "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false }],
         "@typescript-eslint/no-useless-constructor": "error",
         "@typescript-eslint/no-useless-empty-export": "error",
+        "@typescript-eslint/no-useless-template-literals": "error",
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/non-nullable-type-assertion-style": "error",
         "@typescript-eslint/object-curly-spacing": ["error", "always"],
+        "@typescript-eslint/only-throw-error": "error",
         "@typescript-eslint/padding-line-between-statements": "off",
         "@typescript-eslint/prefer-as-const": "off",
         "@typescript-eslint/prefer-enum-initializers": "off",
+        "@typescript-eslint/prefer-find": "error",
         "@typescript-eslint/prefer-for-of": "off",
         "@typescript-eslint/prefer-function-type": "off",
         "@typescript-eslint/prefer-includes": "error",
@@ -207,6 +212,7 @@ export = {
         "@typescript-eslint/prefer-namespace-keyword": "error",
         "@typescript-eslint/prefer-nullish-coalescing": "error",
         "@typescript-eslint/prefer-optional-chain": "off",
+        "@typescript-eslint/prefer-promise-reject-errors": "error",
         "@typescript-eslint/prefer-readonly-parameter-types": "off",
         "@typescript-eslint/prefer-readonly": "off",
         "@typescript-eslint/prefer-reduce-type-parameter": "error",
@@ -231,7 +237,8 @@ export = {
         "@typescript-eslint/type-annotation-spacing": "error",
         "@typescript-eslint/typedef": "off",
         "@typescript-eslint/unbound-method": "off",
-        "@typescript-eslint/unified-signatures": "off"
+        "@typescript-eslint/unified-signatures": "off",
+        "@typescript-eslint/use-unknown-in-catch-callback-variable": "off"
     },
     "overrides": [
         {
@@ -248,6 +255,9 @@ export = {
 
                 // Checked by @typescript-eslint
                 "comma-spacing": "off",
+
+                // Checked by @typescript-eslint
+                "consistent-return": "off",
 
                 // Checked by @typescript-eslint
                 "default-param-last": "off",
@@ -308,6 +318,9 @@ export = {
 
                 // Checked by @typescript-eslint
                 "object-curly-spacing": "off",
+
+                // Checked by @typescript-eslint
+                "prefer-promise-reject-errors": "off",
 
                 // Checked by @typescript-eslint
                 "quotes": "off",
