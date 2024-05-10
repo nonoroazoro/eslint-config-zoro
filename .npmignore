@@ -1,6 +1,6 @@
 # Node files
 node_modules
-yarn.lock
+pnpm-lock.yaml
 
 # Editor files
 .vscode
