@@ -11,13 +11,6 @@ export = {
         "@typescript-eslint/await-thenable": "error",
         "@typescript-eslint/ban-ts-comment": "warn",
         "@typescript-eslint/ban-tslint-comment": "warn",
-        "@typescript-eslint/ban-types": [
-            "error",
-            {
-                "types": { "Function": false },
-                "extendDefaults": true
-            }
-        ],
         "@typescript-eslint/block-spacing": ["error", "always"],
         "@typescript-eslint/brace-style": ["error", "allman", { "allowSingleLine": true }],
         "@typescript-eslint/class-literal-property-style": "off",
@@ -117,6 +110,7 @@ export = {
         "@typescript-eslint/no-base-to-string": "error",
         "@typescript-eslint/no-confusing-non-null-assertion": "error",
         "@typescript-eslint/no-confusing-void-expression": "error",
+        "@typescript-eslint/no-deprecated": "error",
         "@typescript-eslint/no-dupe-class-members": "error",
         "@typescript-eslint/no-duplicate-enum-values": "error",
         "@typescript-eslint/no-duplicate-type-constituents": "error",
@@ -132,7 +126,7 @@ export = {
                 ]
             }
         ],
-        "@typescript-eslint/no-empty-interface": ["error", { "allowSingleExtends": true }],
+        "@typescript-eslint/no-empty-object-type": ["error", { "allowInterfaces": "with-single-extends" }],
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-extra-non-null-assertion": "error",
         "@typescript-eslint/no-extra-parens": ["error", "functions"],
@@ -146,7 +140,6 @@ export = {
         "@typescript-eslint/no-invalid-this": "off",
         "@typescript-eslint/no-invalid-void-type": "error",
         "@typescript-eslint/no-loop-func": "error",
-        "@typescript-eslint/no-loss-of-precision": "error",
         "@typescript-eslint/no-magic-numbers": "off",
         "@typescript-eslint/no-meaningless-void-operator": "error",
         "@typescript-eslint/no-misused-new": "error",
@@ -160,20 +153,30 @@ export = {
         "@typescript-eslint/no-redundant-type-constituents": "error",
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-restricted-imports": "off",
+        "@typescript-eslint/no-restricted-types": [
+            "error",
+            {
+                "types": { "Function": false }
+            }
+        ],
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
         "@typescript-eslint/no-type-alias": "off",
         "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
         "@typescript-eslint/no-unnecessary-condition": "off",
+        "@typescript-eslint/no-unnecessary-parameter-property-assignment": "error",
         "@typescript-eslint/no-unnecessary-qualifier": "error",
+        "@typescript-eslint/no-unnecessary-template-expression": "error",
         "@typescript-eslint/no-unnecessary-type-arguments": "off",
         "@typescript-eslint/no-unnecessary-type-assertion": "error",
         "@typescript-eslint/no-unnecessary-type-constraint": "error",
+        "@typescript-eslint/no-unnecessary-type-parameters": "error",
         "@typescript-eslint/no-unsafe-argument": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unsafe-declaration-merging": "error",
         "@typescript-eslint/no-unsafe-enum-comparison": "off",
+        "@typescript-eslint/no-unsafe-function-type": "error",
         "@typescript-eslint/no-unsafe-member-access": "off",
         "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/no-unsafe-unary-minus": "error",
@@ -196,8 +199,8 @@ export = {
         "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false }],
         "@typescript-eslint/no-useless-constructor": "error",
         "@typescript-eslint/no-useless-empty-export": "error",
-        "@typescript-eslint/no-useless-template-literals": "error",
         "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-wrapper-object-types": "error",
         "@typescript-eslint/non-nullable-type-assertion-style": "error",
         "@typescript-eslint/object-curly-spacing": ["error", "always"],
         "@typescript-eslint/only-throw-error": "error",
@@ -219,7 +222,6 @@ export = {
         "@typescript-eslint/prefer-regexp-exec": "off",
         "@typescript-eslint/prefer-return-this-type": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
-        "@typescript-eslint/prefer-ts-expect-error": "off",
         "@typescript-eslint/promise-function-async": "off",
         "@typescript-eslint/quotes": ["error", "double", { "avoidEscape": true, "allowTemplateLiterals": true }],
         "@typescript-eslint/require-array-sort-compare": "error",
@@ -296,12 +298,9 @@ export = {
                 "no-loop-func": "off",
 
                 // Checked by @typescript-eslint
-                "no-loss-of-precision": "off",
-
-                // Checked by @typescript-eslint
                 "no-shadow": "off",
 
-                // Checked by @typescript-eslint
+                // Checked by @typescript-eslint/only-throw-error
                 "no-throw-literal": "off",
 
                 // Checked by @typescript-eslint

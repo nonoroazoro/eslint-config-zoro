@@ -158,7 +158,8 @@ module.exports = {
         "react/jsx-fragments": "off",
         "react/jsx-pascal-case": "error",
         "react/jsx-props-no-multi-spaces": "error",
-        "react/jsx-props-no-spreading": "off",
+        "react/jsx-props-no-spread-multi": "error",
+        "react/jsx-props-no-spreading": "error",
         "react/jsx-sort-default-props": "off",
         "react/jsx-sort-props": "off",
         "react/jsx-tag-spacing": [

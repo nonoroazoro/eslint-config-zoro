@@ -25,7 +25,7 @@ export = {
         "no-dupe-class-members": "error",
         "no-dupe-else-if": "error",
         "no-duplicate-imports": "error",
-        "no-new-symbol": "error",
+        "no-new-native-nonconstructor": "error",
         "no-restricted-imports": "off",
         "no-this-before-super": "error",
         "no-useless-computed-key": "error",
