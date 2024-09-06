@@ -1,7 +1,12 @@
+import stylistic from '@stylistic/eslint-plugin'
+
 /**
  * See https://eslint.style/rules
  */
 export default {
+    "plugins": {
+        '@stylistic': stylistic
+    },
     "rules": {
         "jsx-child-element-spacing": "off",
         "jsx-closing-bracket-location": ["error", "line-aligned"],

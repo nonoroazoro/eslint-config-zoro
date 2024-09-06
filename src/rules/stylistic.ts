@@ -1,7 +1,12 @@
+import stylistic from '@stylistic/eslint-plugin'
+
 /**
  * See https://eslint.style/rules
  */
 export default {
+    "plugins": {
+        '@stylistic': stylistic
+    },
     "rules": {
         "array-bracket-newline": ["error", "consistent"],
         "array-bracket-spacing": ["error", "never"],
@@ -11,7 +16,9 @@ export default {
         "block-spacing": ["error", "always"],
         "brace-style": ["error", "allman", { "allowSingleLine": true }],
         "comma-dangle": ["error", "never"],
+        "comma-spacing": ["error", { "before": false, "after": true }],
         "computed-property-spacing": ["error", "never"],
+        "comma-style": ["error", "last"],
         "dot-location": "error",
         "eol-last": "error",
         "func-call-spacing": ["error", "never"],
