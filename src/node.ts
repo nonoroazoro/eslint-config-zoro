@@ -1,10 +1,20 @@
 /**
  * Includes `Node` rules.
  */
-export = {
-    "extends": require.resolve("./rules/node"),
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    }
+export default {
+    "extends": [
+        "./rules/node/best-practices",
+        "./rules/node/possible-errors",
+        "./rules/node/stylistic-issues"
+    ].map(path => require.resolve(path)),
+    "env": {
+        "node": true
+    },
+    "ignores": [
+        "*.jsx",
+        "*.tsx"
+    ],
+    "plugins": [
+        "node"
+    ]
 };
