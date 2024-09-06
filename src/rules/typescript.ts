@@ -2,6 +2,7 @@
  * See https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
  */
 export default {
+    "parser": "@typescript-eslint/parser",
     "plugins": [
         "@typescript-eslint"
     ],
