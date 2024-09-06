@@ -1,16 +1,17 @@
 /**
  * Includes `React` rules.
  */
-export = {
+export default {
     "extends": [
-        "./rules/react",
-        "./rules/react-hooks"
-    ].map((path) => require.resolve(path)),
+        "./rules/react/react",
+        "./rules/react/react-hooks"
+    ].map(path => require.resolve(path)),
     "env": {
         "browser": true
     },
     "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        "ecmaFeatures": {
+            "jsx": true
+        }
     }
 };
