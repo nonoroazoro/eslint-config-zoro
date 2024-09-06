@@ -8,10 +8,10 @@ export default {
         '@stylistic': stylistic
     },
     "rules": {
-        "jsx-child-element-spacing": "off",
-        "jsx-closing-bracket-location": ["error", "line-aligned"],
-        "jsx-closing-tag-location": "error",
-        "jsx-curly-brace-presence": [
+        "@stylistic/jsx-child-element-spacing": "off",
+        "@stylistic/jsx-closing-bracket-location": ["error", "line-aligned"],
+        "@stylistic/jsx-closing-tag-location": "error",
+        "@stylistic/jsx-curly-brace-presence": [
             "error",
             {
                 "children": "never",
@@ -19,22 +19,22 @@ export default {
                 "props": "never"
             }
         ],
-        "jsx-curly-newline": ["error", "consistent"],
-        "jsx-curly-spacing": ["error", "never", { "allowMultiline": true }],
-        "jsx-equals-spacing": ["error", "never"],
-        "jsx-first-prop-new-line": ["error", "multiline"],
-        "jsx-function-call-newline": ["error", "multiline"],
-        "jsx-indent": ["error", 4],
-        "jsx-indent-props": ["error", 4],
-        "jsx-max-props-per-line": "off",
-        "jsx-newline": "off",
-        "jsx-one-expression-per-line": "off",
-        "jsx-pascal-case": "error",
-        "jsx-props-no-multi-spaces": "error",
-        "jsx-quotes": ["error", "prefer-double"],
-        "jsx-self-closing-comp": "error",
-        "jsx-sort-props": "off",
-        "jsx-tag-spacing": [
+        "@stylistic/jsx-curly-newline": ["error", "consistent"],
+        "@stylistic/jsx-curly-spacing": ["error", "never", { "allowMultiline": true }],
+        "@stylistic/jsx-equals-spacing": ["error", "never"],
+        "@stylistic/jsx-first-prop-new-line": ["error", "multiline"],
+        "@stylistic/jsx-function-call-newline": ["error", "multiline"],
+        "@stylistic/jsx-indent": ["error", 4],
+        "@stylistic/jsx-indent-props": ["error", 4],
+        "@stylistic/jsx-max-props-per-line": "off",
+        "@stylistic/jsx-newline": "off",
+        "@stylistic/jsx-one-expression-per-line": "off",
+        "@stylistic/jsx-pascal-case": "error",
+        "@stylistic/jsx-props-no-multi-spaces": "error",
+        "@stylistic/jsx-quotes": ["error", "prefer-double"],
+        "@stylistic/jsx-self-closing-comp": "error",
+        "@stylistic/jsx-sort-props": "off",
+        "@stylistic/jsx-tag-spacing": [
             "error",
             {
                 "afterOpening": "never",
@@ -43,7 +43,7 @@ export default {
                 "closingSlash": "never"
             }
         ],
-        "jsx-wrap-multilines": [
+        "@stylistic/jsx-wrap-multilines": [
             "error",
             {
                 "declaration": "parens-new-line",
