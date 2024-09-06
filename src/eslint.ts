@@ -1,7 +1,7 @@
 /**
  * Includes `ESLint` rules.
  */
-export = {
+export default {
     "extends": [
         "./rules/eslint/layout-formatting",
         "./rules/eslint/possible-problems",
