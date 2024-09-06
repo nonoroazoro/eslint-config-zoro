@@ -6,6 +6,7 @@ export default {
         "./eslint",
         "./node",
         "./react",
+        "./stylistic",
         "./typescript"
     ].map(path => require.resolve(path))
 };
