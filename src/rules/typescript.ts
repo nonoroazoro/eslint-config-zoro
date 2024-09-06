@@ -1,7 +1,7 @@
 /**
- * https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin/docs/rules
+ * See https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
  */
-export = {
+export default {
     "plugins": [
         "@typescript-eslint"
     ],
@@ -244,8 +244,8 @@ export = {
     },
     "overrides": [
         {
-            files: ["*.ts", "*.tsx"],
-            rules: {
+            "files": ["*.ts", "*.tsx"],
+            "rules": {
                 // Checked by @typescript-eslint
                 "block-spacing": "off",
 
@@ -383,8 +383,8 @@ export = {
             }
         },
         {
-            files: ["*.js", "*.jsx"],
-            rules: {
+            "files": ["*.js", "*.jsx"],
+            "rules": {
                 // Disabled in vanilla JavaScript files
                 "@typescript-eslint/no-shadow": "off",
                 "@typescript-eslint/prefer-nullish-coalescing": "off",

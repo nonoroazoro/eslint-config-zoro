@@ -1,14 +1,10 @@
 /**
  * Includes `TypeScript` rules.
  */
-export = {
+export default {
     "extends": require.resolve("./rules/typescript"),
     "env": {
         "browser": true
     },
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    }
+    "parser": "@typescript-eslint/parser"
 };
