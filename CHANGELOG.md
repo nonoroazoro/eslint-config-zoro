@@ -1,8 +1,14 @@
 # Changelogs
 
+## 7.0.0-beta.3 - September 09, 2024
+
+- Fix: Fix index.
+
+
 ## 7.0.0-beta.2 - September 09, 2024
 
 - Fix: Fix package.json.
+
 
 ## 7.0.0-beta.1 - September 09, 2024
 
