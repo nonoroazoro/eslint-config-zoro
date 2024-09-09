@@ -1,7 +1,7 @@
 /**
  * See https://eslint.org/docs/latest/rules/#suggestions
  */
-export default {
+export const SUGGESTIONS = {
     "rules": {
         "accessor-pairs": "off",
         "arrow-body-style": "off",

@@ -1,13 +1,16 @@
-/**
- * Includes `ESLint` rules.
- */
-export default {
-    "extends": [
-        "./rules/eslint/layout-formatting",
-        "./rules/eslint/possible-problems",
-        "./rules/eslint/suggestions"
-    ].map(path => require.resolve(path)),
-    "env": {
-        "browser": true
+import { browser } from "globals";
+
+import { LAYOUT_FORMATTING, POSSIBLE_PROBLEMS, SUGGESTIONS } from "./rules/eslint";
+
+export const ESLINT_CONFIGS = [
+    LAYOUT_FORMATTING,
+    POSSIBLE_PROBLEMS,
+    SUGGESTIONS,
+    {
+        languageOptions: {
+            globals: {
+                ...browser
+            }
+        }
     }
-};
+];

@@ -1,8 +1,13 @@
 /**
  * https://eslint.org/docs/latest/rules/#layout--formatting
  */
-export default {
+export const LAYOUT_FORMATTING = {
     "rules": {
         "unicode-bom": ["error", "never"]
     }
 };
+
+function a()
+{
+    debugger;
+}

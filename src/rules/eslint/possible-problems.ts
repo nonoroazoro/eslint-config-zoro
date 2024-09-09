@@ -1,7 +1,7 @@
 /**
  * See https://eslint.org/docs/latest/rules/#possible-problems
  */
-export default {
+export const POSSIBLE_PROBLEMS = {
     "rules": {
         "array-callback-return": "error",
         "constructor-super": "error",
