@@ -1,4 +1,4 @@
-import rules = require("../src/node");
+import * as rules from "../src/node";
 
 describe("rules", () =>
 {

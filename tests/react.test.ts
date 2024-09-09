@@ -1,4 +1,4 @@
-import rules = require("../src/react");
+import * as rules from "../src/react";
 
 describe("rules", () =>
 {

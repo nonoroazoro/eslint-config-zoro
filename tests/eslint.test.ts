@@ -1,4 +1,4 @@
-import rules = require("../src/eslint");
+import * as rules from "../src/eslint";
 
 describe("rules", () =>
 {

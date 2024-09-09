@@ -1,4 +1,4 @@
-import rules = require("../src/typescript");
+import * as rules from "../src/typescript";
 
 describe("rules", () =>
 {
