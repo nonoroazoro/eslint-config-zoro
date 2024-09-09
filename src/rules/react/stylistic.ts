@@ -1,13 +1,13 @@
-import stylistic from '@stylistic/eslint-plugin'
+import * as plugin from '@stylistic/eslint-plugin'
 
 /**
  * See https://eslint.style/rules
  */
-export default {
-    "plugins": {
-        '@stylistic': stylistic
+export const STYLISTIC = {
+    plugins: {
+        "@stylistic": plugin
     },
-    "rules": {
+    rules: {
         "@stylistic/jsx-child-element-spacing": "off",
         "@stylistic/jsx-closing-bracket-location": ["error", "line-aligned"],
         "@stylistic/jsx-closing-tag-location": "error",

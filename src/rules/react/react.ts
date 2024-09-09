@@ -1,11 +1,14 @@
+// @ts-ignore
+import * as plugin from "eslint-plugin-react";
+
 /**
  * See https://github.com/yannickcr/eslint-plugin-react
  */
-export default {
-    "plugins": [
-        "react"
-    ],
-    "rules": {
+export const REACT = {
+    plugins: {
+        react: plugin
+    },
+    rules: {
         "react/boolean-prop-naming": "error",
         "react/button-has-type": "error",
         "react/default-props-match-prop-types": "error",
@@ -139,10 +142,10 @@ export default {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
     },
-    "overrides": [
+    overrides: [
         {
-            "files": ["*.tsx"],
-            "rules": {
+            files: ["*.tsx"],
+            rules: {
                 // Checked by react/sort-comp
                 "@typescript-eslint/member-ordering": "off",
 
@@ -151,10 +154,10 @@ export default {
             }
         }
     ],
-    "settings": {
-        "react": {
-            "pragma": "React",
-            "version": "detect"
+    settings: {
+        react: {
+            pragma: "React",
+            version: "detect"
         }
     }
 };
