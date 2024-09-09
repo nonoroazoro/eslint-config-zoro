@@ -5,6 +5,7 @@ module.exports = {
         "index.js",
         "jest.config.js",
         "react.js",
+        "stylistic.js",
         "typescript.js",
     ]
 };

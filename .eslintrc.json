@@ -1,6 +1,7 @@
 {
     "extends": [
         "./dist/eslint.js",
+        "./dist/stylistic.js",
         "./dist/typescript.js"
     ],
     "env": {
