@@ -27,15 +27,19 @@
 - Node rules:
     1. [Node](https://github.com/mysticatea/eslint-plugin-node/tree/master/docs/rules)
 
+- Stylistic rules:
+    1. [Stylistic](https://eslint.style/rules)
+
 ## Usage
 
-This package contains `five` configurations for your usage:
+This package contains `six` configurations for your usage:
 
 1. **[default](#1-eslint-config-zoro)**: Consists of `all` the rules.
 1. **[eslint](#2-eslint-config-zoroeslint)**: Consists of the `ESLint` rules.
 1. **[react](#3-eslint-config-zororeact)**: Consists of the `React` rules.
 1. **[typescript](#4-eslint-config-zorotypescript)**: Consists of the `TypeScript` rules.
 1. **[node](#5-eslint-config-zoronode)**: Consists of the `Node` rules.
+1. **[stylistic](#6-eslint-config-zorostylistic)**: Consists of the `Stylistic` rules.
 
 The simplest usage is to extend the default configuration in your `.eslintrc.json` as the followings:
 
@@ -45,13 +49,14 @@ The simplest usage is to extend the default configuration in your `.eslintrc.jso
 }
 ```
 
-You can also extend with any combination of `the last four rules`, such as:
+You can also extend with any combination of `the last five rules`, such as:
 
 ```json
 {
     "extends": [
         "eslint-config-zoro/eslint",
         "eslint-config-zoro/react",
+        "eslint-config-zoro/stylistic",
         "eslint-config-zoro/typescript"
     ]
 }
@@ -147,6 +152,24 @@ This configuration only contains the `Node` rules.
     }
     ```
 
+### 6. eslint-config-zoro/stylistic
+
+This configuration only contains the `Stylistic` rules.
+
+1. Install:
+
+    ```sh
+    npm i -D eslint-config-zoro eslint @stylistic/eslint-plugin
+    ```
+
+1. In your `.eslintrc.json` file, add:
+
+    ```json
+    {
+        "extends": "eslint-config-zoro/stylistic"
+    }
+    ```
+
 ## Where to ask for help?
 
 - [ESLint Rules](http://eslint.org/docs/rules)
@@ -154,3 +177,4 @@ This configuration only contains the `Node` rules.
 - [ESLint Rules - React Hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
 - [ESLint Rules - TypeScript](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin)
 - [ESLint Rules - Node](https://github.com/mysticatea/eslint-plugin-node)
+- [ESLint Rules - Stylistic](https://eslint.style/rules)
