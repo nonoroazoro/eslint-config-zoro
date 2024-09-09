@@ -1,14 +1,11 @@
 {
     "compilerOptions": {
         "outDir": "dist",
-        "module": "commonjs",
-        "target": "es2017",
-        "lib": [
-            "es2017"
-        ],
+        "module": "CommonJS",
+        "target": "ESNext",
+        "moduleResolution": "Node",
         "declaration": false,
         "sourceMap": false,
-        "moduleResolution": "node",
         "allowUnreachableCode": true,
         "experimentalDecorators": true,
         "noImplicitAny": true,
@@ -19,7 +16,10 @@
         "pretty": true,
         "skipLibCheck": true,
         "strictBindCallApply": true,
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "lib": [
+            "ESNext"
+        ]
     },
     "include": [
         "src",
