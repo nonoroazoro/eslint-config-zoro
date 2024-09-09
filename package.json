@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zoro",
-  "version": "7.0.0-beta.1",
+  "version": "7.0.0-beta.2",
   "description": "A fully customized ESLint configuration based on the default ESLint, React and TypeScript rules.",
   "main": "./dist/index.js",
   "author": {
