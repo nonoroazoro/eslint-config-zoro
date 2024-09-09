@@ -2,7 +2,7 @@
   "name": "eslint-config-zoro",
   "version": "7.0.0-beta.1",
   "description": "A fully customized ESLint configuration based on the default ESLint, React and TypeScript rules.",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "author": {
     "name": "nonoroazoro",
     "email": "xiaochao.k@gmail.com"
