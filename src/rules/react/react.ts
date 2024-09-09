@@ -108,24 +108,11 @@ export default {
         "react/static-property-placement": "error",
         "react/style-prop-object": "error",
         "react/void-dom-elements-no-children": "error",
-
-
         "react/jsx-boolean-value": ["error", "never"],
-        "react/jsx-child-element-spacing": "off",
-        "react/jsx-closing-bracket-location": ["error", "line-aligned"],
-        "react/jsx-closing-tag-location": "error",
-        "react/jsx-curly-newline": ["error", "consistent"],
-        "react/jsx-curly-spacing": ["error", "never", { "allowMultiline": true }],
-        "react/jsx-equals-spacing": ["error", "never"],
         "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
-        "react/jsx-first-prop-new-line": ["error", "multiline"],
         "react/jsx-handler-names": "off",
-        "react/jsx-indent": ["error", 4],
-        "react/jsx-indent-props": ["error", 4],
         "react/jsx-key": ["error", { "checkKeyMustBeforeSpread": true, "warnOnDuplicates": true }],
         "react/jsx-max-depth": "off",
-        "react/jsx-max-props-per-line": "off",
-        "react/jsx-newline": "off",
         "react/jsx-no-bind": [
             "error",
             {
@@ -145,45 +132,12 @@ export default {
         "react/jsx-no-target-blank": "error",
         "react/jsx-no-undef": "error",
         "react/jsx-no-useless-fragment": "error",
-        "react/jsx-one-expression-per-line": "off",
-        "react/jsx-curly-brace-presence": [
-            "error",
-            {
-                "children": "never",
-                "propElementValues": "always",
-                "props": "never"
-            }
-        ],
         "react/jsx-fragments": "off",
-        "react/jsx-pascal-case": "error",
-        "react/jsx-props-no-multi-spaces": "error",
         "react/jsx-props-no-spread-multi": "error",
         "react/jsx-props-no-spreading": "error",
         "react/jsx-sort-default-props": "off",
-        "react/jsx-sort-props": "off",
-        "react/jsx-tag-spacing": [
-            "error",
-            {
-                "afterOpening": "never",
-                "beforeClosing": "never",
-                "beforeSelfClosing": "always",
-                "closingSlash": "never"
-            }
-        ],
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
-        "react/jsx-wrap-multilines": [
-            "error",
-            {
-                "declaration": "parens-new-line",
-                "assignment": "parens-new-line",
-                "return": "parens-new-line",
-                "arrow": "parens-new-line",
-                "condition": "parens-new-line",
-                "logical": "parens-new-line",
-                "prop": "parens-new-line"
-            }
-        ]
     },
     "overrides": [
         {
