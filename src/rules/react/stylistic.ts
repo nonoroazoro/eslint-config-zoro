@@ -1,4 +1,4 @@
-import * as plugin from '@stylistic/eslint-plugin'
+import * as plugin from "@stylistic/eslint-plugin";
 
 /**
  * See https://eslint.style/rules
@@ -57,4 +57,4 @@ export const STYLISTIC = {
             }
         ]
     }
-}
+};

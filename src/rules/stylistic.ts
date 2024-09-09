@@ -1,11 +1,11 @@
-import * as stylistic from '@stylistic/eslint-plugin'
+import * as plugin from "@stylistic/eslint-plugin";
 
 /**
  * See https://eslint.style/rules
  */
 export const STYLISTIC = {
     plugins: {
-        "@stylistic": stylistic
+        "@stylistic": plugin
     },
     rules: {
         "@stylistic/array-bracket-newline": ["error", "consistent"],
@@ -108,4 +108,4 @@ export const STYLISTIC = {
         "@stylistic/wrap-regex": "off",
         "@stylistic/yield-star-spacing": ["error", "after"]
     }
-}
+};
