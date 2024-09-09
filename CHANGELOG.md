@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.0.0-beta.1 - September 09, 2024
+
+- Fix: Fix all issues introduced by Eslint 9.
+
+
 ## 7.0.0-beta.0 - September 09, 2024
 
 - Added: Add `@stylistic/eslint-plugin`.
