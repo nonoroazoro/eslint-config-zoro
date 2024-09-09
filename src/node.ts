@@ -3,8 +3,9 @@ import { node } from "globals";
 import * as plugin from "eslint-plugin-node";
 
 import { BEST_PRACTICES, POSSIBLE_ERRORS, STYLISTIC_ISSUES } from "./rules/node";
+import type { Config } from "./types";
 
-export const NODE_CONFIGS = [
+export const NODE_CONFIGS: Config[] = [
     BEST_PRACTICES,
     POSSIBLE_ERRORS,
     STYLISTIC_ISSUES,

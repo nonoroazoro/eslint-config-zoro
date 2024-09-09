@@ -2,10 +2,12 @@
 import * as parser from "@typescript-eslint/parser";
 import * as plugin from "@typescript-eslint/eslint-plugin";
 
+import type { Config } from "../types";
+
 /**
  * See https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
  */
-export const TYPESCRIPT = {
+export const TYPESCRIPT: Config = {
     languageOptions: {
         parser
     },

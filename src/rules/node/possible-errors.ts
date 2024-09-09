@@ -1,8 +1,10 @@
+import type { Config } from "../../types";
+
 /**
  * See https://github.com/mysticatea/eslint-plugin-node#possible-errors
  */
-export const POSSIBLE_ERRORS = {
-    "rules": {
+export const POSSIBLE_ERRORS: Config = {
+    rules: {
         "node/handle-callback-err": "off",
         "node/no-callback-literal": "error",
         "node/no-exports-assign": "error",

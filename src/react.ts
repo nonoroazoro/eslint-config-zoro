@@ -1,8 +1,9 @@
 import { browser } from "globals";
 
 import { REACT, REACT_HOOKS, STYLISTIC } from "./rules/react";
+import type { Config } from "./types";
 
-export const REACT_CONFIGS = [
+export const REACT_CONFIGS: Config[] = [
     REACT,
     REACT_HOOKS,
     STYLISTIC,

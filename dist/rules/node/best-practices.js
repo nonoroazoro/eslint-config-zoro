@@ -5,7 +5,7 @@ exports.BEST_PRACTICES = void 0;
  * See https://github.com/mysticatea/eslint-plugin-node#best-practices
  */
 exports.BEST_PRACTICES = {
-    "rules": {
+    rules: {
         "node/no-deprecated-api": "error"
     }
 };

@@ -1,8 +1,10 @@
+import type { Config } from "../../types";
+
 /**
  * See https://eslint.org/docs/latest/rules/#suggestions
  */
-export const SUGGESTIONS = {
-    "rules": {
+export const SUGGESTIONS: Config = {
+    rules: {
         "accessor-pairs": "off",
         "arrow-body-style": "off",
         "block-scoped-var": "error",

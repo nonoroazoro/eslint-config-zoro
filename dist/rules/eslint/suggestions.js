@@ -5,7 +5,7 @@ exports.SUGGESTIONS = void 0;
  * See https://eslint.org/docs/latest/rules/#suggestions
  */
 exports.SUGGESTIONS = {
-    "rules": {
+    rules: {
         "accessor-pairs": "off",
         "arrow-body-style": "off",
         "block-scoped-var": "error",

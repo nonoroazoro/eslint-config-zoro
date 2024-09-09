@@ -1,10 +1,12 @@
 // @ts-ignore
 import * as plugin from "eslint-plugin-react";
 
+import type { Config } from "../../types";
+
 /**
  * See https://github.com/yannickcr/eslint-plugin-react
  */
-export const REACT = {
+export const REACT: Config = {
     plugins: {
         react: plugin
     },

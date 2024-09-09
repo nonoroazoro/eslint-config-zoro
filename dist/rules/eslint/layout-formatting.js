@@ -5,7 +5,7 @@ exports.LAYOUT_FORMATTING = void 0;
  * https://eslint.org/docs/latest/rules/#layout--formatting
  */
 exports.LAYOUT_FORMATTING = {
-    "rules": {
+    rules: {
         "unicode-bom": ["error", "never"]
     }
 };

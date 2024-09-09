@@ -5,7 +5,7 @@ exports.STYLISTIC_ISSUES = void 0;
  * See https://github.com/mysticatea/eslint-plugin-node#stylistic-issues
  */
 exports.STYLISTIC_ISSUES = {
-    "rules": {
+    rules: {
         "node/callback-return": "off",
         "node/exports-style": "error",
         "node/file-extension-in-import": "off",

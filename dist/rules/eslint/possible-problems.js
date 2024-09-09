@@ -5,7 +5,7 @@ exports.POSSIBLE_PROBLEMS = void 0;
  * See https://eslint.org/docs/latest/rules/#possible-problems
  */
 exports.POSSIBLE_PROBLEMS = {
-    "rules": {
+    rules: {
         "array-callback-return": "error",
         "constructor-super": "error",
         "for-direction": "off",

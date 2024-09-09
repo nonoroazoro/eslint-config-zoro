@@ -1,8 +1,10 @@
+import type { Config } from "../../types";
+
 /**
  * See https://eslint.org/docs/latest/rules/#possible-problems
  */
-export const POSSIBLE_PROBLEMS = {
-    "rules": {
+export const POSSIBLE_PROBLEMS: Config = {
+    rules: {
         "array-callback-return": "error",
         "constructor-super": "error",
         "for-direction": "off",

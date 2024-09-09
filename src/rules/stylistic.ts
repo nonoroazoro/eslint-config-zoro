@@ -1,11 +1,13 @@
 import * as plugin from "@stylistic/eslint-plugin";
 
+import type { Config, Plugin } from "../types";
+
 /**
  * See https://eslint.style/rules
  */
-export const STYLISTIC = {
+export const STYLISTIC: Config = {
     plugins: {
-        "@stylistic": plugin
+        "@stylistic": plugin as Plugin
     },
     rules: {
         "@stylistic/array-bracket-newline": ["error", "consistent"],

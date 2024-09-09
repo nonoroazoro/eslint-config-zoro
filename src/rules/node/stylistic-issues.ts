@@ -1,8 +1,10 @@
+import type { Config } from "../../types";
+
 /**
  * See https://github.com/mysticatea/eslint-plugin-node#stylistic-issues
  */
-export const STYLISTIC_ISSUES = {
-    "rules": {
+export const STYLISTIC_ISSUES: Config = {
+    rules: {
         "node/callback-return": "off",
         "node/exports-style": "error",
         "node/file-extension-in-import": "off",

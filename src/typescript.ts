@@ -1,8 +1,9 @@
 import { browser } from "globals";
 
 import { TYPESCRIPT } from "./rules/typescript";
+import type { Config } from "./types";
 
-export const TYPESCRIPT_CONFIGS = [
+export const TYPESCRIPT_CONFIGS: Config[] = [
     TYPESCRIPT,
     {
         files: ["*.ts", "*.tsx"],
