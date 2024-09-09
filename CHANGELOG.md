@@ -1,5 +1,12 @@
 # Changelogs
 
+## 7.0.0-beta.0 - September 09, 2024
+
+- Added: Add `@stylistic/eslint-plugin`.
+
+- Changed: Synchronize version with `@typescript-eslint`.
+
+
 ## 6.1.0 - May 10, 2024
 
 - Changed: Synchronize version with `@typescript-eslint`.
