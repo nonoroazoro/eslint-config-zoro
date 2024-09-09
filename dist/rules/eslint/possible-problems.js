@@ -1,9 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.POSSIBLE_PROBLEMS = void 0;
 /**
  * See https://eslint.org/docs/latest/rules/#possible-problems
  */
-exports.default = {
+exports.POSSIBLE_PROBLEMS = {
     "rules": {
         "array-callback-return": "error",
         "constructor-super": "error",

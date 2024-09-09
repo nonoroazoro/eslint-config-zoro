@@ -1,9 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.POSSIBLE_ERRORS = void 0;
 /**
  * See https://github.com/mysticatea/eslint-plugin-node#possible-errors
  */
-exports.default = {
+exports.POSSIBLE_ERRORS = {
     "rules": {
         "node/handle-callback-err": "off",
         "node/no-callback-literal": "error",

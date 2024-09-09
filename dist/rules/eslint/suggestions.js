@@ -1,9 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SUGGESTIONS = void 0;
 /**
  * See https://eslint.org/docs/latest/rules/#suggestions
  */
-exports.default = {
+exports.SUGGESTIONS = {
     "rules": {
         "accessor-pairs": "off",
         "arrow-body-style": "off",

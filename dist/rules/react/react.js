@@ -1,13 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.REACT = void 0;
+// @ts-ignore
+const plugin = require("eslint-plugin-react");
 /**
  * See https://github.com/yannickcr/eslint-plugin-react
  */
-exports.default = {
-    "plugins": [
-        "react"
-    ],
-    "rules": {
+exports.REACT = {
+    plugins: {
+        react: plugin
+    },
+    rules: {
         "react/boolean-prop-naming": "error",
         "react/button-has-type": "error",
         "react/default-props-match-prop-types": "error",
@@ -141,21 +144,10 @@ exports.default = {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
     },
-    "overrides": [
-        {
-            "files": ["*.tsx"],
-            "rules": {
-                // Checked by react/sort-comp
-                "@typescript-eslint/member-ordering": "off",
-                // Checked by typescript
-                "react/prop-types": "off"
-            }
-        }
-    ],
-    "settings": {
-        "react": {
-            "pragma": "React",
-            "version": "detect"
+    settings: {
+        react: {
+            pragma: "React",
+            version: "detect"
         }
     }
 };

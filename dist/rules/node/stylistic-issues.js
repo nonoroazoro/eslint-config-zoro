@@ -1,9 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.STYLISTIC_ISSUES = void 0;
 /**
  * See https://github.com/mysticatea/eslint-plugin-node#stylistic-issues
  */
-exports.default = {
+exports.STYLISTIC_ISSUES = {
     "rules": {
         "node/callback-return": "off",
         "node/exports-style": "error",

@@ -1,14 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const eslint_plugin_1 = require("@stylistic/eslint-plugin");
+exports.STYLISTIC = void 0;
+const plugin = require("@stylistic/eslint-plugin");
 /**
  * See https://eslint.style/rules
  */
-exports.default = {
-    "plugins": {
-        '@stylistic': eslint_plugin_1.default
+exports.STYLISTIC = {
+    plugins: {
+        "@stylistic": plugin
     },
-    "rules": {
+    rules: {
         "@stylistic/array-bracket-newline": ["error", "consistent"],
         "@stylistic/array-bracket-spacing": ["error", "never"],
         "@stylistic/array-element-newline": ["error", "consistent"],
