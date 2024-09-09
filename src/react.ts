@@ -7,6 +7,16 @@ export const REACT_CONFIGS = [
     REACT_HOOKS,
     STYLISTIC,
     {
+        files: ["*.tsx"],
+        rules: {
+            // Checked by react/sort-comp
+            "@typescript-eslint/member-ordering": "off",
+
+            // Checked by typescript
+            "react/prop-types": "off"
+        }
+    },
+    {
         languageOptions: {
             parserOptions: {
                 ecmaFeatures: {

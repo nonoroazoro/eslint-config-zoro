@@ -142,18 +142,6 @@ export const REACT = {
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
     },
-    overrides: [
-        {
-            files: ["*.tsx"],
-            rules: {
-                // Checked by react/sort-comp
-                "@typescript-eslint/member-ordering": "off",
-
-                // Checked by typescript
-                "react/prop-types": "off"
-            }
-        }
-    ],
     settings: {
         react: {
             pragma: "React",
