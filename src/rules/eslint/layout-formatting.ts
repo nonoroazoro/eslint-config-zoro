@@ -6,8 +6,3 @@ export const LAYOUT_FORMATTING = {
         "unicode-bom": ["error", "never"]
     }
 };
-
-function a()
-{
-    debugger;
-}
