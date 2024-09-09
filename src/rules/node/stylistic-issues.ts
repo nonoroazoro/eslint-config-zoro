@@ -1,7 +1,7 @@
 /**
  * See https://github.com/mysticatea/eslint-plugin-node#stylistic-issues
  */
-export default {
+export const STYLISTIC_ISSUES = {
     "rules": {
         "node/callback-return": "off",
         "node/exports-style": "error",

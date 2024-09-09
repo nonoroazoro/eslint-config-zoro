@@ -1,20 +1,21 @@
-/**
- * Includes `Node` rules.
- */
-export default {
-    "extends": [
-        "./rules/node/best-practices",
-        "./rules/node/possible-errors",
-        "./rules/node/stylistic-issues"
-    ].map(path => require.resolve(path)),
-    "env": {
-        "node": true
-    },
-    "ignores": [
-        "*.jsx",
-        "*.tsx"
-    ],
-    "plugins": [
-        "node"
-    ]
-};
+// TODO: import plugin from "eslint-plugin-node";
+import { node } from "globals";
+
+import { BEST_PRACTICES, POSSIBLE_ERRORS, STYLISTIC_ISSUES } from "./rules/node";
+
+export const NODE_CONFIGS = [
+    BEST_PRACTICES,
+    POSSIBLE_ERRORS,
+    STYLISTIC_ISSUES,
+    {
+        ignores: [
+            "*.jsx",
+            "*.tsx"
+        ],
+        languageOptions: {
+            globals: {
+                ...node
+            }
+        }
+    }
+];

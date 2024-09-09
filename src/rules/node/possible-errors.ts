@@ -1,7 +1,7 @@
 /**
  * See https://github.com/mysticatea/eslint-plugin-node#possible-errors
  */
-export default {
+export const POSSIBLE_ERRORS = {
     "rules": {
         "node/handle-callback-err": "off",
         "node/no-callback-literal": "error",
