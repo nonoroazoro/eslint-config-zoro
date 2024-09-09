@@ -1,9 +1,14 @@
-/**
- * Includes `Stylistic` rules.
- */
-export default {
-    "extends": require.resolve("./rules/stylistic"),
-    "env": {
-        "browser": true
+import { browser } from "globals";
+
+import { STYLISTIC } from "./rules/stylistic";
+
+export const STYLISTIC_CONFIGS = [
+    STYLISTIC,
+    {
+        languageOptions: {
+            globals: {
+                ...browser
+            }
+        }
     }
-}
+];

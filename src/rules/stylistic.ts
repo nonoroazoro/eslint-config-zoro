@@ -1,13 +1,13 @@
-import stylistic from '@stylistic/eslint-plugin'
+import * as stylistic from '@stylistic/eslint-plugin'
 
 /**
  * See https://eslint.style/rules
  */
-export default {
-    "plugins": {
-        '@stylistic': stylistic
+export const STYLISTIC = {
+    plugins: {
+        "@stylistic": stylistic
     },
-    "rules": {
+    rules: {
         "@stylistic/array-bracket-newline": ["error", "consistent"],
         "@stylistic/array-bracket-spacing": ["error", "never"],
         "@stylistic/array-element-newline": ["error", "consistent"],
