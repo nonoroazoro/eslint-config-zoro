@@ -1,13 +1,12 @@
 "use strict";
-module.exports = {
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * See https://www.npmjs.com/package/eslint-plugin-react-hooks
+ */
+exports.default = {
     "plugins": [
         "react-hooks"
     ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        }
-    },
     "rules": {
         "react-hooks/exhaustive-deps": "warn",
         "react-hooks/rules-of-hooks": "error"

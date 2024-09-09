@@ -1,14 +1,20 @@
 "use strict";
-module.exports = {
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * Includes `React` rules.
+ */
+exports.default = {
     "extends": [
-        "./rules/react",
-        "./rules/react-hooks"
-    ].map((path) => require.resolve(path)),
+        "./rules/react/react-hooks",
+        "./rules/react/react",
+        "./rules/react/stylistic"
+    ].map(path => require.resolve(path)),
     "env": {
         "browser": true
     },
     "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+        "ecmaFeatures": {
+            "jsx": true
+        }
     }
 };

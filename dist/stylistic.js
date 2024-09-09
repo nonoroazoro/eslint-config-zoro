@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
- * Includes `TypeScript` rules.
+ * Includes `Stylistic` rules.
  */
 exports.default = {
-    "extends": require.resolve("./rules/typescript"),
+    "extends": require.resolve("./rules/stylistic"),
     "env": {
         "browser": true
     }

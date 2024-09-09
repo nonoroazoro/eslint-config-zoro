@@ -1,5 +1,10 @@
 "use strict";
-module.exports = {
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * See https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
+ */
+exports.default = {
+    "parser": "@typescript-eslint/parser",
     "plugins": [
         "@typescript-eslint"
     ],
@@ -236,8 +241,8 @@ module.exports = {
     },
     "overrides": [
         {
-            files: ["*.ts", "*.tsx"],
-            rules: {
+            "files": ["*.ts", "*.tsx"],
+            "rules": {
                 // Checked by @typescript-eslint
                 "block-spacing": "off",
                 // Checked by @typescript-eslint
@@ -331,8 +336,8 @@ module.exports = {
             }
         },
         {
-            files: ["*.js", "*.jsx"],
-            rules: {
+            "files": ["*.js", "*.jsx"],
+            "rules": {
                 // Disabled in vanilla JavaScript files
                 "@typescript-eslint/no-shadow": "off",
                 "@typescript-eslint/prefer-nullish-coalescing": "off",

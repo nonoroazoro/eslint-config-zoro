@@ -1,17 +1,15 @@
 "use strict";
-module.exports = {
+Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * Includes `ESLint` rules.
+ */
+exports.default = {
     "extends": [
-        "./rules/best-practices",
-        "./rules/errors",
-        "./rules/style",
-        "./rules/variables",
-        "./rules/es6"
-    ].map((path) => require.resolve(path)),
+        "./rules/eslint/layout-formatting",
+        "./rules/eslint/possible-problems",
+        "./rules/eslint/suggestions"
+    ].map(path => require.resolve(path)),
     "env": {
         "browser": true
-    },
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
     }
 };
