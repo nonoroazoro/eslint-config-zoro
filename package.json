@@ -24,8 +24,8 @@
   "scripts": {
     "prepare": "husky",
     "prebuild": "npm run clean",
-    "build": "tsc -p tsconfig.prod.json",
-    "watch": "tsc -p tsconfig.prod.json -w",
+    "build": "tsc",
+    "watch": "tsc -w",
     "clean": "rimraf dist/*",
     "lint": "eslint src/**",
     "test": "jest --config jest.config.js",
