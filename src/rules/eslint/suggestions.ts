@@ -202,7 +202,7 @@ export const SUGGESTIONS: Config = {
         "prefer-template": "error",
         "radix": "error",
         "require-await": "off",
-        "require-unicode-regexp": "error",
+        "require-unicode-regexp": "off",
         "require-yield": "error",
         "sort-imports": "off",
         "sort-keys": "off",
