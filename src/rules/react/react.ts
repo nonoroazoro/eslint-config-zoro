@@ -1,5 +1,4 @@
-// @ts-ignore
-import * as plugin from "eslint-plugin-react";
+import plugin from "eslint-plugin-react";
 
 import type { Config } from "../../types";
 
@@ -21,6 +20,7 @@ export const REACT: Config = {
         "react/forbid-elements": "off",
         "react/forbid-foreign-prop-types": "error",
         "react/forbid-prop-types": ["error", { "forbid": ["any", "array", "object"] }],
+        "react/forward-ref-uses-ref": "error",
         "react/function-component-definition": "off",
         "react/hook-use-state": "error",
         "react/iframe-missing-sandbox": "error",
@@ -142,7 +142,7 @@ export const REACT: Config = {
         "react/jsx-props-no-spreading": "error",
         "react/jsx-sort-default-props": "off",
         "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error",
+        "react/jsx-uses-vars": "error"
     },
     settings: {
         react: {

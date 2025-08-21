@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
         "outDir": "dist",
-        "module": "CommonJS",
-        "target": "ESNext",
-        "moduleResolution": "Node",
+        "module": "esnext",
+        "target": "esnext",
+        "moduleResolution": "bundler",
         "declaration": false,
         "sourceMap": false,
         "allowUnreachableCode": true,
@@ -23,5 +23,9 @@
     },
     "include": [
         "src"
-    ]
+    ],
+    "tsc-alias": {
+        "resolveFullPaths": true,
+        "resolveFullExtension": ".js"
+    }
 }

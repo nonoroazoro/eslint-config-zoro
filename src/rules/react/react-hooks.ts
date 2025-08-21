@@ -1,5 +1,4 @@
-// @ts-ignore
-import * as plugin from "eslint-plugin-react-hooks"
+import * as plugin from "eslint-plugin-react-hooks";
 
 import type { Config } from "../../types";
 

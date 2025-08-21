@@ -4,7 +4,7 @@ import { REACT_CONFIGS as RAW_REACT_CONFIGS } from "./react";
 import { STYLISTIC_CONFIGS as RAW_STYLISTIC_CONFIGS } from "./stylistic";
 import { TYPESCRIPT_CONFIGS as RAW_TYPESCRIPT_CONFIGS } from "./typescript";
 
-// TODO: Node is not supported yet, fix after the eslint-plugin-node is updated.
+// TODO: Node is not supported yet, fix after the eslint-plugin-n is updated.
 
 /**
  * All configs, including eslint, node, react, stylistic, and typescript.
@@ -14,7 +14,7 @@ export const ALL_CONFIGS = [
     // ...RAW_NODE_CONFIGS,
     ...RAW_REACT_CONFIGS,
     ...RAW_STYLISTIC_CONFIGS,
-    ...RAW_TYPESCRIPT_CONFIGS,
+    ...RAW_TYPESCRIPT_CONFIGS
 ];
 
 /**

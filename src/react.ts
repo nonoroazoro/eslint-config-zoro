@@ -1,6 +1,8 @@
-import { browser } from "globals";
+import globals from "globals";
 
-import { REACT, REACT_HOOKS, STYLISTIC } from "./rules/react";
+import { REACT } from "./rules/react/react";
+import { REACT_HOOKS } from "./rules/react/react-hooks";
+import { STYLISTIC } from "./rules/react/stylistic";
 import type { Config } from "./types";
 
 export const REACT_CONFIGS: Config[] = [
@@ -8,7 +10,7 @@ export const REACT_CONFIGS: Config[] = [
     REACT_HOOKS,
     STYLISTIC,
     {
-        files: ["*.tsx"],
+        files: ["**/*.?([cm])tsx"],
         rules: {
             // Checked by react/sort-comp
             "@typescript-eslint/member-ordering": "off",
@@ -25,7 +27,7 @@ export const REACT_CONFIGS: Config[] = [
                 }
             },
             globals: {
-                ...browser
+                ...globals.browser
             }
         }
     }

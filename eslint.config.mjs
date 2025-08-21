@@ -1,13 +1,13 @@
-import * as globals from "globals";
+import globals from "globals";
 
-import { ESLINT_CONFIGS } from "./dist/eslint.js";
-import { STYLISTIC_CONFIGS } from "./dist/stylistic.js";
-import { TYPESCRIPT_CONFIGS } from "./dist/typescript.js";
+import * as eslint from "./dist/eslint.js";
+import * as stylistic from "./dist/stylistic.js";
+import * as typescript from "./dist/typescript.js";
 
 export default [
-    ...ESLINT_CONFIGS,
-    ...STYLISTIC_CONFIGS,
-    ...TYPESCRIPT_CONFIGS,
+    ...eslint.ESLINT_CONFIGS,
+    ...stylistic.STYLISTIC_CONFIGS,
+    ...typescript.TYPESCRIPT_CONFIGS,
     {
         ignores: [
             "dist/*",

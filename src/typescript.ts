@@ -1,4 +1,4 @@
-import { browser } from "globals";
+import globals from "globals";
 
 import { TYPESCRIPT } from "./rules/typescript";
 import type { Config } from "./types";
@@ -6,7 +6,7 @@ import type { Config } from "./types";
 export const TYPESCRIPT_CONFIGS: Config[] = [
     TYPESCRIPT,
     {
-        files: ["*.ts", "*.tsx"],
+        files: ["**/*.?([cm])ts", "**/*.?([cm])tsx"],
         rules: {
             // Checked by @typescript-eslint
             "consistent-return": "off",
@@ -91,7 +91,7 @@ export const TYPESCRIPT_CONFIGS: Config[] = [
         }
     },
     {
-        files: ["*.js", "*.jsx"],
+        files: ["**/*.?([cm])js", "**/*.?([cm])jsx"],
         rules: {
             // Disabled in vanilla JavaScript files
             "@typescript-eslint/no-shadow": "off",
@@ -102,7 +102,7 @@ export const TYPESCRIPT_CONFIGS: Config[] = [
     {
         languageOptions: {
             globals: {
-                ...browser
+                ...globals.browser
             }
         }
     }

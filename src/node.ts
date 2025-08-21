@@ -1,8 +1,9 @@
-import { node } from "globals";
-// @ts-ignore
-import * as plugin from "eslint-plugin-node";
+import globals from "globals";
+import * as plugin from "eslint-plugin-n";
 
-import { BEST_PRACTICES, POSSIBLE_ERRORS, STYLISTIC_ISSUES } from "./rules/node";
+import { BEST_PRACTICES } from "./rules/node/best-practices";
+import { POSSIBLE_ERRORS } from "./rules/node/possible-errors";
+import { STYLISTIC_ISSUES } from "./rules/node/stylistic-issues";
 import type { Config } from "./types";
 
 export const NODE_CONFIGS: Config[] = [
@@ -16,7 +17,7 @@ export const NODE_CONFIGS: Config[] = [
         ],
         languageOptions: {
             globals: {
-                ...node
+                ...globals.node
             }
         },
         plugins: {

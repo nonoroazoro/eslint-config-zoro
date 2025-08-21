@@ -25,7 +25,7 @@
     1. [TypeScript](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules)
 
 - Node rules:
-    1. [Node](https://github.com/mysticatea/eslint-plugin-node/tree/master/docs/rules)
+    1. [Node](https://github.com/eslint-community/eslint-plugin-n/tree/master/docs/rules)
 
 - Stylistic rules:
     1. [Stylistic](https://eslint.style/rules)
@@ -69,7 +69,7 @@ This is the default configuration which contains `all` the rules.
 1. Install:
 
     ```sh
-    npm i -D eslint-config-zoro eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-node
+    npm i -D eslint-config-zoro eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-n
     ```
 
 1. Add to your `.eslintrc.json` file:
@@ -141,7 +141,7 @@ This configuration only contains the `Node` rules.
 1. Install:
 
     ```sh
-    npm i -D eslint-config-zoro eslint eslint-plugin-node
+    npm i -D eslint-config-zoro eslint eslint-plugin-n
     ```
 
 1. In your `.eslintrc.json` file, add:
@@ -176,5 +176,5 @@ This configuration only contains the `Stylistic` rules.
 - [ESLint Rules - React](https://github.com/yannickcr/eslint-plugin-react)
 - [ESLint Rules - React Hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
 - [ESLint Rules - TypeScript](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin)
-- [ESLint Rules - Node](https://github.com/mysticatea/eslint-plugin-node)
+- [ESLint Rules - Node](https://github.com/eslint-community/eslint-plugin-n)
 - [ESLint Rules - Stylistic](https://eslint.style/rules)

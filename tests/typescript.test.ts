@@ -4,9 +4,9 @@ describe("rules", () =>
 {
     it("should load TypeScript rules.", () =>
     {
-        Object.keys(rules).forEach((key) =>
+        Object.keys(rules).forEach(key =>
         {
-            expect((rules as any)[key]).not.toBeNull();
+            expect(rules[key]).not.toBeNull();
         });
     });
 });

@@ -1,13 +1,13 @@
-import * as plugin from "@stylistic/eslint-plugin";
+import plugin from "@stylistic/eslint-plugin";
 
-import type { Config, Plugin } from "../../types";
+import type { Config } from "../../types/Config";
 
 /**
  * See https://eslint.style/rules
  */
 export const STYLISTIC: Config = {
     plugins: {
-        "@stylistic": plugin as Plugin
+        "@stylistic": plugin
     },
     rules: {
         "@stylistic/jsx-child-element-spacing": "off",

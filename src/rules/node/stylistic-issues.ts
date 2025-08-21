@@ -1,7 +1,7 @@
 import type { Config } from "../../types";
 
 /**
- * See https://github.com/mysticatea/eslint-plugin-node#stylistic-issues
+ * See https://github.com/eslint-community/eslint-plugin-n#-rules
  */
 export const STYLISTIC_ISSUES: Config = {
     rules: {
