@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.1.0 - August 21, 2025
+
+- Changed: Upgrade all packages and fix issues.
+
+
 ## 7.0.0-beta.3 - September 09, 2024
 
 - Fix: Fix index.
