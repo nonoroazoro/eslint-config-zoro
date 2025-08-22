@@ -1,5 +1,12 @@
 # Changelogs
 
+## 7.1.1 - August 22, 2025
+
+- Fix: Fix node rules.
+
+- Fix: Fix module exports.
+
+
 ## 7.1.0 - August 21, 2025
 
 - Changed: Upgrade all packages and fix issues.
