@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.1.2 - August 22, 2025
+
+- Fix: Export node configs.
+
+
 ## 7.1.1 - August 22, 2025
 
 - Fix: Fix node rules.
