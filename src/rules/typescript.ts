@@ -29,7 +29,7 @@ export const TYPESCRIPT: Config = {
 
         "@typescript-eslint/consistent-type-assertions": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
-        "@typescript-eslint/consistent-type-exports": "error",
+        "@typescript-eslint/consistent-type-exports": "off",
         "@typescript-eslint/consistent-type-imports": "error",
         "@typescript-eslint/default-param-last": "error",
         "@typescript-eslint/dot-notation": "off",
