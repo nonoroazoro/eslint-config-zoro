@@ -142,7 +142,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-unnecessary-type-constraint": "error",
         "@typescript-eslint/no-unnecessary-type-parameters": "error",
         "@typescript-eslint/no-unsafe-argument": "off",
-        "@typescript-eslint/no-unsafe-assignment": "error",
+        "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "error",
         "@typescript-eslint/no-unsafe-declaration-merging": "error",
         "@typescript-eslint/no-unsafe-enum-comparison": "off",
