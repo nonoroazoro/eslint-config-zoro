@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.1.4 - August 22, 2025
+
+- Change: disable @typescript-eslint/consistent-type-exports
+
+
 ## 7.1.3 - August 22, 2025
 
 - Change: @typescript-eslint/naming-convention and @typescript-eslint/no-require-imports
