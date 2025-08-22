@@ -181,7 +181,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/prefer-includes": "error",
         "@typescript-eslint/prefer-literal-enum-member": ["error", { "allowBitwiseExpressions": true }],
         "@typescript-eslint/prefer-namespace-keyword": "error",
-        "@typescript-eslint/prefer-nullish-coalescing": "error",
+        "@typescript-eslint/prefer-nullish-coalescing": ["error", { "ignoreIfStatements": true }],
         "@typescript-eslint/prefer-optional-chain": "error",
         "@typescript-eslint/prefer-promise-reject-errors": "error",
         "@typescript-eslint/prefer-readonly-parameter-types": "off",
