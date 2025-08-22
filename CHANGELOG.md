@@ -1,5 +1,14 @@
 # Changelogs
 
+## 7.1.7 - August 22, 2025
+
+- Change: disable @typescript-eslint/no-redeclare
+
+- Change: fix @stylistic/member-delimiter-style and @stylistic/operator-linebreak
+
+- Change: disable no-implicit-globals
+
+
 ## 7.1.6 - August 22, 2025
 
 - Change: @typescript-eslint/prefer-nullish-coalescing
