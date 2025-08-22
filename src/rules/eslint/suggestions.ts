@@ -80,7 +80,7 @@ export const SUGGESTIONS: Config = {
         "no-extra-label": "error",
         "no-global-assign": "error",
         "no-implicit-coercion": "off",
-        "no-implicit-globals": "error",
+        "no-implicit-globals": "off",
         "no-implied-eval": "error",
         "no-inline-comments": "off",
         "no-invalid-this": "off",
