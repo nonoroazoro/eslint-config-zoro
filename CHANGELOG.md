@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.1.5 - August 22, 2025
+
+- Change: @stylistic/type-annotation-spacing
+
+
 ## 7.1.4 - August 22, 2025
 
 - Change: disable @typescript-eslint/consistent-type-exports
