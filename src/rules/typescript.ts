@@ -125,7 +125,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
         "@typescript-eslint/no-non-null-assertion": "warn",
-        "@typescript-eslint/no-redeclare": ["error", { "ignoreDeclarationMerge": true }],
+        "@typescript-eslint/no-redeclare": "off",
         "@typescript-eslint/no-redundant-type-constituents": "error",
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-restricted-imports": "off",
