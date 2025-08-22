@@ -5,6 +5,6 @@ import type { Config } from "../../types";
  */
 export const BEST_PRACTICES: Config = {
     rules: {
-        "node/no-deprecated-api": "error"
+        "n/no-deprecated-api": "error"
     }
 };

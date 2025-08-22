@@ -5,23 +5,23 @@ import type { Config } from "../../types";
  */
 export const POSSIBLE_ERRORS: Config = {
     rules: {
-        "node/handle-callback-err": "off",
-        "node/no-callback-literal": "error",
-        "node/no-exports-assign": "error",
-        "node/no-extraneous-import": "error",
-        "node/no-extraneous-require": "off",
-        "node/no-missing-import": "off",
-        "node/no-missing-require": "off",
-        "node/no-new-require": "error",
-        "node/no-path-concat": "error",
-        "node/no-process-exit": "off",
-        "node/no-unpublished-bin": "error",
-        "node/no-unpublished-import": "off",
-        "node/no-unpublished-require": "off",
-        "node/no-unsupported-features/es-builtins": "error",
-        "node/no-unsupported-features/es-syntax": "off",
-        "node/no-unsupported-features/node-builtins": "error",
-        "node/process-exit-as-throw": "error",
-        "node/shebang": "error"
+        "n/handle-callback-err": "off",
+        "n/no-callback-literal": "error",
+        "n/no-exports-assign": "error",
+        "n/no-extraneous-import": "error",
+        "n/no-extraneous-require": "off",
+        "n/no-missing-import": "off",
+        "n/no-missing-require": "off",
+        "n/no-new-require": "error",
+        "n/no-path-concat": "error",
+        "n/no-process-exit": "off",
+        "n/no-unpublished-bin": "error",
+        "n/no-unpublished-import": "off",
+        "n/no-unpublished-require": "off",
+        "n/no-unsupported-features/es-builtins": "error",
+        "n/no-unsupported-features/es-syntax": "off",
+        "n/no-unsupported-features/node-builtins": "error",
+        "n/process-exit-as-throw": "error",
+        "n/shebang": "error"
     }
 };

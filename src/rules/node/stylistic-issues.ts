@@ -5,23 +5,23 @@ import type { Config } from "../../types";
  */
 export const STYLISTIC_ISSUES: Config = {
     rules: {
-        "node/callback-return": "off",
-        "node/exports-style": "error",
-        "node/file-extension-in-import": "off",
-        "node/global-require": "off",
-        "node/no-mixed-requires": "off",
-        "node/no-process-env": "off",
-        "node/no-restricted-import": "off",
-        "node/no-restricted-require": "off",
-        "node/no-sync": "off",
-        "node/prefer-global/buffer": "error",
-        "node/prefer-global/console": "error",
-        "node/prefer-global/process": "error",
-        "node/prefer-global/text-decoder": "error",
-        "node/prefer-global/text-encoder": "error",
-        "node/prefer-global/url-search-params": "error",
-        "node/prefer-global/url": "error",
-        "node/prefer-promises/dns": "error",
-        "node/prefer-promises/fs": "error"
+        "n/callback-return": "off",
+        "n/exports-style": "error",
+        "n/file-extension-in-import": "off",
+        "n/global-require": "off",
+        "n/no-mixed-requires": "off",
+        "n/no-process-env": "off",
+        "n/no-restricted-import": "off",
+        "n/no-restricted-require": "off",
+        "n/no-sync": "off",
+        "n/prefer-global/buffer": "error",
+        "n/prefer-global/console": "error",
+        "n/prefer-global/process": "error",
+        "n/prefer-global/text-decoder": "error",
+        "n/prefer-global/text-encoder": "error",
+        "n/prefer-global/url-search-params": "error",
+        "n/prefer-global/url": "error",
+        "n/prefer-promises/dns": "error",
+        "n/prefer-promises/fs": "error"
     }
 };

@@ -1,5 +1,5 @@
 import globals from "globals";
-import * as plugin from "eslint-plugin-n";
+import plugin from "eslint-plugin-n";
 
 import { BEST_PRACTICES } from "./rules/node/best-practices";
 import { POSSIBLE_ERRORS } from "./rules/node/possible-errors";
@@ -21,7 +21,7 @@ export const NODE_CONFIGS: Config[] = [
             }
         },
         plugins: {
-            node: plugin
+            n: plugin
         }
     }
 ];
