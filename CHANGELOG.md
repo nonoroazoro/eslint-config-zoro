@@ -1,5 +1,12 @@
 # Changelogs
 
+## 7.1.3 - August 22, 2025
+
+- Change: @typescript-eslint/naming-convention and @typescript-eslint/no-require-imports
+
+- Change: @stylistic/lines-around-comment
+
+
 ## 7.1.2 - August 22, 2025
 
 - Fix: Export node configs.
