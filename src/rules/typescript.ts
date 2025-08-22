@@ -78,7 +78,7 @@ export const TYPESCRIPT: Config = {
             "error",
             {
                 "selector": "variable",
-                "format": ["camelCase", "UPPER_CASE"],
+                "format": ["camelCase", "PascalCase", "UPPER_CASE"],
                 "leadingUnderscore": "allow",
                 "trailingUnderscore": "forbid"
             }
@@ -127,7 +127,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-non-null-assertion": "warn",
         "@typescript-eslint/no-redeclare": ["error", { "ignoreDeclarationMerge": true }],
         "@typescript-eslint/no-redundant-type-constituents": "error",
-        "@typescript-eslint/no-require-imports": "error",
+        "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-restricted-imports": "off",
         "@typescript-eslint/no-restricted-types": "error",
         "@typescript-eslint/no-shadow": "error",
