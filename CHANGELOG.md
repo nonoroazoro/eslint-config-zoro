@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.1.6 - August 22, 2025
+
+- Change: @typescript-eslint/prefer-nullish-coalescing
+
+
 ## 7.1.5 - August 22, 2025
 
 - Change: @stylistic/type-annotation-spacing
