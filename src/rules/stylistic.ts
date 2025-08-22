@@ -46,7 +46,17 @@ export const STYLISTIC: Config = {
         ],
         "@stylistic/line-comment-position": "off",
         "@stylistic/linebreak-style": "error",
-        "@stylistic/lines-around-comment": ["error", { "beforeBlockComment": true }],
+        "@stylistic/lines-around-comment": ["error", {
+            "beforeBlockComment": true,
+            "allowBlockStart": true,
+            "allowObjectStart": true,
+            "allowArrayStart": true,
+            "allowClassStart": true,
+            "allowEnumStart": true,
+            "allowInterfaceStart": true,
+            "allowModuleStart": true,
+            "allowTypeStart": true
+        }],
         "@stylistic/lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
         "@stylistic/max-len": "off",
         "@stylistic/max-statements-per-line": "error",
