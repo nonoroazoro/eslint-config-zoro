@@ -23,7 +23,7 @@ export const ESLINT_CONFIGS = RAW_ESLINT_CONFIGS;
 /**
  * Node configs.
  */
-// export const NODE_CONFIGS = RAW_NODE_CONFIGS;
+export const NODE_CONFIGS = RAW_NODE_CONFIGS;
 
 /**
  * React configs.
