@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.1.8 - August 25, 2025
+
+- Change: Tweak configurations guide.
+
+
 ## 7.1.7 - August 22, 2025
 
 - Change: disable @typescript-eslint/no-redeclare
