@@ -26,7 +26,6 @@ export const STYLISTIC: Config = {
         "@stylistic/jsx-equals-spacing": ["error", "never"],
         "@stylistic/jsx-first-prop-new-line": ["error", "multiline"],
         "@stylistic/jsx-function-call-newline": ["error", "multiline"],
-        "@stylistic/jsx-indent": ["error", 4],
         "@stylistic/jsx-indent-props": ["error", 4],
         "@stylistic/jsx-max-props-per-line": "off",
         "@stylistic/jsx-newline": "off",
