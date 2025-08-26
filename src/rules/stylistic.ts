@@ -22,7 +22,7 @@ export const STYLISTIC: Config = {
         "@stylistic/comma-style": ["error", "last"],
         "@stylistic/computed-property-spacing": ["error", "never"],
         "@stylistic/curly-newline": ["error", { "multiline": true, "consistent": true }],
-        "@stylistic/dot-location": "error",
+        "@stylistic/dot-location": ["error", "property"],
         "@stylistic/eol-last": "error",
         "@stylistic/function-call-argument-newline": ["error", "consistent"],
         "@stylistic/function-call-spacing": ["error", "never"],
