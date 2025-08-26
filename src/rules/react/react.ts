@@ -60,7 +60,7 @@ export const REACT: Config = {
         "react/prefer-stateless-function": "off",
         "react/prop-types": ["error", { "ignore": ["children"], "customValidators": [] }],
         "react/react-in-jsx-scope": "off",
-        "react/require-default-props": "error",
+        "react/require-default-props": "off",
         "react/require-optimization": "off",
         "react/require-render-return": "error",
         "react/self-closing-comp": "error",
