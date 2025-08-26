@@ -1,5 +1,14 @@
 # Changelogs
 
+## 7.1.9 - August 26, 2025
+
+- Change: Change @stylistic/dot-location to property.
+
+- Change: Disable react/require-default-props.
+
+- Fix: Remove deprecated rule @stylistic/jsx-indent.
+
+
 ## 7.1.8 - August 25, 2025
 
 - Change: Tweak configurations guide.
