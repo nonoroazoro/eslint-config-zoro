@@ -139,7 +139,7 @@ export const REACT: Config = {
         "react/jsx-no-useless-fragment": "error",
         "react/jsx-fragments": "off",
         "react/jsx-props-no-spread-multi": "error",
-        "react/jsx-props-no-spreading": "error",
+        "react/jsx-props-no-spreading": ["error", { "html": "ignore" }],
         "react/jsx-sort-default-props": "off",
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error"
