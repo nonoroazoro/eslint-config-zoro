@@ -27,7 +27,7 @@ export const STYLISTIC: Config = {
         "@stylistic/function-call-argument-newline": ["error", "consistent"],
         "@stylistic/function-call-spacing": ["error", "never"],
         "@stylistic/function-paren-newline": ["error", "consistent"],
-        "@stylistic/generator-star-spacing": "error",
+        "@stylistic/generator-star-spacing": ["error", { "anonymous": "neither" }],
         "@stylistic/implicit-arrow-linebreak": "off",
         "@stylistic/indent": ["error", 4, { "SwitchCase": 1 }],
         "@stylistic/indent-binary-ops": ["error", 4],
