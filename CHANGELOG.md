@@ -1,5 +1,12 @@
 # Changelogs
 
+## 7.1.10 - August 27, 2025
+
+- Change: @stylistic/generator-star-spacing set to anonymous neither
+
+- Change: react/jsx-props-no-spreading allow html.
+
+
 ## 7.1.9 - August 26, 2025
 
 - Change: Change @stylistic/dot-location to property.

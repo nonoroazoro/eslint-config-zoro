@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-zoro",
-  "version": "7.1.9",
+  "version": "7.1.10",
   "description": "A fully customized ESLint configuration based on the default ESLint, React and TypeScript rules.",
   "author": {
     "name": "nonoroazoro",
