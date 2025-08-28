@@ -1,19 +1,24 @@
 # Changelogs
 
+## 7.1.11 - August 28, 2025
+
+- Change: `@stylistic/jsx-wrap-multilines` set to prop ignore.
+
+
 ## 7.1.10 - August 27, 2025
 
-- Change: @stylistic/generator-star-spacing set to anonymous neither
+- Change: `@stylistic/generator-star-spacing` set to anonymous neither.
 
-- Change: react/jsx-props-no-spreading allow html.
+- Change: `react/jsx-props-no-spreading` allow html.
 
 
 ## 7.1.9 - August 26, 2025
 
-- Change: Change @stylistic/dot-location to property.
+- Change: Change `@stylistic/dot-location` to property.
 
-- Change: Disable react/require-default-props.
+- Change: Disable `react/require-default-props`.
 
-- Fix: Remove deprecated rule @stylistic/jsx-indent.
+- Fix: Remove deprecated rule `@stylistic/jsx-indent`.
 
 
 ## 7.1.8 - August 25, 2025
@@ -23,33 +28,33 @@
 
 ## 7.1.7 - August 22, 2025
 
-- Change: disable @typescript-eslint/no-redeclare
+- Change: disable `@typescript-eslint/no-redeclare`.
 
-- Change: fix @stylistic/member-delimiter-style and @stylistic/operator-linebreak
+- Change: fix `@stylistic/member-delimiter-style` and `@stylistic/operator-linebreak`.
 
-- Change: disable no-implicit-globals
+- Change: disable `no-implicit-globals`.
 
 
 ## 7.1.6 - August 22, 2025
 
-- Change: @typescript-eslint/prefer-nullish-coalescing
+- Change: `@typescript-eslint/prefer-nullish-coalescing`.
 
 
 ## 7.1.5 - August 22, 2025
 
-- Change: @stylistic/type-annotation-spacing
+- Change: `@stylistic/type-annotation-spacing`.
 
 
 ## 7.1.4 - August 22, 2025
 
-- Change: disable @typescript-eslint/consistent-type-exports
+- Change: disable `@typescript-eslint/consistent-type-exports`.
 
 
 ## 7.1.3 - August 22, 2025
 
-- Change: @typescript-eslint/naming-convention and @typescript-eslint/no-require-imports
+- Change: `@typescript-eslint/naming-convention` and `@typescript-eslint/no-require-imports`.
 
-- Change: @stylistic/lines-around-comment
+- Change: `@stylistic/lines-around-comment`.
 
 
 ## 7.1.2 - August 22, 2025
