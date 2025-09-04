@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.1.12 - September 04, 2025
+
+- Change: disable `@typescript-eslint/no-unsafe-call` and `@typescript-eslint/no-unsafe-member-access` in vanilla JavaScript files.
+
+
 ## 7.1.11 - August 28, 2025
 
 - Change: `@stylistic/jsx-wrap-multilines` set to prop ignore.
@@ -355,7 +360,7 @@
 
 ## 3.0.5 - July 02, 2020
 
-- Changed: Disable restrict-template-expressions in vanilla JavaScript
+- Changed: Disable restrict-template-expressions in vanilla JavaScript files.
 
 
 ## 3.0.4 - June 30, 2020
