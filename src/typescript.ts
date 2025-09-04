@@ -95,6 +95,8 @@ export const TYPESCRIPT_CONFIGS: Config[] = [
         rules: {
             // Disabled in vanilla JavaScript files
             "@typescript-eslint/no-shadow": "off",
+            "@typescript-eslint/no-unsafe-call": "off",
+            "@typescript-eslint/no-unsafe-member-access": "off",
             "@typescript-eslint/prefer-nullish-coalescing": "off",
             "@typescript-eslint/restrict-template-expressions": "off"
         }
