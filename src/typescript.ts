@@ -102,6 +102,13 @@ export const TYPESCRIPT_CONFIGS: Config[] = [
         }
     },
     {
+        files: ["**/*.d.ts"],
+        rules: {
+            // Disabled in TypeScript declaration files
+            "no-var": "off"
+        }
+    },
+    {
         languageOptions: {
             globals: {
                 ...globals.browser
