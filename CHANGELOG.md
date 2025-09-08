@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.1.13 - September 08, 2025
+
+- Change: disable `no-var` in TypeScript declaration files.
+
+
 ## 7.1.12 - September 04, 2025
 
 - Change: disable `@typescript-eslint/no-unsafe-call` and `@typescript-eslint/no-unsafe-member-access` in vanilla JavaScript files.
