@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.1.14 - September 19, 2025
+
+- Change: disable `@typescript-eslint/no-unnecessary-condition` as it's not work as expected.
+
+
 ## 7.1.13 - September 08, 2025
 
 - Change: disable `no-var` in TypeScript declaration files.
