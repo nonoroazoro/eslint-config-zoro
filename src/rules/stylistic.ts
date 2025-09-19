@@ -32,7 +32,7 @@ export const STYLISTIC: Config = {
             {
                 "anonymous": "neither",
                 "method": { "before": false, "after": true },
-                "name": { "before": false, "after": true }
+                "named": { "before": false, "after": true }
             }
         ],
         "@stylistic/implicit-arrow-linebreak": "off",
