@@ -1,5 +1,10 @@
 # Changelogs
 
+## 7.1.15 - September 19, 2025
+
+- Change: unify generator-star format by adjusting `@stylistic/generator-star-spacing`'s options.
+
+
 ## 7.1.14 - September 19, 2025
 
 - Change: disable `@typescript-eslint/no-unnecessary-condition` as it's not work as expected.
