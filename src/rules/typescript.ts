@@ -133,7 +133,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-this-alias": ["error", { "allowedNames": ["self"] }],
         "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
-        "@typescript-eslint/no-unnecessary-condition": "error",
+        "@typescript-eslint/no-unnecessary-condition": "off",
         "@typescript-eslint/no-unnecessary-parameter-property-assignment": "error",
         "@typescript-eslint/no-unnecessary-qualifier": "error",
         "@typescript-eslint/no-unnecessary-template-expression": "error",
