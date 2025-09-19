@@ -1,5 +1,12 @@
 # Changelogs
 
+## 7.1.16 - September 19, 2025
+
+- Change: fix `@stylistic/generator-star-spacing`'s options.
+
+- Change: remove deprecated rule `@stylistic/jsx-props-no-multi-spaces`.
+
+
 ## 7.1.15 - September 19, 2025
 
 - Change: unify generator-star format by adjusting `@stylistic/generator-star-spacing`'s options.
