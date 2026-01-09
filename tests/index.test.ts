@@ -1,12 +1,31 @@
-import * as rules from "../src/index";
+import { ESLint } from "eslint";
+import { expect, it } from "vitest";
 
-describe("rules", () =>
+import { ALL_CONFIGS } from "../src/index";
+
+it("ALL_CONFIGS should be valid ESLint flat config", async () =>
 {
-    it("should load all rules.", () =>
-    {
-        Object.keys(rules).forEach(key =>
-        {
-            expect(rules[key]).not.toBeNull();
-        });
+    const eslint = new ESLint({
+        overrideConfigFile: true,
+        overrideConfig: [
+            ...ALL_CONFIGS,
+            {
+                settings: { react: { version: "19" } },
+                languageOptions: {
+                    parserOptions: {
+                        projectService: {
+                            allowDefaultProject: ["*.ts"]
+                        }
+                    }
+                }
+            }
+        ]
     });
+
+    const results = await eslint.lintText(
+        `const foo: string = "bar";\nconsole.log(foo);\n`,
+        { filePath: "test.ts" }
+    );
+
+    expect(results[0].fatalErrorCount).toBe(0);
 });

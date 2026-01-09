@@ -1,12 +1,19 @@
-import * as rules from "../src/eslint";
+import { ESLint } from "eslint";
+import { expect, it } from "vitest";
 
-describe("rules", () =>
+import { ESLINT_CONFIGS } from "../src/eslint";
+
+it("ESLINT_CONFIGS should be valid ESLint flat config", async () =>
 {
-    it("should load ESLint rules.", () =>
-    {
-        Object.keys(rules).forEach(key =>
-        {
-            expect(rules[key]).not.toBeNull();
-        });
+    const eslint = new ESLint({
+        overrideConfigFile: true,
+        overrideConfig: ESLINT_CONFIGS
     });
+
+    const results = await eslint.lintText(
+        `const foo = "bar";\nconsole.log(foo);\n`,
+        { filePath: "test.js" }
+    );
+
+    expect(results[0].fatalErrorCount).toBe(0);
 });

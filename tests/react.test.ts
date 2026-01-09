@@ -1,12 +1,22 @@
-import * as rules from "../src/react";
+import { ESLint } from "eslint";
+import { expect, it } from "vitest";
 
-describe("rules", () =>
+import { REACT_CONFIGS } from "../src/react";
+
+it("REACT_CONFIGS should be valid ESLint flat config", async () =>
 {
-    it("should load React rules.", () =>
-    {
-        Object.keys(rules).forEach(key =>
-        {
-            expect(rules[key]).not.toBeNull();
-        });
+    const eslint = new ESLint({
+        overrideConfigFile: true,
+        overrideConfig: [
+            ...REACT_CONFIGS,
+            { settings: { react: { version: "19" } } }
+        ]
     });
+
+    const results = await eslint.lintText(
+        `export function App() { return <div>Hello</div>; }\n`,
+        { filePath: "test.tsx" }
+    );
+
+    expect(results[0].fatalErrorCount).toBe(0);
 });

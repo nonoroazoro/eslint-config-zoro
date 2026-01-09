@@ -1,12 +1,30 @@
-import * as rules from "../src/typescript";
+import { ESLint } from "eslint";
+import { expect, it } from "vitest";
 
-describe("rules", () =>
+import { TYPESCRIPT_CONFIGS } from "../src/typescript";
+
+it("TYPESCRIPT_CONFIGS should be valid ESLint flat config", async () =>
 {
-    it("should load TypeScript rules.", () =>
-    {
-        Object.keys(rules).forEach(key =>
-        {
-            expect(rules[key]).not.toBeNull();
-        });
+    const eslint = new ESLint({
+        overrideConfigFile: true,
+        overrideConfig: [
+            ...TYPESCRIPT_CONFIGS,
+            {
+                languageOptions: {
+                    parserOptions: {
+                        projectService: {
+                            allowDefaultProject: ["*.ts"]
+                        }
+                    }
+                }
+            }
+        ]
     });
+
+    const results = await eslint.lintText(
+        `const foo: string = "bar";\nconsole.log(foo);\n`,
+        { filePath: "test.ts" }
+    );
+
+    expect(results[0].fatalErrorCount).toBe(0);
 });

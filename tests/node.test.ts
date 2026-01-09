@@ -1,12 +1,19 @@
-import * as rules from "../src/node";
+import { ESLint } from "eslint";
+import { expect, it } from "vitest";
 
-describe("rules", () =>
+import { NODE_CONFIGS } from "../src/node";
+
+it("NODE_CONFIGS should be valid ESLint flat config", async () =>
 {
-    it("should load Node rules.", () =>
-    {
-        Object.keys(rules).forEach(key =>
-        {
-            expect(rules[key]).not.toBeNull();
-        });
+    const eslint = new ESLint({
+        overrideConfigFile: true,
+        overrideConfig: NODE_CONFIGS
     });
+
+    const results = await eslint.lintText(
+        `const path = require("path");\nconsole.log(path.resolve("."));\n`,
+        { filePath: "test.js" }
+    );
+
+    expect(results[0].fatalErrorCount).toBe(0);
 });
