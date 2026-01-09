@@ -1,4 +1,4 @@
-import * as plugin from "eslint-plugin-react-hooks";
+import plugin from "eslint-plugin-react-hooks";
 
 import type { Config, Plugin } from "../../types";
 
