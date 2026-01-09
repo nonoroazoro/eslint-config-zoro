@@ -1,30 +1,37 @@
 # Changelogs
 
+## 8.0.0 - January 01, 2026
+
+- Change: Upgrade all packages and fix issues.
+
+- Change: Migrate to vitest and fulfill tests.
+
+
 ## 7.1.16 - September 19, 2025
 
-- Change: fix `@stylistic/generator-star-spacing`'s options.
+- Change: Fix `@stylistic/generator-star-spacing`'s options.
 
-- Change: remove deprecated rule `@stylistic/jsx-props-no-multi-spaces`.
+- Change: Remove deprecated rule `@stylistic/jsx-props-no-multi-spaces`.
 
 
 ## 7.1.15 - September 19, 2025
 
-- Change: unify generator-star format by adjusting `@stylistic/generator-star-spacing`'s options.
+- Change: Unify generator-star format by adjusting `@stylistic/generator-star-spacing`'s options.
 
 
 ## 7.1.14 - September 19, 2025
 
-- Change: disable `@typescript-eslint/no-unnecessary-condition` as it's not work as expected.
+- Change: Disable `@typescript-eslint/no-unnecessary-condition` as it's not work as expected.
 
 
 ## 7.1.13 - September 08, 2025
 
-- Change: disable `no-var` in TypeScript declaration files.
+- Change: Disable `no-var` in TypeScript declaration files.
 
 
 ## 7.1.12 - September 04, 2025
 
-- Change: disable `@typescript-eslint/no-unsafe-call` and `@typescript-eslint/no-unsafe-member-access` in vanilla JavaScript files.
+- Change: Disable `@typescript-eslint/no-unsafe-call` and `@typescript-eslint/no-unsafe-member-access` in vanilla JavaScript files.
 
 
 ## 7.1.11 - August 28, 2025
@@ -55,11 +62,11 @@
 
 ## 7.1.7 - August 22, 2025
 
-- Change: disable `@typescript-eslint/no-redeclare`.
+- Change: Disable `@typescript-eslint/no-redeclare`.
 
-- Change: fix `@stylistic/member-delimiter-style` and `@stylistic/operator-linebreak`.
+- Change: Fix `@stylistic/member-delimiter-style` and `@stylistic/operator-linebreak`.
 
-- Change: disable `no-implicit-globals`.
+- Change: Disable `no-implicit-globals`.
 
 
 ## 7.1.6 - August 22, 2025
@@ -74,7 +81,7 @@
 
 ## 7.1.4 - August 22, 2025
 
-- Change: disable `@typescript-eslint/consistent-type-exports`.
+- Change: Disable `@typescript-eslint/consistent-type-exports`.
 
 
 ## 7.1.3 - August 22, 2025
@@ -98,7 +105,7 @@
 
 ## 7.1.0 - August 21, 2025
 
-- Changed: Upgrade all packages and fix issues.
+- Change: Upgrade all packages and fix issues.
 
 
 ## 7.0.0-beta.3 - September 09, 2024
@@ -118,503 +125,503 @@
 
 ## 7.0.0-beta.0 - September 09, 2024
 
-- Added: Add `@stylistic/eslint-plugin`.
+- Add: Add `@stylistic/eslint-plugin`.
 
-- Changed: Synchronize version with `@typescript-eslint`.
+- Change: Synchronize version with `@typescript-eslint`.
 
 
 ## 6.1.0 - May 10, 2024
 
-- Changed: Synchronize version with `@typescript-eslint`.
+- Change: Synchronize version with `@typescript-eslint`.
 
 
 ## 6.0.1 - September 25, 2023
 
-- Changed: Disable `@typescript-eslint/no-unsafe-enum-comparison` by default.
+- Change: Disable `@typescript-eslint/no-unsafe-enum-comparison` by default.
 
 
 ## 6.0.0 - September 25, 2023
 
-- Changed: Synchronize version with `@typescript-eslint`.
+- Change: Synchronize version with `@typescript-eslint`.
 
 
 ## 5.54.0 - March 09, 2023
 
-- Changed: Synchronize version with `@typescript-eslint`.
+- Change: Synchronize version with `@typescript-eslint`.
 
 
 ## 5.35.0 - December 09, 2022
 
-- Changed: Synchronize version with `@typescript-eslint`.
+- Change: Synchronize version with `@typescript-eslint`.
 
 
 ## 5.34.0 - August 24, 2022
 
-- Changed: Synchronize version with `@typescript-eslint`.
-- Changed: Disable `prefer-object-has-own` by default.
+- Change: Synchronize version with `@typescript-eslint`.
+- Change: Disable `prefer-object-has-own` by default.
 
 
 ## 5.30.0 - July 07, 2022
 
-- Changed: Synchronize version with `@typescript-eslint`.
+- Change: Synchronize version with `@typescript-eslint`.
 
 
 ## 5.29.0 - May 31, 2022
 
-- Changed: Disable `node/global-require` by default.
-- Changed: Synchronize version with `@typescript-eslint`.
+- Change: Disable `node/global-require` by default.
+- Change: Synchronize version with `@typescript-eslint`.
 
 
 ## 5.27.0 - May 31, 2022
 
-- Changed: Synchronize version with `@typescript-eslint` and `eslint-plugin-react`.
-- Changed: Enable `react/jsx-no-leaked-render` and `@typescript-eslint/no-duplicate-enum-values` by default.
-- Added: Add `overrideMethods` to rule `@typescript-eslint/no-empty-function`.
+- Change: Synchronize version with `@typescript-eslint` and `eslint-plugin-react`.
+- Change: Enable `react/jsx-no-leaked-render` and `@typescript-eslint/no-duplicate-enum-values` by default.
+- Add: Add `overrideMethods` to rule `@typescript-eslint/no-empty-function`.
 
 
 ## 5.15.5 - April 11, 2022
 
-- Changed: Disable node/no-missing-import and node/no-missing-require.
+- Change: Disable node/no-missing-import and node/no-missing-require.
 
 
 ## 5.15.4 - April 11, 2022
 
-- Changed: Disable node/no-extraneous-require.
+- Change: Disable node/no-extraneous-require.
 
 
 ## 5.15.3 - April 08, 2022
 
-- Changed: Ignore ignore jsx and tsx for node rules.
+- Change: Ignore ignore jsx and tsx for node rules.
 
 
 ## 5.15.2 - April 08, 2022
 
-- Changed: Disable node/no-unpublished-import, node/no-unpublished-require and node/no-unsupported-features/es-syntax.
+- Change: Disable node/no-unpublished-import, node/no-unpublished-require and node/no-unsupported-features/es-syntax.
 
 
 ## 5.15.1 - April 08, 2022
 
-- Fixed: Fix rule react/hook-use-state.
+- Fix: Fix rule react/hook-use-state.
 
 
 ## 5.15.0 - April 08, 2022
 
-- Changed: Synchronize version with @typescript-eslint and eslint-plugin-react.
+- Change: Synchronize version with @typescript-eslint and eslint-plugin-react.
 
 
 ## 5.14.0 - March 08, 2022
 
-- Added: Add node config file.
+- Add: Add node config file.
 
 
 ## 5.13.0 - March 07, 2022
 
-- Changed: Synchronize version with @typescript-eslint and eslint.
+- Change: Synchronize version with @typescript-eslint and eslint.
 
 
 ## 5.12.1 - February 23, 2022
 
-- Changed: Synchronize version with @typescript-eslint.
+- Change: Synchronize version with @typescript-eslint.
 
 
 ## 5.9.0 - January 01, 2022
 
-- Changed: Synchronize version with @typescript-eslint.
+- Change: Synchronize version with @typescript-eslint.
 
 
 ## 5.8.1 - December 28, 2021
 
-- Changed: Synchronize version with @typescript-eslint and eslint-plugin-react.
+- Change: Synchronize version with @typescript-eslint and eslint-plugin-react.
 
 
 ## 5.8.0 - December 22, 2021
 
-- Changed: Synchronize version with @typescript-eslint.
+- Change: Synchronize version with @typescript-eslint.
 
 
 ## 5.4.0 - December 09, 2021
 
-- Changed: Synchronize version with @typescript-eslint.
+- Change: Synchronize version with @typescript-eslint.
 
 
 ## 5.3.2 - December 01, 2021
 
-- Changed: Disable @typescript-eslint/prefer-regexp-exec
+- Change: Disable @typescript-eslint/prefer-regexp-exec
 
 
 ## 5.3.1 - December 01, 2021
 
-- Changed: Set `no-cond-assign` with default options.
+- Change: Set `no-cond-assign` with default options.
 
 
 ## 5.3.0 - December 01, 2021
 
-- Changed: Synchronize version with @typescript-eslint and eslint-plugin-react.
+- Change: Synchronize version with @typescript-eslint and eslint-plugin-react.
 
 
 ## 5.2.0 - October 28, 2021
 
-- Added: Add rule @typescript-eslint/consistent-type-exports.
+- Add: Add rule @typescript-eslint/consistent-type-exports.
 
-- Changed: Synchronize version with @typescript-eslint.
+- Change: Synchronize version with @typescript-eslint.
 
 
 ## 5.0.0 - October 13, 2021
 
-- Changed: Synchronize version with @typescript-eslint.
+- Change: Synchronize version with @typescript-eslint.
 
 
 ## 4.31.0 - September 16, 2021
 
-- Changed: Synchronize version with @typescript-eslint.
-- Changed: Enable rule @typescript-eslint/no-meaningless-void-operator.
+- Change: Synchronize version with @typescript-eslint.
+- Change: Enable rule @typescript-eslint/no-meaningless-void-operator.
 
 
 ## 4.30.0 - September 01, 2021
 
-- Changed: Synchronize version with @typescript-eslint.
-- Changed: Disable rule @typescript-eslint/indent.
+- Change: Synchronize version with @typescript-eslint.
+- Change: Disable rule @typescript-eslint/indent.
 
 
 ## 4.28.0 - June 22, 2021
 
-- Changed: Synchronize version with @typescript-eslint.
+- Change: Synchronize version with @typescript-eslint.
 
 
 ## 4.5.1 - May 24, 2021
 
-- Changed: Disable react/react-in-jsx-scope by default, please use the [new JSX Transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) to run your code.
+- Change: Disable react/react-in-jsx-scope by default, please use the [new JSX Transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) to run your code.
 
 
 ## 4.5.0 - May 18, 2021
 
-- Added: Added rules react/no-unstable-nested-components and @typescript-eslint/no-unsafe-argument.
+- Add: Added rules react/no-unstable-nested-components and @typescript-eslint/no-unsafe-argument.
 
 
 ## 4.4.1 - March 19, 2021
 
-- Changed: Enable rule @typescript-eslint/consistent-type-imports
+- Change: Enable rule @typescript-eslint/consistent-type-imports
 
 
 ## 4.4.0 - March 19, 2021
 
-- Changed: Upgrade to @typescript-eslint version 4.18.0
-- Changed: Enable rule @typescript-eslint/indent.
+- Change: Upgrade to @typescript-eslint version 4.18.0
+- Change: Enable rule @typescript-eslint/indent.
 
 
 ## 4.3.0 - March 05, 2021
 
-- Changed: Upgrade to @typescript-eslint version 4.16.1
+- Change: Upgrade to @typescript-eslint version 4.16.1
 
 
 ## 4.2.2 - January 18, 2021
 
-- Changed: Enable rule @typescript-eslint/sort-type-union-intersection-members.
+- Change: Enable rule @typescript-eslint/sort-type-union-intersection-members.
 
 
 ## 4.2.1 - January 11, 2021
 
-- Changed: Disable rule @typescript-eslint/sort-type-union-intersection-members.
+- Change: Disable rule @typescript-eslint/sort-type-union-intersection-members.
 
 
 ## 4.0.1 - November 17, 2020
 
-- Changed: Comment out unreleased rules.
+- Change: Comment out unreleased rules.
 
 
 ## 4.0.0 - November 17, 2020
 
-- Changed: Upgrade to @typescript-eslint version 4.8.0
+- Change: Upgrade to @typescript-eslint version 4.8.0
 
 
 ## 3.2.0 - October 12, 2020
 
-- Changed: Upgrade to @typescript-eslint version 4.4.0
+- Change: Upgrade to @typescript-eslint version 4.4.0
 
 
 ## 3.1.4 - September 04, 2020
 
-- Changed: Ignore args in no-unused-vars and @typescript-eslint/no-unused-vars.
+- Change: Ignore args in no-unused-vars and @typescript-eslint/no-unused-vars.
 
 
 ## 3.1.3 - September 01, 2020
 
-- Changed: Use @typescript-eslint/no-shadow instead of no-shadow.
+- Change: Use @typescript-eslint/no-shadow instead of no-shadow.
 
 
 ## 3.1.2 - September 01, 2020
 
-- Changed: Disable jsx-handler-names.
+- Change: Disable jsx-handler-names.
 
 
 ## 3.1.1 - September 01, 2020
 
-- Changed: Disable consistent-type-imports.
+- Change: Disable consistent-type-imports.
 
 
 ## 3.1.0 - September 01, 2020
 
-- Added: Enable consistent-type-imports.
-- Added: Enable no-implicit-any-catch.
-- Changed: Enable jsx-handler-names.
+- Add: Enable consistent-type-imports.
+- Add: Enable no-implicit-any-catch.
+- Change: Enable jsx-handler-names.
 
 
 ## 3.0.9 - July 21, 2020
 
-- Changed: Upgrade packages.
+- Change: Upgrade packages.
 
 
 ## 3.0.8 - July 09, 2020
 
-- Changed: Allow public in no-parameter-properties.
+- Change: Allow public in no-parameter-properties.
 
 
 ## 3.0.7 - July 08, 2020
 
-- Changed: Allow classes in no-use-before-define.
+- Change: Allow classes in no-use-before-define.
 
 
 ## 3.0.6 - July 08, 2020
 
-- Changed: Enable prefer-literal-enum-member.
-- Changed: Enable Function in ban-types.
+- Change: Enable prefer-literal-enum-member.
+- Change: Enable Function in ban-types.
 
 
 ## 3.0.5 - July 02, 2020
 
-- Changed: Disable restrict-template-expressions in vanilla JavaScript files.
+- Change: Disable restrict-template-expressions in vanilla JavaScript files.
 
 
 ## 3.0.4 - June 30, 2020
 
-- Changed: Upgrade to @typescript-eslint version 3.5.0
+- Change: Upgrade to @typescript-eslint version 3.5.0
 
 
 ## 3.0.3 - June 04, 2020
 
-- Changed: Restrict leadingUnderscore and trailingUnderscore in naming-convention convention.
+- Change: Restrict leadingUnderscore and trailingUnderscore in naming-convention convention.
 
 
 ## 3.0.2 - June 02, 2020
 
-- Changed: Allow PascalCase naming
+- Change: Allow PascalCase naming
 
-- Changed: Allow #region in comments
+- Change: Allow #region in comments
 
 
 ## 3.0.1 - June 02, 2020
 
-- Changed: Allow PascalCase naming in React files
+- Change: Allow PascalCase naming in React files
 
 
 ## 3.0.0 - June 02, 2020
 
-- Changed: Upgrade to @typescript-eslint version 3.1.0
+- Change: Upgrade to @typescript-eslint version 3.1.0
 
-- Changed: Update Typescript overrides
+- Change: Update Typescript overrides
 
-- Changed: Remove deprecated rules
+- Change: Remove deprecated rules
 
 
 ## 2.9.1 - May 14, 2020
 
-- Changed: Upgrade to @typescript-eslint version 2.33.0
+- Change: Upgrade to @typescript-eslint version 2.33.0
 
 
 ## 2.9.0 - May 06, 2020
 
-- Changed: Upgrade to @typescript-eslint version 2.31.0
+- Change: Upgrade to @typescript-eslint version 2.31.0
 
-- Changed: Drop support for Node 8
+- Change: Drop support for Node 8
 
 
 ## 2.8.5 - April 26, 2020
 
-- Changed: Disable @typescript-eslint/method-signature-style
+- Change: Disable @typescript-eslint/method-signature-style
 
 
 ## 2.8.4 - April 26, 2020
 
-- Changed: Change the default option of @typescript-eslint/method-signature-style to `method`.
+- Change: Change the default option of @typescript-eslint/method-signature-style to `method`.
 
 
 ## 2.8.3 - April 26, 2020
 
-- Changed: Upgrade to @typescript-eslint version 2.29.0
+- Change: Upgrade to @typescript-eslint version 2.29.0
 
 
 ## 2.8.2 - April 01, 2020
 
-- Changed: Disable @typescript-eslint/no-unnecessary-condition
+- Change: Disable @typescript-eslint/no-unnecessary-condition
 
 
 ## 2.8.1 - March 31, 2020
 
-- Changed: Upgrade to @typescript-eslint version 2.26.0
+- Change: Upgrade to @typescript-eslint version 2.26.0
 
 
 ## 2.8.0 - March 30, 2020
 
-- Changed: Upgrade to @typescript-eslint version 2.25.0
+- Change: Upgrade to @typescript-eslint version 2.25.0
 
 
 ## 2.7.6 - January 16, 2020
 
-- Changed: Changed @typescript-eslint/member-ordering (move protected members to the front).
+- Change: Changed @typescript-eslint/member-ordering (move protected members to the front).
 
 
 ## 2.7.5 - December 24, 2019
 
-- Added: Add @typescript-eslint/no-extra-semi
+- Add: Add @typescript-eslint/no-extra-semi
 
-- Added: Add @typescript-eslint/no-throw-literal
+- Add: Add @typescript-eslint/no-throw-literal
 
-- Changed: Upgrade to @typescript-eslint version 2.13.0
+- Change: Upgrade to @typescript-eslint version 2.13.0
 
 
 ## 2.7.4 - December 17, 2019
 
-- Changed: Upgrade to @typescript-eslint version 2.12.0
+- Change: Upgrade to @typescript-eslint version 2.12.0
 
 
 ## 2.7.3 - December 06, 2019
 
-- Changed: Disable @typescript-eslint/no-dynamic-delete.
+- Change: Disable @typescript-eslint/no-dynamic-delete.
 
-- Changed: Disable @typescript-eslint/no-unnecessary-condition because it's not function correctly yet.
+- Change: Disable @typescript-eslint/no-unnecessary-condition because it's not function correctly yet.
 
 
 ## 2.7.2 - December 05, 2019
 
-- Changed: Disable @typescript-eslint/prefer-nullish-coalescing in vanilla JavaScript files.
+- Change: Disable @typescript-eslint/prefer-nullish-coalescing in vanilla JavaScript files.
 
 
 ## 2.7.1 - December 04, 2019
 
-- Changed: Only lint ts files with ts rules.
+- Change: Only lint ts files with ts rules.
 
 
 ## 2.7.0 - December 03, 2019
 
-- Changed: Upgrade to @typescript-eslint version 2.10.0
+- Change: Upgrade to @typescript-eslint version 2.10.0
 
-- Changed: Upgrade to eslint-plugin-react version 7.17.0
+- Change: Upgrade to eslint-plugin-react version 7.17.0
 
 
 ## 2.6.4 - November 25, 2019
 
-- Changed: Disable @typescript-eslint/disable no-untyped-public-signature.
+- Change: Disable @typescript-eslint/disable no-untyped-public-signature.
 
 
 ## 2.6.3 - November 25, 2019
 
-- Changed: Allow number in @typescript-eslint/restrict-template-expressions rule.
+- Change: Allow number in @typescript-eslint/restrict-template-expressions rule.
 
 
 ## 2.6.2 - November 22, 2019
 
-- Added: Add missing rules
+- Add: Add missing rules
 
 
 ## 2.6.0 - November 22, 2019
 
-- Changed: Upgrade to @typescript-eslint version 2.8.0
+- Change: Upgrade to @typescript-eslint version 2.8.0
 
-- Changed: Upgrade to eslint-plugin-react version 7.16.0
+- Change: Upgrade to eslint-plugin-react version 7.16.0
 
-- Changed: Upgrade to eslint-plugin-react-hooks version 2.3.0
+- Change: Upgrade to eslint-plugin-react-hooks version 2.3.0
 
 
 ## 2.5.2 - August 15, 2019
 
-- Changed: Disable @typescript-eslint/explicit-member-accessibility.
+- Change: Disable @typescript-eslint/explicit-member-accessibility.
 
-- Changed: Disable @typescript-eslint/member-ordering while linting React.
+- Change: Disable @typescript-eslint/member-ordering while linting React.
 
 
 ## 2.5.1 - August 15, 2019
 
-- Changed: Upgrade node engines.
+- Change: Upgrade node engines.
 
 
 ## 2.5.0 - August 15, 2019
 
-- Changed: Upgrade to @typescript-eslint version 2.0.0
+- Change: Upgrade to @typescript-eslint version 2.0.0
 
 
 ## 2.4.3 - August 13, 2019
 
-- Changed: Update dependencies.
+- Change: Update dependencies.
 
 
 ## 2.4.2 - July 22, 2019
 
-- Changed: Disable @typescript-eslint/strict-boolean-expressions.
+- Change: Disable @typescript-eslint/strict-boolean-expressions.
 
 
 ## 2.4.1 - July 22, 2019
 
-- Changed: Enable allowTemplateLiterals option of quotes.
+- Change: Enable allowTemplateLiterals option of quotes.
 
 
 ## 2.4.0 - July 22, 2019
 
-- Added: @typescript-eslint/no-misused-promises.
+- Add: @typescript-eslint/no-misused-promises.
 
-- Added: @typescript-eslint/prefer-readonly.
+- Add: @typescript-eslint/prefer-readonly.
 
-- Added: @typescript-eslint/require-await.
+- Add: @typescript-eslint/require-await.
 
-- Added: @typescript-eslint/strict-boolean-expressions.
+- Add: @typescript-eslint/strict-boolean-expressions.
 
-- Changed: Remove @typescript-eslint/no-triple-slash-reference in favor @typescript-eslint/triple-slash-reference.
+- Change: Remove @typescript-eslint/no-triple-slash-reference in favor @typescript-eslint/triple-slash-reference.
 
 
 ## 2.3.7 - July 02, 2019
 
-- Fixed: Fix peerDependencies.
+- Fix: Fix peerDependencies.
 
 
 ## 2.3.6 - July 02, 2019
 
-- Changed: Upgrade packages.
+- Change: Upgrade packages.
 
 
 ## 2.3.5 - June 25, 2019
 
-- Changed: Disable @typescript-eslint/unbound-method.
+- Change: Disable @typescript-eslint/unbound-method.
 
 
 ## 2.3.4 - June 25, 2019
 
-- Changed: Disable @typescript-eslint/no-floating-promises.
+- Change: Disable @typescript-eslint/no-floating-promises.
 
 
 ## 2.3.3 - June 25, 2019
 
-- Changed: Disable @typescript-eslint/promise-function-async.
+- Change: Disable @typescript-eslint/promise-function-async.
 
 
 ## 2.3.2 - June 25, 2019
 
-- Changed: Disable @typescript-eslint/no-var-requires.
+- Change: Disable @typescript-eslint/no-var-requires.
 
 
 ## 2.3.1 - June 25, 2019
 
-- Changed: Upgrade packages.
+- Change: Upgrade packages.
 
 
 ## 2.3.0 - June 25, 2019
 
-- Changed: Enable rules.
+- Change: Enable rules.
 
 
 ## 2.2.1 - June 03, 2019
 
-- Changed: Disable @typescript-eslint/prefer-regexp-exec
+- Change: Disable @typescript-eslint/prefer-regexp-exec
 
 
 ## 2.2.0 - May 13, 2019
 
-- Changed: Update with @typescript-eslint/eslint-plugin v1.9.0 and eslint-plugin-react v7.13.0
+- Change: Update with @typescript-eslint/eslint-plugin v1.9.0 and eslint-plugin-react v7.13.0
