@@ -1,6 +1,9 @@
 <h1 align="center">Zoro's ESLint Configuration</h1>
 <p align="center">A fully customized <b>ESLint configuration</b> based on <i>ESLint</i>, <i>Stylistic</i>, <i>TypeScript</i>, <i>React</i> and <i>Node</i> rules.</p>
 <p align="center">
+    <a href="https://github.com/nonoroazoro/eslint-config-zoro/actions/workflows/ci.yml">
+        <img src="https://github.com/nonoroazoro/eslint-config-zoro/actions/workflows/ci.yml/badge.svg" alt="GitHub CI" />
+    </a>
     <a href="https://github.com/nonoroazoro/eslint-config-zoro/blob/master/LICENSE">
         <img src="https://img.shields.io/npm/l/eslint-config-zoro.svg" alt="GitHub License" />
     </a>
