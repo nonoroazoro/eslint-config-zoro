@@ -36,9 +36,8 @@
     "build": "tsc && tsc-alias",
     "clean": "rimraf dist/*",
     "lint": "eslint src/**",
-    "test": "jest --config jest.config.js",
-    "test:watch": "npm test -- --watch",
-    "upgradepackages": "./scripts/upgrade_packages.sh"
+    "test": "vitest run",
+    "upgradepackages": "ncu -u"
   },
   "engines": {
     "node": "^16.0.0 || >=18.0.0"
@@ -50,23 +49,22 @@
     ]
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^5.3.1",
-    "@types/jest": "^30.0.0",
-    "@types/node": "^24.5.2",
-    "@typescript-eslint/eslint-plugin": "^8.44.0",
-    "@typescript-eslint/parser": "^8.44.0",
-    "eslint": "^9.35.0",
+    "@stylistic/eslint-plugin": "^5.6.1",
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.52.0",
+    "@typescript-eslint/parser": "^8.52.0",
+    "eslint": "^9.39.2",
     "eslint-plugin-n": "^17.23.1",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "globals": "^16.4.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^17.0.0",
     "husky": "^9.1.7",
-    "jest": "^30.1.3",
-    "lint-staged": "^16.1.6",
-    "rimraf": "^6.0.1",
-    "ts-jest": "^29.4.3",
+    "lint-staged": "^16.2.7",
+    "npm-check-updates": "^19.3.1",
+    "rimraf": "^6.1.2",
     "tsc-alias": "^1.8.16",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": ">=5.3.1",

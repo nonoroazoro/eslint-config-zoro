@@ -10,38 +10,18 @@ export const TYPESCRIPT_CONFIGS: Config[] = [
         rules: {
             // Checked by @typescript-eslint
             "consistent-return": "off",
-
-            // Checked by @typescript-eslint
             "default-param-last": "off",
-
-            // Checked by @typescript-eslint
+            "max-params": "off",
             "no-duplicate-imports": "off",
-
-            // Checked by @typescript-eslint
             "no-empty-function": "off",
-
-            // Checked by @typescript-eslint
             "no-loop-func": "off",
-
-            // Checked by @typescript-eslint
             "no-shadow": "off",
-
-            // Checked by @typescript-eslint/only-throw-error
             "no-throw-literal": "off",
-
-            // Checked by @typescript-eslint
             "no-unused-expressions": "off",
-
-            // Checked by @typescript-eslint
+            "no-unused-private-class-members": "off",
             "no-unused-vars": "off",
-
-            // Checked by @typescript-eslint
             "no-use-before-define": "off",
-
-            // Checked by @typescript-eslint
             "no-useless-constructor": "off",
-
-            // Checked by @typescript-eslint
             "prefer-promise-reject-errors": "off",
 
             // Checked by Typescript - ts(2335) & ts(2377)

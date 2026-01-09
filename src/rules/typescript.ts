@@ -37,6 +37,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/explicit-member-accessibility": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/init-declarations": "off",
+        "@typescript-eslint/max-params": "off",
         "@typescript-eslint/member-ordering": [
             "error",
             {
@@ -120,6 +121,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-meaningless-void-operator": "error",
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
+        "@typescript-eslint/no-misused-spread": "error",
         "@typescript-eslint/no-mixed-enums": "error",
         "@typescript-eslint/no-namespace": ["error", { "allowDeclarations": true, "allowDefinitionFiles": true }],
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
@@ -140,6 +142,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-unnecessary-type-arguments": "error",
         "@typescript-eslint/no-unnecessary-type-assertion": "error",
         "@typescript-eslint/no-unnecessary-type-constraint": "error",
+        "@typescript-eslint/no-unnecessary-type-conversion": "error",
         "@typescript-eslint/no-unnecessary-type-parameters": "error",
         "@typescript-eslint/no-unsafe-argument": "off",
         "@typescript-eslint/no-unsafe-assignment": "off",
@@ -159,6 +162,7 @@ export const TYPESCRIPT: Config = {
                 "allowTaggedTemplates": false
             }
         ],
+        "@typescript-eslint/no-unused-private-class-members": "warn",
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {
@@ -169,11 +173,14 @@ export const TYPESCRIPT: Config = {
         ],
         "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false }],
         "@typescript-eslint/no-useless-constructor": "error",
+        "@typescript-eslint/no-useless-default-assignment": "error",
         "@typescript-eslint/no-useless-empty-export": "error",
         "@typescript-eslint/no-wrapper-object-types": "error",
         "@typescript-eslint/non-nullable-type-assertion-style": "error",
         "@typescript-eslint/only-throw-error": "error",
+        "@typescript-eslint/parameter-properties": "error",
         "@typescript-eslint/prefer-as-const": "off",
+        "@typescript-eslint/prefer-destructuring": "off",
         "@typescript-eslint/prefer-enum-initializers": "error",
         "@typescript-eslint/prefer-find": "error",
         "@typescript-eslint/prefer-for-of": "off",
@@ -191,6 +198,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/prefer-return-this-type": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
         "@typescript-eslint/promise-function-async": "error",
+        "@typescript-eslint/related-getter-setter-pairs": "error",
         "@typescript-eslint/require-array-sort-compare": "error",
         "@typescript-eslint/require-await": "off",
         "@typescript-eslint/restrict-plus-operands": "error",
