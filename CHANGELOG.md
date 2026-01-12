@@ -1,5 +1,10 @@
 # Changelogs
 
+## 8.0.1 - January 12, 2026
+
+- Change: Set arrow spacing to `{ before: true, after: true }`.
+
+
 ## 8.0.0 - January 01, 2026
 
 - Change: Upgrade all packages and fix issues.
