@@ -124,7 +124,19 @@ export const STYLISTIC: Config = {
         "@stylistic/switch-colon-spacing": ["error", { "before": false, "after": true }],
         "@stylistic/template-curly-spacing": "error",
         "@stylistic/template-tag-spacing": ["error", "never"],
-        "@stylistic/type-annotation-spacing": ["error", { "before": false, "after": true }],
+        "@stylistic/type-annotation-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true,
+                "overrides": {
+                    "colon": {
+                        "before": false,
+                        "after": true
+                    }
+                }
+            }
+        ],
         "@stylistic/type-generic-spacing": "error",
         "@stylistic/type-named-tuple-spacing": "error",
         "@stylistic/wrap-iife": ["error", "outside", { "functionPrototypeMethods": false }],
