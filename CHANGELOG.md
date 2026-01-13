@@ -1,5 +1,10 @@
 # Changelogs
 
+## 8.0.2 - January 13, 2026
+
+- Change: Disable `@typescript-eslint/no-empty-function`.
+
+
 ## 8.0.1 - January 12, 2026
 
 - Change: Set arrow spacing to `{ before: true, after: true }`.
