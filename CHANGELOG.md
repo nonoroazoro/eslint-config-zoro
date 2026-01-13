@@ -1,5 +1,10 @@
 # Changelogs
 
+## 8.0.3 - January 13, 2026
+
+- Change: Allow separate type imports in rule `no-duplicate-imports`.
+
+
 ## 8.0.2 - January 13, 2026
 
 - Change: Disable `@typescript-eslint/no-empty-function`.
