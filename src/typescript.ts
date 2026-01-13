@@ -9,14 +9,9 @@ export const TYPESCRIPT_CONFIGS: Config[] = [
         files: ["**/*.?([cm])ts", "**/*.?([cm])tsx"],
         rules: {
             // Checked by @typescript-eslint
-            "consistent-return": "off",
             "default-param-last": "off",
-            "max-params": "off",
-            "no-duplicate-imports": "off",
-            "no-empty-function": "off",
             "no-loop-func": "off",
             "no-shadow": "off",
-            "no-throw-literal": "off",
             "no-unused-expressions": "off",
             "no-unused-private-class-members": "off",
             "no-unused-vars": "off",
