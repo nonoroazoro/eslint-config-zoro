@@ -94,17 +94,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-duplicate-enum-values": "error",
         "@typescript-eslint/no-duplicate-type-constituents": "error",
         "@typescript-eslint/no-dynamic-delete": "error",
-        "@typescript-eslint/no-empty-function": [
-            "error",
-            {
-                "allow": [
-                    "arrowFunctions",
-                    "functions",
-                    "methods",
-                    "overrideMethods"
-                ]
-            }
-        ],
+        "@typescript-eslint/no-empty-function": "off",
         "@typescript-eslint/no-empty-object-type": ["error", { "allowInterfaces": "with-single-extends" }],
         "@typescript-eslint/no-explicit-any": "warn",
         "@typescript-eslint/no-extra-non-null-assertion": "error",

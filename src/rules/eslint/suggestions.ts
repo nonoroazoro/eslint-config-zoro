@@ -60,16 +60,7 @@ export const SUGGESTIONS: Config = {
         "no-delete-var": "error",
         "no-div-regex": "off",
         "no-else-return": "off",
-        "no-empty-function": [
-            "error",
-            {
-                "allow": [
-                    "arrowFunctions",
-                    "functions",
-                    "methods"
-                ]
-            }
-        ],
+        "no-empty-function": "off",
         "no-empty-static-block": "error",
         "no-empty": ["error", { "allowEmptyCatch": true }],
         "no-eq-null": "off",
