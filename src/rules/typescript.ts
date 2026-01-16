@@ -195,6 +195,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/restrict-template-expressions": "error",
         "@typescript-eslint/return-await": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
+        "@typescript-eslint/strict-void-return": "error",
         "@typescript-eslint/switch-exhaustiveness-check": "error",
         "@typescript-eslint/triple-slash-reference": "error",
         "@typescript-eslint/typedef": "off",
