@@ -33,7 +33,6 @@ export const STYLISTIC: Config = {
         "@stylistic/jsx-pascal-case": "error",
         "@stylistic/jsx-quotes": ["error", "prefer-double"],
         "@stylistic/jsx-self-closing-comp": "error",
-        "@stylistic/jsx-sort-props": "off",
         "@stylistic/jsx-tag-spacing": [
             "error",
             {
