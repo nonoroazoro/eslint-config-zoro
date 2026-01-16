@@ -16,7 +16,7 @@ export const SUGGESTIONS: Config = {
         "consistent-this": "off",
         "curly": "error",
         "default-case-last": "error",
-        "default-case": ["error", { "commentPattern": "^no default$" }],
+        "default-case": "off",
         "default-param-last": "error",
         "dot-notation": "off",
         "eqeqeq": ["error", "always", { "null": "ignore" }],
