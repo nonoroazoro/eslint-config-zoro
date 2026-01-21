@@ -52,7 +52,6 @@ export const NODE: Config = {
         "n/prefer-node-protocol": "error",
         "n/prefer-promises/dns": "error",
         "n/prefer-promises/fs": "error",
-        "n/process-exit-as-throw": "error",
-        "n/shebang": "error"
+        "n/process-exit-as-throw": "error"
     }
 };
