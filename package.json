@@ -32,7 +32,7 @@
     "prepare": "husky",
     "prepublish": "npm run build",
     "prebuild": "rimraf dist",
-    "build": "npm run lint && tsc && tsc-alias",
+    "build": "tsc && tsc-alias && npm run lint",
     "lint": "eslint src/**",
     "test": "vitest run",
     "upgradepackages": "ncu -u"
