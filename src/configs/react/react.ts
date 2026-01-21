@@ -38,8 +38,6 @@ export const REACT: Config = {
             "error",
             {
                 "allowArrowFunctions": true,
-                "allowBind": false,
-                "allowFunctions": false,
                 "ignoreDOMComponents": true,
                 "ignoreRefs": true
             }
@@ -89,14 +87,14 @@ export const REACT: Config = {
         "react/no-unknown-property": "error",
         "react/no-unsafe": "error",
         "react/no-unstable-nested-components": "error",
-        "react/no-unused-prop-types": ["warn", { "customValidators": [], "skipShapeProps": true }],
+        "react/no-unused-prop-types": "warn",
         "react/no-unused-state": "error",
         "react/no-will-update-set-state": "error",
         "react/prefer-es6-class": ["error", "always"],
         "react/prefer-exact-props": "error",
         "react/prefer-read-only-props": "error",
         "react/prefer-stateless-function": "off",
-        "react/prop-types": ["error", { "customValidators": [], "ignore": ["children"] }],
+        "react/prop-types": ["error", { "ignore": ["children"] }],
         "react/react-in-jsx-scope": "off",
         "react/require-default-props": "off",
         "react/require-optimization": "off",

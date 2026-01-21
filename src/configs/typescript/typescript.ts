@@ -120,7 +120,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }],
         "@typescript-eslint/no-misused-spread": "error",
         "@typescript-eslint/no-mixed-enums": "error",
-        "@typescript-eslint/no-namespace": ["error", { "allowDeclarations": true, "allowDefinitionFiles": true }],
+        "@typescript-eslint/no-namespace": ["error", { "allowDeclarations": true }],
         "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
         "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
         "@typescript-eslint/no-non-null-assertion": "warn",
@@ -151,21 +151,13 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-unsafe-return": "error",
         "@typescript-eslint/no-unsafe-type-assertion": "off",
         "@typescript-eslint/no-unsafe-unary-minus": "error",
-        "@typescript-eslint/no-unused-expressions": [
-            "error",
-            {
-                "allowShortCircuit": false,
-                "allowTaggedTemplates": false,
-                "allowTernary": false
-            }
-        ],
+        "@typescript-eslint/no-unused-expressions": "error",
         "@typescript-eslint/no-unused-private-class-members": "warn",
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {
                 "args": "none",
-                "ignoreRestSiblings": true,
-                "vars": "all"
+                "ignoreRestSiblings": true
             }
         ],
         "@typescript-eslint/no-use-before-define": ["error", { "classes": false, "functions": false }],

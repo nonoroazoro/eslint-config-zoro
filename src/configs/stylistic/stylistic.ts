@@ -18,11 +18,11 @@ export const STYLISTIC: Config = {
         "@stylistic/array-bracket-spacing": ["error", "never"],
         "@stylistic/array-element-newline": ["error", "consistent"],
         "@stylistic/arrow-parens": ["error", "as-needed"],
-        "@stylistic/arrow-spacing": ["error", { "after": true, "before": true }],
+        "@stylistic/arrow-spacing": "error",
         "@stylistic/block-spacing": ["error", "always"],
         "@stylistic/brace-style": ["error", "allman", { "allowSingleLine": true }],
         "@stylistic/comma-dangle": ["error", "never"],
-        "@stylistic/comma-spacing": ["error", { "after": true, "before": false }],
+        "@stylistic/comma-spacing": "error",
         "@stylistic/comma-style": ["error", "last"],
         "@stylistic/computed-property-spacing": ["error", "never"],
         "@stylistic/curly-newline": ["error", { "consistent": true, "multiline": true }],
@@ -42,7 +42,7 @@ export const STYLISTIC: Config = {
         "@stylistic/implicit-arrow-linebreak": "off",
         "@stylistic/indent": ["error", 4, { "SwitchCase": 1 }],
         "@stylistic/indent-binary-ops": ["error", 4],
-        "@stylistic/key-spacing": ["error", { "afterColon": true, "beforeColon": false }],
+        "@stylistic/key-spacing": "error",
         "@stylistic/keyword-spacing": [
             "error",
             {
@@ -103,7 +103,7 @@ export const STYLISTIC: Config = {
         "@stylistic/quotes": ["error", "double", { "allowTemplateLiterals": "always", "avoidEscape": true }],
         "@stylistic/rest-spread-spacing": ["error", "never"],
         "@stylistic/semi": ["error", "always"],
-        "@stylistic/semi-spacing": ["error", { "after": true, "before": false }],
+        "@stylistic/semi-spacing": "error",
         "@stylistic/semi-style": ["error", "last"],
         "@stylistic/space-before-blocks": "error",
         "@stylistic/space-before-function-paren": ["error", { "anonymous": "always", "asyncArrow": "always", "catch": "always", "named": "never" }],
@@ -125,7 +125,7 @@ export const STYLISTIC: Config = {
                 }
             }
         ],
-        "@stylistic/switch-colon-spacing": ["error", { "after": true, "before": false }],
+        "@stylistic/switch-colon-spacing": "error",
         "@stylistic/template-curly-spacing": "error",
         "@stylistic/template-tag-spacing": ["error", "never"],
         "@stylistic/type-annotation-spacing": [
@@ -143,7 +143,7 @@ export const STYLISTIC: Config = {
         ],
         "@stylistic/type-generic-spacing": "error",
         "@stylistic/type-named-tuple-spacing": "error",
-        "@stylistic/wrap-iife": ["error", "outside", { "functionPrototypeMethods": false }],
+        "@stylistic/wrap-iife": "error",
         "@stylistic/wrap-regex": "off",
         "@stylistic/yield-star-spacing": ["error", "after"]
     }

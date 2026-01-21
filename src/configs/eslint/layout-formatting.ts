@@ -6,6 +6,6 @@ import type { Config } from "../../types";
 export const LAYOUT_FORMATTING: Config = {
     name: "zoro/eslint/layout-formatting",
     rules: {
-        "unicode-bom": ["error", "never"]
+        "unicode-bom": "error"
     }
 };

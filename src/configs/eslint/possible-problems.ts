@@ -17,7 +17,7 @@ export const POSSIBLE_PROBLEMS: Config = {
         "no-cond-assign": "error",
         "no-const-assign": "error",
         "no-constant-binary-expression": "error",
-        "no-constant-condition": ["warn", { "checkLoops": false }],
+        "no-constant-condition": ["warn", { "checkLoops": "none" }],
         "no-constructor-return": "error",
         "no-control-regex": "error",
         "no-debugger": "error",
@@ -61,8 +61,7 @@ export const POSSIBLE_PROBLEMS: Config = {
             "warn",
             {
                 "args": "none",
-                "ignoreRestSiblings": true,
-                "vars": "all"
+                "ignoreRestSiblings": true
             }
         ],
         "no-use-before-define": ["error", { "classes": false, "functions": false }],

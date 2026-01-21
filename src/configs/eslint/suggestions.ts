@@ -38,19 +38,7 @@ export const SUGGESTIONS: Config = {
         "max-nested-callbacks": "off",
         "max-params": "off",
         "max-statements": "off",
-        "new-cap": [
-            "error",
-            {
-                "capIsNew": false,
-                "capIsNewExceptions": [
-                    "Immutable.Map",
-                    "Immutable.Set",
-                    "Immutable.List"
-                ],
-                "newIsCap": true,
-                "newIsCapExceptions": []
-            }
-        ],
+        "new-cap": "error",
         "no-alert": "error",
         "no-array-constructor": "error",
         "no-bitwise": "off",
@@ -135,14 +123,7 @@ export const SUGGESTIONS: Config = {
         "no-undefined": "off",
         "no-underscore-dangle": "off",
         "no-unneeded-ternary": "error",
-        "no-unused-expressions": [
-            "error",
-            {
-                "allowShortCircuit": false,
-                "allowTaggedTemplates": false,
-                "allowTernary": false
-            }
-        ],
+        "no-unused-expressions": "error",
         "no-unused-labels": "error",
         "no-useless-call": "off",
         "no-useless-catch": "off",
@@ -150,14 +131,7 @@ export const SUGGESTIONS: Config = {
         "no-useless-concat": "error",
         "no-useless-constructor": "error",
         "no-useless-escape": "error",
-        "no-useless-rename": [
-            "error",
-            {
-                "ignoreDestructuring": false,
-                "ignoreExport": false,
-                "ignoreImport": false
-            }
-        ],
+        "no-useless-rename": "error",
         "no-useless-return": "off",
         "no-var": "error",
         "no-void": "error",
@@ -167,19 +141,12 @@ export const SUGGESTIONS: Config = {
             "error",
             "always",
             {
-                "avoidQuotes": true,
-                "ignoreConstructors": false
+                "avoidQuotes": true
             }
         ],
         "one-var": ["error", "never"],
         "operator-assignment": "off",
-        "prefer-arrow-callback": [
-            "error",
-            {
-                "allowNamedFunctions": false,
-                "allowUnboundThis": true
-            }
-        ],
+        "prefer-arrow-callback": "error",
         "prefer-const": "error",
         "prefer-destructuring": "off",
         "prefer-exponentiation-operator": "off",
