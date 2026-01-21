@@ -30,7 +30,6 @@ export const REACT_HOOKS: Config = {
         "react-hooks/set-state-in-render": "error",
         "react-hooks/static-components": "error",
         "react-hooks/unsupported-syntax": "warn",
-        "react-hooks/use-memo": "error",
-        "react-hooks/void-use-memo": "error"
+        "react-hooks/use-memo": "error"
     }
 };
