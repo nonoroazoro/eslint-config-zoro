@@ -41,13 +41,13 @@ The following presets are **always enabled** and cannot be opted out:
 
 ## Optional Presets
 
-Enable optional presets by passing options to `defineConfig`:
+Enable optional presets by passing options to `defineConfig`, see [Examples](#examples):
 
-| Option | Preset | Install Dependencies |
+| Option | Preset | Required Dependencies |
 | ------ | ------ | -------------------------- |
-| `typescript: true` | [TypeScript](https://typescript-eslint.io/rules) | `npm i -D @typescript-eslint/parser @typescript-eslint/eslint-plugin` |
-| `react: true` | [React](https://github.com/jsx-eslint/eslint-plugin-react) + [React Hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) | `npm i -D eslint-plugin-react eslint-plugin-react-hooks` |
-| `node: true` | [Node](https://github.com/eslint-community/eslint-plugin-n) | `npm i -D eslint-plugin-n` |
+| `typescript` | [TypeScript](https://typescript-eslint.io/rules) | `@typescript-eslint/parser` `@typescript-eslint/eslint-plugin` |
+| `react` | [React](https://github.com/jsx-eslint/eslint-plugin-react) + [React Hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) | `eslint-plugin-react` `eslint-plugin-react-hooks` |
+| `node` | [Node](https://github.com/eslint-community/eslint-plugin-n) | `eslint-plugin-n` |
 
 ## Examples
 

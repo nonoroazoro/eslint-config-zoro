@@ -1,5 +1,42 @@
 # Changelogs
 
+## 9.0.0 - January 21, 2026
+
+### Breaking Changes
+
+- Change: Use `defineConfig` as the single entry point for configuration generation. The previous multiple config imports (`ESLINT_CONFIGS`, `STYLISTIC_CONFIGS`, etc.) are no longer supported.
+
+- Change: Use `eslint-plugin-perfectionist` as a core preset (always enabled).
+
+### Migrate to v9.x
+
+v9.0.0 is a major release and has several breaking changes that you need to be aware of.
+
+**Before**:
+
+```javascript
+import { ESLINT_CONFIGS } from "eslint-config-zoro/eslint";
+import { STYLISTIC_CONFIGS } from "eslint-config-zoro/stylistic";
+import { TYPESCRIPT_CONFIGS } from "eslint-config-zoro/typescript";
+
+export default [
+    ...ESLINT_CONFIGS,
+    ...STYLISTIC_CONFIGS,
+    ...TYPESCRIPT_CONFIGS
+];
+```
+
+**After**:
+
+```javascript
+import { defineConfig } from "eslint-config-zoro";
+
+export default defineConfig({
+    typescript: true
+});
+```
+
+
 ## 8.0.3 - January 13, 2026
 
 - Change: Allow separate type imports in rule `no-duplicate-imports`.
