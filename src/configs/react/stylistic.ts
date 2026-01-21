@@ -1,11 +1,15 @@
 import plugin from "@stylistic/eslint-plugin";
 
+import { GLOB_JSX, GLOB_TSX } from "../../constants/globs";
+
 import type { Config } from "../../types/Config";
 
 /**
  * See https://eslint.style/rules
  */
 export const STYLISTIC: Config = {
+    files: [GLOB_JSX, GLOB_TSX],
+    name: "zoro/react/stylistic",
     plugins: {
         "@stylistic": plugin
     },
@@ -45,14 +49,14 @@ export const STYLISTIC: Config = {
         "@stylistic/jsx-wrap-multilines": [
             "error",
             {
-                "declaration": "parens-new-line",
-                "assignment": "parens-new-line",
-                "return": "parens-new-line",
                 "arrow": "parens-new-line",
+                "assignment": "parens-new-line",
                 "condition": "parens-new-line",
+                "declaration": "parens-new-line",
                 "logical": "parens-new-line",
                 "prop": "ignore",
-                "propertyValue": "parens-new-line"
+                "propertyValue": "parens-new-line",
+                "return": "parens-new-line"
             }
         ]
     }

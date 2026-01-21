@@ -1,20 +1,27 @@
-import * as parser from "@typescript-eslint/parser";
 import plugin from "@typescript-eslint/eslint-plugin";
+import * as parser from "@typescript-eslint/parser";
 
-import type { Config, Plugin } from "../types/Config";
+import { GLOB_DTS, GLOB_TS, GLOB_TSX } from "../../constants/globs";
+
+import type { Config, Plugin } from "../../types/Config";
 
 /**
  * See https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
  */
 export const TYPESCRIPT: Config = {
+    files: [GLOB_TS, GLOB_TSX],
+    ignores: [GLOB_DTS],
     languageOptions: {
         parser
     },
+    name: "zoro/typescript",
     plugins: {
         "@typescript-eslint": plugin as unknown as Plugin
     },
     rules: {
-        "@typescript-eslint/adjacent-overload-signatures": "error",
+        // Checked by perfectionist/sort-interfaces and perfectionist/sort-object-types
+        "@typescript-eslint/adjacent-overload-signatures": "off",
+
         "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
         "@typescript-eslint/await-thenable": "error",
         "@typescript-eslint/ban-ts-comment": "warn",
@@ -24,7 +31,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/consistent-generic-constructors": "error",
         "@typescript-eslint/consistent-indexed-object-style": "error",
 
-        // Use tsconfig's noImplicitReturns option instead.
+        // Checked by noImplicitReturns
         "@typescript-eslint/consistent-return": "off",
 
         "@typescript-eslint/consistent-type-assertions": "error",
@@ -78,9 +85,9 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/naming-convention": [
             "error",
             {
-                "selector": "variable",
                 "format": ["camelCase", "PascalCase", "UPPER_CASE"],
                 "leadingUnderscore": "allow",
+                "selector": "variable",
                 "trailingUnderscore": "forbid"
             }
         ],
@@ -148,20 +155,20 @@ export const TYPESCRIPT: Config = {
             "error",
             {
                 "allowShortCircuit": false,
-                "allowTernary": false,
-                "allowTaggedTemplates": false
+                "allowTaggedTemplates": false,
+                "allowTernary": false
             }
         ],
         "@typescript-eslint/no-unused-private-class-members": "warn",
         "@typescript-eslint/no-unused-vars": [
             "warn",
             {
-                "vars": "all",
                 "args": "none",
-                "ignoreRestSiblings": true
+                "ignoreRestSiblings": true,
+                "vars": "all"
             }
         ],
-        "@typescript-eslint/no-use-before-define": ["error", { "functions": false, "classes": false }],
+        "@typescript-eslint/no-use-before-define": ["error", { "classes": false, "functions": false }],
         "@typescript-eslint/no-useless-constructor": "error",
         "@typescript-eslint/no-useless-default-assignment": "error",
         "@typescript-eslint/no-useless-empty-export": "error",
@@ -181,8 +188,8 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/prefer-nullish-coalescing": ["error", { "ignoreIfStatements": true }],
         "@typescript-eslint/prefer-optional-chain": "error",
         "@typescript-eslint/prefer-promise-reject-errors": "error",
-        "@typescript-eslint/prefer-readonly-parameter-types": "off",
         "@typescript-eslint/prefer-readonly": "off",
+        "@typescript-eslint/prefer-readonly-parameter-types": "off",
         "@typescript-eslint/prefer-reduce-type-parameter": "error",
         "@typescript-eslint/prefer-regexp-exec": "off",
         "@typescript-eslint/prefer-return-this-type": "error",

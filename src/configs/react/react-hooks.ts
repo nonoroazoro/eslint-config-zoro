@@ -1,11 +1,15 @@
 import plugin from "eslint-plugin-react-hooks";
 
+import { GLOB_JSX, GLOB_TSX } from "../../constants/globs";
+
 import type { Config, Plugin } from "../../types";
 
 /**
- * See https://www.npmjs.com/package/eslint-plugin-react-hooks
+ * See https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks
  */
 export const REACT_HOOKS: Config = {
+    files: [GLOB_JSX, GLOB_TSX],
+    name: "zoro/react/react-hooks",
     plugins: {
         "react-hooks": plugin as unknown as Plugin
     },

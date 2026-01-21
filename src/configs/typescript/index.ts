@@ -1,12 +1,10 @@
-import globals from "globals";
+import { TYPESCRIPT } from "./typescript";
 
-import { TYPESCRIPT } from "./rules/typescript";
-import type { Config } from "./types";
+import type { Config } from "../../types";
 
 export const TYPESCRIPT_CONFIGS: Config[] = [
     TYPESCRIPT,
     {
-        files: ["**/*.?([cm])ts", "**/*.?([cm])tsx"],
         rules: {
             // Checked by @typescript-eslint
             "default-param-last": "off",
@@ -63,31 +61,6 @@ export const TYPESCRIPT_CONFIGS: Config[] = [
 
             // Checked by Typescript - ts(2367)
             "valid-typeof": "off"
-        }
-    },
-    {
-        files: ["**/*.?([cm])js", "**/*.?([cm])jsx"],
-        rules: {
-            // Disabled in vanilla JavaScript files
-            "@typescript-eslint/no-shadow": "off",
-            "@typescript-eslint/no-unsafe-call": "off",
-            "@typescript-eslint/no-unsafe-member-access": "off",
-            "@typescript-eslint/prefer-nullish-coalescing": "off",
-            "@typescript-eslint/restrict-template-expressions": "off"
-        }
-    },
-    {
-        files: ["**/*.d.ts"],
-        rules: {
-            // Disabled in TypeScript declaration files
-            "no-var": "off"
-        }
-    },
-    {
-        languageOptions: {
-            globals: {
-                ...globals.browser
-            }
         }
     }
 ];

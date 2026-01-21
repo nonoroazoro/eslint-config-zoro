@@ -4,6 +4,7 @@ import type { Config } from "../../types";
  * See https://eslint.org/docs/latest/rules/#suggestions
  */
 export const SUGGESTIONS: Config = {
+    name: "zoro/eslint/suggestions",
     rules: {
         "accessor-pairs": "off",
         "arrow-body-style": "off",
@@ -15,8 +16,8 @@ export const SUGGESTIONS: Config = {
         "consistent-return": "off",
         "consistent-this": "off",
         "curly": "error",
-        "default-case-last": "error",
         "default-case": "off",
+        "default-case-last": "error",
         "default-param-last": "error",
         "dot-notation": "off",
         "eqeqeq": ["error", "always", { "null": "ignore" }],
@@ -32,22 +33,22 @@ export const SUGGESTIONS: Config = {
         "logical-assignment-operators": ["error", "never"],
         "max-classes-per-file": "error",
         "max-depth": "off",
-        "max-lines-per-function": "off",
         "max-lines": "off",
+        "max-lines-per-function": "off",
         "max-nested-callbacks": "off",
         "max-params": "off",
         "max-statements": "off",
         "new-cap": [
             "error",
             {
-                "newIsCap": true,
-                "newIsCapExceptions": [],
                 "capIsNew": false,
                 "capIsNewExceptions": [
                     "Immutable.Map",
                     "Immutable.Set",
                     "Immutable.List"
-                ]
+                ],
+                "newIsCap": true,
+                "newIsCapExceptions": []
             }
         ],
         "no-alert": "error",
@@ -60,9 +61,9 @@ export const SUGGESTIONS: Config = {
         "no-delete-var": "error",
         "no-div-regex": "off",
         "no-else-return": "off",
+        "no-empty": ["error", { "allowEmptyCatch": true }],
         "no-empty-function": "off",
         "no-empty-static-block": "error",
-        "no-empty": ["error", { "allowEmptyCatch": true }],
         "no-eq-null": "off",
         "no-eval": "error",
         "no-extend-native": "error",
@@ -86,13 +87,13 @@ export const SUGGESTIONS: Config = {
         "no-multi-str": "error",
         "no-negated-condition": "off",
         "no-nested-ternary": "error",
+        "no-new": "error",
         "no-new-func": "error",
         "no-new-wrappers": "error",
-        "no-new": "error",
         "no-nonoctal-decimal-escape": "error",
         "no-object-constructor": "error",
-        "no-octal-escape": "error",
         "no-octal": "error",
+        "no-octal-escape": "error",
         "no-param-reassign": "error",
         "no-plusplus": "off",
         "no-proto": "error",
@@ -104,17 +105,17 @@ export const SUGGESTIONS: Config = {
         "no-restricted-properties": [
             "error",
             {
+                "message": "arguments.callee is deprecated.",
                 "object": "arguments",
-                "property": "callee",
-                "message": "arguments.callee is deprecated."
+                "property": "callee"
             },
             {
-                "property": "__defineGetter__",
-                "message": "Please use Object.defineProperty instead."
+                "message": "Please use Object.defineProperty instead.",
+                "property": "__defineGetter__"
             },
             {
-                "property": "__defineSetter__",
-                "message": "Please use Object.defineProperty instead."
+                "message": "Please use Object.defineProperty instead.",
+                "property": "__defineSetter__"
             }
         ],
         "no-restricted-syntax": [
@@ -126,8 +127,8 @@ export const SUGGESTIONS: Config = {
         "no-return-assign": ["error", "always"],
         "no-script-url": "off",
         "no-sequences": "error",
-        "no-shadow-restricted-names": "error",
         "no-shadow": "error",
+        "no-shadow-restricted-names": "error",
         "no-ternary": "off",
         "no-throw-literal": "error",
         "no-undef-init": "off",
@@ -153,8 +154,8 @@ export const SUGGESTIONS: Config = {
             "error",
             {
                 "ignoreDestructuring": false,
-                "ignoreImport": false,
-                "ignoreExport": false
+                "ignoreExport": false,
+                "ignoreImport": false
             }
         ],
         "no-useless-return": "off",
@@ -166,8 +167,8 @@ export const SUGGESTIONS: Config = {
             "error",
             "always",
             {
-                "ignoreConstructors": false,
-                "avoidQuotes": true
+                "avoidQuotes": true,
+                "ignoreConstructors": false
             }
         ],
         "one-var": ["error", "never"],
@@ -195,8 +196,13 @@ export const SUGGESTIONS: Config = {
         "require-await": "off",
         "require-unicode-regexp": "off",
         "require-yield": "error",
+
+        // Checked by perfectionist/sort-imports
         "sort-imports": "off",
+
+        // Checked by perfectionist/sort-objects
         "sort-keys": "off",
+
         "sort-vars": "off",
         "strict": ["error", "never"],
         "symbol-description": "error",

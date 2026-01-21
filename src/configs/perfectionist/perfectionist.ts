@@ -1,0 +1,56 @@
+import plugin from "eslint-plugin-perfectionist";
+
+import { GLOB_ALL } from "../../constants/globs";
+
+import type { Config } from "../../types/Config";
+
+/**
+ * See https://perfectionist.dev/rules
+ */
+export const PERFECTIONIST: Config = {
+    files: [GLOB_ALL],
+    name: "zoro/perfectionist",
+    plugins: {
+        "perfectionist": plugin
+    },
+    rules: {
+        "perfectionist/sort-array-includes": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-classes": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-decorators": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-enums": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-export-attributes": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-exports": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-heritage-clauses": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-import-attributes": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-imports": [
+            "error",
+            {
+                "groups": [
+                    "side-effect",
+
+                    "builtin",
+                    "external",
+                    "internal",
+                    ["index", "sibling", "parent"],
+                    "type",
+
+                    "side-effect-style",
+                    "style"
+                ],
+                "ignoreCase": false
+            }
+        ],
+        "perfectionist/sort-interfaces": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-intersection-types": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-maps": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-modules": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-named-exports": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-named-imports": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-object-types": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-objects": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-sets": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-switch-case": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-union-types": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-variable-declarations": ["error", { "ignoreCase": false }]
+    }
+};

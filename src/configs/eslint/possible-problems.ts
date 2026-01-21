@@ -4,6 +4,7 @@ import type { Config } from "../../types";
  * See https://eslint.org/docs/latest/rules/#possible-problems
  */
 export const POSSIBLE_PROBLEMS: Config = {
+    name: "zoro/eslint/possible-problems",
     rules: {
         "array-callback-return": "error",
         "constructor-super": "error",
@@ -50,8 +51,8 @@ export const POSSIBLE_PROBLEMS: Config = {
         "no-undef": "error",
         "no-unexpected-multiline": "off",
         "no-unmodified-loop-condition": "off",
-        "no-unreachable-loop": "error",
         "no-unreachable": "error",
+        "no-unreachable-loop": "error",
         "no-unsafe-finally": "error",
         "no-unsafe-negation": "error",
         "no-unsafe-optional-chaining": "error",
@@ -59,12 +60,12 @@ export const POSSIBLE_PROBLEMS: Config = {
         "no-unused-vars": [
             "warn",
             {
-                "vars": "all",
                 "args": "none",
-                "ignoreRestSiblings": true
+                "ignoreRestSiblings": true,
+                "vars": "all"
             }
         ],
-        "no-use-before-define": ["error", { "functions": false, "classes": false }],
+        "no-use-before-define": ["error", { "classes": false, "functions": false }],
         "no-useless-assignment": "warn",
         "no-useless-backreference": "error",
         "require-atomic-updates": "off",

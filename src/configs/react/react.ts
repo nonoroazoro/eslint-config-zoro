@@ -1,13 +1,17 @@
 import plugin from "eslint-plugin-react";
 
+import { GLOB_JSX, GLOB_TSX } from "../../constants/globs";
+
 import type { Config } from "../../types";
 
 /**
  * See https://github.com/yannickcr/eslint-plugin-react
  */
 export const REACT: Config = {
+    files: [GLOB_JSX, GLOB_TSX],
+    name: "zoro/react/react",
     plugins: {
-        react: plugin
+        "react": plugin
     },
     rules: {
         "react/boolean-prop-naming": "error",
@@ -24,6 +28,40 @@ export const REACT: Config = {
         "react/function-component-definition": "off",
         "react/hook-use-state": "error",
         "react/iframe-missing-sandbox": "error",
+        "react/jsx-boolean-value": ["error", "never"],
+        "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+        "react/jsx-fragments": "off",
+        "react/jsx-handler-names": "off",
+        "react/jsx-key": ["error", { "checkKeyMustBeforeSpread": true, "warnOnDuplicates": true }],
+        "react/jsx-max-depth": "off",
+        "react/jsx-no-bind": [
+            "error",
+            {
+                "allowArrowFunctions": true,
+                "allowBind": false,
+                "allowFunctions": false,
+                "ignoreDOMComponents": true,
+                "ignoreRefs": true
+            }
+        ],
+        "react/jsx-no-comment-textnodes": "error",
+        "react/jsx-no-constructed-context-values": "error",
+        "react/jsx-no-duplicate-props": "error",
+        "react/jsx-no-leaked-render": "error",
+        "react/jsx-no-literals": "off",
+        "react/jsx-no-script-url": "error",
+        "react/jsx-no-target-blank": "error",
+        "react/jsx-no-undef": "error",
+        "react/jsx-no-useless-fragment": "error",
+        "react/jsx-props-no-spread-multi": "error",
+        "react/jsx-props-no-spreading": ["error", { "html": "ignore" }],
+        "react/jsx-sort-default-props": "off",
+
+        // Checked by perfectionist/sort-jsx-props
+        "react/jsx-sort-props": "off",
+
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
         "react/no-access-state-in-setstate": "error",
         "react/no-adjacent-inline-elements": "error",
         "react/no-array-index-key": "error",
@@ -44,9 +82,9 @@ export const REACT: Config = {
         "react/no-redundant-should-component-update": "error",
         "react/no-render-return-value": "error",
         "react/no-set-state": "off",
-        "react/no-typos": "error",
         "react/no-string-refs": "error",
         "react/no-this-in-sfc": "error",
+        "react/no-typos": "error",
         "react/no-unescaped-entities": "error",
         "react/no-unknown-property": "error",
         "react/no-unsafe": "error",
@@ -58,7 +96,7 @@ export const REACT: Config = {
         "react/prefer-exact-props": "error",
         "react/prefer-read-only-props": "error",
         "react/prefer-stateless-function": "off",
-        "react/prop-types": ["error", { "ignore": ["children"], "customValidators": [] }],
+        "react/prop-types": ["error", { "customValidators": [], "ignore": ["children"] }],
         "react/react-in-jsx-scope": "off",
         "react/require-default-props": "off",
         "react/require-optimization": "off",
@@ -66,19 +104,6 @@ export const REACT: Config = {
         "react/self-closing-comp": "error",
         "react/sort-comp": [
             "error", {
-                "order": [
-                    "static-variables",
-                    "static-methods",
-                    "instance-variables",
-                    "lifecycle",
-                    "/^on.+$/",
-                    "getters",
-                    "setters",
-                    "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
-                    "instance-methods",
-                    "everything-else",
-                    "rendering"
-                ],
                 "groups": {
                     "lifecycle": [
                         "displayName",
@@ -105,44 +130,27 @@ export const REACT: Config = {
                         "/^render.+$/",
                         "render"
                     ]
-                }
+                },
+                "order": [
+                    "static-variables",
+                    "static-methods",
+                    "instance-variables",
+                    "lifecycle",
+                    "/^on.+$/",
+                    "getters",
+                    "setters",
+                    "/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/",
+                    "instance-methods",
+                    "everything-else",
+                    "rendering"
+                ]
             }
         ],
         "react/sort-prop-types": "off",
         "react/state-in-constructor": "off",
         "react/static-property-placement": "error",
         "react/style-prop-object": "error",
-        "react/void-dom-elements-no-children": "error",
-        "react/jsx-boolean-value": ["error", "never"],
-        "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
-        "react/jsx-handler-names": "off",
-        "react/jsx-key": ["error", { "checkKeyMustBeforeSpread": true, "warnOnDuplicates": true }],
-        "react/jsx-max-depth": "off",
-        "react/jsx-no-bind": [
-            "error",
-            {
-                "ignoreRefs": true,
-                "allowArrowFunctions": true,
-                "allowFunctions": false,
-                "allowBind": false,
-                "ignoreDOMComponents": true
-            }
-        ],
-        "react/jsx-no-comment-textnodes": "error",
-        "react/jsx-no-constructed-context-values": "error",
-        "react/jsx-no-duplicate-props": "error",
-        "react/jsx-no-leaked-render": "error",
-        "react/jsx-no-literals": "off",
-        "react/jsx-no-script-url": "error",
-        "react/jsx-no-target-blank": "error",
-        "react/jsx-no-undef": "error",
-        "react/jsx-no-useless-fragment": "error",
-        "react/jsx-fragments": "off",
-        "react/jsx-props-no-spread-multi": "error",
-        "react/jsx-props-no-spreading": ["error", { "html": "ignore" }],
-        "react/jsx-sort-default-props": "off",
-        "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error"
+        "react/void-dom-elements-no-children": "error"
     },
     settings: {
         react: {
