@@ -1,4 +1,4 @@
-import plugin from "@stylistic/eslint-plugin";
+import plugin from "eslint-plugin-perfectionist";
 
 import { GLOB_JSX, GLOB_TSX } from "../../constants/globs";
 
