@@ -7,6 +7,7 @@ export const TYPESCRIPT_CONFIGS: Config[] = [
     {
         rules: {
             // Checked by @typescript-eslint
+            "default-case": "off",
             "default-param-last": "off",
             "no-loop-func": "off",
             "no-shadow": "off",
