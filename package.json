@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-zoro",
   "version": "8.0.3",
-  "packageManager": "pnpm@10.28.0",
+  "packageManager": "pnpm@10.28.1",
   "description": "A fully customized ESLint configuration based on the default ESLint, React and TypeScript rules.",
   "author": {
     "name": "nonoroazoro",
@@ -21,44 +21,43 @@
     "styleguide",
     "typescript"
   ],
-  "main": "./dist/index.js",
   "type": "module",
   "exports": {
-    ".": "./dist/index.js",
-    "./eslint": "./dist/eslint.js",
-    "./node": "./dist/node.js",
-    "./react": "./dist/react.js",
-    "./stylistic": "./dist/stylistic.js",
-    "./typescript": "./dist/typescript.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
   },
   "scripts": {
     "prepare": "husky",
-    "prebuild": "npm run clean",
-    "build": "tsc && tsc-alias",
-    "clean": "rimraf dist/*",
+    "prepublish": "npm run build",
+    "prebuild": "rimraf dist",
+    "build": "npm run lint && tsc && tsc-alias",
     "lint": "eslint src/**",
     "test": "vitest run",
     "upgradepackages": "ncu -u"
   },
   "engines": {
-    "node": "^16.0.0 || >=18.0.0"
+    "node": ">=18.18.0"
   },
   "lint-staged": {
     "{src,tests}/**/*.{js,ts,tsx}": [
-      "eslint",
-      "git add"
+      "eslint"
     ]
+  },
+  "dependencies": {
+    "globals": "^17.0.0"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.7.0",
     "@types/node": "^25.0.9",
-    "@typescript-eslint/eslint-plugin": "^8.53.0",
-    "@typescript-eslint/parser": "^8.53.0",
+    "@typescript-eslint/eslint-plugin": "^8.53.1",
+    "@typescript-eslint/parser": "^8.53.1",
     "eslint": "^9.39.2",
     "eslint-plugin-n": "^17.23.2",
+    "eslint-plugin-perfectionist": "^5.3.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
-    "globals": "^17.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "npm-check-updates": "^19.3.1",
@@ -68,14 +67,22 @@
     "vitest": "^4.0.17"
   },
   "peerDependencies": {
-    "@stylistic/eslint-plugin": ">=5.3.1",
-    "@typescript-eslint/eslint-plugin": ">=8.44.0",
-    "eslint": "^9.35.0",
-    "eslint-plugin-n": ">=17.23.1",
-    "eslint-plugin-react": ">=7.37.5",
-    "eslint-plugin-react-hooks": ">=5.2.0"
+    "@stylistic/eslint-plugin": ">=5.7.0",
+    "@typescript-eslint/eslint-plugin": ">=8.53.0",
+    "@typescript-eslint/parser": ">=8.53.0",
+    "eslint": ">=9.39.0",
+    "eslint-plugin-n": ">=17.23.0",
+    "eslint-plugin-perfectionist": ">=5.3.0",
+    "eslint-plugin-react": ">=7.37.0",
+    "eslint-plugin-react-hooks": ">=7.0.0"
   },
   "peerDependenciesMeta": {
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
     "eslint-plugin-n": {
       "optional": true
     },
