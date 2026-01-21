@@ -1,6 +1,6 @@
 import plugin from "eslint-plugin-react";
 
-import { GLOB_JSX, GLOB_TSX } from "../../constants/globs";
+import { GLOB_JSX, GLOB_TSX } from "../../globs";
 
 import type { Config } from "../../types";
 

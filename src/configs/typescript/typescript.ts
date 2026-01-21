@@ -1,7 +1,7 @@
 import plugin from "@typescript-eslint/eslint-plugin";
 import * as parser from "@typescript-eslint/parser";
 
-import { GLOB_DTS, GLOB_TS, GLOB_TSX } from "../../constants/globs";
+import { GLOB_DTS, GLOB_TS, GLOB_TSX } from "../../globs";
 
 import type { Config, Plugin } from "../../types/Config";
 

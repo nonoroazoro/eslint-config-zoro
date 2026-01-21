@@ -1,6 +1,6 @@
 import plugin from "eslint-plugin-perfectionist";
 
-import { GLOB_ALL } from "../../constants/globs";
+import { GLOB_ALL } from "../../globs";
 
 import type { Config } from "../../types/Config";
 

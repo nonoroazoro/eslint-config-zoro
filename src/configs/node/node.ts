@@ -1,6 +1,6 @@
 import plugin from "eslint-plugin-n";
 
-import { GLOB_JS, GLOB_TS } from "../../constants";
+import { GLOB_JS, GLOB_TS } from "../../globs";
 
 import type { Config } from "../../types";
 
