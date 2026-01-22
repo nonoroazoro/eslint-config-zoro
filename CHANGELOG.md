@@ -1,5 +1,10 @@
 # Changelogs
 
+## 9.0.1 - January 22, 2026
+
+- Change: Switch to dynamic plugin loading to avoid errors when optional dependencies are not installed.
+
+
 ## 9.0.0 - January 21, 2026
 
 ### Breaking Changes
