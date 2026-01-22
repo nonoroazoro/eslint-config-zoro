@@ -16,9 +16,10 @@
     "config",
     "eslint",
     "eslintconfig",
-    "javascript",
+    "node",
+    "perfectionist",
     "react",
-    "styleguide",
+    "stylistic",
     "typescript"
   ],
   "type": "module",
