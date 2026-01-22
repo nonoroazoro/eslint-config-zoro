@@ -1,5 +1,3 @@
-import plugin from "@stylistic/eslint-plugin";
-
 import { GLOB_ALL } from "../../globs";
 
 import type { Config } from "../../types/Config";
@@ -10,9 +8,6 @@ import type { Config } from "../../types/Config";
 export const STYLISTIC: Config = {
     files: [GLOB_ALL],
     name: "zoro/stylistic",
-    plugins: {
-        "@stylistic": plugin
-    },
     rules: {
         "@stylistic/array-bracket-newline": ["error", "consistent"],
         "@stylistic/array-bracket-spacing": ["error", "never"],

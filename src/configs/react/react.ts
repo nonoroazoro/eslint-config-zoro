@@ -1,5 +1,3 @@
-import plugin from "eslint-plugin-react";
-
 import { GLOB_JSX, GLOB_TSX } from "../../globs";
 
 import type { Config } from "../../types";
@@ -10,9 +8,6 @@ import type { Config } from "../../types";
 export const REACT: Config = {
     files: [GLOB_JSX, GLOB_TSX],
     name: "zoro/react/react",
-    plugins: {
-        "react": plugin
-    },
     rules: {
         "react/boolean-prop-naming": "error",
         "react/button-has-type": "error",

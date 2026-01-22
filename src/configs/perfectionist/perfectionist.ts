@@ -1,5 +1,3 @@
-import plugin from "eslint-plugin-perfectionist";
-
 import { GLOB_ALL } from "../../globs";
 
 import type { Config } from "../../types/Config";
@@ -10,9 +8,6 @@ import type { Config } from "../../types/Config";
 export const PERFECTIONIST: Config = {
     files: [GLOB_ALL],
     name: "zoro/perfectionist",
-    plugins: {
-        "perfectionist": plugin
-    },
     rules: {
         "perfectionist/sort-array-includes": "off",
         "perfectionist/sort-classes": ["error", { "ignoreCase": false }],
@@ -40,14 +35,14 @@ export const PERFECTIONIST: Config = {
                 "ignoreCase": false
             }
         ],
-        "perfectionist/sort-interfaces": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-interfaces": "off",
         "perfectionist/sort-intersection-types": ["error", { "ignoreCase": false }],
         "perfectionist/sort-maps": "off",
         "perfectionist/sort-modules": ["error", { "ignoreCase": false }],
         "perfectionist/sort-named-exports": ["error", { "ignoreCase": false }],
         "perfectionist/sort-named-imports": ["error", { "ignoreCase": false }],
         "perfectionist/sort-object-types": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
-        "perfectionist/sort-objects": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-objects": "off",
         "perfectionist/sort-sets": "off",
         "perfectionist/sort-switch-case": "off",
         "perfectionist/sort-union-types": ["error", { "ignoreCase": false }],

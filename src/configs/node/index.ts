@@ -1,16 +1,31 @@
 import globals from "globals";
 
+import { importPackage } from "../../utils";
 import { NODE } from "./node";
 
-import type { Config } from "../../types";
+import type { Config, Plugin, Preset } from "../../types";
 
-export const NODE_CONFIGS: Config[] = [
-    NODE,
+const DEPENDENCIES = ["eslint-plugin-n"];
+
+export const NODE_PRESET: Preset = {
+    name: "node",
+    dependencies: DEPENDENCIES,
+    async load(): Promise<Config[]>
     {
-        languageOptions: {
-            globals: {
-                ...globals.node
+        return [
+            {
+                ...NODE,
+                plugins: {
+                    "n": await importPackage<Plugin>(DEPENDENCIES[0])
+                }
+            },
+            {
+                languageOptions: {
+                    globals: {
+                        ...globals.node
+                    }
+                }
             }
-        }
+        ];
     }
-];
+};

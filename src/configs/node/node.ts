@@ -1,5 +1,3 @@
-import plugin from "eslint-plugin-n";
-
 import { GLOB_JS, GLOB_TS } from "../../globs";
 
 import type { Config } from "../../types";
@@ -10,9 +8,6 @@ import type { Config } from "../../types";
 export const NODE: Config = {
     files: [GLOB_JS, GLOB_TS],
     name: "zoro/node",
-    plugins: {
-        "n": plugin
-    },
     rules: {
         "n/callback-return": "off",
         "n/exports-style": "error",

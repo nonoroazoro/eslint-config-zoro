@@ -1,40 +1,53 @@
 import
 {
-    ESLINT_CONFIGS,
-    NODE_CONFIGS,
-    PERFECTIONIST_CONFIGS,
-    REACT_CONFIGS,
-    STYLISTIC_CONFIGS,
-    TYPESCRIPT_CONFIGS
+    ESLINT_PRESET,
+    NODE_PRESET,
+    PERFECTIONIST_PRESET,
+    REACT_PRESET,
+    STYLISTIC_PRESET,
+    TYPESCRIPT_PRESET
 } from "./configs";
+import { getMissingDependencies } from "./utils";
 
 import type { Config, UserConfig } from "./types";
 
 /**
- * Enabled by default and cannot be opted out.
+ * Always enabled, cannot be opted out.
  */
-const CORE_PRESETS: Config[] = [
-    ...ESLINT_CONFIGS,
-    ...STYLISTIC_CONFIGS,
-    ...PERFECTIONIST_CONFIGS
+const REQUIRED_PRESETS = [
+    ESLINT_PRESET,
+    STYLISTIC_PRESET,
+    PERFECTIONIST_PRESET
 ];
 
 /**
  * Enabled by user opt-in.
  */
-const OPTIONAL_PRESETS = {
-    "node": NODE_CONFIGS,
-    "react": REACT_CONFIGS,
-    "typescript": TYPESCRIPT_CONFIGS
-};
+const OPTIONAL_PRESETS = [
+    NODE_PRESET,
+    REACT_PRESET,
+    TYPESCRIPT_PRESET
+];
 
-export function defineConfig(config?: UserConfig): Config[]
+export async function defineConfig(config?: UserConfig): Promise<Config[]>
 {
-    const configs = [...CORE_PRESETS];
-
-    if (config?.ignores)
+    const presets = [...REQUIRED_PRESETS];
+    if (config != null)
     {
-        configs.push({ ignores: config.ignores });
+        presets.push(...OPTIONAL_PRESETS.filter(preset => config[preset.name as keyof UserConfig]));
+    }
+
+    const missing = presets.flatMap(preset => getMissingDependencies(preset.dependencies));
+    if (missing.length > 0)
+    {
+        throw new Error(`[eslint-config-zoro] Please install missing dependencies: npm i -D ${missing.join(" ")}`);
+    }
+
+    const configs: Config[] = [];
+
+    for (const preset of presets)
+    {
+        configs.push(...await preset.load());
     }
 
     if (config == null)
@@ -43,12 +56,10 @@ export function defineConfig(config?: UserConfig): Config[]
     }
 
     const { ignores, node, react, typescript, ...globalConfig } = config;
-    for (const name of Object.keys(OPTIONAL_PRESETS) as Array<keyof typeof OPTIONAL_PRESETS>)
+
+    if (ignores)
     {
-        if (config[name])
-        {
-            configs.push(...OPTIONAL_PRESETS[name]);
-        }
+        configs.push({ ignores });
     }
 
     if (Object.keys(globalConfig).length > 0)

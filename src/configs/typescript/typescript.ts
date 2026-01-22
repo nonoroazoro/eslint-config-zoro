@@ -1,9 +1,6 @@
-import plugin from "@typescript-eslint/eslint-plugin";
-import * as parser from "@typescript-eslint/parser";
-
 import { GLOB_DTS, GLOB_TS, GLOB_TSX } from "../../globs";
 
-import type { Config, Plugin } from "../../types/Config";
+import type { Config } from "../../types/Config";
 
 /**
  * See https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin/docs/rules
@@ -11,13 +8,7 @@ import type { Config, Plugin } from "../../types/Config";
 export const TYPESCRIPT: Config = {
     files: [GLOB_TS, GLOB_TSX],
     ignores: [GLOB_DTS],
-    languageOptions: {
-        parser
-    },
     name: "zoro/typescript",
-    plugins: {
-        "@typescript-eslint": plugin as unknown as Plugin
-    },
     rules: {
         // Checked by perfectionist/sort-interfaces and perfectionist/sort-object-types
         "@typescript-eslint/adjacent-overload-signatures": "off",

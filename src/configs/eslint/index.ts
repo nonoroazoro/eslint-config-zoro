@@ -4,17 +4,24 @@ import { LAYOUT_FORMATTING } from "./layout-formatting";
 import { POSSIBLE_PROBLEMS } from "./possible-problems";
 import { SUGGESTIONS } from "./suggestions";
 
-import type { Config } from "../../types";
+import type { Preset } from "../../types";
 
-export const ESLINT_CONFIGS: Config[] = [
-    LAYOUT_FORMATTING,
-    POSSIBLE_PROBLEMS,
-    SUGGESTIONS,
+export const ESLINT_PRESET: Preset = {
+    name: "eslint",
+    dependencies: ["eslint"],
+    load()
     {
-        languageOptions: {
-            globals: {
-                ...globals.browser
+        return [
+            LAYOUT_FORMATTING,
+            POSSIBLE_PROBLEMS,
+            SUGGESTIONS,
+            {
+                languageOptions: {
+                    globals: {
+                        ...globals.browser
+                    }
+                }
             }
-        }
+        ];
     }
-];
+};
