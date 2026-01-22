@@ -14,7 +14,7 @@ export const PERFECTIONIST: Config = {
         "perfectionist": plugin
     },
     rules: {
-        "perfectionist/sort-array-includes": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-array-includes": "off",
         "perfectionist/sort-classes": ["error", { "ignoreCase": false }],
         "perfectionist/sort-decorators": ["error", { "ignoreCase": false }],
         "perfectionist/sort-enums": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
@@ -42,14 +42,14 @@ export const PERFECTIONIST: Config = {
         ],
         "perfectionist/sort-interfaces": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
         "perfectionist/sort-intersection-types": ["error", { "ignoreCase": false }],
-        "perfectionist/sort-maps": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
+        "perfectionist/sort-maps": "off",
         "perfectionist/sort-modules": ["error", { "ignoreCase": false }],
         "perfectionist/sort-named-exports": ["error", { "ignoreCase": false }],
         "perfectionist/sort-named-imports": ["error", { "ignoreCase": false }],
         "perfectionist/sort-object-types": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
         "perfectionist/sort-objects": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
-        "perfectionist/sort-sets": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
-        "perfectionist/sort-switch-case": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-sets": "off",
+        "perfectionist/sort-switch-case": "off",
         "perfectionist/sort-union-types": ["error", { "ignoreCase": false }],
         "perfectionist/sort-variable-declarations": ["error", { "ignoreCase": false }]
     }
