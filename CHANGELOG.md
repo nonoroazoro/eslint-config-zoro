@@ -1,5 +1,12 @@
 # Changelogs
 
+## 9.0.2 - January 23, 2026
+
+- Add: Add tests for importPackage.
+
+- Change: Remove custom dependencies check.
+
+
 ## 9.0.1 - January 22, 2026
 
 - Change: Switch to dynamic plugin loading to avoid errors when optional dependencies are not installed.
