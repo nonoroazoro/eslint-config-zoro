@@ -1,9 +1,14 @@
 # Changelogs
 
+## 9.0.3 - January 23, 2026
+
+- Change: Turn off `perfectionist/sort-classes`.
+- Change: Turn off `perfectionist/sort-decorators`.
+
+
 ## 9.0.2 - January 23, 2026
 
-- Add: Add tests for importPackage.
-
+- Add: Add tests for `importPackage`.
 - Change: Remove custom dependencies check.
 
 
@@ -17,7 +22,6 @@
 ### Breaking Changes
 
 - Change: Use `defineConfig` as the single entry point for configuration generation. The previous multiple config imports (`ESLINT_CONFIGS`, `STYLISTIC_CONFIGS`, etc.) are no longer supported.
-
 - Change: Use `eslint-plugin-perfectionist` as a core preset (always enabled).
 
 ### Migrate to v9.x
@@ -67,14 +71,12 @@ export default defineConfig({
 ## 8.0.0 - January 01, 2026
 
 - Change: Upgrade all packages and fix issues.
-
 - Change: Migrate to vitest and fulfill tests.
 
 
 ## 7.1.16 - September 19, 2025
 
 - Change: Fix `@stylistic/generator-star-spacing`'s options.
-
 - Change: Remove deprecated rule `@stylistic/jsx-props-no-multi-spaces`.
 
 
@@ -106,16 +108,13 @@ export default defineConfig({
 ## 7.1.10 - August 27, 2025
 
 - Change: `@stylistic/generator-star-spacing` set to anonymous neither.
-
 - Change: `react/jsx-props-no-spreading` allow html.
 
 
 ## 7.1.9 - August 26, 2025
 
 - Change: Change `@stylistic/dot-location` to property.
-
 - Change: Disable `react/require-default-props`.
-
 - Fix: Remove deprecated rule `@stylistic/jsx-indent`.
 
 
@@ -127,9 +126,7 @@ export default defineConfig({
 ## 7.1.7 - August 22, 2025
 
 - Change: Disable `@typescript-eslint/no-redeclare`.
-
 - Change: Fix `@stylistic/member-delimiter-style` and `@stylistic/operator-linebreak`.
-
 - Change: Disable `no-implicit-globals`.
 
 
@@ -151,7 +148,6 @@ export default defineConfig({
 ## 7.1.3 - August 22, 2025
 
 - Change: `@typescript-eslint/naming-convention` and `@typescript-eslint/no-require-imports`.
-
 - Change: `@stylistic/lines-around-comment`.
 
 
@@ -163,7 +159,6 @@ export default defineConfig({
 ## 7.1.1 - August 22, 2025
 
 - Fix: Fix node rules.
-
 - Fix: Fix module exports.
 
 
@@ -190,7 +185,6 @@ export default defineConfig({
 ## 7.0.0-beta.0 - September 09, 2024
 
 - Add: Add `@stylistic/eslint-plugin`.
-
 - Change: Synchronize version with `@typescript-eslint`.
 
 
@@ -238,9 +232,9 @@ export default defineConfig({
 
 ## 5.27.0 - May 31, 2022
 
+- Add: Add `overrideMethods` to rule `@typescript-eslint/no-empty-function`.
 - Change: Synchronize version with `@typescript-eslint` and `eslint-plugin-react`.
 - Change: Enable `react/jsx-no-leaked-render` and `@typescript-eslint/no-duplicate-enum-values` by default.
-- Add: Add `overrideMethods` to rule `@typescript-eslint/no-empty-function`.
 
 
 ## 5.15.5 - April 11, 2022
@@ -469,7 +463,6 @@ export default defineConfig({
 ## 3.0.2 - June 02, 2020
 
 - Change: Allow PascalCase naming
-
 - Change: Allow #region in comments
 
 
@@ -481,9 +474,7 @@ export default defineConfig({
 ## 3.0.0 - June 02, 2020
 
 - Change: Upgrade to @typescript-eslint version 3.1.0
-
 - Change: Update Typescript overrides
-
 - Change: Remove deprecated rules
 
 
@@ -537,9 +528,7 @@ export default defineConfig({
 ## 2.7.5 - December 24, 2019
 
 - Add: Add @typescript-eslint/no-extra-semi
-
 - Add: Add @typescript-eslint/no-throw-literal
-
 - Change: Upgrade to @typescript-eslint version 2.13.0
 
 
@@ -568,7 +557,6 @@ export default defineConfig({
 ## 2.7.0 - December 03, 2019
 
 - Change: Upgrade to @typescript-eslint version 2.10.0
-
 - Change: Upgrade to eslint-plugin-react version 7.17.0
 
 
@@ -590,16 +578,13 @@ export default defineConfig({
 ## 2.6.0 - November 22, 2019
 
 - Change: Upgrade to @typescript-eslint version 2.8.0
-
 - Change: Upgrade to eslint-plugin-react version 7.16.0
-
 - Change: Upgrade to eslint-plugin-react-hooks version 2.3.0
 
 
 ## 2.5.2 - August 15, 2019
 
 - Change: Disable @typescript-eslint/explicit-member-accessibility.
-
 - Change: Disable @typescript-eslint/member-ordering while linting React.
 
 
@@ -630,15 +615,11 @@ export default defineConfig({
 
 ## 2.4.0 - July 22, 2019
 
-- Add: @typescript-eslint/no-misused-promises.
-
-- Add: @typescript-eslint/prefer-readonly.
-
-- Add: @typescript-eslint/require-await.
-
-- Add: @typescript-eslint/strict-boolean-expressions.
-
-- Change: Remove @typescript-eslint/no-triple-slash-reference in favor @typescript-eslint/triple-slash-reference.
+- Add: `@typescript-eslint/no-misused-promises`.
+- Add: `@typescript-eslint/prefer-readonly`.
+- Add: `@typescript-eslint/require-await`.
+- Add: `@typescript-eslint/strict-boolean-expressions`.
+- Change: Remove `@typescript-eslint/no-triple-slash-reference` in favor `@typescript-eslint/triple-slash-reference`.
 
 
 ## 2.3.7 - July 02, 2019
