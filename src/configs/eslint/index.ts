@@ -8,7 +8,6 @@ import type { Preset } from "../../types";
 
 export const ESLINT_PRESET: Preset = {
     name: "eslint",
-    dependencies: ["eslint"],
     load()
     {
         return [

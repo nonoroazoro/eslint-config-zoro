@@ -7,7 +7,6 @@ import
     STYLISTIC_PRESET,
     TYPESCRIPT_PRESET
 } from "./configs";
-import { getMissingDependencies } from "./utils";
 
 import type { Config, UserConfig } from "./types";
 
@@ -35,12 +34,6 @@ export async function defineConfig(config?: UserConfig): Promise<Config[]>
     if (config != null)
     {
         presets.push(...OPTIONAL_PRESETS.filter(preset => config[preset.name as keyof UserConfig]));
-    }
-
-    const missing = presets.flatMap(preset => getMissingDependencies(preset.dependencies));
-    if (missing.length > 0)
-    {
-        throw new Error(`[eslint-config-zoro] Please install missing dependencies: npm i -D ${missing.join(" ")}`);
     }
 
     const configs: Config[] = [];

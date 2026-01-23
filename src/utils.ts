@@ -1,28 +1,3 @@
-import { createRequire } from "node:module";
-
-const require = createRequire(import.meta.url);
-
-/**
- * Get missing dependencies.
- *
- * @param {string[]} names Required package names.
- */
-export function getMissingDependencies(names: string[]): string[]
-{
-    return names.filter(name =>
-    {
-        try
-        {
-            require.resolve(name);
-            return false;
-        }
-        catch
-        {
-            return true;
-        }
-    });
-}
-
 /**
  * Dynamic import a package.
  *

@@ -3,21 +3,18 @@ import { TYPESCRIPT } from "./typescript";
 
 import type { Config, Parser, Plugin, Preset } from "../../types";
 
-const DEPENDENCIES = ["@typescript-eslint/parser", "@typescript-eslint/eslint-plugin"];
-
 export const TYPESCRIPT_PRESET: Preset = {
     name: "typescript",
-    dependencies: DEPENDENCIES,
     async load(): Promise<Config[]>
     {
         return [
             {
                 ...TYPESCRIPT,
                 languageOptions: {
-                    parser: await importPackage<Parser>(DEPENDENCIES[0])
+                    parser: await importPackage<Parser>("@typescript-eslint/parser")
                 },
                 plugins: {
-                    "@typescript-eslint": await importPackage<Plugin>(DEPENDENCIES[1])
+                    "@typescript-eslint": await importPackage<Plugin>("@typescript-eslint/eslint-plugin")
                 }
             },
             {
