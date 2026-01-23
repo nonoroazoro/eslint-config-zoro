@@ -1,7 +1,7 @@
 import globals from "globals";
 
-import { importPackage } from "../../utils";
 import { NODE } from "./node";
+import { importPackage } from "../../utils";
 
 import type { Config, Plugin, Preset } from "../../types";
 

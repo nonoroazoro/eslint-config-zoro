@@ -1,5 +1,5 @@
-import { importPackage } from "../../utils";
 import { PERFECTIONIST } from "./perfectionist";
+import { importPackage } from "../../utils";
 
 import type { Config, Plugin, Preset } from "../../types";
 

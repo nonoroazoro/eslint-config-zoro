@@ -1,5 +1,5 @@
-import { importPackage } from "../../utils";
 import { STYLISTIC } from "./stylistic";
+import { importPackage } from "../../utils";
 
 import type { Config, Plugin, Preset } from "../../types";
 

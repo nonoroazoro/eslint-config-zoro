@@ -1,5 +1,5 @@
-import { importPackage } from "../../utils";
 import { TYPESCRIPT } from "./typescript";
+import { importPackage } from "../../utils";
 
 import type { Config, Parser, Plugin, Preset } from "../../types";
 

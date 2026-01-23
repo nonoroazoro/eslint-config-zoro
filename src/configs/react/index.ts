@@ -1,8 +1,8 @@
-import { importPackage } from "../../utils";
 import { PERFECTIONIST } from "./perfectionist";
 import { REACT } from "./react";
 import { REACT_HOOKS } from "./react-hooks";
 import { STYLISTIC } from "./stylistic";
+import { importPackage } from "../../utils";
 
 import type { Config, Plugin, Preset } from "../../types";
 
