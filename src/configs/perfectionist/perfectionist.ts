@@ -47,7 +47,7 @@ export const PERFECTIONIST: Config = {
         "perfectionist/sort-interfaces": "off",
         "perfectionist/sort-intersection-types": ["error", { "ignoreCase": false }],
         "perfectionist/sort-maps": "off",
-        "perfectionist/sort-modules": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-modules": "off",
         "perfectionist/sort-named-exports": ["error", { "ignoreCase": false }],
         "perfectionist/sort-named-imports": ["error", { "ignoreCase": false }],
         "perfectionist/sort-object-types": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
