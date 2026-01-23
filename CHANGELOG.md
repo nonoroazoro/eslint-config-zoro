@@ -1,5 +1,10 @@
 # Changelogs
 
+## 9.0.4 - January 23, 2026
+
+- Change: Tweak `perfectionist/sort-import`.
+
+
 ## 9.0.3 - January 23, 2026
 
 - Change: Turn off `perfectionist/sort-classes`.
