@@ -20,19 +20,28 @@ export const PERFECTIONIST: Config = {
         "perfectionist/sort-imports": [
             "error",
             {
+                "ignoreCase": false,
                 "groups": [
                     "side-effect",
 
                     "builtin",
+                    { "newlinesBetween": 0 },
                     "external",
+
                     "internal",
-                    ["index", "sibling", "parent"],
+                    { "newlinesBetween": 0 },
+                    "index",
+                    { "newlinesBetween": 0 },
+                    "sibling",
+                    { "newlinesBetween": 0 },
+                    "parent",
+
                     "type",
 
                     "side-effect-style",
+                    { "newlinesBetween": 0 },
                     "style"
-                ],
-                "ignoreCase": false
+                ]
             }
         ],
         "perfectionist/sort-interfaces": "off",
