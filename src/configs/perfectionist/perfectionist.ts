@@ -10,8 +10,8 @@ export const PERFECTIONIST: Config = {
     name: "zoro/perfectionist",
     rules: {
         "perfectionist/sort-array-includes": "off",
-        "perfectionist/sort-classes": ["error", { "ignoreCase": false }],
-        "perfectionist/sort-decorators": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-classes": "off",
+        "perfectionist/sort-decorators": "off",
         "perfectionist/sort-enums": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
         "perfectionist/sort-export-attributes": ["error", { "ignoreCase": false }],
         "perfectionist/sort-exports": ["error", { "ignoreCase": false, "partitionByNewLine": true }],
