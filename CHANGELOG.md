@@ -1,5 +1,11 @@
 # Changelogs
 
+## 9.0.6 - January 26, 2026
+
+- Change: Set `flatTernaryExpressions` to `true`.
+- Change: Set `allowSingleElementEquality` to `always`.
+
+
 ## 9.0.5 - January 23, 2026
 
 - Change: Turn off `perfectionist/sort-modules`.
