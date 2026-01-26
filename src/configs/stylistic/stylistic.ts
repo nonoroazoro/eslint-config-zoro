@@ -35,7 +35,7 @@ export const STYLISTIC: Config = {
             }
         ],
         "@stylistic/implicit-arrow-linebreak": "off",
-        "@stylistic/indent": ["error", 4, { "SwitchCase": 1 }],
+        "@stylistic/indent": ["error", 4, { "SwitchCase": 1, "flatTernaryExpressions": true }],
         "@stylistic/indent-binary-ops": ["error", 4],
         "@stylistic/key-spacing": "error",
         "@stylistic/keyword-spacing": [
