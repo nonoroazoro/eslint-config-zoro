@@ -1,4 +1,5 @@
 import { TYPESCRIPT } from "./typescript";
+import { GLOB_DTS, GLOB_TS, GLOB_TSX } from "../../globs";
 import { importPackage } from "../../utils";
 
 import type { Config, Parser, Plugin, Preset } from "../../types";
@@ -9,15 +10,19 @@ export const TYPESCRIPT_PRESET: Preset = {
     {
         return [
             {
-                ...TYPESCRIPT,
                 languageOptions: {
                     parser: await importPackage<Parser>("@typescript-eslint/parser")
-                },
+                }
+            },
+            {
+                ...TYPESCRIPT,
                 plugins: {
                     "@typescript-eslint": await importPackage<Plugin>("@typescript-eslint/eslint-plugin")
                 }
             },
             {
+                files: [GLOB_TS, GLOB_TSX],
+                ignores: [GLOB_DTS],
                 rules: {
                     // Checked by @typescript-eslint
                     "default-case": "off",
