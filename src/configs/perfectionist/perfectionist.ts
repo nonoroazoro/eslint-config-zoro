@@ -54,7 +54,13 @@ export const PERFECTIONIST: Config = {
         "perfectionist/sort-objects": "off",
         "perfectionist/sort-sets": "off",
         "perfectionist/sort-switch-case": "off",
-        "perfectionist/sort-union-types": ["error", { "ignoreCase": false }],
+        "perfectionist/sort-union-types": [
+            "error",
+            {
+                "ignoreCase": false,
+                "groups": ["unknown", "nullish"]
+            }
+        ],
         "perfectionist/sort-variable-declarations": ["error", { "ignoreCase": false }]
     }
 };
