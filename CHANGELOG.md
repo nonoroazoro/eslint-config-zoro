@@ -1,5 +1,20 @@
 # Changelog
 
+## [9.1.0] - 2026-03-09
+
+### Added
+
+- Add `react/no-unused-class-component-methods` and `react/sort-default-props` rules.
+- Add `n/prefer-global/crypto` and `n/prefer-global/timers` rules.
+
+### Changed
+
+- `perfectionist/sort-union-types`: Sort nullish types to the end of union types.
+
+### Removed
+
+- Remove deprecated `@typescript-eslint/typedef` and `react/jsx-sort-default-props` rules.
+
 ## [9.0.7] - 2026-01-29
 
 ### Fixed
