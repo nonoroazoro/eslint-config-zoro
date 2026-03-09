@@ -24,19 +24,29 @@ export const PERFECTIONIST: Config = {
                 "groups": [
                     "side-effect",
 
-                    "builtin",
+                    "value-builtin",
                     { "newlinesBetween": 0 },
-                    "external",
+                    "value-external",
 
-                    "internal",
+                    "type-builtin",
                     { "newlinesBetween": 0 },
-                    "index",
-                    { "newlinesBetween": 0 },
-                    "sibling",
-                    { "newlinesBetween": 0 },
-                    "parent",
+                    "type-external",
 
-                    "type",
+                    "value-internal",
+                    { "newlinesBetween": 0 },
+                    "value-index",
+                    { "newlinesBetween": 0 },
+                    "value-sibling",
+                    { "newlinesBetween": 0 },
+                    "value-parent",
+
+                    "type-internal",
+                    { "newlinesBetween": 0 },
+                    "type-index",
+                    { "newlinesBetween": 0 },
+                    "type-sibling",
+                    { "newlinesBetween": 0 },
+                    "type-parent",
 
                     "side-effect-style",
                     { "newlinesBetween": 0 },
