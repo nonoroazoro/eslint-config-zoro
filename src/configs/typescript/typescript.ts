@@ -188,7 +188,6 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/strict-void-return": "error",
         "@typescript-eslint/switch-exhaustiveness-check": "error",
         "@typescript-eslint/triple-slash-reference": "error",
-        "@typescript-eslint/typedef": "off",
         "@typescript-eslint/unbound-method": "off",
         "@typescript-eslint/unified-signatures": "off",
         "@typescript-eslint/use-unknown-in-catch-callback-variable": "off"
