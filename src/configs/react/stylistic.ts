@@ -35,6 +35,10 @@ export const STYLISTIC: Config = {
         "@stylistic/jsx-newline": "off",
         "@stylistic/jsx-one-expression-per-line": "off",
         "@stylistic/jsx-pascal-case": "error",
+
+        // Experimental
+        // "@stylistic/jsx-props-style": "error",
+
         "@stylistic/jsx-quotes": ["error", "prefer-double"],
         "@stylistic/jsx-self-closing-comp": "error",
         "@stylistic/jsx-tag-spacing": [

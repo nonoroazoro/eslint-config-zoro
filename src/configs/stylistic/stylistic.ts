@@ -67,7 +67,10 @@ export const STYLISTIC: Config = {
             }
         ],
         "@stylistic/lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-        "@stylistic/list-style": "off",
+
+        // Experimental
+        // "@stylistic/list-style": "off",
+
         "@stylistic/max-len": "off",
         "@stylistic/max-statements-per-line": "error",
         "@stylistic/member-delimiter-style": ["error", { "singleline": { "requireLast": true } }],
