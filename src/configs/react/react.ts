@@ -11,6 +11,7 @@ export const REACT: Config = {
     rules: {
         "react/boolean-prop-naming": "error",
         "react/button-has-type": "error",
+        "react/checked-requires-onchange-or-readonly": "error",
         "react/default-props-match-prop-types": "error",
         "react/destructuring-assignment": "off",
         "react/display-name": "off",
@@ -48,7 +49,6 @@ export const REACT: Config = {
         "react/jsx-no-useless-fragment": "error",
         "react/jsx-props-no-spread-multi": "error",
         "react/jsx-props-no-spreading": ["error", { "html": "ignore" }],
-        "react/jsx-sort-default-props": "off",
 
         // Checked by perfectionist/sort-jsx-props
         "react/jsx-sort-props": "off",
@@ -82,6 +82,7 @@ export const REACT: Config = {
         "react/no-unknown-property": "error",
         "react/no-unsafe": "error",
         "react/no-unstable-nested-components": "error",
+        "react/no-unused-class-component-methods": "warn",
         "react/no-unused-prop-types": "warn",
         "react/no-unused-state": "error",
         "react/no-will-update-set-state": "error",
@@ -139,6 +140,7 @@ export const REACT: Config = {
                 ]
             }
         ],
+        "react/sort-default-props": "off",
         "react/sort-prop-types": "off",
         "react/state-in-constructor": "off",
         "react/static-property-placement": "error",
