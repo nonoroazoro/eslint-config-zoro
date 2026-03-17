@@ -22,9 +22,8 @@ export const TYPESCRIPT_PRESET: Preset = {
             },
             {
                 files: [GLOB_TS, GLOB_TSX],
-                ignores: [GLOB_DTS],
                 rules: {
-                    // Checked by @typescript-eslint
+                    // Checked by @typescript-eslint.
                     "default-case": "off",
                     "default-param-last": "off",
                     "no-loop-func": "off",
@@ -36,7 +35,7 @@ export const TYPESCRIPT_PRESET: Preset = {
                     "no-useless-constructor": "off",
                     "prefer-promise-reject-errors": "off",
 
-                    // Checked by Typescript
+                    // Checked by Typescript.
                     "constructor-super": "off",
                     "getter-return": "off",
                     "no-const-assign": "off",
@@ -52,6 +51,14 @@ export const TYPESCRIPT_PRESET: Preset = {
                     "no-unreachable": "off",
                     "no-unsafe-negation": "off",
                     "valid-typeof": "off"
+                }
+            },
+            {
+                files: [GLOB_DTS],
+                rules: {
+                    // Disable unnecessary rules for .d.ts files.
+                    "@typescript-eslint/no-unused-vars": "off",
+                    "@typescript-eslint/no-use-before-define": "off"
                 }
             }
         ];
