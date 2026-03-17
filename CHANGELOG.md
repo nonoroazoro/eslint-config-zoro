@@ -1,5 +1,11 @@
 # Changelog
 
+## [9.1.2] - 2026-03-17
+
+### Changed
+
+- Disable unnecessary rules for .d.ts files.
+
 ## [9.1.1] - 2026-03-09
 
 ### Changed
