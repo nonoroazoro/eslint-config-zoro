@@ -1,8 +1,9 @@
 {
+    "editor.defaultFormatter": "dprint.dprint",
+    "js/ts.tsdk.path": "node_modules/typescript/lib",
     "search.exclude": {
         "**/dist": true,
         "**/pnpm-lock.yaml": true,
         "**/pnpm-workspace.yaml": true
-    },
-    "typescript.tsdk": "node_modules/typescript/lib"
+    }
 }

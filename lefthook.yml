@@ -1,0 +1,10 @@
+pre-commit:
+  commands:
+    format:
+      glob: "{src,tests}/**/*.ts"
+      run: dprint fmt {staged_files}
+      stage_fixed: true
+    lint:
+      glob: "{src,tests}/**/*.ts"
+      run: eslint --fix {staged_files}
+      stage_fixed: true
