@@ -6,14 +6,13 @@ pnpm-lock.yaml
 .vscode
 
 # Configuration files
-.eslintrc.json
+.claudeignore
 .gitignore
-.huskyrc
-.lintstagedrc
-.travis.yml
-jest.config.js
+dprint.json
+eslint.config.mjs
+lefthook.yml
+tsconfig.eslint.json
 tsconfig.json
-tsconfig.prod.json
 
 # Project specific stuff
 src

@@ -1,8 +1,20 @@
-# Node files
-node_modules
-
 # OS junk files
 .DS_Store
 
-# Project specific stuff
+# Environments
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+*.log*
+logs
+
+# Project
+node_modules
+coverage
 dist
+
+# MCP
+.playwright-mcp
