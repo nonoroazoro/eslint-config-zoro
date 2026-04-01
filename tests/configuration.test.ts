@@ -8,12 +8,15 @@ import type { Config } from "../src";
 const CODE_JS = `const foo = "bar";\nconsole.log(foo);\n`;
 const CODE_TS = `const foo: string = "bar";\nconsole.log(foo);\n`;
 const CODE_JSX = `export function App() {\n    return <div>Hello</div>;\n}\n`;
-const CODE_TSX = `interface Props {\n    name: string;\n}\n\nexport function App({ name }: Props) {\n    return <div>Hello {name}</div>;\n}\n`;
+const CODE_TSX =
+    `interface Props {\n    name: string;\n}\n\nexport function App({ name }: Props) {\n    return <div>Hello {name}</div>;\n}\n`;
 
 const CODE_TS_VIOLATION = `import { Config } from "./types";\nconst x: Config = {};\n`;
-const CODE_REACT_VIOLATION = `const items = [1, 2, 3];\nexport function App() {\n    return <div>{items.map(item => <span>{item}</span>)}</div>;\n}\n`;
+const CODE_REACT_VIOLATION =
+    `const items = [1, 2, 3];\nexport function App() {\n    return <div>{items.map(item => <span>{item}</span>)}</div>;\n}\n`;
 const CODE_NODE_VIOLATION = `import fs from "fs";\nconsole.log(fs);\n`;
-const CODE_REACT_HOOKS_VIOLATION = `import { useState } from "react";\nexport function App({ condition }) {\n    if (condition) {\n        const [state] = useState(0);\n        return <div>{state}</div>;\n    }\n    return <div>No state</div>;\n}\n`;
+const CODE_REACT_HOOKS_VIOLATION =
+    `import { useState } from "react";\nexport function App({ condition }) {\n    if (condition) {\n        const [state] = useState(0);\n        return <div>{state}</div>;\n    }\n    return <div>No state</div>;\n}\n`;
 
 const TS_PARSER_OPTIONS = {
     languageOptions: {
@@ -293,12 +296,9 @@ describe("defineConfig", () =>
         {
             const configs = await defineConfig({ node: false, react: false, typescript: false });
 
-            const hasTypescript = configs.some(c =>
-                c.plugins && Object.keys(c.plugins).includes("@typescript-eslint"));
-            const hasReact = configs.some(c =>
-                c.plugins && Object.keys(c.plugins).includes("react"));
-            const hasNode = configs.some(c =>
-                c.plugins && Object.keys(c.plugins).includes("n"));
+            const hasTypescript = configs.some(c => c.plugins && Object.keys(c.plugins).includes("@typescript-eslint"));
+            const hasReact = configs.some(c => c.plugins && Object.keys(c.plugins).includes("react"));
+            const hasNode = configs.some(c => c.plugins && Object.keys(c.plugins).includes("n"));
 
             expect(hasTypescript).toBe(false);
             expect(hasReact).toBe(false);

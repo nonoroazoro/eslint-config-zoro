@@ -1,5 +1,4 @@
-import
-{
+import {
     ESLINT_PRESET,
     NODE_PRESET,
     PERFECTIONIST_PRESET,

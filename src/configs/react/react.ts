@@ -97,7 +97,8 @@ export const REACT: Config = {
         "react/require-render-return": "error",
         "react/self-closing-comp": "error",
         "react/sort-comp": [
-            "error", {
+            "error",
+            {
                 "groups": {
                     "lifecycle": [
                         "displayName",

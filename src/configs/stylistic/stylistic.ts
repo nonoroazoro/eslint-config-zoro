@@ -104,7 +104,12 @@ export const STYLISTIC: Config = {
         "@stylistic/semi-spacing": "error",
         "@stylistic/semi-style": ["error", "last"],
         "@stylistic/space-before-blocks": "error",
-        "@stylistic/space-before-function-paren": ["error", { "anonymous": "always", "asyncArrow": "always", "catch": "always", "named": "never" }],
+        "@stylistic/space-before-function-paren": ["error", {
+            "anonymous": "always",
+            "asyncArrow": "always",
+            "catch": "always",
+            "named": "never"
+        }],
         "@stylistic/space-in-parens": ["error", "never"],
         "@stylistic/space-infix-ops": "error",
         "@stylistic/space-unary-ops": "error",
