@@ -15,7 +15,7 @@
 ## Installation
 
 ```sh
-npm i -D eslint-config-zoro eslint @stylistic/eslint-plugin eslint-plugin-perfectionist
+npm i -D eslint eslint-config-zoro
 ```
 
 ## Usage
@@ -33,21 +33,21 @@ export default defineConfig();
 
 The following presets are **always enabled** and cannot be opted out:
 
-| Preset | Description |
-| ------ | ----------- |
-| [ESLint](https://eslint.org/docs/rules) | ESLint rules |
-| [Stylistic](https://eslint.style/rules) | Style rules |
+| Preset                                           | Description   |
+| ------------------------------------------------ | ------------- |
+| [ESLint](https://eslint.org/docs/rules)          | ESLint rules  |
+| [Stylistic](https://eslint.style/rules)          | Style rules   |
 | [Perfectionist](https://perfectionist.dev/rules) | Sorting rules |
 
 ## Optional Presets
 
 Enable optional presets by passing options to `defineConfig`, see [Examples](#examples):
 
-| Option | Preset | Required Dependencies |
-| ------ | ------ | -------------------------- |
-| `typescript` | [TypeScript](https://typescript-eslint.io/rules) | `@typescript-eslint/parser` `@typescript-eslint/eslint-plugin` |
-| `react` | [React](https://github.com/jsx-eslint/eslint-plugin-react) + [React Hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) | `eslint-plugin-react` `eslint-plugin-react-hooks` |
-| `node` | [Node](https://github.com/eslint-community/eslint-plugin-n) | `eslint-plugin-n` |
+| Option       | Preset                                                                                                                                                     | Required Dependencies                                          |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| `typescript` | [TypeScript](https://typescript-eslint.io/rules)                                                                                                           | `@typescript-eslint/parser` `@typescript-eslint/eslint-plugin` |
+| `react`      | [React](https://github.com/jsx-eslint/eslint-plugin-react) + [React Hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks) | `eslint-plugin-react` `eslint-plugin-react-hooks`              |
+| `node`       | [Node](https://github.com/eslint-community/eslint-plugin-n)                                                                                                | `eslint-plugin-n`                                              |
 
 ## Examples
 
