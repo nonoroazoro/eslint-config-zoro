@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "rootDir": "src",
         "outDir": "dist",
         "module": "esnext",
         "target": "esnext",
@@ -17,10 +18,7 @@
         "pretty": true,
         "skipLibCheck": true,
         "strictBindCallApply": true,
-        "strictNullChecks": true,
-        "lib": [
-            "ESNext"
-        ]
+        "strictNullChecks": true
     },
     "include": [
         "src"
