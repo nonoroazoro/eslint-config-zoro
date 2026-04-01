@@ -36,7 +36,7 @@
         "build": "tsc && tsc-alias && npm run lint",
         "lint": "eslint src/**",
         "test": "vitest run",
-        "upgradepackages": "ncu -u"
+        "upgradepackages": "ncu -u -x eslint"
     },
     "engines": {
         "node": ">=18.18.0"
