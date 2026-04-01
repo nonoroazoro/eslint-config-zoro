@@ -1,5 +1,22 @@
 # Changelog
 
+## [9.1.3] - 2026-04-01
+
+### Changed
+
+- Migrate to dprint and lefthook.
+- Skip eslint from upgrading.
+- Upgrade packages.
+
+### Removed
+
+- Remove `@stylistic/eslint-plugin` and `eslint-plugin-perfectionist` from installation.
+
+### Fixed
+
+- Fix tsconfig.
+- Fix ignore files.
+
 ## [9.1.2] - 2026-03-17
 
 ### Changed
