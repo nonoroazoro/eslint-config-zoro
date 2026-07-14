@@ -9,7 +9,6 @@ export const REACT_HOOKS: Config = {
     files: [GLOB_JSX, GLOB_TSX],
     name: "zoro/react/react-hooks",
     rules: {
-        "react-hooks/component-hook-factories": "error",
         "react-hooks/config": "error",
         "react-hooks/error-boundaries": "error",
         "react-hooks/exhaustive-deps": "warn",

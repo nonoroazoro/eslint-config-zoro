@@ -10,6 +10,7 @@ export const PERFECTIONIST: Config = {
     name: "zoro/perfectionist",
     rules: {
         "perfectionist/sort-array-includes": "off",
+        "perfectionist/sort-arrays": "off",
         "perfectionist/sort-classes": "off",
         "perfectionist/sort-decorators": "off",
         "perfectionist/sort-enums": ["error", { "ignoreCase": false, "partitionByNewLine": true }],

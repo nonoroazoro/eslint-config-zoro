@@ -26,7 +26,6 @@ export const TYPESCRIPT_PRESET: Preset = {
                     // Checked by @typescript-eslint.
                     "default-case": "off",
                     "default-param-last": "off",
-                    "no-loop-func": "off",
                     "no-shadow": "off",
                     "no-unused-expressions": "off",
                     "no-unused-private-class-members": "off",

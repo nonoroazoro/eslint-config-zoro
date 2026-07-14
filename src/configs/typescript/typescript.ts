@@ -104,7 +104,6 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-inferrable-types": "error",
         "@typescript-eslint/no-invalid-this": "off",
         "@typescript-eslint/no-invalid-void-type": "error",
-        "@typescript-eslint/no-loop-func": "error",
         "@typescript-eslint/no-magic-numbers": "off",
         "@typescript-eslint/no-meaningless-void-operator": "error",
         "@typescript-eslint/no-misused-new": "error",
