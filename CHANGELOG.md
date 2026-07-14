@@ -1,5 +1,25 @@
 # Changelog
 
+## [9.2.0] - 2026-07-14
+
+### Added
+
+- `perfectionist/sort-arrays` rule.
+
+### Changed
+
+- Upgrade `eslint-plugin-n` to v18 (CJS to ESM migration).
+- Upgrade `eslint-plugin-perfectionist` to v5.10.0.
+- Upgrade `eslint-plugin-react-hooks` to v7.1.1.
+- Upgrade `@typescript-eslint` to v8.64.0.
+- Upgrade `pnpm` to v11.13.0.
+- Skip `typescript` v7 and `eslint` v10 (incompatible with plugins).
+
+### Removed
+
+- Deprecated `@typescript-eslint/no-loop-func` rule (use core rule instead).
+- Deprecated `react-hooks/component-hook-factories` rule.
+
 ## [9.1.3] - 2026-04-01
 
 ### Changed
