@@ -1,10 +1,14 @@
 pre-commit:
   commands:
     dprint:
-      glob: "**/*.{cjs,cts,html,js,json,jsonc,jsx,md,mjs,mts,ts,tsx,vue}"
+      glob:
+        - "*.{cjs,cts,html,js,json,jsonc,jsx,md,mjs,mts,ts,tsx,vue}"
+        - "**/*.{cjs,cts,html,js,json,jsonc,jsx,md,mjs,mts,ts,tsx,vue}"
       run: dprint fmt {staged_files}
       stage_fixed: true
     eslint:
-      glob: "**/*.{cjs,cts,js,jsx,mjs,mts,ts,tsx}"
+      glob:
+        - "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx}"
+        - "**/*.{cjs,cts,js,jsx,mjs,mts,ts,tsx}"
       run: eslint --fix {staged_files}
       stage_fixed: true
