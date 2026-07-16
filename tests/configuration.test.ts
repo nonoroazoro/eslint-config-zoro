@@ -42,8 +42,9 @@ const REACT_OPTIONS = {
 
 function expectHasPlugin(configs: Config[], pluginPrefix: string): void
 {
-    const hasPlugin = configs.some(c =>
-        c.plugins && Object.keys(c.plugins).some(key => key === pluginPrefix || key.startsWith(pluginPrefix)));
+    const hasPlugin = configs.some(
+        c => c.plugins && Object.keys(c.plugins).some(key => key === pluginPrefix || key.startsWith(pluginPrefix))
+    );
     expect(hasPlugin).toBe(true);
 }
 
