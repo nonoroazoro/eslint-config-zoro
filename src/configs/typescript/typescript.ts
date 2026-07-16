@@ -97,7 +97,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-explicit-any": "warn",
         "@typescript-eslint/no-extra-non-null-assertion": "error",
         "@typescript-eslint/no-extraneous-class": "off",
-        "@typescript-eslint/no-floating-promises": "error",
+        "@typescript-eslint/no-floating-promises": ["error", { "ignoreVoid": true }],
         "@typescript-eslint/no-for-in-array": "error",
         "@typescript-eslint/no-implied-eval": "error",
         "@typescript-eslint/no-import-type-side-effects": "error",

@@ -12,6 +12,9 @@ const CODE_TSX =
     `interface Props {\n    name: string;\n}\n\nexport function App({ name }: Props) {\n    return <div>Hello {name}</div>;\n}\n`;
 
 const CODE_TS_VIOLATION = `import { Config } from "./types";\nconst x: Config = {};\n`;
+const CODE_TS_FLOATING_PROMISE = `Promise.resolve();\n`;
+const CODE_VOID_STATEMENT = `void Promise.resolve();\n`;
+const CODE_VOID_EXPRESSION = `const result = void Promise.resolve();\nconsole.log(result);\n`;
 const CODE_REACT_VIOLATION =
     `const items = [1, 2, 3];\nexport function App() {\n    return <div>{items.map(item => <span>{item}</span>)}</div>;\n}\n`;
 const CODE_NODE_VIOLATION = `import fs from "fs";\nconsole.log(fs);\n`;
@@ -98,6 +101,24 @@ describe("defineConfig", () =>
             const configs = await defineConfig();
             expectHasPlugin(configs, "perfectionist");
         });
+
+        it("should allow void in statement position", async () =>
+        {
+            const configs = await defineConfig();
+
+            const result = await lint(configs, CODE_VOID_STATEMENT, "test.js");
+            expectNoFatalErrors(result);
+            expectRuleNotTriggered(result, "no-void");
+        });
+
+        it("should reject void outside statement position", async () =>
+        {
+            const configs = await defineConfig();
+
+            const result = await lint(configs, CODE_VOID_EXPRESSION, "test.js");
+            expectNoFatalErrors(result);
+            expectRuleTriggered(result, "no-void");
+        });
     });
 
     describe("typescript option", () =>
@@ -123,6 +144,24 @@ describe("defineConfig", () =>
             const result = await lint(configs, CODE_TS_VIOLATION, "test.ts");
             expectNoFatalErrors(result);
             expectRuleTriggered(result, "@typescript-eslint/consistent-type-imports");
+        });
+
+        it("should allow explicitly ignored Promises", async () =>
+        {
+            const configs = await defineConfig({ typescript: true, ...TS_PARSER_OPTIONS });
+
+            const result = await lint(configs, CODE_VOID_STATEMENT, "test.ts");
+            expectNoFatalErrors(result);
+            expectRuleNotTriggered(result, "@typescript-eslint/no-floating-promises");
+        });
+
+        it("should reject floating Promises without void", async () =>
+        {
+            const configs = await defineConfig({ typescript: true, ...TS_PARSER_OPTIONS });
+
+            const result = await lint(configs, CODE_TS_FLOATING_PROMISE, "test.ts");
+            expectNoFatalErrors(result);
+            expectRuleTriggered(result, "@typescript-eslint/no-floating-promises");
         });
 
         it("should NOT trigger typescript rules without typescript option", async () =>

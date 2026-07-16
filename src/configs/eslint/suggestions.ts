@@ -134,7 +134,7 @@ export const SUGGESTIONS: Config = {
         "no-useless-rename": "error",
         "no-useless-return": "off",
         "no-var": "error",
-        "no-void": "error",
+        "no-void": ["error", { "allowAsStatement": true }],
         "no-warning-comments": "off",
         "no-with": "error",
         "object-shorthand": [
