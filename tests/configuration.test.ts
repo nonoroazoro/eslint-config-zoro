@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 
 import { defineConfig } from "../src";
 
-import type { Config } from "../src";
+import type { Config, UserConfig } from "../src";
 
 const CODE_JS = `const foo = "bar";\nconsole.log(foo);\n`;
 const CODE_TS = `const foo: string = "bar";\nconsole.log(foo);\n`;
@@ -30,6 +30,15 @@ const TS_PARSER_OPTIONS = {
         }
     }
 };
+
+const REACT_OPTIONS = {
+    react: true,
+    settings: {
+        react: {
+            version: "19"
+        }
+    }
+} satisfies UserConfig;
 
 function expectHasPlugin(configs: Config[], pluginPrefix: string): void
 {
@@ -185,19 +194,19 @@ describe("defineConfig", () =>
     {
         it("should add react plugin", async () =>
         {
-            const configs = await defineConfig({ react: true });
+            const configs = await defineConfig(REACT_OPTIONS);
             expectHasPlugin(configs, "react");
         });
 
         it("should add react-hooks plugin", async () =>
         {
-            const configs = await defineConfig({ react: true });
+            const configs = await defineConfig(REACT_OPTIONS);
             expectHasPlugin(configs, "react-hooks");
         });
 
         it("should lint JSX code without fatal errors", async () =>
         {
-            const configs = await defineConfig({ react: true });
+            const configs = await defineConfig(REACT_OPTIONS);
 
             const result = await lint(configs, CODE_JSX, "test.jsx");
             expectNoFatalErrors(result);
@@ -205,7 +214,7 @@ describe("defineConfig", () =>
 
         it("should trigger react/jsx-key on missing key in map", async () =>
         {
-            const configs = await defineConfig({ react: true });
+            const configs = await defineConfig(REACT_OPTIONS);
 
             const result = await lint(configs, CODE_REACT_VIOLATION, "test.jsx");
             expectNoFatalErrors(result);
@@ -214,7 +223,7 @@ describe("defineConfig", () =>
 
         it("should trigger react-hooks/rules-of-hooks on conditional hook", async () =>
         {
-            const configs = await defineConfig({ react: true });
+            const configs = await defineConfig(REACT_OPTIONS);
 
             const result = await lint(configs, CODE_REACT_HOOKS_VIOLATION, "test.jsx");
             expectNoFatalErrors(result);
@@ -233,7 +242,7 @@ describe("defineConfig", () =>
         it("should add more configs than base", async () =>
         {
             const base = await defineConfig();
-            const withReact = await defineConfig({ react: true });
+            const withReact = await defineConfig(REACT_OPTIONS);
             expect(withReact.length).toBeGreaterThan(base.length);
         });
     });
@@ -284,7 +293,7 @@ describe("defineConfig", () =>
     {
         it("typescript + react: should lint TSX without fatal errors", async () =>
         {
-            const configs = await defineConfig({ react: true, typescript: true, ...TS_PARSER_OPTIONS });
+            const configs = await defineConfig({ ...REACT_OPTIONS, typescript: true, ...TS_PARSER_OPTIONS });
 
             const result = await lint(configs, CODE_TSX, "test.tsx");
             expectNoFatalErrors(result);
@@ -292,7 +301,7 @@ describe("defineConfig", () =>
 
         it("typescript + react: should have both plugins", async () =>
         {
-            const configs = await defineConfig({ react: true, typescript: true });
+            const configs = await defineConfig({ ...REACT_OPTIONS, typescript: true });
             expectHasPlugin(configs, "@typescript-eslint");
             expectHasPlugin(configs, "react");
         });
@@ -306,14 +315,14 @@ describe("defineConfig", () =>
 
         it("react + node: should have both plugins", async () =>
         {
-            const configs = await defineConfig({ node: true, react: true });
+            const configs = await defineConfig({ ...REACT_OPTIONS, node: true });
             expectHasPlugin(configs, "react");
             expectHasPlugin(configs, "n");
         });
 
         it("all options: should have all plugins", async () =>
         {
-            const configs = await defineConfig({ node: true, react: true, typescript: true });
+            const configs = await defineConfig({ ...REACT_OPTIONS, node: true, typescript: true });
             expectHasPlugin(configs, "@typescript-eslint");
             expectHasPlugin(configs, "react");
             expectHasPlugin(configs, "react-hooks");
