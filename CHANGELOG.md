@@ -1,5 +1,11 @@
 # Changelog
 
+## [9.2.1] - 2026-07-16
+
+### Changed
+
+- Allow explicit void Promise statements.
+
 ## [9.2.0] - 2026-07-14
 
 ### Added

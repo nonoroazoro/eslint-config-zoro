@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-zoro",
-    "version": "9.2.0",
+    "version": "9.2.1",
     "description": "A fully customized ESLint configuration based on the default ESLint, React and TypeScript rules.",
     "packageManager": "pnpm@11.13.0",
     "license": "MIT",
