@@ -1,10 +1,10 @@
 pre-commit:
   commands:
-    format:
-      glob: "{src,tests}/**/*.ts"
+    dprint:
+      glob: "**/*.{cjs,cts,html,js,json,jsonc,jsx,md,mjs,mts,ts,tsx,vue}"
       run: dprint fmt {staged_files}
       stage_fixed: true
-    lint:
-      glob: "{src,tests}/**/*.ts"
+    eslint:
+      glob: "**/*.{cjs,cts,js,jsx,mjs,mts,ts,tsx}"
       run: eslint --fix {staged_files}
       stage_fixed: true

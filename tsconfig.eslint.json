@@ -1,5 +1,10 @@
 {
     "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "rootDir": ".",
+        "allowJs": true,
+        "noEmit": true
+    },
     "include": [
         "eslint.config.mjs",
         "src",
