@@ -159,6 +159,7 @@ export const SUGGESTIONS: Config = {
         "prefer-rest-params": "error",
         "prefer-spread": "error",
         "prefer-template": "error",
+        "preserve-caught-error": "error",
         "radix": "error",
         "require-await": "off",
         "require-unicode-regexp": "off",

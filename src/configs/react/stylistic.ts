@@ -37,7 +37,7 @@ export const STYLISTIC: Config = {
         "@stylistic/jsx-pascal-case": "error",
 
         // Experimental
-        // "@stylistic/jsx-props-style": "error",
+        // "@stylistic/exp-jsx-props-style": "error",
 
         "@stylistic/jsx-quotes": ["error", "prefer-double"],
         "@stylistic/jsx-self-closing-comp": "error",

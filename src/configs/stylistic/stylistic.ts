@@ -69,7 +69,7 @@ export const STYLISTIC: Config = {
         "@stylistic/lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
 
         // Experimental
-        // "@stylistic/list-style": "off",
+        // "@stylistic/exp-list-style": "off",
 
         "@stylistic/max-len": "off",
         "@stylistic/max-statements-per-line": "error",

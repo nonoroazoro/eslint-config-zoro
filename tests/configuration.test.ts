@@ -15,11 +15,17 @@ const CODE_TS_VIOLATION = `import { Config } from "./types";\nconst x: Config = 
 const CODE_TS_FLOATING_PROMISE = `Promise.resolve();\n`;
 const CODE_VOID_STATEMENT = `void Promise.resolve();\n`;
 const CODE_VOID_EXPRESSION = `const result = void Promise.resolve();\nconsole.log(result);\n`;
+const CODE_UNASSIGNED_VARIABLE = `let value;\nconsole.log(value);\n`;
+const CODE_DROPPED_CAUSE =
+    `try {\n    throw new Error("root");\n} catch (error) {\n    throw new Error("wrapped");\n}\n`;
 const CODE_REACT_VIOLATION =
     `const items = [1, 2, 3];\nexport function App() {\n    return <div>{items.map(item => <span>{item}</span>)}</div>;\n}\n`;
 const CODE_NODE_VIOLATION = `import fs from "fs";\nconsole.log(fs);\n`;
+const CODE_NODE_ASSERT = `import assert from "node:assert";\nassert(true);\n`;
 const CODE_REACT_HOOKS_VIOLATION =
     `import { useState } from "react";\nexport function App({ condition }) {\n    if (condition) {\n        const [state] = useState(0);\n        return <div>{state}</div>;\n    }\n    return <div>No state</div>;\n}\n`;
+const CODE_VOID_USE_MEMO =
+    `import { useMemo } from "react";\nexport function App() {\n    useMemo(() => 42, []);\n    return <div />;\n}\n`;
 
 const TS_PARSER_OPTIONS = {
     languageOptions: {
@@ -129,6 +135,24 @@ describe("defineConfig", () =>
             expectNoFatalErrors(result);
             expectRuleTriggered(result, "no-void");
         });
+
+        it("should reject variables that are never assigned", async () =>
+        {
+            const configs = await defineConfig();
+
+            const result = await lint(configs, CODE_UNASSIGNED_VARIABLE, "test.js");
+            expectNoFatalErrors(result);
+            expectRuleTriggered(result, "no-unassigned-vars");
+        });
+
+        it("should preserve caught errors as the cause", async () =>
+        {
+            const configs = await defineConfig();
+
+            const result = await lint(configs, CODE_DROPPED_CAUSE, "test.js");
+            expectNoFatalErrors(result);
+            expectRuleTriggered(result, "preserve-caught-error");
+        });
     });
 
     describe("typescript option", () =>
@@ -231,6 +255,15 @@ describe("defineConfig", () =>
             expectRuleTriggered(result, "react-hooks/rules-of-hooks");
         });
 
+        it("should trigger react-hooks/void-use-memo on an unused result", async () =>
+        {
+            const configs = await defineConfig(REACT_OPTIONS);
+
+            const result = await lint(configs, CODE_VOID_USE_MEMO, "test.jsx");
+            expectNoFatalErrors(result);
+            expectRuleTriggered(result, "react-hooks/void-use-memo");
+        });
+
         it("should NOT trigger react rules without react option", async () =>
         {
             const configs = await defineConfig();
@@ -271,6 +304,15 @@ describe("defineConfig", () =>
             const result = await lint(configs, CODE_NODE_VIOLATION, "test.js");
             expectNoFatalErrors(result);
             expectRuleTriggered(result, "n/prefer-node-protocol");
+        });
+
+        it("should trigger n/prefer-import/assert-strict on node:assert", async () =>
+        {
+            const configs = await defineConfig({ node: true });
+
+            const result = await lint(configs, CODE_NODE_ASSERT, "test.js");
+            expectNoFatalErrors(result);
+            expectRuleTriggered(result, "n/prefer-import/assert-strict");
         });
 
         it("should NOT trigger node rules without node option", async () =>
