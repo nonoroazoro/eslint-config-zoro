@@ -110,7 +110,11 @@ export const SUGGESTIONS: Config = {
             "error",
             "ForInStatement",
             "LabeledStatement",
-            "WithStatement"
+            "WithStatement",
+            {
+                "message": "Use a top-level import type declaration.",
+                "selector": "ImportSpecifier[importKind='type']"
+            }
         ],
         "no-return-assign": ["error", "always"],
         "no-script-url": "off",

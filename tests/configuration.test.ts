@@ -12,6 +12,8 @@ const CODE_TSX =
     `interface Props {\n    name: string;\n}\n\nexport function App({ name }: Props) {\n    return <div>Hello {name}</div>;\n}\n`;
 
 const CODE_TS_VIOLATION = `import { Config } from "./types";\nconst x: Config = {};\n`;
+const CODE_TS_INLINE_TYPE_IMPORT = `import { type Config } from "./types";\nconst x: Config = {};\n`;
+const CODE_TS_SEPARATE_TYPE_IMPORT = `import type { Config } from "./types";\nconst x: Config = {};\n`;
 const CODE_TS_FLOATING_PROMISE = `Promise.resolve();\n`;
 const CODE_VOID_STATEMENT = `void Promise.resolve();\n`;
 const CODE_VOID_EXPRESSION = `const result = void Promise.resolve();\nconsole.log(result);\n`;
@@ -178,6 +180,25 @@ describe("defineConfig", () =>
             const result = await lint(configs, CODE_TS_VIOLATION, "test.ts");
             expectNoFatalErrors(result);
             expectRuleTriggered(result, "@typescript-eslint/consistent-type-imports");
+        });
+
+        it("should reject inline type imports", async () =>
+        {
+            const configs = await defineConfig({ typescript: true, ...TS_PARSER_OPTIONS });
+
+            const result = await lint(configs, CODE_TS_INLINE_TYPE_IMPORT, "test.ts");
+            expectNoFatalErrors(result);
+            expectRuleTriggered(result, "no-restricted-syntax");
+        });
+
+        it("should allow separate type imports", async () =>
+        {
+            const configs = await defineConfig({ typescript: true, ...TS_PARSER_OPTIONS });
+
+            const result = await lint(configs, CODE_TS_SEPARATE_TYPE_IMPORT, "test.ts");
+            expectNoFatalErrors(result);
+            expectRuleNotTriggered(result, "no-restricted-syntax");
+            expectRuleNotTriggered(result, "@typescript-eslint/consistent-type-imports");
         });
 
         it("should allow explicitly ignored Promises", async () =>
