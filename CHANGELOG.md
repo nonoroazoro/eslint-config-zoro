@@ -1,5 +1,24 @@
 # Changelog
 
+## [9.3.0] - 2026-08-15
+
+### Added
+
+- `no-unassigned-vars` and `preserve-caught-error` rules.
+- `n/prefer-import/assert-strict` and `react-hooks/void-use-memo` rules.
+
+### Changed
+
+- Upgrade dependencies and peer dependency ranges.
+- Upgrade `pnpm` to v11.21.0.
+- Require Node.js v20.19.0, v22.13.0, or v24.0.0 and later compatible releases.
+- Keep TypeScript at v6.0.3 and ESLint at v9.39.5 for plugin compatibility.
+- Update renamed experimental Stylistic rules.
+
+### Removed
+
+- Deprecated `@typescript-eslint/no-restricted-imports` rule.
+
 ## [9.2.1] - 2026-07-16
 
 ### Changed
