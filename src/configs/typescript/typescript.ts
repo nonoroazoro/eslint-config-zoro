@@ -105,6 +105,7 @@ export const TYPESCRIPT: Config = {
         "@typescript-eslint/no-extraneous-class": "off",
         "@typescript-eslint/no-floating-promises": ["error", { "ignoreVoid": true }],
         "@typescript-eslint/no-for-in-array": "error",
+        "@typescript-eslint/no-generated-empty-object-type": "off",
         "@typescript-eslint/no-implied-eval": "error",
         "@typescript-eslint/no-import-type-side-effects": "error",
         "@typescript-eslint/no-inferrable-types": "error",
