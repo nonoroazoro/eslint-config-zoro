@@ -1,5 +1,12 @@
 # Changelog
 
+## [9.3.1] - 2026-09-21
+
+### Changed
+
+- Upgrade `@typescript-eslint` to v8.70.0 and require it in peer dependencies.
+- Upgrade `eslint-plugin-perfectionist` to v5.11.1.
+
 ## [9.3.0] - 2026-08-15
 
 ### Added
